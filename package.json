@@ -1,0 +1,21 @@
+{
+  "name": "11ty-starter",
+  "version": "1.0.0",
+  "description": "Creating a starter template for 11ty",
+  "main": "index.html",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3"
+  },
+  "browserslist": [
+    "> 0.2%",
+    "not dead"
+  ]
+}

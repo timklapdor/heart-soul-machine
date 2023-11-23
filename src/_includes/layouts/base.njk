@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+</head>
+<body>
+	<header>
+		<h1>{{ title }}</h1>
+		<a href="{{ '/' | url }}">
+    		<h1 class="logo-present">{{ title }}</h1>
+    		<img src="{{ '/assets/heart-soul-machine-logo.svg' | url }}" alt="{{ title }} Logo">
+  		</a>
+	</header>
+	<aside>
+
+		<nav>
+			<ul>
+				<li>appearances</li>
+				<li>events</li>
+				<li>honours</li>
+				<li>ideas</li>
+				<li>machines</li>
+				<li>presentations</li>
+				<li>projects</li>
+				<li>publications</li>
+				<li>roles</li>
+				<li>travels</li>
+				<li>visuals</li>
+			</ul>
+		</nav>
+		</aside>
+
+	<main>
+	{{ content | safe }}
+	</main>
+</body>
+</html>
