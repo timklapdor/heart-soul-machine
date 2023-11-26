@@ -1,10 +1,15 @@
 ---
-layout: layouts/base.njk
+layout: partials/blog.njk
 title: Hello World
 ---
 
+# What becomes of Australian Rugby?
 
+![img](images/wallaby.jpeg)
+
+<div class="introduction">
 Learning types describe the intention of learning, the ways which we wish students would engage in order to learn. They define the experience we are trying to design and act to guide our process. 
+</div>
 
 They help us to critically engage with the course, its concepts and topics in order to design an experience that best fits the the specific moment in the course. 
 
@@ -21,10 +26,9 @@ Any pedagogical models try to highlight a specific learning the way to facilitat
 
 #LearningTypes 
 
----
-
-
+<div class="comment">
 Learning types describe the intention of learning, the ways which we wish students would engage in order to learn. They define the experience we are trying to design and act to guide our process. 
+</div>
 
 They help us to critically engage with the course, its concepts and topics in order to design an experience that best fits the the specific moment in the course. 
 

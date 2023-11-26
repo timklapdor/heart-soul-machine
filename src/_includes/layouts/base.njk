@@ -7,14 +7,16 @@
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
 <body>
-	<header>
-		<h1>{{ title }}</h1>
-		<a href="{{ '/' | url }}">
-    		<h1 class="logo-present">{{ title }}</h1>
-    		<img src="{{ '/assets/heart-soul-machine-logo.svg' | url }}" alt="{{ title }} Logo">
-  		</a>
-	</header>
-	<aside>
+	<div class="with-sidebar container">
+
+	<aside >
+		<header>
+			<h1>{{ title }}</h1>
+			<a href="{{ '/' | url }}">
+    			<h1 class="logo-present">{{ title }}</h1>
+    			<img src="{{ '/assets/heart-soul-machine-logo.svg' | url }}" alt="{{ title }} Logo">
+  			</a>
+		</header>
 
 		<nav>
 			<ul>
@@ -36,5 +38,6 @@
 	<main>
 	{{ content | safe }}
 	</main>
+	</div>
 </body>
 </html>
