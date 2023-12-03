@@ -1,6 +1,19 @@
 ---
-layout: ../layouts/base.njk
+layout: /layouts/grid.njk
 ---
 <article class="blogpost">
+	<h1>{{ title }}</h1>
+	<ul class="metadata">
+		<li id="date">{{ page.date | postDate }}</li>
+		<li id="categories">Testing </li>
+	</ul>
 	{{ content | safe }}
+	<ul class="metadata">
+		<li class"author"></li>
+		<li class="edited-date"></li>
+		<li class="edit-description"></li>
+		<li class="tags"></li>
+		<li class="location"></li>
+	</ul>
+	{% include "partials/footer.njk" %}
 </article>

@@ -1,0 +1,10 @@
+---
+title: 
+date:
+updated:
+update-description: 
+categories: 
+tags: 
+location: 
+cover-image: 
+---

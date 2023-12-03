@@ -1,0 +1,9 @@
+<nav role="navigation">
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
+    </button>
+    <ul id="menu">
+        {% for item in nav.nav %}
+             <li><a href="{{item.url}}">{{item.text}}</a></li>
+        {% endfor %}
+    </ul>
+</nav>    

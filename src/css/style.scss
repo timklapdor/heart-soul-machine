@@ -1,7 +1,13 @@
 @import "modules/reset";
 @import "modules/colour";
+@import "modules/svg-factory";
 @import "modules/font-size";
-@import "modules/grid";
+@import 'modules/grid.scss';
+@import 'modules/main';
+@import 'modules/hamburger';
+
+
+
 
 $heart: #ff0e69;
 $soul: #ffae2c; 

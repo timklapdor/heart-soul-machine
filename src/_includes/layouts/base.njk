@@ -17,27 +17,13 @@
     			<img src="{{ '/assets/heart-soul-machine-logo.svg' | url }}" alt="{{ title }} Logo">
   			</a>
 		</header>
-
-		<nav>
-			<ul>
-				<li>appearances</li>
-				<li>events</li>
-				<li>honours</li>
-				<li>ideas</li>
-				<li>machines</li>
-				<li>presentations</li>
-				<li>projects</li>
-				<li>publications</li>
-				<li>roles</li>
-				<li>travels</li>
-				<li>visuals</li>
-			</ul>
-		</nav>
+			{% include "partials/navigation.njk" %}
 		</aside>
 
 	<main>
 	{{ content | safe }}
 	</main>
 	</div>
+
 </body>
 </html>

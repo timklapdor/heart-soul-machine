@@ -1,0 +1,32 @@
+{
+    "nav" : [
+        {
+            "text":"Home",
+            "url":"/"
+        },
+        {
+            "text":"Posts", 
+            "url":"/posts/"
+        }, 
+        {
+            "text":"Notes", 
+            "url":"/notes/"
+        }, 
+        {
+            "text":"Updates", 
+            "url":"/updates/"
+        }, 
+        {
+            "text":"About", 
+            "url":"/about/"
+        }, 
+        {
+            "text":"Now", 
+            "url":"/now/"
+        }, 
+        {
+            "text":"Uses", 
+            "url":"/uses/"
+        }
+    ]
+}

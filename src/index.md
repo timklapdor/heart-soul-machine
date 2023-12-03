@@ -1,9 +1,14 @@
 ---
-layout: partials/blog.njk
-title: Hello World
+layout: /partials/blog.njk
+title: What becomes of Australian Rugby?
+date: 2023-09-28 
+updated:
+update-description: 
+categories: 
+tags: 
+location: 
+cover-image: 
 ---
-
-# What becomes of Australian Rugby?
 
 ![img](images/wallaby.jpeg)
 
