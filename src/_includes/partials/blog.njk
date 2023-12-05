@@ -1,19 +1,28 @@
 ---
 layout: /layouts/grid.njk
 ---
-<article class="blogpost">
-	<h1>{{ title }}</h1>
+<article class="h-entry blogpost">
+	<h1 class="p-name">{{ title }}</h1>
+	
 	<ul class="metadata">
-		<li id="date">{{ page.date | postDate }}</li>
-		<li id="categories">Testing </li>
+		<li class="dt-published date">{{ page.date | postDate }}</li>
+		{% if categories %}<li class="categories">{{ categories}} </li>{% endif %}
+		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
+	
+	{% if not summary  %}
+	<div class="p-summary introduction">
+		{{ summary }}
+	</div>
+	{% endif %}
+
 	{{ content | safe }}
 	<ul class="metadata">
-		<li class"author"></li>
-		<li class="edited-date"></li>
-		<li class="edit-description"></li>
-		<li class="tags"></li>
-		<li class="location"></li>
+		{% if author | length  %}<li class="p-author author">{{ author}}</li>{% endif %}
+		{% if location %}<li class="p-locality location">{{ location }}</li>{% endif %}
+		{% if tags | length  %}<li class="p-category tags">{%for item in tags %}{% if loop.last %} & {{ item}} {% else %}{{item}}, {%endif%} {% endfor %} </li>{% endif %}
+		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate}}</li>{% endif %}
+		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
 	</ul>
 	{% include "partials/footer.njk" %}
 </article>

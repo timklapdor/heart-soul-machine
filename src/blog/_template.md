@@ -1,10 +1,11 @@
 ---
 title: 
 date:
-updated:
-update-description: 
 categories: 
+updatedDate:
+updateDescription: 
 tags: 
 location: 
 cover-image: 
+summary:
 ---

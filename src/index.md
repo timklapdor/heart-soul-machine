@@ -2,19 +2,13 @@
 layout: /partials/blog.njk
 title: What becomes of Australian Rugby?
 date: 2023-09-28 
-updated:
-update-description: 
-categories: 
-tags: 
-location: 
-cover-image: 
+author:
+summary: "Learning types describe the intention of learning, the ways which we wish students would engage in order to learn. They define the experience we are trying to design and act to guide our process."
+
 ---
 
 ![img](images/wallaby.jpeg)
 
-<div class="introduction">
-Learning types describe the intention of learning, the ways which we wish students would engage in order to learn. They define the experience we are trying to design and act to guide our process. 
-</div>
 
 They help us to critically engage with the course, its concepts and topics in order to design an experience that best fits the the specific moment in the course. 
 

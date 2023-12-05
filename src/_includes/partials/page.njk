@@ -1,0 +1,20 @@
+---
+layout: /layouts/grid.njk
+---
+<article class="">
+
+	<h1 class="">{{ title }}</h1>
+    {% if summary %}
+	<div class="p-summary introduction">
+		{{ summary }}
+	</div>
+    {% endif %}
+	{{ content | safe }}
+	<ul class="metadata">
+		{% if author %}<li class="p-author author">{{ author}}</li>{% endif %}
+		{% if location %}<li class="p-locality location">{{ location }}</li>{% endif %}
+		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate}}</li>{% endif %}
+		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
+	</ul>
+	{% include "partials/footer.njk" %}
+</article>

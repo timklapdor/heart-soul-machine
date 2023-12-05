@@ -1,8 +1,11 @@
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 const { DateTime } = require("luxon");
+const timeToRead = require('eleventy-plugin-time-to-read');
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
+  eleventyConfig.addPlugin(timeToRead);
 
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/assets");

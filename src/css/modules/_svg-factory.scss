@@ -26,6 +26,31 @@
   $calendar-light: svg-calendar($flexoki-500);
   $calendar-dark: svg-calendar($flexoki-paper);
 
+  @function svg-author($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>';
+  }
+  $author-light: svg-author($flexoki-500);
+  $author-dark: svg-author($flexoki-paper);
+
+  @function svg-map($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>';
+  }
+  $map-light: svg-map($flexoki-500);
+  $map-dark: svg-map($flexoki-paper);
+
+  @function svg-categories($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6h-6z" /><path d="M4 14h6v6h-6z" /><path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>';
+  }
+  $categories-light: svg-categories($flexoki-500);
+  $categories-dark: svg-categories($flexoki-paper);
+
+  @function svg-time($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>';
+  }
+  $time-light: svg-time($flexoki-500);
+  $time-dark: svg-time($flexoki-paper);
+
+
 // Thanks to Hugo Giraudel for his str-replace function (http://www.sassmeister.com/gist/1b4f2da5527830088e4d)
 @function str-replace($string, $search, $replace: '') {
     $index: str-index($string, $search);
