@@ -1,0 +1,20 @@
+---
+layout: /layouts/grid.njk
+---
+<article class="h-entry blogpost">
+	<h1 class="p-name">{{ title }}</h1>
+
+    {% if summary  %}
+	<div class="p-summary introduction">
+		{{ summary }}
+	</div>
+	{% endif %}
+
+    	{{ content | safe }}
+
+    <ul>
+    {% for post in collections.notes %}
+        <li><a href="{{ post.url }}"><h3>{{post.data.title}}</h3></a>
+    {% endfor %}
+    </ul>
+</article>

@@ -1,20 +1,22 @@
 ---
 layout: /layouts/grid.njk
+date: 2023-12-09
+location: 
 ---
 <article class="">
 
 	<h1 class="">{{ title }}</h1>
+
+	<ul class="metadata">
+		<li class="dt-published date">Updated {{ page.date | monthDate }}</li>
+		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
+	</ul>
+
     {% if summary %}
 	<div class="p-summary introduction">
 		{{ summary }}
 	</div>
     {% endif %}
 	{{ content | safe }}
-	<ul class="metadata">
-		{% if author %}<li class="p-author author">{{ author}}</li>{% endif %}
-		{% if location %}<li class="p-locality location">{{ location }}</li>{% endif %}
-		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate}}</li>{% endif %}
-		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
-	</ul>
 	{% include "partials/footer.njk" %}
 </article>

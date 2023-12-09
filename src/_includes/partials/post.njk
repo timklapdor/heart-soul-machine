@@ -10,7 +10,7 @@ layout: /layouts/grid.njk
 		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
 	
-	{% if not summary  %}
+	{% if summary  %}
 	<div class="p-summary introduction">
 		{{ summary }}
 	</div>

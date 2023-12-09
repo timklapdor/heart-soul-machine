@@ -1,0 +1,5 @@
+{
+    "layout": "/partials/blog-archive.njk", 
+    "author": "Tim Klapdor",
+    "tags": "updates"
+}

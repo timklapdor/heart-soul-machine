@@ -1,3 +1,7 @@
+$heart: #ff0e69;
+$soul: #ffae2c; 
+
+
 @import "modules/reset";
 @import "modules/colour";
 @import "modules/svg-factory";
@@ -5,13 +9,6 @@
 @import 'modules/grid.scss';
 @import 'modules/main';
 @import 'modules/hamburger';
-
-
-
-
-$heart: #ff0e69;
-$soul: #ffae2c; 
-
 
 
 body {

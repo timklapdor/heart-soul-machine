@@ -51,5 +51,3 @@ That frustration just left one day. I accepted what was, and what had been, but 
 
 So that’s the aim. To stop doing what I was doing because it didn’t work. To look towards opportunities and to create my own. To embrace change again. What happens will happen, and regardless of how things have been perceived — I know the truth. I know what I did, what I achieved and what came out of those actions. Even if no one else can, I can see it and I’ve felt the difference.
 
-
-

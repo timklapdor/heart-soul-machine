@@ -19,12 +19,13 @@ main {
 
         & hr {
             width: 80%;;
-            border: 1px solid var(--flexoki-500);
+            border: 1px solid var(--heart);
             border-radius: 25%;
         }
 
         & a {
             text-decoration-style: dotted;
+            text-decoration-color: var(--flexoki-500);
             }
 
 
@@ -62,6 +63,12 @@ main {
 
         p img {
             width: 85ch;
+
+            &.img-left {
+                width: 30vh;
+                border-radius: 2ch;
+
+            }
         }
 
         .comment {
