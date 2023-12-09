@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Types</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+
+    <aside>
+
+    <header>
+        <h1>Learning Types</h1>
+        <a href="/">
+            <h1 class="logo-present">Learning Types</h1>
+            <img src="/assets/heart-soul-machine-logo.svg" alt="Learning Types Logo">
+          </a>
+    </header>
+
+    <nav role="navigation">
+        <button class="menu-toggle" id="toggle" aria-expanded="false">
+
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <ul id="menu">
+            
+                 <li><a href="/">Home</a></li>
+            
+                 <li><a href="/posts/">Posts</a></li>
+            
+                 <li><a href="/notes/">Notes</a></li>
+            
+                 <li><a href="/updates/">Updates</a></li>
+            
+                 <li><a href="/about/">About</a></li>
+            
+                 <li><a href="/now/">Now</a></li>
+            
+                 <li><a href="/uses/">Uses</a></li>
+            
+        </ul>
+    </nav>    
+    <script>
+        var toggle = document.querySelector('#toggle');
+        var menu = document.querySelector('#menu');
+        var menuItems = document.querySelectorAll('#menu li a');
+
+        toggle.addEventListener('click', function(){
+          if (menu.classList.contains('is-active')) {
+            this.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active'); 
+            this.setAttribute('aria-expanded', 'true');
+            //menuItems[0].focus();
+          }
+        });
+    </script>
+    
+
+
+        </aside>
+
+    <main>
+      <article class="h-entry blogpost">
+	<h1 class="p-name">Learning Types</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">Dec 9, 2023</li>
+		<li class="categories">Learning Design </li>
+		<li class="time">1 minute reading time</li>
+	</ul>
+	
+	
+	<div class="p-summary introduction">
+		Building on the work of Laurillard, this is an attempt to categorise the types of learning in order to design learning.
+	</div>
+	
+
+	<p>Foundational to the work of designing learning is an understanding of the types of learning — the ways that we can and do learn. This is distinct from learning styles or preferences, but more foundational to the ways in which we learn.</p>
+<ul>
+<li><strong>Assimilative</strong> - Learning through presented information</li>
+<li><strong>Investigative</strong> - Learning by seeking information</li>
+<li><strong>Formative</strong> - Learning by trying</li>
+<li><strong>Discursive</strong> - Learning by engaging with other perspectives</li>
+<li><strong>Productive</strong> - Learning by creating artefacts</li>
+<li><strong>Evaluative</strong> - Learning through feedback</li>
+<li><strong>Social</strong> - Learning with others</li>
+</ul>
+<hr>
+<p>These definitions are based on Laurillard (2002), who developed a set of 'Learning Types' as part of her Conversational Framework: Acquisition, Investigation, Practice, Production, Collaboration and Discussion. This work helped establish a way of thinking about learning, and a need for a typology that was made of adjectives of learning. The other aim of this work was to shift away from the tradition teacher led conversational model so that it could suit an instructor-embedded model of learning suitable for online delivery.</p>
+
+	<ul class="metadata">
+		<li class="p-author author">Tim Klapdor</li>
+		
+		<li class="p-category tags">notes,  Learning Design,   & Learning   </li>
+		
+		
+	</ul>
+	<footer>
+    <p>© Tim Klapdor 2023</p>
+    <p class="name">Heart  |  Soul  |  Machine</p>
+</footer>
+</article>
+    </main>
+
+  </body>
+</html>

@@ -2,6 +2,7 @@
 layout: /layouts/grid.njk
 date: 2023-12-09
 location: 
+templateEngineOverride: njk,md
 ---
 <article class="">
 
@@ -14,7 +15,7 @@ location:
 
     {% if summary %}
 	<div class="p-summary introduction">
-		{{ summary }}
+		{{ summary | markdown | safe  }}
 	</div>
     {% endif %}
 	{{ content | safe }}

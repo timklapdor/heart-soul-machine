@@ -21,7 +21,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat('LLL yyyy');
   });
 
-  let markdownLibrary = markdownIt({
+
+  
+
+  const markdownLibrary = markdownIt({
     html: true,
     breaks: true,
     linkify: true
@@ -34,11 +37,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownLibrary);
 
+  eleventyConfig.addFilter("markdown", (content) => {
+    return markdownLibrary.render(content);
+  });
+
 
   return {
     dir: {
       input: "src",
-      output: "public",
+      output: "docs",
     },
   };
 };

@@ -6,12 +6,13 @@ updateDescription:
 tags:
 location: Adelaide
 cover-image: 
-summary:
+summary: | 
+    Hej! 👋 I'm Tim Klapdor
+
+    I work in Higher Education. I live in [Adelaide, Australia](https://duckduckgo.com/?q=adelaide&ia=web&iaxm=about).
 ---
 
-Hej! 👋 I'm Tim Klapdor
 
-I work in Higher Education. I live in Adelaide, Australia. 
 
 ![Photo of Tim Klapdor, lit using a neon colour palette]({{'/images/IMG_3394.jpg'}}){.img-left}
 
