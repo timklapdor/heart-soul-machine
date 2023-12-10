@@ -17,6 +17,19 @@ main {
             justify-self: start;
         }
 
+        ul li::marker {
+            content: '→  ';
+        }
+
+        h2.year {
+            width: 100%;
+            padding-top: 1ch;
+            text-transform: uppercase;
+            border-top: 1px dotted var(--heart);
+            color: var(--heart);
+            --fluid-type-max: 2rem;
+        }
+
         & hr {
             width: 80%;;
             border: 1px solid var(--heart);
@@ -27,6 +40,18 @@ main {
             text-decoration-style: dotted;
             text-decoration-color: var(--flexoki-500);
             }
+
+        & blockquote {
+            border-left: 4px solid var(--heart);
+            margin-block-end: 1rem;
+            margin-block-end: 1rem;
+            font-style: italic;
+
+            & p {
+                margin: 0;
+                padding: 1ch;
+            }
+        }
 
 
         footer {
@@ -49,6 +74,26 @@ main {
                     text-transform: uppercase;
                     letter-spacing: 5;
                 }
+            }
+        }
+
+        div.note-links {
+            grid-column: 4;
+            width: 100%;
+            padding: 2ch;
+            border-top: 1px dotted var(--flexoki-500);
+
+            h2 {
+                margin: 0;
+                text-transform: uppercase;
+                --fluid-type-min: 1.5rem;
+                --fluid-type-max: 2rem;
+            }
+            h3 {
+                margin: 0;
+                text-transform: uppercase;
+                --fluid-type-min: 1rem;
+                --fluid-type-max: 1rem;
             }
         }
 
@@ -104,10 +149,13 @@ main {
                 color: var(--flexoki-500);
             
 
-                li {
+                & li {
                     margin-right: 4ch;
                     font-size: 1.1rem;
                     padding: .2ch;
+                    &::marker {
+                       content: ""
+                    }
                 }
 
                 li.date {

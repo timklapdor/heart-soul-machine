@@ -1,5 +1,5 @@
 {
-    "layout": "/partials/post.njk", 
+    "layout": "/partials/note.njk", 
     "author": "Tim Klapdor",
     "tags": "notes"
 }

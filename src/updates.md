@@ -6,7 +6,7 @@ updateDescription:
 tags:
 location: Adelaide
 cover-image: 
-summary: Testing out the summary function
+summary: Updates are my attempt to micro-blog, short quick updates to create a feed that can power a POSSE workflow. 
 collection: notes
 ---
 

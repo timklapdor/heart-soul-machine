@@ -7,7 +7,7 @@ summary: "Welcome to Heart Soul Machine! ❤️ 🔥 ⚙️ is the presonal site
 
 ---
 
-This is a work in progress and personal project to bring together my work over the years into one place. I'm also planning to use this site to adopt a POSSE (Publish (on your) Own Site, Syndicate Everywhere) workflow.
+This is a work in progress and personal project to bring together my work over the years into one place. I'm also planning to use this site to adopt a [[POSSE]] (Publish (on your) Own Site, Syndicate Everywhere) workflow.
 
 Over the next few months I'll be publishing new blog posts and micro-blogs here, and beginning to build out an Evergreen Notes section as a shortcut to some of the reference points in my work and thinking. 
 

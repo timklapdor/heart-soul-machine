@@ -1,5 +1,7 @@
 ---
 title: Learning Types
+aliases: 
+- Types of Learning
 date: 2023-12-09
 categories: Learning Design
 updatedDate:
@@ -12,7 +14,7 @@ cover-image:
 summary: "Building on the work of Laurillard, this is an attempt to categorise the types of learning in order to design learning." 
 ---
 
-Foundational to the work of designing learning is an understanding of the types of learning — the ways that we can and do learn. This is distinct from learning styles or preferences, but more foundational to the ways in which we learn. 
+There are a number of distinct ways in which learn. These are is seperate to learning styles or preferences, and instead focus on being foundational descriptions of the ways in which we learn. 
 
 -   **Assimilative** - Learning through presented information
 -   **Investigative** - Learning by seeking information 

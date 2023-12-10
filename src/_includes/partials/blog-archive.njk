@@ -4,6 +4,7 @@ layout: /layouts/grid.njk
 <article class="h-entry blogpost">
 	<h1 class="p-name">{{ title }}</h1>
 
+
     {% if summary  %}
 	<div class="p-summary introduction">
 		{{ summary }}
@@ -12,9 +13,12 @@ layout: /layouts/grid.njk
 
     	{{ content | safe }}
 
-    <ul>
-    {% for post in collections.posts %}
-        <li><a href="{{ post.url }}"><h3>{{post.data.title}}</h3></a>
+    {% for year, yearPosts in collections.postsByYear %}
+    <h2 class="year">{{ year }}</h2>
+        <ul>
+            {% for post in yearPosts | reverse %}
+            <li>{{ post.data.date | dayMonthDate }} — <a href="{{ post.url }}">{{ post.data.title }}</a></li>
+            {% endfor %}
+        </ul>
     {% endfor %}
-    </ul>
 </article>
