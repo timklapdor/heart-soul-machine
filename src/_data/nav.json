@@ -21,12 +21,16 @@
             "url":"/about/"
         }, 
         {
+            "text":"Timeline", 
+            "url":"/timeline/"
+        }, 
+        {
             "text":"Now", 
             "url":"/now/"
         }, 
         {
-            "text":"Uses", 
-            "url":"/uses/"
+            "text":"Setup", 
+            "url":"/setup/"
         }
     ]
 }

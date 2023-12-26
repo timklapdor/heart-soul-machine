@@ -1,0 +1,314 @@
+[
+    {
+        "eventtype": "Life",
+        "date": "1980-08-20T14:30:00.000Z",
+        "description": "Life begins",
+        "location": "Sydney, Australia"
+    },
+    {
+        "eventtype": "School",
+        "date": "1985-12-31T13:30:00.000Z",
+        "description": "Start kindegarten at [St Brigid’s School](https://stpatschurchhill.org/20th-century-recent-years-developments/) ", 
+        "location": "Sydney, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "1989-05-31T14:30:00.000Z",
+        "description": "Moved to Wagga Wagga started school at [Henschke Primary School](http://web.hpww.catholic.edu.au/)",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2017-06-05T14:30:00.000Z",
+        "description": "Won Wagga Battle of the Bands - link to photo",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "School",
+        "date": "1998-11-30T13:30:00.000Z",
+        "description": "Graduated high school from Trinity Senior College. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "School",
+        "date": "1999-01-02T13:30:00.000Z",
+        "description": "Travelled to Sweden for a full year student exchange. ",
+        "location": "Helsingborg, Sweden"
+    },
+    {
+        "eventtype": "School",
+        "date": "2000-01-31T13:30:00.000Z",
+        "description": "Started studing a Bachelor of Arts (Multimedia) at Charles Sturt University",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2002-05-31T14:30:00.000Z",
+        "description": "Started as a Graphic Designer at Snap Printing.",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "School",
+        "date": "2002-06-30T14:30:00.000Z",
+        "description": "Dropped out of university - took out an Associate Degree in Multimedia. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2003-07-31T14:30:00.000Z",
+        "description": "Moved to Ireland. Started in Dublin, moved to Derry and back to Dublin.",
+        "location": "Derry & Dublin Ireland"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2004-06-30T14:30:00.000Z",
+        "description": "Moved to Wales for a new job working at Sutherland Trading as their in-house graphic desiger working on all of their print material. ",
+        "location": "Cardiff, Wales"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2005-06-30T14:30:00.000Z",
+        "description": "Packed up our lives in the UK and went backpacking for 3 months. 17 countries and an unforgettable journey. ",
+        "location": "Europe"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2005-12-31T13:30:00.000Z",
+        "description": "Freelance graphic design and web work with MSP, CSU and small businesses. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "School",
+        "date": "2006-02-28T13:30:00.000Z",
+        "description": "Back to studying - switched to a Bachelor of Arts (Graphic Design).",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2006-12-31T13:30:00.000Z",
+        "description": "Fulltime role at Charles Sturt University as a Multimedia Development Team Leader.",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2008-08-06T14:30:00.000Z",
+        "description": "Married in Las Vegas",
+        "location": "Las Vegas, United States of Ameria"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2008-08-19T14:30:00.000Z",
+        "description": "Honeymoon driving around France for three weeks. ",
+        "location": "France"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2011-03-22T13:30:00.000Z",
+        "description": "Research trip to the US for three weeks to investigate mobile learning. ",
+        "location": "United States of Ameria"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2011-09-09T14:30:00.000Z",
+        "description": "Established the mLearn project for CSU. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2012-01-13T13:30:00.000Z",
+        "description": "Daughter was born. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2014-06-30T14:30:00.000Z",
+        "description": "Recieved the Vice-Chancellor’s Awards For Leadership Excellence. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2014-07-31T14:30:00.000Z",
+        "description": "Family trip to Vanuatu. ",
+        "location": "Port Vila, Vanuatu"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2014-12-31T13:30:00.000Z",
+        "description": "Took on the role of Online Learning Technology Leader in the learning innovations unit, uImagine.",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": 2016,
+        "description": "Collaboratively developed the Online Learning Model for roll out at CSU. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2015-09-22T14:30:00.000Z",
+        "description": "[[The Fire]]",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2015-10-11T13:30:00.000Z",
+        "description": "Trip to the US to speak at the dLRN conference and meet Kate Bowles, Jim Groom and a raft of other North American Edtech-ers. ",
+        "location": "Palo Alto, United States of America"
+    },
+    {
+        "eventtype": "Project",
+        "date": "2015-11-23T13:30:00.000Z",
+        "description": "Gave my talk at Nerd Nite - Exploitation and Enslavement: A Story of Social Media. \n",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2016-03-05T13:30:00.000Z",
+        "description": "US trip to join the Indie Ed Tech meetup and attend SXSWEdu. ",
+        "location": "Austin & Davidson, United States of America"
+    },
+    {
+        "eventtype": "Project",
+        "date": "2017-02-28T13:30:00.000Z",
+        "description": "Started in the Australian Wool Innovations stream of the eChallenge program. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2017-05-25T14:30:00.000Z",
+        "description": "Moved back into the house after [[the fire]]",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2017-05-31T14:30:00.000Z",
+        "description": "Visit to Oklahoma for the Domains Conference. Presented Beyond the LMS. ",
+        "location": "Oklahoma, United States of America"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2017-07-21T14:30:00.000Z",
+        "description": "Down Under reunion of the Domains crew - Keegan and Jim in Melbourne.",
+        "location": "Melbourne, Australia"
+    },
+    {
+        "eventtype": "Project",
+        "date": "2017-09-14T14:30:00.000Z",
+        "description": "Started the short lived LinkRot podcast and created the Jekyll Podcast tool.  ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Project",
+        "date": "2017-11-09T13:30:00.000Z",
+        "description": "Runners up in the eChallenge program with the development of Kelpie: The Digital Working Dog.",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2017-12-13T13:30:00.000Z",
+        "description": "Noosa family trip with the in-laws. ",
+        "location": "Noosa, Australia"
+    },
+    {
+        "eventtype": "Project",
+        "date": "2018-03-01T13:30:00.000Z",
+        "description": "Winners of the Agrihack Challenge and the birth of Chickon. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Project",
+        "date": "2018-07-17T14:30:00.000Z",
+        "description": "Participant and finalist in the Hybrid World Startup Lab. Got to pitch to 400+ attendees on the big stage!",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2018-08-24T14:30:00.000Z",
+        "description": "Cairns Klapdor family holiday. Diving on the Great Barrier Reef, white water rafting and quality family time. ",
+        "location": "Cairns, Australia"
+    },
+    {
+        "eventtype": "Project",
+        "date": "2018-12-20T13:30:00.000Z",
+        "description": "The great deck build! 45 square meters of it!",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2019-01-25T13:30:00.000Z",
+        "description": "Part of the India Entrepreneur Boot Camp. 10 days in India with a NSW Government delegation.",
+        "location": "Mumbai, Pune, Ahmedabad & Bangaluru, India"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2019-08-18T14:30:00.000Z",
+        "description": "Family move to Adelaide. ",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2019-08-04T14:30:00.000Z",
+        "description": "Start work at the University of Adelaide in the Online Programs Team",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2019-09-24T14:30:00.000Z",
+        "description": "Sold our Wagga home. A lot of blood, sweat and tears went into this place and it was sad to see it end. ",
+        "location": "Wagga Wagga, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2019-11-29T13:30:00.000Z",
+        "description": "Best man at my sister-in-laws' wedding. Was a stand in but honoured. ",
+        "location": "Ferny Creek, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2020-03-06T13:30:00.000Z",
+        "description": "Got to experience a full Fringe Festical and Womad before COVID shut everything down. ",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Work",
+        "date": "2020-04-24T14:30:00.000Z",
+        "description": "Launch of the MathTrackX Program on EdX. My first work on MOOCs and setup a fully online bridging program for the university.",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2020-07-20T14:30:00.000Z",
+        "description": "Turned 40, went home to see family, then spent 14 days in isolation. ",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2021-02-26T13:30:00.000Z",
+        "description": "Bought our \"hexadome\" home in Adelaide. ",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2021-07-07T14:30:00.000Z",
+        "description": "Trip to Kangaroo Island with Ms A. Most naturally beautiful places I've been to on the planet. Was great dad and daughter time. ",
+        "location": "Kangaroo Island, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2022-01-28T13:30:00.000Z",
+        "description": "Frankie joins the family",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2023-07-15T14:30:00.000Z",
+        "description": "Family holiday to Fiji. Was quite dramatic with our friend breaking her ankle - but was a much needed break.",
+        "location": "Viti Levu, Fiji"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2023-10-07T13:30:00.000Z",
+        "description": "Trip with Mrs K to Port Lincoln. Dived with sharks, saw 4 great whites on the day! Ate oysters and a seafood feast in Coffin Bay and explored the National Parks. ",
+        "location": "Port Lincoln, Australia"
+    }
+]

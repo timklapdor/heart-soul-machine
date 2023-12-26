@@ -8,11 +8,6 @@ templateEngineOverride: njk,md
 
 	<h1 class="">{{ title }}</h1>
 
-	<ul class="metadata">
-		<li class="dt-published date">Updated {{ page.date | monthDate }}</li>
-		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
-	</ul>
-
     {% if summary %}
 	<div class="p-summary introduction">
 		{{ summary | markdown | safe  }}

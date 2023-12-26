@@ -28,6 +28,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat('LLL yyyy');
   });
 
+  eleventyConfig.addFilter("yearMonth", (dateObj) => {
+    return DateTime.fromISO(dateObj).toFormat('yyyy LLL');
+  });
+
   eleventyConfig.addFilter("dayMonthDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('dd LLL');
   });

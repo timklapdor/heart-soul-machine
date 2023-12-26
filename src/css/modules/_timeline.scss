@@ -1,0 +1,53 @@
+div.timeline {
+    width: 100%;
+
+    ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4ch;
+
+    li::marker {
+        content: none;
+    }
+
+    li {
+        display: grid;
+        grid-template-columns: 2rem 1fr 4fr 2fr;
+        gap: 2ch;
+        margin-top: 2ch;
+        padding-bottom: 2ch;
+        border-bottom: 1px solid $soul;
+
+        &:last-child {
+           border-bottom: none;
+        }
+
+        div p {
+            margin: 0;
+        }
+
+        div.eventtype {
+            grid-column: 1;
+            font-size: 80%;
+            width: 2rem;
+
+            &.work {background: url(svg-encode($work-light)) no-repeat;}
+            &.life {background: url(svg-encode($life-light)) no-repeat;}
+            &.school {background: url(svg-encode($school-light)) no-repeat;}
+            &.project {background: url(svg-encode($project-light)) no-repeat;}
+
+
+        }
+        div.date {
+            grid-column: 2;
+            font-size: 80%;
+            text-transform: uppercase;
+        }
+        div.description {grid-column: 3;}
+        div.location {
+            grid-column: 4;
+            font-size: 80%;
+        }
+    }
+    }
+}

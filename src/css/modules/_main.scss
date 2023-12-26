@@ -161,7 +161,7 @@ main {
                 li.date {
                     &::before{
                         content: "";
-                        background-image: url(svg-encode($calendar-light));;
+                        background-image: url(svg-encode($calendar-light));
                         background-size: contain;
                         display: inline-block;
                         width: 1em;

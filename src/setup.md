@@ -1,28 +1,12 @@
 ---
 layout: partials/page.njk
-title: Uses
+title: Setup
 date: 2023-12-09
 ---
 
 This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/) post and the [Defaults list](https://defaults.rknight.me/) format. 
 
-## Hardware
-
-- iPhone 15 Pro
-- M2 MacBook Pro for work
-- M1 Macook Air for personal
-- iPad Mini
-- Mac Mini as home theatre centre
-- Magic Trackpad
-- Dell 4k monitor at home
-- Black IKEA BEKANT sit/stand desk
-- Lifx smart lights
-- LG C2 65" OLED TV
-- Apple TV
-- Panasonic Soundbar
-
 ## Software
-
 
 - 📨 Mail Client: Mail.app
 - 📮 Mail Server: Gmail (personal) & Outlook (professional)
@@ -50,10 +34,25 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 - 🎤 Podcasts: Overcast
 - 🔐 Password Management: 1Password
 
-
 ### Other apps
 - Plex
 - Bartender
 - Visual Studio
 - iA Writer
-- Adobe Illustrator
+- Adobe Illustrator & Lightroom
+
+## Hardware
+
+- iPhone 15 Pro
+- M2 MacBook Pro for work
+- M1 Macook Air for personal
+- iPad Mini
+- Mac Mini as home theatre centre
+- Magic Trackpad
+- Dell 4k monitor at home
+- Black IKEA BEKANT sit/stand desk
+- Lifx smart lights
+- LG C2 65" OLED TV
+- Apple TV
+- Panasonic Soundbar
+
