@@ -24,6 +24,10 @@ div.timeline {
 
         div p {
             margin: 0;
+
+            & a {
+                font-weight: 600;
+            }
         }
 
         div.eventtype {

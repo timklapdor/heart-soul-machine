@@ -8,19 +8,19 @@
     {
         "eventtype": "School",
         "date": "1985-12-31T13:30:00.000Z",
-        "description": "Start kindegarten at [St Brigid’s School](https://stpatschurchhill.org/20th-century-recent-years-developments/) ", 
+        "description": "Start kindegarten at [St Brigid’s School](https://stpatschurchhill.org/20th-century-recent-years-developments/).", 
         "location": "Sydney, Australia"
     },
     {
         "eventtype": "Life",
         "date": "1989-05-31T14:30:00.000Z",
-        "description": "Moved to Wagga Wagga started school at [Henschke Primary School](http://web.hpww.catholic.edu.au/)",
+        "description": "Moved to Wagga Wagga started school at [Henschke Primary School](http://web.hpww.catholic.edu.au/).",
         "location": "Wagga Wagga, Australia"
     },
     {
         "eventtype": "Life",
         "date": "2017-06-05T14:30:00.000Z",
-        "description": "Won Wagga Battle of the Bands - link to photo",
+        "description": "Won Wagga Battle of the Bands. - link to photo",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -38,13 +38,13 @@
     {
         "eventtype": "School",
         "date": "2000-01-31T13:30:00.000Z",
-        "description": "Started studing a Bachelor of Arts (Multimedia) at Charles Sturt University",
+        "description": "Started studing a Bachelor of Arts (Multimedia) at [Charles Sturt University](https://www.csu.edu.au/).",
         "location": "Wagga Wagga, Australia"
     },
     {
         "eventtype": "Work",
         "date": "2002-05-31T14:30:00.000Z",
-        "description": "Started as a Graphic Designer at Snap Printing.",
+        "description": "Started as a Graphic Designer at [Snap Printing](https://www.snap.com.au/snap-print-solutions-wagga-wagga.html).",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -62,13 +62,13 @@
     {
         "eventtype": "Work",
         "date": "2004-06-30T14:30:00.000Z",
-        "description": "Moved to Wales for a new job working at Sutherland Trading as their in-house graphic desiger working on all of their print material. ",
+        "description": "Moved to Wales for a new job working at [Sutherland Trading](https://www.sutherlandtrading.com/) as their in-house graphic desiger working on all of their print material. ",
         "location": "Cardiff, Wales"
     },
     {
         "eventtype": "Life",
         "date": "2005-06-30T14:30:00.000Z",
-        "description": "Packed up our lives in the UK and went backpacking for 3 months. 17 countries and an unforgettable journey. ",
+        "description": "Packed up our lives in the UK and went backpacking for 3 months. 17 countries and an [unforgettable journey](https://flic.kr/s/aHBqjB8bfR). ",
         "location": "Europe"
     },
     {
@@ -110,7 +110,7 @@
     {
         "eventtype": "Work",
         "date": "2011-09-09T14:30:00.000Z",
-        "description": "Established the mLearn project for CSU. ",
+        "description": "Established the [mLearn project](https://mlearnproject.wordpress.com/) for CSU. ",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -266,13 +266,13 @@
     {
         "eventtype": "Life",
         "date": "2020-03-06T13:30:00.000Z",
-        "description": "Got to experience a full Fringe Festical and Womad before COVID shut everything down. ",
+        "description": "Got to experience a full Fringe Festival and Womad before COVID shut everything down. ",
         "location": "Adelaide, Australia"
     },
     {
         "eventtype": "Work",
         "date": "2020-04-24T14:30:00.000Z",
-        "description": "Launch of the MathTrackX Program on EdX. My first work on MOOCs and setup a fully online bridging program for the university.",
+        "description": "Launch of the [MathTrackX Program](https://www.edx.org/xseries/adelaidex-math-trackx) on EdX. My first work on MOOCs and setup a fully online bridging program for the university.",
         "location": "Adelaide, Australia"
     },
     {
@@ -284,7 +284,7 @@
     {
         "eventtype": "Life",
         "date": "2021-02-26T13:30:00.000Z",
-        "description": "Bought our \"hexadome\" home in Adelaide. ",
+        "description": "Bought our \"[[hexadome]]\" home in Adelaide. ",
         "location": "Adelaide, Australia"
     },
     {

@@ -13,10 +13,6 @@
             "url":"/notes/"
         }, 
         {
-            "text":"Updates", 
-            "url":"/updates/"
-        }, 
-        {
             "text":"About", 
             "url":"/about/"
         }, 
