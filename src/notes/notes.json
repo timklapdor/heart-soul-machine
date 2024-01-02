@@ -1,5 +1,6 @@
 {
     "layout": "/partials/note.njk", 
     "author": "Tim Klapdor",
-    "tags": "notes"
+    "tags": "notes", 
+    "permalink": "notes/{{ title | slug }}/index.html"
 }

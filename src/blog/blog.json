@@ -1,5 +1,6 @@
 {
     "layout": "/partials/post.njk", 
     "author": "Tim Klapdor",
-    "tags": "posts"
+    "tags": "posts", 
+    "permalink": "blog/{{ page.date | date: '%Y/' }}{{page.date | monthDay | slug}}-{{ title | slug}}/index.html"
 }

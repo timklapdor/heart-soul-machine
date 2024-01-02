@@ -20,6 +20,7 @@
     "not dead"
   ],
   "dependencies": {
+    "@11ty/eleventy-img": "^3.1.8",
     "@photogabble/eleventy-plugin-interlinker": "^1.0.2",
     "eleventy-plugin-time-to-read": "^1.3.0",
     "markdown-it-attrs": "^4.1.6"

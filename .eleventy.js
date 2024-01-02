@@ -3,6 +3,8 @@ const { DateTime } = require("luxon");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
+const fs = require("fs");
+const Image = require("@11ty/eleventy-img");
 
 
 module.exports = function (eleventyConfig) {
@@ -33,8 +35,13 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("dayMonthDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat('dd LLL');
+    return DateTime.fromJSDate(dateObj).toFormat('LLL dd');
   });
+
+  eleventyConfig.addFilter("monthDay", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('LL dd');
+  });
+
 
 
   	// Filters
@@ -98,6 +105,54 @@ module.exports = function (eleventyConfig) {
   
     return postsByYear;
   });
+
+  eleventyConfig.addFilter('splitlines', function(input) {
+    const parts = input.split(' ');
+    const lines = parts.reduce(function(prev, current) {
+
+    if (!prev.length) {
+        return [current];
+    }
+    
+    let lastOne = prev[prev.length - 1];
+
+    if (lastOne.length + current.length > 22) {
+        return [...prev, current];
+    }
+
+    prev[prev.length - 1] = lastOne + ' ' + current;
+
+    return prev;
+    }, []);
+
+    return lines;
+});
+
+eleventyConfig.on('afterBuild', () => {
+  const socialPreviewImagesDir = "docs/assets/social-previews/";
+  fs.readdir(socialPreviewImagesDir, function (err, files) {
+      if (files.length > 0) {
+          files.forEach(function (filename) {
+              if (filename.endsWith(".svg")) {
+
+                  let imageUrl = socialPreviewImagesDir + filename;
+                  Image(imageUrl, {
+                      formats: ["jpeg"],
+                      outputDir: "./" + socialPreviewImagesDir,
+                      filenameFormat: function (id, src, width, format, options) {
+
+                          let outputFilename = filename.substring(0, (filename.length-4));
+                      
+                          return `${outputFilename}.${format}`;
+
+                      }
+                  });
+
+              }
+          })
+      }
+  })
+});
 
   
 

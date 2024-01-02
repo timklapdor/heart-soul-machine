@@ -1,5 +1,5 @@
 ---
-title: Hello blog
+title: "Hello blogs"
 date: 2023-09-26
 categories: Writing, Work
 updatedDate: 

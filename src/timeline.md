@@ -14,7 +14,7 @@ collection: timeline
 
 <div class="timeline">
     <ul>
-        {% for event in timeline | reverse %}<li>
+        {% for event in timeline  %}<li>
         <div class="eventtype {{'work' if event.eventtype =='Work'}}{{'life' if event.eventtype =='Life'}}{{'school' if event.eventtype =='School'}}{{'project' if event.eventtype =='Project'}}">  </div>
         <div class="date">{{ event.date | yearMonth }}</div>
         <div class="description">{{ event.description |  markdown | safe  }}</div>

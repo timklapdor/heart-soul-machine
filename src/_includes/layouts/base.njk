@@ -5,6 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+	<meta property="og:title" content="{% if page.url == "/" %}Heart | Soul | Machine • by Tim Klapdor {% else %}{{ title }}{% endif %}" />
+	<meta property="og:url" content="{{ page.url }}" />
+	{% if tags %}
+	<meta property="og:image" content="/assets/social-previews/{{ preview.data.title | slug }}-preview.jpeg" />
+	<meta property="og:image:secure_url" content="/assets/social-previews/{{ preview.data.title | slug }}-preview.jpeg" /> 
+	{% else %}
+	<meta property="og:image" content="/assets/social-previews/default.jpeg" />
+	<meta property="og:image:secure_url" content="/assets/social-previews/default.jpeg" />
+	{% endif %}
+
 </head>
 <body>
 	<div class="with-sidebar container">

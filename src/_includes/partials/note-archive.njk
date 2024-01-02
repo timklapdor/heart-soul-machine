@@ -15,7 +15,7 @@ layout: /layouts/grid.njk
         <div class="note-links">
         <h2>Notes</h2>
             <ul>
-            {% for post in collections.notes %}
+            {% for post in collections.notes | sort(false, false, 'data.title') %}
                 <li><a href="{{ post.url }}">{{post.data.title}}</a>
             {% endfor %}
             </ul>

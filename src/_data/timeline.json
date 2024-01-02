@@ -93,7 +93,7 @@
         "eventtype": "Life",
         "date": "2008-08-06T14:30:00.000Z",
         "description": "Married in Las Vegas",
-        "location": "Las Vegas, United States of Ameria"
+        "location": "Las Vegas, USA"
     },
     {
         "eventtype": "Life",
@@ -105,7 +105,7 @@
         "eventtype": "Life",
         "date": "2011-03-22T13:30:00.000Z",
         "description": "Research trip to the US for three weeks to investigate mobile learning. ",
-        "location": "United States of Ameria"
+        "location": "USA"
     },
     {
         "eventtype": "Work",
@@ -146,7 +146,7 @@
     {
         "eventtype": "Life",
         "date": "2015-09-22T14:30:00.000Z",
-        "description": "[[The Fire]]",
+        "description": "[[The Fire | The Fire]]",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -194,13 +194,13 @@
     {
         "eventtype": "Project",
         "date": "2017-09-14T14:30:00.000Z",
-        "description": "Started the short lived LinkRot podcast and created the Jekyll Podcast tool.  ",
+        "description": "Started the short lived [LinkRot podcast](https://linkrot.net/) and created the [Jekyll Podcast](https://linkrot.net/podcast.html) tool.  ",
         "location": "Wagga Wagga, Australia"
     },
     {
         "eventtype": "Project",
         "date": "2017-11-09T13:30:00.000Z",
-        "description": "Runners up in the eChallenge program with the development of Kelpie: The Digital Working Dog.",
+        "description": "Runners up in the eChallenge program with the development of [Kelpie: The Digital Working Dog](https://www.kelpieapp.com/).",
         "location": "Adelaide, Australia"
     },
     {
@@ -212,7 +212,7 @@
     {
         "eventtype": "Project",
         "date": "2018-03-01T13:30:00.000Z",
-        "description": "Winners of the Agrihack Challenge and the birth of Chickon. ",
+        "description": "Winners of the [Agrihack Challenge](https://26fifty.com.au/assets/images/agrihack.jpg) and the birth of [Chickon](https://timklapdor.github.io/chickon/). ",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -224,7 +224,7 @@
     {
         "eventtype": "Life",
         "date": "2018-08-24T14:30:00.000Z",
-        "description": "Cairns Klapdor family holiday. Diving on the Great Barrier Reef, white water rafting and quality family time. ",
+        "description": "Cairns Klapdor [family holiday](https://flic.kr/s/aHBqjB8PS7). Diving on the Great Barrier Reef, white water rafting and quality family time. ",
         "location": "Cairns, Australia"
     },
     {
@@ -236,7 +236,7 @@
     {
         "eventtype": "Work",
         "date": "2019-01-25T13:30:00.000Z",
-        "description": "Part of the India Entrepreneur Boot Camp. 10 days in India with a NSW Government delegation.",
+        "description": "Part of the India Entrepreneur Boot Camp. [10 days in India](https://flic.kr/s/aHsmA8fMsX) with a NSW Government delegation.",
         "location": "Mumbai, Pune, Ahmedabad & Bangaluru, India"
     },
     {
@@ -254,7 +254,7 @@
     {
         "eventtype": "Life",
         "date": "2019-09-24T14:30:00.000Z",
-        "description": "Sold our Wagga home. A lot of blood, sweat and tears went into this place and it was sad to see it end. ",
+        "description": "Sold [our Wagga home](https://www.realestate.com.au/property/8-brookong-ave-wagga-wagga-nsw-2650/). A lot of blood, sweat and tears went into this place and it was sad to see it end. ",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -266,7 +266,7 @@
     {
         "eventtype": "Life",
         "date": "2020-03-06T13:30:00.000Z",
-        "description": "Got to experience a full Fringe Festival and Womad before COVID shut everything down. ",
+        "description": "Got to experience a full Fringe Festival and WOMAD before COVID shut everything down. ",
         "location": "Adelaide, Australia"
     },
     {
@@ -290,7 +290,7 @@
     {
         "eventtype": "Life",
         "date": "2021-07-07T14:30:00.000Z",
-        "description": "Trip to Kangaroo Island with Ms A. Most naturally beautiful places I've been to on the planet. Was great dad and daughter time. ",
+        "description": "Trip to [Kangaroo Island](https://flic.kr/s/aHsmWcZm8z) with Ms A. Most naturally beautiful places I've been to on the planet. Was great dad and daughter time. ",
         "location": "Kangaroo Island, Australia"
     },
     {
@@ -302,7 +302,7 @@
     {
         "eventtype": "Life",
         "date": "2023-07-15T14:30:00.000Z",
-        "description": "Family holiday to Fiji. Was quite dramatic with our friend breaking her ankle - but was a much needed break.",
+        "description": "Family holiday to Fiji. Was quite dramatic with our friend breaking her ankle - but was a much needed holiday.",
         "location": "Viti Levu, Fiji"
     },
     {

@@ -6,7 +6,7 @@
         },
         {
             "text":"Posts", 
-            "url":"/posts/"
+            "url":"/blog/"
         }, 
         {
             "text":"Notes", 
@@ -25,8 +25,8 @@
             "url":"/now/"
         }, 
         {
-            "text":"Setup", 
-            "url":"/setup/"
+            "text":"Uses", 
+            "url":"/uses/"
         }
     ]
 }
