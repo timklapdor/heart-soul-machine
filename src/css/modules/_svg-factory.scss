@@ -74,6 +74,12 @@
   $project-light: svg-project($flexoki-500);
   $project-dark: svg-project($flexoki-paper);
 
+  @function svg-rss($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>';
+  }
+  $rss-light: svg-rss($flexoki-500);
+  $rss-dark: svg-rss($flexoki-paper);
+
 // Thanks to Hugo Giraudel for his str-replace function (http://www.sassmeister.com/gist/1b4f2da5527830088e4d)
 @function str-replace($string, $search, $replace: '') {
     $index: str-index($string, $search);

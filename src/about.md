@@ -9,10 +9,8 @@ cover-image:
 summary: | 
     Hej! 👋 I'm Tim Klapdor
 
-    I work in Higher Education. I live in [Adelaide, Australia](https://duckduckgo.com/?q=adelaide&ia=web&iaxm=about).
+    I live in I'm a 43 year old cisgender male (he/him), based in [Adelaide, South Australia](https://duckduckgo.com/?q=adelaide&ia=web&iaxm=about). I'm married and our family consists of a 11yo daughter and a 2yo kelpie. I work in Higher Education and have a passion for learning, technology and jumping into a problem space.
 ---
-
-
 
 ![Photo of Tim Klapdor, lit using a neon colour palette]({{'/images/IMG_3394.jpg'}}){.img-left}
 
