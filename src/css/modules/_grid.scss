@@ -17,6 +17,20 @@ body {
             color: var(--flexoki-paper);
             padding: 2ch;
             transition: transform 400ms;
+            display: grid;
+            height: 100vh;
+
+            div.rss {
+                align-self: self-end;
+                justify-self: center;
+                color: var(--flexoki-paper);
+                &:hover {
+                    color: var(--heart);
+                }
+                h3 {
+                    display: none;
+                }
+            }
         }
 
         header {
@@ -115,6 +129,10 @@ body {
             grid-template-rows: max-content;
             transition: transform 400ms;
             padding: 2vw;
+            height: auto;
+
+            div.rss {
+                display: none;}
         }
 
 

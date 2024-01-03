@@ -25,10 +25,11 @@ I’ve struggled with this round of changes, and I had to question myself about 
 
 A large part of my experience has been around grief. A lot of what has happened has been the end of things:
 
-The team I originally joined is gone. We’ve been disbanded and repackaged beyond all recognition.
-The team I assembled anew and recruited for has also been changed beyond recognition.
-The manager who hired me went on to pursue something new and ended up leaving the institution completely.
-Many of the projects that I’ve been leading have finished – successful in their outcome but without acknowledgement or celebration.
+- The team I originally joined is gone. We’ve been disbanded and repackaged beyond all recognition.
+- The team I assembled anew and recruited for has also been changed beyond recognition.
+- The manager who hired me went on to pursue something new and ended up leaving the institution completely.
+- Many of the projects that I’ve been leading have finished – successful in their outcome but without acknowledgement or celebration.
+
 In general, the work I’ve been doing hasn’t evolved in the way that I expected. I imagined riding the wave of developing these new online programs through to a more senior role. I poured a lot of myself, energy and time into that idea and outcome. But things haven’t worked out that way. Decisions have been made, or not, to pursue things in differently – one that doesn’t seem to include me.
 
 And my grief is connected to that. That loss of professional self, one that I’d been working so hard towards. From moving to a new city to working through the pandemic to going through the stress of hard deadlines and deliverables, to trying to manage the toll on my team.
