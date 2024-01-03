@@ -6,6 +6,7 @@ const markdownItAttrs = require('markdown-it-attrs');
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownLinks = require("markdown-it-link-attributes");
 
 
 
@@ -82,6 +83,12 @@ module.exports = function (eleventyConfig) {
   leftDelimiter: '{',
   rightDelimiter: '}',
   allowedAttributes: []  // empty array = all attributes are allowed
+}).use(markdownLinks, {
+  pattern: /^https?:/,
+	attrs: {
+		target: "_blank",
+		rel: "noopener noreferrer"
+	}
 });
 
   eleventyConfig.setLibrary("md", markdownLibrary);
