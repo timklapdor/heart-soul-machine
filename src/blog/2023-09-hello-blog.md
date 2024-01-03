@@ -1,5 +1,5 @@
 ---
-title: "Hello blogs"
+title: "Hello blog"
 date: 2023-09-26
 categories: Writing, Work
 updatedDate: 
@@ -9,7 +9,7 @@ tags:
 - career
 - heroics
 location: Adelaide
-cover-image: 
+coverImage: 
 summary: "Some thoughts on work and how things have been faring." 
 ---
 

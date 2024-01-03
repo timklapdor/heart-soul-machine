@@ -5,11 +5,14 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.addPlugin(timeToRead);
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(
     require('@photogabble/eleventy-plugin-interlinker'),
     {

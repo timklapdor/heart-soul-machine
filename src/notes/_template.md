@@ -1,11 +1,12 @@
 ---
-title: Template
-date:
+title: 
+aliases: 
+date: 2023-12-26
 categories: 
 updatedDate:
 updateDescription: 
 tags: 
 location: 
-coverImage: 
-summary:
+cover-image: 
+summary: "" 
 ---
