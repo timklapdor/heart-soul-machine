@@ -2,11 +2,16 @@
 layout: /layouts/grid.njk
 ---
 <article class="h-entry blogpost">
-	<h1 class="p-name">{{ title }}</h1>
+
+		{% if coverImage | length  %}
+	<img src="{{ coverImage | url }}" class="header-image" alt="">
+	<div class="hero-overlay"></div>
+		{% endif %}
+	<h1 class="p-name title {{ 'hero' if coverImage | length }}">{{ title }}</h1>
 	
 	<ul class="metadata">
 		<li class="dt-published date">{{ page.date | postDate }}</li>
-		{% if categories %}<li class="categories">{{ categories}} </li>{% endif %}
+		{% if categories %}<li class="categories">{{ categories }} </li>{% endif %}
 		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
 	
