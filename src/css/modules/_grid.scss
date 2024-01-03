@@ -19,6 +19,8 @@ body {
             transition: transform 400ms;
             display: grid;
             height: 100vh;
+            align-items: start;
+            grid-template-rows: 1fr 3fr 1fr;
 
             div.rss {
                 align-self: self-end;
