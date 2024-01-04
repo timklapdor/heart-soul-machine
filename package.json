@@ -1,7 +1,7 @@
 {
-  "name": "11ty-starter",
+  "name": "Heart Soul Machine",
   "version": "1.0.0",
-  "description": "Creating a starter template for 11ty",
+  "description": "Creating a new online home for myself based on the Domain of Ones Own principles.",
   "main": "index.html",
   "scripts": {
     "start": "eleventy --serve",
