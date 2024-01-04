@@ -11,7 +11,7 @@ layout: /layouts/grid.njk
 	</div>
 	{% endif %}
 
-    	{{ content | safe }}
+    {{ content | safe }}
 
     {% for year, yearPosts in collections.postsByYear %}
     <h2 class="year">{{ year }}</h2>
