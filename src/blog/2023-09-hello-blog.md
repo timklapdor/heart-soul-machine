@@ -1,7 +1,9 @@
 ---
 title: "Hello blog"
 date: 2023-09-26
-categories: Writing, Work
+categories: 
+- Writing
+- Work
 updatedDate: 
 updateDescription: 
 tags: 

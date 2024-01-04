@@ -46,13 +46,15 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 - iPhone 15 Pro
 - M2 MacBook Pro for work
 - M1 Macook Air for personal
-- iPad Mini
+- iPad Mini + Apple Pencil
 - Mac Mini as home theatre centre
 - Magic Trackpad
 - Dell 4k monitor at home
 - Black IKEA BEKANT sit/stand desk
 - Lifx smart lights
 - LG C2 65" OLED TV
-- Apple TV
+- Apple TV 4K
 - Panasonic Soundbar
+- Olympus E-M5 MarkII 
+    — glass includes - 12-40mm 2.8, 40-150mm F2.8, 20mm Pancake 1.7
 

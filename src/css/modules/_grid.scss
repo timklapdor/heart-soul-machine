@@ -103,6 +103,8 @@ body {
                     &:hover {
                         background-color: var(--heart);
                         color: var(--flexoki-paper);
+                        transition: all 0.15s ease-out; 
+
                     }
                 }
             }

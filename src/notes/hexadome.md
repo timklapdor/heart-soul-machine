@@ -1,5 +1,5 @@
 ---
-title: Hexadomes
+title: "Hexadomes"
 aliases: 
 - hexadome
 date: 2023-12-26

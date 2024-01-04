@@ -1,5 +1,5 @@
 ---
-title: Learning Types
+title: "Learning Types"
 aliases: 
 - Types of Learning
 date: 2023-12-09

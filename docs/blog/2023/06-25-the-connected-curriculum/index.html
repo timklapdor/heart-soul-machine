@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Connected Curriculum</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <meta property="og:title" content="The Connected Curriculum" />
+    <meta property="og:url" content="/blog/2023/06-25-the-connected-curriculum/" />
+    
+    <meta property="og:image" content="/assets/social-previews/undefined-preview.jpeg" />
+    <meta property="og:image:secure_url" content="/assets/social-previews/undefined-preview.jpeg" /> 
+    
+
+  </head>
+
+  <body>
+
+    <aside>
+
+    <header>
+        <h1>The Connected Curriculum</h1>
+        <a href="/">
+            <h1 class="logo-present">The Connected Curriculum</h1>
+            <img src="/assets/heart-soul-machine-logo.svg" alt="The Connected Curriculum Logo">
+          </a>
+    </header>
+
+
+
+    <nav role="navigation">
+        <button class="menu-toggle" id="toggle" aria-expanded="false">
+
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <ul id="menu">
+            
+                 <li><a href="/">Home</a></li>
+            
+                 <li><a href="/blog/">Posts</a></li>
+            
+                 <li><a href="/notes/">Notes</a></li>
+            
+                 <li><a href="/about/">About</a></li>
+            
+                 <li><a href="/timeline/">Timeline</a></li>
+            
+                 <li><a href="/now/">Now</a></li>
+            
+                 <li><a href="/uses/">Uses</a></li>
+            
+        </ul>
+    </nav>    
+    <script>
+        var toggle = document.querySelector('#toggle');
+        var menu = document.querySelector('#menu');
+        var menuItems = document.querySelectorAll('#menu li a');
+
+        toggle.addEventListener('click', function(){
+          if (menu.classList.contains('is-active')) {
+            this.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active'); 
+            this.setAttribute('aria-expanded', 'true');
+            //menuItems[0].focus();
+          }
+        });
+    </script>
+  
+    <div class="rss">
+      <a href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+        </a>
+     </div>
+
+    </aside>
+
+    <main>
+      <article class="h-entry blogpost">
+
+		
+	<h1 class="p-name title ">The Connected Curriculum</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">Jun 25, 2023</li>
+		<li class="categories">Learning Design,Concept </li>
+		<li class="time">3 minutes reading time</li>
+	</ul>
+	
+	
+	<div class="p-summary introduction">
+		A brief idea for a Connected Curriculum, what that might be and how it might work.
+	</div>
+	
+
+	<p>For the last four years, I’ve been overseeing the development of online programs at the University of Adelaide, and for the past 15 years, I’ve been involved in the development of courses, programs, media and assessments and aligning those things back into curriculum and program design, constructive alignment and accreditation requirements.</p>
+<p>One of the problems that I’ve seen consistently during that time is that each one of those components has its own separate workflow, ways of working and related data. None of these elements connect, talk, link back or feed into each other. They also share a similar disconnection – time.</p>
+<p>Most curriculum is developed linearly with very few feedback loops or iterations in the process. If feedback exists, it's usually measured in years, not months or even semesters. Most data and artefacts remain static throughout the process.</p>
+<p>Program information is usually developed at the very beginning of the process. If any changes happen when a course is developed, it rarely feeds back into that original documentation. There are often important reasons for making ad hoc changes that add value to courses, but there’s no facility to track what they are, why they happened, or measure and see how they impact things at the program level.</p>
+<blockquote>
+<p>But what if we could connect data about the curriculum throughout its development?</p>
+<p>What if instead of static documents, we utilised data throughout the workflow – to not only map out a program but to help detail what and when specific skills and knowledge are not only introduced but developed and applied too?</p>
+</blockquote>
+<p>A <a href="/notes/connected-curriculum/">Connected Curriculum</a> would provide a way to engage with learning design across a program through courses, assessments and potential specific activities and tasks. It would allow us to set parameters for learning at a high level and, as a course is developed, demonstrate and show when and how that learning develops, where students engage with concepts and how they go about applying them.</p>
+<p>You could also map accreditation requirements not just to courses but to individual tasks and assessments. If those assessments are linked to the LMS, you could pull examples of students’ work across the grading scheme from live courses.</p>
+<p>Rather than just a map of possibilities, as you create courses, you could feed up information about the student experience into the program view live and as it happens:</p>
+<ul>
+<li>How much time have students spent on specific activities?</li>
+<li>Have they done group work?</li>
+<li>Have they completed specific accreditation requirements?</li>
+<li>When and what is the evidence they have?</li>
+</ul>
+<p>The reality is that this is completely impossible today because the data model doesn’t exist. The modularity of programs, courses and hours is not specified correctly. One can’t zoom in if the detail isn’t there. There is no “<em>enhance</em>” button that provides data that isn’t there.</p>
+<p>The idea of a <a href="/notes/connected-curriculum/">Connected Curriculum</a> isn’t new, but it is still missing from most organisations working within education. While many aspects have been standardised and now require accreditation, much of the process is still opaque. It’s hard to visualise because of the atomisation of education and ed-tech – where many tools exist to perform ever-specialised teaching functions.</p>
+<p>But I can see how it could work. By creating a flexible data model, a clear link between course and program could be made. Using simple tools, like tags and standard nomenclature and a modular approach to course design, it’s not only possible but holds the potential to be a breakthrough in creating higher quality courses.</p>
+<p>I recently completed a round of work on some program mapping and then applied this straight into course design, and I can see how useful a <a href="/notes/connected-curriculum/">Connected Curriculum</a> would be. Having created capstone courses for programs that I had nothing to do with developing, I can attest to how useful a <a href="/notes/connected-curriculum/">Connected Curriculum</a> would have been. Having gone through accreditation processes before, I can see how important a <a href="/notes/connected-curriculum/">Connected Curriculum</a> can be – and how much work it requires when it doesn’t exist.</p>
+<p>At the moment, this is just an idea, but I can see how it connects to some of the work I’ve already done. A way to connect program design to learning design in more tangible and visible ways would be incredibly powerful for institutions to have and for the staff working across these areas. It would help empower academics and designers at all levels to create better student learning experiences.</p>
+
+	<ul class="metadata">
+		<li class="p-author author">Tim Klapdor</li>
+		<li class="p-locality location">Adelaide, Australia</li>
+		<li class="p-category tags">posts,   & ConnectedCurriculum   </li>
+		<li class="dt-updated updatedDate">Jan 4, 2024</li>
+		<li class="update-description">Spelling and edits for clarity</li>
+	</ul>
+	<footer>
+    <p>© Tim Klapdor 2024</p>
+    <p class="name">Heart  |  Soul  |  Machine</p>
+</footer>
+</article>
+    </main>
+
+  </body>
+</html>

@@ -24,9 +24,9 @@ layout: /layouts/grid.njk
 	{{ content | safe }}
 	<ul class="metadata">
 		{% if author | length  %}<li class="p-author author">{{ author}}</li>{% endif %}
-		{% if location %}<li class="p-locality location">{{ location }}</li>{% endif %}
+		{% if location | length %}<li class="p-locality location">{{ location }}</li>{% else %}<li class="p-locality location">Adelaide, Australia</li>{% endif %}
 		{% if tags | length  %}<li class="p-category tags">{%for item in tags %}{% if loop.last %} & {{ item}} {% else %}{{item}}, {%endif%} {% endfor %} </li>{% endif %}
-		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate}}</li>{% endif %}
+		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate | postDate }}</li>{% endif %}
 		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
 	</ul>
 	{% include "partials/footer.njk" %}

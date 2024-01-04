@@ -10,7 +10,7 @@ summary: A space to store composable ideas, a way of breaking down bigger concep
 collection: notes
 ---
 
-I came across the concept of **Evergreen Notes** via [Steph Ango](https://stephango.com/evergreen-notes)'s blog. The idea rang true for me and resonated with some of the ideas I worked through during the [Federated Wiki Happening](https://fedwikihappening.rodwell.me/view/happening-folks). The concept is  articluated really well by Steph:
+I came across the concept of **Evergreen Notes** via [Steph Ango's](https://stephango.com/evergreen-notes) blog. The idea rang true for me and resonated with some of the ideas I worked through during the [Federated Wiki Happening](https://fedwikihappening.rodwell.me/view/happening-folks). The concept is  articluated really well by Steph:
 
 > Evergreen notes allow you to think about complex ideas by building them up from smaller composable ideas.
 

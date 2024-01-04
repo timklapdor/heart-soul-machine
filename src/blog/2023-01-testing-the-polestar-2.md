@@ -1,0 +1,104 @@
+---
+title: Testing the Polestar 2
+date: 2023-01-13
+categories:
+  - Review
+updatedDate: 2023-01-04
+updateDescription: "Updated title and edits for clarity." 
+tags:
+  - EV
+  - polestar
+location: 
+coverImage: 
+summary: Some thoughts on a two-week practical test of an EV - the Polestar 2.
+aliases:
+  - Testing an electric car
+---
+A couple of months ago, I test-drove the [Volvo XC40 Recharge](https://www.volvocars.com/au/cars/xc40-electric/) - their first foray into electric vehicles and the only model locally available to test drive. As our petrol prices ballooned over the last 12 months, I’ve been seriously thinking about making the switch, and with my current lease running out, it seemed like a good time to switch. With a lack of available cars in the country and the inability to test drive many variants, I thought it best to hold off. 
+
+When we started to look at travel plans for Christmas, the prices of things began to add up. Rental cars have skyrocketed in expense, going from a couple of hundred dollars to a couple of thousand. I shit you not that the Holden Barina compact was at the low end of $2500 from some companies. Doing a bit of research, I found that Hertz had invested in a fleet of EVs and that this could be an opportunity to test out an EV over a period of time. So I bit the bullet, and my Christmas present to myself was to plonk down the money for two weeks with a Polestar 2. 
+
+## WTF is a Polestar? 
+
+I have more than a passing interest in cars - I love to drive and keep abreast of what’s out there. So, I already knew Polestar was a performance workshop that merged with Volvo and has subsequently turned out its own brand of vehicles. A Polestar is essentially a Volvo in its underpinnings but styled and set up in its own unique way — which honestly differs quite a lot from its parent company. 
+
+![](https://images.carexpert.com.au/crop/1600/1067/app/uploads/2021/11/POLESTAR-2-LRSM-29.jpg)
+
+Explaining who and what a Polestar is has been a daily experience pulling into parking lots and chatting with family. I guess this is the lived experience of owning a niche brand. 
+
+## What’s it like? 
+
+To look at, it’s a slightly odd high-riding sedan with a fairly wide and flat profile. The colour is - a bit of a mystery. It’s kind of a grey colour, but it seems to have tints of blue and lilac, depending on the lighting. The car's lines are fantastic and give the car a sense of speed while demonstrating a solid stance. Big wheels and really nice LED lights around the car finish off a fairly impressive-looking car. 
+
+![](https://images.carexpert.com.au/crop/1600/1067/app/uploads/2021/11/POLESTAR-2-LRSM-24.jpg)
+
+An oversized central console dominates the inside of the car. It creates a bit of a cockpit feel for the driver, with a large touchscreen at the centre – about the size of an iPad. There aren’t a lot of buttons to play around with - most controls are shifted to the centre screen. This might seem like an issue - it's just something you need to adapt to, but after a couple of days, you can set things up quickly and efficiently, even when driving.  
+
+[![Polestar Interior](https://editorial.pxcrush.net/carsales/general/editorial/polestar2_magnesium_020-5gcm.jpg?width=1024&height=682)](https://www.carsales.com.au/editorial/details/polestar-2-carsales-car-of-the-year-2021-finalist-132642/)
+
+I have a love/hate relationship with this centre console. It's big and eats up a lot of cabin space. There may be practical reasons for its existence, but it reduces leg space for those who like to man-spread and offers little practical storage. There's a little shelf for your phone, which needs to be plugged in for Apple CarPlay to work, a single cup holder and a console lid that opens up to - another cupholder. There are a couple of hidden shelves on both the driver and passenger sides for small items - wallet or glasses case. The door pockets are also not particularly practical - unable to hold water bottles vertically, which is a bummer. So upfront, there's not oodles of space for accoutrement or expected needs - like two cup holders. 
+
+At the same time, the 'cockpit' feel is excellent as a driver. I like the seating position and the way you feel inside the cabin. Everything is well made, with great textures and feel to everything you touch - from the steering wheel, seat fabric, steering wheel, levers and buttons. As the driver, you always feel in control of the car, and everything you need is accessible. The car's design isn't open and airy - it's more closed-in and cocoon-like. Visibility is limited but in a focused way – you see what you need to see. The setup of the mirrors and the additional sensors give you a complete sense of what's around you and what you need to know. Peripheral visibility is the limiting factor - but to be honest, that often gets in the way of focus. 
+
+This is a driver's car. It's set up for you to get from A to B and to do so in comfort.
+
+# How does it drive?
+
+It drives well. Very well. 
+
+The model I've driven is the single motor version with around 380kms of range. I had doubts about its performance based on the stats - but from a real-world perspective, it's everything it needs to be and a lot more. 
+
+It doesn't have the sickening acceleration of a Tesla or the dual-motor variants with a 4-point-something 0-100 speed - but it accelerates handsomely. What's great about this car is that the acceleration is available at any time - there's no lag, no gear change - push the accelerator, and there's instantly more power and speed. Driving through the Blue Mountains on the back roads was so much fun. Accelerating out of corners with instant speed was bliss. The car's handling was tight and responsive – it's an absolute joy to drive and throw around corners. 
+
+This extends to the practical too - stop-start traffic, highway driving, handling broken roads and potholes - the Polestar does all of these things well. Really well. You're comfortable the whole time, and you're not freaking out about the drive in front because of the adaptive cruise control. The car doesn't shudder when you don't see the pothole or broken asphalt. The Polestar takes everything in its stride. 
+
+Most electric vehicles have an energy recovery system or regenerative braking - a feature that uses the wheels to power the motor and recharge the battery. You don't get a huge amount of charge out of the process, but it is an interesting driving feature. It essentially provides the car with two ways to slow down: Use the wheels to power the motor and slow the wheels that way, or your standard brakes to slow the wheels down. This dynamic is one of the best features of an EV and creates the possibility of **one-pedal drive** - similar to driving a Dodgem car – when you press the pedal, you go fast, and when you release, you slow down. You can still use the brake - but you can do most driving using one pedal. I loved this feature and have quickly converted to it. It's going to be a challenge going back to a normal car. 
+
+I took it out on a short gravel road and had quite an exciting experience using the one-pedal drive. Usually, on gravel, the car is searching for traction and slowing the car down with brakes to corner usually means losing traction. With the regenerative braking in the Polestar it essentially sucks the speed out of the car rather than physically braking, so taking corners was a genuinely strange experience. You don't lose traction slowing down and getting that noticeable drift, the only time you got that sense was when you accelerated back out of the corner. It was an added element to the driving experience and one I really liked, having done my fair share of backroads and dirt. 
+
+While the dual motor version would add that extra grunt and performance, this is not a car that is lacking in that department. The base model will accelerate faster, handle better and be more pleasant to drive than any family sedan. The battery range is adequate. It's not mind-blowing, but a big part of hiring this car was to look at how you would need to manage the content - and it's not a concern for most trips. 
+
+# Practicalities
+
+Our hire car was the *standard range single motor* with the *Pilot lite* pack. You would want the Pilot pack as it has a range of features that really should be standard at this price point. The pack comes with a neat 360° camera feature, making parking easy. I always struggle with judging the distance behind and in front of the car, so this visual aid was perfect. The adaptive cruise control was also handy, especially in traffic. That sounds odd, using cruise control in the city, but the constant changes in sign-posted speed limits, traffic speed and the plethora of speed cameras and police on the roads make Sydney quite a combative place to drive. The cruise handled this easily, stopping at traffic lights and taking off once the light was green. The lane departure feature was quite aggressive, not something I would use often - except on the freeway. 
+
+The car is a sedan, and the boot isn’t huge. It’s quite flat without a lot of height, so getting a suitcase in on its side (the most convenient) made the cover pop up and the boot unable to shut. It ended up being quite a Tetris challenge to get three suitcases in. It's not a dealbreaker and not something that would impact everyday use. There is ample space under the boot floor accessible via a lift-up section, but it is an odd shape. It became known as the “ham bay” as there was enough room for a whole leg of ham. 
+
+### Charging
+
+One of the key reasons for hiring the car was to assess the viability of owning an electric vehicle. What changes would you need to make to accommodate an electric vehicle and its need to charge? 
+
+[![](https://images.carexpert.com.au/crop/1600/1067/app/uploads/2021/11/Polestar-2518-1.jpeg)](https://www.carexpert.com.au/car-reviews/2022-polestar-2-long-range-single-motor-review)
+
+To start with — range anxiety is a very real thing. The car was at 100% charge when we picked it up, and I was quite nervous about how quickly that number decreased and the speed it did it. The first leg of our journey took us from Sydney airport down the coast to Jervis Bay. Rather than stick to the highway, we took a few of the backroads as we couldn’t check into our accommodation till 2pm. We used about half the battery that day - and the next couple of days I was a little worried at how things would go. There was no public charging infrastructure where we were staying - the nearest was 40 minutes drive away. That nervousness started to abate as time went on. We ran errands and visited the local sights without issue and made it to the public charger with 17% charge. 
+
+In hindsight, range anxiety is very real – but it’s something you get over quite quickly. After that first charge I had much more confidence in the car, the range, and the accuracy of its own predictions. The built-in Google Maps has a button to search for chargers nearby. The maps are also scarily accurate with their predicted charge at the destination. So you can navigate with confidence using the car and know what charge you’ll have. I’m not sure if the Polestar app connects in the same way, allowing you to plot a journey away from the car - but that would be a great feature if it didn’t. 
+
+I also downloaded and used the PlugShare app - checking in using it and seeing how useful a community-powered tool like this is, as well as the Evie app. Evie and Hertz have done a deal, and charges are free on Evie infrastructure via the RF card attached to the key fob.  
+
+One of the big learning curves was finding out about the charging infrastructure - which varies quite significantly. The main difference between charging methods is speed - how much charge can go into the car.  My summary of what’s available is the following:
+1. Wall plug - the car came with a wall plug cable, so we did two charges like this at the holiday house we were staying at. 
+2. Charging plug - these outlets are significantly faster than your wall plug but need to be installed. They are often found at a location - like a supermarket, car park or some tourist destinations. They’re often free to use and pump out about 5kW. 
+3. Purpose Charging - these are actual charging stations with a specifically designed installed and operate similarly to a petrol bowser. Pull up, use the in-built plug and charge away. These are commercial in nature, but at the moment, the NRMA in NSW have made them free, which I took advantage of in Berry. I also used an Evie station located at a shopping mall. Both advertised 50kW, but it seems variable about what you get into the car at the time - but I was getting about 35-45kW. 
+4. Fast Charging - similar to above but significantly faster and with higher output. I tried the Evie station at Seven Hills and was pumping in over 130kW into the car. 
+
+Practically these options look like:
+
+1. Wall - About a day to charge. 
+2. Didn’t use these - but I’m assuming they are useful for topping up a charge rather than “filling up”. 
+3. Over an hour to go from below 20% to between 80-90%. 
+4. 32 minutes to go from 17% to 88%. 
+
+### The Opinion
+
+I’m going to divide this into two - one on the everyday use of an electric car, the other on the Polestar itself. 
+
+Right here, today, I would 100% say yes to an electric car. I found the whole experience easy to manage, free of show-stopping issues and overall a really enjoyable driving experience An electric car is an amazing thing in so much as it’s just like driving a normal car - but ***every*** aspect of it is better. You can accelerate faster, slow down better, feel more in control of the car and lay down as much torque as you need when you need it. It’s an amazing feat of engineering. 
+
+So the Polestar. I love the look, and I love the drive, but I had a few practical issues with it. The centre console, for one, but also getting in and out of the car was a bit weird for a person with my height and dimensions. I felt like I should be stepping into the car, but it’s more like sliding across into it - and that’s just a bit weird. Everything else, though, I love. 
+
+But… at the price point it’s at, there are a few more issues. The Pilot pack is extra, so to is the Plus pack to get all the creature comforts this car didn't come with. I would expect that if you were going to lay down this amount of money – they’d be included. They are in the Volvo XC40 Recharge, and they want less for it, and you get the dual motors. There’s also the brand new C40 - Volvo's first fully electric car platform, which is in the same price range. So from that perspective, it’s a hard sell to convince me to put down the money. 
+
+That said - if Polestar sharpened up their pricing, I would 100% rethink that opinion, but pricing for electric cars is their big issue at the moment. There are a few cheaper Chinese models coming in the next year - but most electric cars have a luxury price tag and they need to reflect that in their fit and features. I think Volvo get that - but Polestar’s pricing isn’t quite as good. 
+
+Of course, if Polestar wants to get in touch and offer me a discount or wants a long-term tester - I would relish the opportunity. Going back to my "normal" cars has taken quite a bit of adjustment. There's a lot I miss about the Polestar!

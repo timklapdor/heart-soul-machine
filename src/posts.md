@@ -13,5 +13,3 @@ permalink: "/blog/"
 
 The topics covered here are pretty varied but can be grouped around the main categories of: 
 
-Or you can browse via [[tags]]: 
-
