@@ -11,8 +11,8 @@
     <meta property="og:title" content="{% if page.url == "/" %}Heart | Soul | Machine • by Tim Klapdor {% else %}{{ title }}{% endif %}" />
     <meta property="og:url" content="{{ page.url }}" />
     {% if tags %}
-    <meta property="og:image" content="/assets/social-previews/{{ preview.data.title | slug }}-preview.jpeg" />
-    <meta property="og:image:secure_url" content="/assets/social-previews/{{ preview.data.title | slug }}-preview.jpeg" /> 
+    <meta property="og:image" content="/assets/social-previews/{{ title | slug }}-preview.jpeg" />
+    <meta property="og:image:secure_url" content="/assets/social-previews/{{ title | slug }}-preview.jpeg" /> 
     {% else %}
     <meta property="og:image" content="/assets/social-previews/default.jpeg" />
     <meta property="og:image:secure_url" content="/assets/social-previews/default.jpeg" />
