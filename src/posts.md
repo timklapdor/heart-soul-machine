@@ -11,7 +11,4 @@ collection: blog
 permalink: "/blog/"
 ---
 
-The topics covered here are pretty varied but can be grouped around the main categories of: Conferences, Concepts, Educational Technology, Family, Higher Education, Leadership, Learning Design, Politics, Reclaim, Reflection, Review, Social Media, Sport, Technology, Work & Writing. 
-
 *(PS I'll make all of those clickable in the future!)*
-

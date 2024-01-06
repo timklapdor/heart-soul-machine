@@ -1,9 +1,0 @@
----
-items: 
-  - text: Home
-    url: "/"
-  - text: About
-    url: "/about/"
-  - text: Now
-    url: "/now/"
----

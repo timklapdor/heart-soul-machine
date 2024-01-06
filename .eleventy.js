@@ -7,7 +7,7 @@ const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const markdownLinks = require("markdown-it-link-attributes");
-
+const yaml = require("js-yaml");
 
 
 module.exports = function (eleventyConfig) {
@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
       defaultLayout: 'layouts/embed.liquid'
     }
   );
-
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/assets");
 
@@ -45,8 +45,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("monthDay", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('LL dd');
   });
-
-
 
   	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

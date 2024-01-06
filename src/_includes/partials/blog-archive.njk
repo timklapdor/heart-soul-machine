@@ -11,6 +11,10 @@ layout: /layouts/grid.njk
 	</div>
 	{% endif %}
 
+    <p>The topics covered here are pretty varied but can be grouped around the main categories of: {% for item in categoryList %}{% if loop.last %} and {{ item }} {% else %}{{ item }}, {%endif %}{% endfor %}</p>
+
+
+
     {{ content | safe }}
 
     {% for year, yearPosts in collections.postsByYear %}

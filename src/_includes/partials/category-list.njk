@@ -1,0 +1,2 @@
+{% for item in categoryList %}{% if loop.last %} and {{ item }} {% else %}{{ item }} {{ loop.index0 }}, {%endif %}{% endfor %}
+
