@@ -94,6 +94,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("markdown", (content) => {
     return markdownLibrary.render(content);
   });
+  
 
 
   // Blog archive - https://github.com/11ty/eleventy/issues/1284

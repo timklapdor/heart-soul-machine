@@ -11,7 +11,7 @@ layout: /layouts/grid.njk
 	
 	<ul class="metadata">
 		<li class="dt-published date">{{ page.date | postDate }}</li>
-		{% if categories %}<li class="categories">{{ categories }} </li>{% endif %}
+		{% if categories %}<li class="categories"> {{ categories }} </li>{% endif %}
 		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
 	

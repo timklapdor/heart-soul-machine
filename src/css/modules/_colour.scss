@@ -45,8 +45,11 @@
   
     --flexoki-magenta-600: #A02F6F;
     --flexoki-magenta-400: #CE5D97;
-  }
+
+    --dark-heart: color-mix(in srgb, var(--heart), black 40%);
+    --dark-soul: color-mix(in srgb, var(--soul), black 70%);
+}
 
 $flexoki-black: #100F0F;
 $flexoki-paper: #FFFCF0;
-$flexoki-500:         #878580;
+$flexoki-500:   #878580;
