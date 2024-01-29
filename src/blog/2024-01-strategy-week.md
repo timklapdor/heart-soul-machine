@@ -30,7 +30,7 @@ We then went into the **6 Areas of Your Life**
 1. Career
 2. Relationships
 3. Physical Health
-4. Inter-Personal
+4. Inner-Personal
 5. Finances
 6. Rest & Recreation
 
@@ -51,7 +51,7 @@ I'm not going to share everything, but I think my Someday Goals act as a guide t
 | 1. Career | Work is optional and I have a choice about it. Rather than dominate life, it becomes an auxiliary function. |
 | 2. Relationships | Maintain a strong family bond with both sides. Have friends to share travel and adventures. |
 | 3. Physical Health | To take better care of my body and embody my physical self. |
-| 4. Inter-Personal | To find a sustainable connection to people and place. |
+| 4. Inner-Personal | To find a sustainable connection to people and place. |
 | 5. Finances | No mortgage or debts. To have a haven - a place to go for refuge and safety. |
 | 6. Rest & Recreation | To feel I have the energy and capacity to give and be able to choose when and what to give. |
 
