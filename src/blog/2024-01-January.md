@@ -20,6 +20,7 @@ The vibe has been chilled. I've had pretty much all of January off from work, wh
 January kicked off back at home — with a plan to eat better, exercise and get my shit together. Part of getting my shit together was enrolling in the [Focus Course](https://thefocuscourse.com/Course/). I came across the course via a blog post earlier in the year that discussed the busted flywheel that leads to burnout - 
 
 ![](https://thesweetsetup.com/wp-content/uploads/2021/03/symptoms-of-busted-productivity.jpg)
+
 This really resonated with where I've been at work for the last year, but maybe longer. It does describe where I get to in terms of work and life at my lowest points. I don't suffer from depression - but this flywheel perfectly describes me at my worst. It's great being able to recognise something, but I needed to make changes. With two weeks of the focus course complete I have gone back to look at my core values, articulated a vision for my life that I feel good about, and started to work on some goals. This all ties in to making some changes to diet and exercise and I feel much more mentally prepared for the new year. The sense of impending burnout has gone and now I feel more focussed.  
 
 There are still two weeks of the course left, so there is plenty more to do, but my next big step is to feel more practised. To embed the changes into my everyday life. The challenge comes from going back to work and school and the drumbeat of the everyday returns. 
