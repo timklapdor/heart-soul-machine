@@ -37,7 +37,7 @@ A couple of my favourite snaps from the month.
 Based on what I've been watching, reading and listening to I'd recommend the following:
 
 #### Watch
-- **Once Upon a Time in Northern Ireland**|Once Upon a Time in Northern Ireland]]** - A harrowing documentary told through historical footage and interviews. It reminded me of lunchtimes I had while working up in the north of Ireland and living in Derry. 
+- **Once Upon a Time in Northern Ireland** - A harrowing documentary told through historical footage and interviews. It reminded me of lunchtimes I had while working up in the north of Ireland and living in Derry. 
 - A [fascinating video](https://youtu.be/z7DuvWVazpk) on Australian vowel sounds. A lot of the technical stuff is over my head, but I love that you can accurately describe these very nuanced aspects of language and sound. 
 - Binged on **The Bear** S01 and S02. It's an interesting mix of themes and vibes, it has a 'feel good' tone while dealing with really traumatic themes. 
 - **Beef** – Interesting story, great characters and premise. I loved the final episode. 
