@@ -28,8 +28,8 @@ The selling point for me was how well some of the diagnosed problems were articu
 
 Over four weeks the course works through the following areas:
 
-1. [Vision](../../blog/2024/01-28-vision-week/)
-2. Strategy
-3. Habits
-4. Margin
+1. [[Vision Week|Vision]]
+2. [[Strategy Week|Strategy]]
+3. [[Habits Week|Habits]]
+4. [[Margin Week|Margin]]
 

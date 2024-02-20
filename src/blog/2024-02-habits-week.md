@@ -1,5 +1,6 @@
 ---
 title: Habits Week
+aliases: ['Habits Week']
 date: 2024-02-19
 categories:
   - Reflection
@@ -10,7 +11,7 @@ location:
 coverImage: 
 summary: Habits Week was all about — Habits! It focuses on the activities and actions we do, what we spend our time on and where we focus our attention.
 ---
-It started with a list of any current habits or routines we had - both positive and negative. I had some good routines at work with my team, which I'd developed and worked on to establish and set them up. Some of my chores had a rhythm - being the cook for the household helps. Getting our dog made daily exercise a strong habit; without it, he would go mental and take us with him! But apart from those, I found I had a lack of positive habits. There were many negative ones – getting on the phone, not planning anything for the weekends, mindless scrolling, playing time-eating games. These were often focussed around escape - trying to get away from work or the mounting chores and tasks at home. 
+This week of the [[Focus Course]] started with a list of any current habits or routines we had - both positive and negative. I had some good routines at work with my team, which I'd developed and worked on to establish and set them up. Some of my chores had a rhythm - being the cook for the household helps. Getting our dog made daily exercise a strong habit; without it, he would go mental and take us with him! But apart from those, I found I had a lack of positive habits. There were many negative ones – getting on the phone, not planning anything for the weekends, mindless scrolling, playing time-eating games. These were often focussed around escape - trying to get away from work or the mounting chores and tasks at home. 
 
 The next step was to develop ideas for habits, routines, systems, and activities across the [[6 Areas of Life]]. This was really about how to align these with our own vision and values. The next step was to pick those up and pick a single activity for each area and map out the required time commitment and frequency of the activity. 
 

@@ -1,7 +1,7 @@
 ---
 title: Vision Week
 date: 2024-01-28
-aliases: "Vision"
+aliases: ['Vision Week']
 categories:
   - Reflection
 updatedDate: 

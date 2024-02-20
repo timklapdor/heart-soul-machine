@@ -1,5 +1,6 @@
 ---
 title: Strategy Week
+aliases: ['Strategy Week']
 date: 2024-01-29
 categories:
   - Reflection
@@ -12,7 +13,7 @@ Reference: "[[Published Blog Posts]]"
 summary: A summary of week 2 of the Focus Course.
 ---
 
-Strategy Week was all about manifesting our [[Vision Week|vision and values]]. We started out with an introduction to the **8 Laws of Focus**. 
+Strategy Week in the [[Focus Course]] was all about manifesting our [[Vision Week|vision and values]]. We started out with an introduction to the **8 Laws of Focus**. 
 
 1. Clarity
 2. Boundaries

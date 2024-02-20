@@ -1,5 +1,6 @@
 ---
 title: Margin Week
+aliases: ['Margin Week']
 date: 2024-02-20
 categories:
   - Reflection
