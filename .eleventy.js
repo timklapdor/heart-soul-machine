@@ -3,6 +3,7 @@ const { DateTime } = require("luxon");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItFootnote = require("markdown-it-footnote");
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -87,7 +88,7 @@ module.exports = function (eleventyConfig) {
 		target: "_blank",
 		rel: "noopener noreferrer"
 	}
-});
+}).use(require('markdown-it-footnote'));
 
   eleventyConfig.setLibrary("md", markdownLibrary);
 

@@ -10,7 +10,7 @@ main {
     grid-template-rows: auto minmax(2ch, auto) auto;
     justify-items: center;
     
-        h1, h2, h3, h4, h4, h5, h6, p, ul, ol, blockquote, hr, div, table, iframe {
+        h1, h2, h3, h4, h4, h5, h6, p, ul, ol, blockquote, hr, div, table, iframe, section.footnotes {
             grid-column: 4;
             grid-row: auto;
             text-align: left;
