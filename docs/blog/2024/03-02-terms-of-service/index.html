@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <meta property="og:title" content="Terms of Service" />
+    <meta property="og:url" content="/blog/2024/03-02-terms-of-service/" />
+    
+    <meta property="og:image" content="/assets/social-previews/terms-of-service-preview.jpeg" />
+    <meta property="og:image:secure_url" content="/assets/social-previews/terms-of-service-preview.jpeg" /> 
+    
+
+  </head>
+
+  <body>
+
+    <aside>
+
+    <header>
+        <h1>Terms of Service</h1>
+        <a href="/">
+            <h1 class="logo-present">Terms of Service</h1>
+            <img src="/assets/heart-soul-machine-logo.svg" alt="Terms of Service Logo">
+          </a>
+    </header>
+
+
+
+    <nav role="navigation">
+        <button class="menu-toggle" id="toggle" aria-expanded="false">
+
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <ul id="menu">
+            
+                 <li><a href="/">Home</a></li>
+            
+                 <li><a href="/blog/">Posts</a></li>
+            
+                 <li><a href="/notes/">Notes</a></li>
+            
+                 <li><a href="/about/">About</a></li>
+            
+                 <li><a href="/timeline/">Timeline</a></li>
+            
+                 <li><a href="/now/">Now</a></li>
+            
+                 <li><a href="/uses/">Uses</a></li>
+            
+        </ul>
+    </nav>    
+    <script>
+        var toggle = document.querySelector('#toggle');
+        var menu = document.querySelector('#menu');
+        var menuItems = document.querySelectorAll('#menu li a');
+
+        toggle.addEventListener('click', function(){
+          if (menu.classList.contains('is-active')) {
+            this.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active'); 
+            this.setAttribute('aria-expanded', 'true');
+            //menuItems[0].focus();
+          }
+        });
+    </script>
+    <a rel="me" href="https://mastodon.social/@timklapdor" style="display: none;">Mastodon</a>
+    <div class="rss">
+      <a href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+        </a>
+     </div>
+
+    </aside>
+
+    <main>
+      <article class="h-entry blogpost">
+
+		
+	<h1 class="p-name title ">Terms of Service</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">Mar 2, 2024</li>
+		<li class="categories"> Technology </li>
+		<li class="time">2 minutes reading time</li>
+	</ul>
+	
+	
+	<div class="p-summary introduction">
+		I’m curious - has anyone ever challenged the notion that Ticking a Box or pressing Accept has the same validity as a signature?
+	</div>
+	
+
+	<p>I’m being spammed by a bunch of companies that are updating their <strong>Terms of Service</strong>. These long legal documents have become the default for every web service as a self-made get-out-of-jail-free card. They tend to outline how they aren’t liable for any loss you would encounter, they’re not responsible for maintaining their services and your data, and any loss or damage you may encounter using THEIR service is YOUR problem.</p>
+<p>They are written in legalese, an impenetrable dialect of English full of loopholes, double meaning and antiquated terminology that only a minority of the population can decipher, usually only to the extent that an entirely contradictory point of view can be extracted from the same text.</p>
+<p>There’s also the presentation. These aren’t meant to be read. They’re usually hidden from view rather than presented to the user. They have no readability or accessibility features and usually lack basic formatting or stylistic elements like headings, indentation, etc. There’s also the microscopic font size and language used. Legalese obviously had no copy editors or understanding of their audience to present them with valid and useful information. There is only the kitchen sink - which will be hurled at you if anything goes wrong.</p>
+<blockquote>
+<p>So I’m curious… how valid are these as legal documents?</p>
+</blockquote>
+<p>I mean seriously, in an objective verdict-by-your-peers way. If you presented a terms of service document to a jury, would it be seen as valid? Yes, the words exonerate the companies, but don’t they have a duty of care? If they take your money, that is also contractual. So, can you sell a service and then deny or not deliver it because of a loophole you created?</p>
+<p>The other thing I'm interested in is the process of gaining agreement.</p>
+<p>“But you signed it…” but did I?</p>
+<p>I don’t think I’ve ever “signed” anything online. Despite the technical geniuses in Silicon Valley, I have yet to encounter any technology capable of capturing my signature - the physical act of me signing my name as authorisation and acceptance. Most lack anything like a pen to complete the task or the resolution that would allow anyone to meaningfully verify and compare signatures. Is clicking a button or ticking a box an adequate equivalent? No physicality, no unique identifier, no sense of authorisation. If a bot can do it, then it’s not really a signature, nor should it qualify as an equivalent.</p>
+<p>I’d also question the timing of the “acceptance”. Most services require you to accept the TOS <em><strong>before</strong></em> you can even use the service. How can you make an informed decision without even having a chance to see the service or interact with it? You don’t buy a house, car, or a microwave without the ability to test it out, look around, press some buttons and see if it’s suitable. So, how can an online service justify requiring you to accept a legally binding document BEFORE you use it? How much legal weight are we willing to give the TOS?</p>
+
+	<ul class="metadata">
+		<li class="p-author author">Tim Klapdor</li>
+		<li class="p-locality location">Adelaide, Australia</li>
+		<li class="p-category tags">posts,   & TOS   </li>
+		
+		
+	</ul>
+	<footer>
+    <p>© Tim Klapdor 2024</p>
+    <p class="name">Heart  |  Soul  |  Machine</p>
+</footer>
+</article>
+    </main>
+
+  </body>
+</html>
