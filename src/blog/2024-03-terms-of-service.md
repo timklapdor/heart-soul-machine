@@ -3,8 +3,8 @@ title: Terms of Service
 date: 2024-03-02
 categories:
   - Technology
-updatedDate: 
-updateDescription: 
+updatedDate: 2024-03-03
+updateDescription: Added TOS link
 tags:
   - TOS
 location: 
@@ -28,4 +28,8 @@ The other thing I'm interested in is the process of gaining agreement.
 I don’t think I’ve ever “signed” anything online. Despite the technical geniuses in Silicon Valley, I have yet to encounter any technology capable of capturing my signature - the physical act of me signing my name as authorisation and acceptance. Most lack anything like a pen to complete the task or the resolution that would allow anyone to meaningfully verify and compare signatures. Is clicking a button or ticking a box an adequate equivalent? No physicality, no unique identifier, no sense of authorisation. If a bot can do it, then it’s not really a signature, nor should it qualify as an equivalent. 
 
 I’d also question the timing of the “acceptance”. Most services require you to accept the TOS ***before*** you can even use the service. How can you make an informed decision without even having a chance to see the service or interact with it? You don’t buy a house, car, or a microwave without the ability to test it out, look around, press some buttons and see if it’s suitable. So, how can an online service justify requiring you to accept a legally binding document BEFORE you use it? How much legal weight are we willing to give the TOS?
+
+---
+
+Just a quick FYI that I've added my own [Terms of Service]({{'/tos/' | url}}) to the site. 
 
