@@ -6,7 +6,7 @@ updateDescription:
 tags:
 location: 
 cover-image: 
-summary: 'This is a bit of a timeline of my life, some of th key events and markers along the way - personally and professionally.'
+summary: 'This is a bit of a timeline of my life, some of the key events and markers along the way - personally and professionally.'
 collection: timeline
 ---
 
