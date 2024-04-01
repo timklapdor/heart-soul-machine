@@ -4,10 +4,11 @@ const timeToRead = require('eleventy-plugin-time-to-read');
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require("markdown-it-footnote");
+const markdownLinks = require("markdown-it-link-attributes");
+
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const markdownLinks = require("markdown-it-link-attributes");
 const yaml = require("js-yaml");
 
 
@@ -71,24 +72,22 @@ module.exports = function (eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
-  
-
   const markdownLibrary = markdownIt({
     html: true,
     breaks: true,
     linkify: true
-  }).use(markdownItAttrs, {
-  // optional, these are default options
-  leftDelimiter: '{',
-  rightDelimiter: '}',
-  allowedAttributes: []  // empty array = all attributes are allowed
-}).use(markdownLinks, {
-  pattern: /^https?:/,
-	attrs: {
-		target: "_blank",
-		rel: "noopener noreferrer"
-	}
-}).use(require('markdown-it-footnote'));
+    }).use(markdownItAttrs, {
+      // optional, these are default options
+      leftDelimiter: '{',
+      rightDelimiter: '}',
+      allowedAttributes: []  // empty array = all attributes are allowed
+    }).use(markdownLinks, {
+        pattern: /^https?:/,
+        attrs: {
+          target: "_blank",
+          rel: "noopener noreferrer"
+        }
+      }).use(require('markdown-it-footnote'));
 
   eleventyConfig.setLibrary("md", markdownLibrary);
 
