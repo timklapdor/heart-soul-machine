@@ -20,7 +20,7 @@ Imagine you’re an architect. You meet a client. They have secured financing, t
 
 As an architect, this sounds great. It's a dream job, a once-in-a-lifetime opportunity. So you sit down with the client to start forming a brief, but they’re distracted. 
 
-“There’s so much to do. We need to start marketing this thing, get the plans in, and get ready tenants now!”
+“There’s so much to do. We need to start marketing this thing, get the plans in, and get ready for tenants now!”
 
 *What you say sounds great, but let’s start with some fundamentals - what kind of building do you want this to be?*
 
