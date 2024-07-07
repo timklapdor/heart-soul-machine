@@ -1,0 +1,33 @@
+---
+layout: /layouts/grid.njk
+---
+<article class="h-entry presentation">
+
+		{% if coverImage | length  %}
+	<img src="{{ coverImage | url }}" class="header-image" alt="">
+	<div class="hero-overlay"></div>
+		{% endif %}
+	<h1 class="p-name title {{ 'hero' if coverImage | length }}">{{ title }}</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">{{ page.date | postDate }}</li>
+		{% if categories %}<li class="categories"> {{ categories }} </li>{% endif %}
+		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
+	</ul>
+	
+	{% if summary  %}
+	<div class="p-summary introduction">
+		{{ summary }}
+	</div>
+	{% endif %}
+
+	{{ content | safe }}
+	<ul class="metadata">
+		{% if author | length  %}<li class="p-author author">{{ author}}</li>{% endif %}
+		{% if location | length %}<li class="p-locality location">{{ location }}</li>{% else %}<li class="p-locality location">Adelaide, Australia</li>{% endif %}
+		{% if tags | length  %}<li class="p-category tags">{%for item in tags %}{% if loop.last %} & {{ item}} {% else %}{{item}}, {%endif%} {% endfor %} </li>{% endif %}
+		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate | postDate }}</li>{% endif %}
+		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
+	</ul>
+	{% include "partials/footer.njk" %}
+</article>
