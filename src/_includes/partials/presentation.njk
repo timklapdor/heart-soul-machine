@@ -4,20 +4,20 @@ layout: /layouts/grid.njk
 <article class="h-entry presentation">
 
 		{% if coverImage | length  %}
-	<img src="{{ coverImage | url }}" class="header-image" alt="">
+	<img src="{{ 'coverImage' | url }}" class="header-image" alt="">
 	<div class="hero-overlay"></div>
 		{% endif %}
 	<h1 class="p-name title {{ 'hero' if coverImage | length }}">{{ title }}</h1>
 	
 	<ul class="metadata">
-		<li class="dt-published date">{{ page.date | postDate }}</li>
+		<li class="dt-published date">Presented on {{ page.date | postDate }} at the {{ event }}</li>
 		{% if categories %}<li class="categories"> {{ categories }} </li>{% endif %}
-		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
+		<li class="time"> {{ duration}} minutes</li>
 	</ul>
 	
-	{% if summary  %}
-	<div class="p-summary introduction">
-		{{ summary }}
+	{% if description  %}
+	<div class="p-summary summary ">
+		{{ description | safe }}
 	</div>
 	{% endif %}
 

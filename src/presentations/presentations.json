@@ -2,6 +2,6 @@
     "layout": "/partials/presentation.njk", 
     "author": "Tim Klapdor",
     "tags": "presentations", 
-    "permalink": "presentation/{{ page.date | date: '%Y/' }}{{page.date | monthDay | slug}}-{{ title | slug}}/index.html",
+    "permalink": "presentations/{{ page.date | date: '%Y/' }}/{{ title | slug}}/index.html",
     "categories": "presentations"
 }

@@ -8,6 +8,7 @@ const markdownLinks = require("markdown-it-link-attributes");
 
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
+const path = require('path');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const yaml = require("js-yaml");
 
@@ -76,19 +77,22 @@ module.exports = function (eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true
-    }).use(markdownItAttrs, {
+    })
+    .use(markdownItAttrs, {
       // optional, these are default options
       leftDelimiter: '{',
       rightDelimiter: '}',
       allowedAttributes: []  // empty array = all attributes are allowed
-    }).use(markdownLinks, {
+    })
+    .use(markdownLinks, {
         pattern: /^https?:/,
         attrs: {
           target: "_blank",
           rel: "noopener noreferrer"
         }
-      }).use(require('markdown-it-footnote'));
-
+      })
+      .use(require('markdown-it-footnote'));
+        
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addFilter("markdown", (content) => {
@@ -115,6 +119,7 @@ module.exports = function (eleventyConfig) {
     return postsByYear;
   });
 
+  // Filter for Social Images
   eleventyConfig.addFilter('splitlines', function(input) {
     const parts = input.split(' ');
     const lines = parts.reduce(function(prev, current) {

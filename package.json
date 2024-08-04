@@ -14,7 +14,8 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3",
-    "markdown-it": "^14.0.0"
+    "markdown-it": "^14.0.0",
+    "markdown-it-eleventy-img": "^0.10.2"
   },
   "browserslist": [
     "> 0.2%",
