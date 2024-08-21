@@ -106,7 +106,7 @@ main {
             grid-row: auto;
             text-align: left;
             justify-self: end;
-            border-top: 1px solid var(--flexoki-500);
+            border-top: 1px solid var(--flexoki-700);
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -114,7 +114,7 @@ main {
             p {
                 text-align: end;
                 font-size: .8rem;
-                color: var(--flexoki-500);
+                color: var(--flexoki-700);
 
                 &.name {
                     text-transform: uppercase;
@@ -127,7 +127,7 @@ main {
             grid-column: 4;
             width: 100%;
             padding: 2ch;
-            border-top: 1px dotted var(--flexoki-500);
+            border-top: 1px dotted var(--flexoki-700);
 
             h2 {
                 margin: 0;
@@ -286,6 +286,11 @@ main {
                 margin-block-start: 1.5rem;
                 gap: 2ch;
 
+                h3 {
+                    --fluid-type-min: 1.1rem;
+                    --fluid-type-max: 1.4rem;
+                }
+
                 &:hover {
                     box-shadow: 0 10px 20px rgba(0,0,0,0.06), 0 6px 6px rgba(0,0,0,0.10) !important;
                     background: var(--soul);
@@ -326,7 +331,7 @@ main {
                 justify-content: flex-start;
                 padding: 2ch 0 0 0;
                 width: 100%;
-                color: var(--flexoki-500);
+                color: var(--flexoki-700);
             
 
                 & li {
