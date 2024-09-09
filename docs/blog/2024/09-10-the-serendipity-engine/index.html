@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Serendipity Engine</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <meta property="og:title" content="The Serendipity Engine" />
+    <meta property="og:url" content="/blog/2024/09-10-the-serendipity-engine/" />
+    
+    <meta property="og:image" content="/assets/social-previews/the-serendipity-engine-preview.jpeg" />
+    <meta property="og:image:secure_url" content="/assets/social-previews/the-serendipity-engine-preview.jpeg" /> 
+    
+
+    <!-- Matomo -->
+      <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDoNotTrack", true]);
+        _paq.push(["disableCookies"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//timklapdor.me/analytics/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '3']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//timklapdor.me/analytics/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+
+
+  </head>
+
+  <body>
+
+    <aside>
+
+    <header>
+        <h1>The Serendipity Engine</h1>
+        <a href="/">
+            <h1 class="logo-present">The Serendipity Engine</h1>
+            <img src="/assets/heart-soul-machine-logo.svg" alt="The Serendipity Engine Logo">
+          </a>
+    </header>
+
+
+
+    <nav role="navigation">
+        <button class="menu-toggle" id="toggle" aria-expanded="false" aria-label="Menu Toggle">
+
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <ul id="menu">
+            
+                 <li><a href="/">Home</a></li>
+            
+                 <li><a href="/blog/">Posts</a></li>
+            
+                 <li><a href="/notes/">Notes</a></li>
+            
+                 <li><a href="/about/">About</a></li>
+            
+                 <li><a href="/timeline/">Timeline</a></li>
+            
+                 <li><a href="/now/">Now</a></li>
+            
+                 <li><a href="/uses/">Uses</a></li>
+            
+        </ul>
+    </nav>    
+    <script>
+        var toggle = document.querySelector('#toggle');
+        var menu = document.querySelector('#menu');
+        var menuItems = document.querySelectorAll('#menu li a');
+
+        toggle.addEventListener('click', function(){
+          if (menu.classList.contains('is-active')) {
+            this.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active'); 
+            this.setAttribute('aria-expanded', 'true');
+            //menuItems[0].focus();
+          }
+        });
+    </script>
+    <a rel="me" href="https://mastodon.social/@timklapdor" style="display: none;">Mastodon</a>
+    <div class="rss">
+      <a href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+        </a>
+     </div>
+
+    </aside>
+
+    <main>
+      <article class="h-entry blogpost">
+
+		
+	<h1 class="p-name title ">The Serendipity Engine</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">Sep 10, 2024</li>
+		<li class="categories"> Concepts,Educational Technology,Learning Design,Reflection </li>
+		<li class="time">3 minutes reading time</li>
+	</ul>
+	
+	
+	<div class="p-summary introduction">
+		A somewhat serendipitous post about serendipity and designing for it.
+	</div>
+	
+
+	<p>A few years ago a colleague and I were working on a tool to enable better organisation of groups for learning. The tool ended up being a combination of a simple survey and a couple of unique sorting mechanisms that we developed.</p>
+<p>In many cases, we aimed to group 'like' students together based on their answers - their location, area of study interests, etc. But during our discussions, we asked ourselves - what if we wanted to do the opposite? What if instead of grouping like students, we want to go the other way and group students together based on differences? A simple example might be grouping students by their preference for roles in a team, in that instance you would want a variety of roles in each group, not all of the same grouped together. But in other instances, you might group different students to create friction and possibility. That kind of sorting became known as the <strong>serendipity engine</strong>.</p>
+<blockquote>
+<p>The <strong>serendipity engine</strong> groups learners in ways that increase the chances of serendipity - of sharing, discovery, connection, conflict - and learning together.</p>
+</blockquote>
+<p>It wasn't a guarantee that anything would happen, but it increased the odds that something unplanned and unstructured would occur.</p>
+<p>We aimed to enable group learning to be different and to create engagement by creating opportunities for collaboration, cooperation, sharing, and discussion and for differences to arise through the co-mingling of people and ideas.</p>
+<p>By pushing different people towards each other with a shared purpose to produce something, we could create a whole variety of different learning opportunities.</p>
+<p>Sometimes, it is through conflict and the creativity required to move past that which is where the real learning opportunity arises. Sometimes, it's in not dealing with the conflict and having to experience some level of disagreement and failure. There are so few real opportunities for us to delve into that process because conflict is one of those things where you have to be in it to learn from it and learn how to cope with it. It's not something you can just read about – it's experiential.</p>
+<hr>
+<p>This all came up over the last week as I've been thinking about how serendipity relates to my current work on learning design. I've been developing my ideas around learning types and patterns and planning on running a few workshops on using them for learning design. I aim to get people to think about learning experiences more holistically and to think about moving <strong>between</strong> different types of learning as ways of engaging with different types of learners.</p>
+<p>In many ways, a marker of the success of the learning experience is the variation of learning offered to students because each of these creates opportunities to learn - to engage with different types of students and connect with different ideas, concepts and experiences in their schema.</p>
+<p>The aim of our design is to increase the conditions for serendipity.</p>
+<p>And rather than fumbling through it, the concepts of learning types and patterns allow us to design for it. Rather than seeking to template everything by defaulting to the specific formats and structures that are so ubiquitous and forced on us by the technology and tools we use, what if we designed for serendipity instead?</p>
+<hr>
+<p>In what seems like a serendipitous occurrence - Doug Belshaw mentioned his idea of <strong>Serendipity Surface</strong> in <a href="https://dougbelshaw.com/blog/2024/09/08/weeknote-35-2024/" target="_blank" rel="noopener noreferrer">his latest Weeknote</a>. He outlined the term to describe cultivating an attitude of curiosity and increasing the chance encounters we have by putting ourselves out there. On this <a href="https://www.youtube.com/watch?v=R5I92QO1_D4" target="_blank" rel="noopener noreferrer">podcast on YouTube</a> Doug describes coining the term Serendipity Surface to describe cultivating curiosity, increasing random encounters and possibilities by putting ourselves out there. He sees it as the opposite of reducing the &quot;attack surface&quot; in security; it's about expanding opportunities.</p>
+<p>I like that term, so perhaps the aim is to use the <em>serendipity engine</em> to increase the <em>serendipity surface</em> of our learners.</p>
+
+	<ul class="metadata">
+		<li class="p-author author">Tim Klapdor</li>
+		<li class="p-locality location">Adelaide, Australia</li>
+		<li class="p-category tags">posts,   & Serendipity   </li>
+		
+		
+	</ul>
+	<footer>
+    <p>© Tim Klapdor 2024</p>
+    <p class="name">Heart  |  Soul  |  Machine</p>
+</footer>
+</article>
+    </main>
+
+  </body>
+</html>

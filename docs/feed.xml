@@ -4,12 +4,42 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2024-09-01T00:00:00Z</updated>
+  <updated>2024-09-10T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>The Serendipity Engine</title>
+    <link href="https://heartsoulmachine.com/blog/2024/09-10-the-serendipity-engine/"/>
+    <updated>2024-09-10T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2024/09-10-the-serendipity-engine/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/the-serendipity-engine-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>A somewhat serendipitous post about serendipity and designing for it.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;A few years ago a colleague and I were working on a tool to enable better organisation of groups for learning. The tool ended up being a combination of a simple survey and a couple of unique sorting mechanisms that we developed.&lt;/p&gt;
+&lt;p&gt;In many cases, we aimed to group &#39;like&#39; students together based on their answers - their location, area of study interests, etc. But during our discussions, we asked ourselves - what if we wanted to do the opposite? What if instead of grouping like students, we want to go the other way and group students together based on differences? A simple example might be grouping students by their preference for roles in a team, in that instance you would want a variety of roles in each group, not all of the same grouped together. But in other instances, you might group different students to create friction and possibility. That kind of sorting became known as the &lt;strong&gt;serendipity engine&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;serendipity engine&lt;/strong&gt; groups learners in ways that increase the chances of serendipity - of sharing, discovery, connection, conflict - and learning together.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It wasn&#39;t a guarantee that anything would happen, but it increased the odds that something unplanned and unstructured would occur.&lt;/p&gt;
+&lt;p&gt;We aimed to enable group learning to be different and to create engagement by creating opportunities for collaboration, cooperation, sharing, and discussion and for differences to arise through the co-mingling of people and ideas.&lt;/p&gt;
+&lt;p&gt;By pushing different people towards each other with a shared purpose to produce something, we could create a whole variety of different learning opportunities.&lt;/p&gt;
+&lt;p&gt;Sometimes, it is through conflict and the creativity required to move past that which is where the real learning opportunity arises. Sometimes, it&#39;s in not dealing with the conflict and having to experience some level of disagreement and failure. There are so few real opportunities for us to delve into that process because conflict is one of those things where you have to be in it to learn from it and learn how to cope with it. It&#39;s not something you can just read about – it&#39;s experiential.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;This all came up over the last week as I&#39;ve been thinking about how serendipity relates to my current work on learning design. I&#39;ve been developing my ideas around learning types and patterns and planning on running a few workshops on using them for learning design. I aim to get people to think about learning experiences more holistically and to think about moving &lt;strong&gt;between&lt;/strong&gt; different types of learning as ways of engaging with different types of learners.&lt;/p&gt;
+&lt;p&gt;In many ways, a marker of the success of the learning experience is the variation of learning offered to students because each of these creates opportunities to learn - to engage with different types of students and connect with different ideas, concepts and experiences in their schema.&lt;/p&gt;
+&lt;p&gt;The aim of our design is to increase the conditions for serendipity.&lt;/p&gt;
+&lt;p&gt;And rather than fumbling through it, the concepts of learning types and patterns allow us to design for it. Rather than seeking to template everything by defaulting to the specific formats and structures that are so ubiquitous and forced on us by the technology and tools we use, what if we designed for serendipity instead?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;In what seems like a serendipitous occurrence - Doug Belshaw mentioned his idea of &lt;strong&gt;Serendipity Surface&lt;/strong&gt; in &lt;a href=&quot;https://dougbelshaw.com/blog/2024/09/08/weeknote-35-2024/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;his latest Weeknote&lt;/a&gt;. He outlined the term to describe cultivating an attitude of curiosity and increasing the chance encounters we have by putting ourselves out there. On this &lt;a href=&quot;https://www.youtube.com/watch?v=R5I92QO1_D4&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;podcast on YouTube&lt;/a&gt; Doug describes coining the term Serendipity Surface to describe cultivating curiosity, increasing random encounters and possibilities by putting ourselves out there. He sees it as the opposite of reducing the &amp;quot;attack surface&amp;quot; in security; it&#39;s about expanding opportunities.&lt;/p&gt;
+&lt;p&gt;I like that term, so perhaps the aim is to use the &lt;em&gt;serendipity engine&lt;/em&gt; to increase the &lt;em&gt;serendipity surface&lt;/em&gt; of our learners.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>August 2024</title>
     <link href="https://heartsoulmachine.com/blog/2024/09-01-august-2024/"/>
