@@ -5,6 +5,8 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownLinks = require("markdown-it-link-attributes");
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+
 
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
@@ -17,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(embedYouTube);
   eleventyConfig.addPlugin(
     require('@photogabble/eleventy-plugin-interlinker'),
     {
