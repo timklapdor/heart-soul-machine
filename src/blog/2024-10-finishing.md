@@ -12,7 +12,7 @@ tags:
   - OUA
 location: 
 coverImage: 
-summary: Our work to develop two fully online programs for Open Universities Australia has come to an end. 3 years of work is a challenge to get your head around and try and capture in a meaningful way.
+summary: Our work to develop two fully online programs for Open Universities Australia has come to an end. Three years of work is a challenge to get your head around and try and capture in a meaningful way.
 ---
 
 In my career, I’ve had the pleasure of seeing a couple of large-scale projects come to fruition and finish. There’s always hoopla and hype at the beginning that fades pretty quickly once the work begins. But when the project lasts a couple of years, the end is, at best, anticlimactic. Most of the enthusiasm is gone by then. Instead, what gets you to the end is momentum and the ability to work as a team to get you through to the finale.  And once you’re there? Not much. 
