@@ -27,16 +27,15 @@ The other part of this that we have been able to finish is recording what we've 
 
 1. The project overall & innovations behind the scenes 
 
-https://youtu.be/0tVOoji-DFc 
+https://www.youtube.com/watch?v=tR5PW51ImJI
 
 2. The design process we developed 
 
-https://youtu.be/Cs7badqlanY
-
+https://www.youtube.com/watch?v=IPv_zKrab7k
 
 3. Our reflections on the curriculum design process 
 
-https://youtu.be/IHibmTs9hI0
+https://www.youtube.com/watch?v=lhXJx7BUwf0
 
 I've never made a wrap-up video like this, and I am proud of the result, even though this had little to do with me and was all my team. I actually don't mind being on camera! 
 
