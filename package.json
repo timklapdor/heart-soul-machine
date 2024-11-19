@@ -28,6 +28,7 @@
     "eleventy-plugin-youtube-embed": "^1.11.0",
     "js-yaml": "^4.1.0",
     "markdown-it-attrs": "^4.1.6",
+    "markdown-it-bracketed-spans": "^1.0.1",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-wikilinks": "^1.4.0"

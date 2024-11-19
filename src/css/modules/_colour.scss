@@ -48,6 +48,22 @@
 
     --dark-heart: color-mix(in srgb, var(--heart), black 40%);
     --dark-soul: color-mix(in srgb, var(--soul), black 70%);
+
+    --p10-1: hsl(189, 100%, 47%);
+    --p10-2: hsl(355, 100%, 67%);
+    --p10-3: hsl(33, 100%, 50%);
+    --p10-4: hsl(40, 100%, 62%);
+    --p10-5: hsl(100, 39%, 57%);
+    --p10-6: hsl(167, 100%, 35%);
+    --p10-7: hsl(278, 97%, 71%);
+
+    --p10-1-juicy: hsl(195, 100%, 46%);
+    --p10-2-juicy: hsl(358, 100%, 59%);
+    --p10-3-juicy: hsl(19, 100%, 50%);
+    --p10-4-juicy: hsl(34, 100%, 56%);
+    --p10-5-juicy: hsl(110, 50%, 41%);
+    --p10-6-juicy: hsl(153, 100%, 25.5%);
+    --p10-7-juicy: hsl(276, 95%, 60%);
 }
 
 $flexoki-black: #100F0F;

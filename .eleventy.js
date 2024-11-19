@@ -6,6 +6,7 @@ const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownLinks = require("markdown-it-link-attributes");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
+const markdownItBracketed = require('markdown-it-bracketed-spans');
 
 
 const fs = require("fs");
@@ -94,7 +95,8 @@ module.exports = function (eleventyConfig) {
           rel: "noopener noreferrer"
         }
       })
-      .use(require('markdown-it-footnote'));
+      .use(require('markdown-it-footnote'))
+      .use(markdownItBracketed);
         
   eleventyConfig.setLibrary("md", markdownLibrary);
 

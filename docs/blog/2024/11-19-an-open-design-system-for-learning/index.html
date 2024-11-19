@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Open Design System for Learning</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <meta property="og:title" content="An Open Design System for Learning" />
+    <meta property="og:url" content="/blog/2024/11-19-an-open-design-system-for-learning/" />
+    
+    <meta property="og:image" content="/assets/social-previews/an-open-design-system-for-learning-preview.jpeg" />
+    <meta property="og:image:secure_url" content="/assets/social-previews/an-open-design-system-for-learning-preview.jpeg" /> 
+    
+
+    <!-- Matomo -->
+      <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDoNotTrack", true]);
+        _paq.push(["disableCookies"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//timklapdor.me/analytics/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '3']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//timklapdor.me/analytics/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+
+
+  </head>
+
+  <body>
+
+    <aside>
+
+    <header>
+        <h1>An Open Design System for Learning</h1>
+        <a href="/">
+            <h1 class="logo-present">An Open Design System for Learning</h1>
+            <img src="/assets/heart-soul-machine-logo.svg" alt="An Open Design System for Learning Logo">
+          </a>
+    </header>
+
+
+
+    <nav role="navigation">
+        <button class="menu-toggle" id="toggle" aria-expanded="false" aria-label="Menu Toggle">
+
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <ul id="menu">
+            
+                 <li><a href="/">Home</a></li>
+            
+                 <li><a href="/blog/">Posts</a></li>
+            
+                 <li><a href="/notes/">Notes</a></li>
+            
+                 <li><a href="/about/">About</a></li>
+            
+                 <li><a href="/timeline/">Timeline</a></li>
+            
+                 <li><a href="/now/">Now</a></li>
+            
+                 <li><a href="/uses/">Uses</a></li>
+            
+        </ul>
+    </nav>    
+    <script>
+        var toggle = document.querySelector('#toggle');
+        var menu = document.querySelector('#menu');
+        var menuItems = document.querySelectorAll('#menu li a');
+
+        toggle.addEventListener('click', function(){
+          if (menu.classList.contains('is-active')) {
+            this.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active'); 
+            this.setAttribute('aria-expanded', 'true');
+            //menuItems[0].focus();
+          }
+        });
+    </script>
+    <a rel="me" href="https://mastodon.social/@timklapdor" style="display: none;">Mastodon</a>
+    <div class="rss">
+      <a href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+        </a>
+     </div>
+
+    </aside>
+
+    <main>
+      <article class="h-entry blogpost">
+
+		
+	<h1 class="p-name title ">An Open Design System for Learning</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">Nov 19, 2024</li>
+		<li class="categories"> Conferences, Higher Education, Learning Design, Travels, &amp; Work </li>
+		<li class="time">12 minutes reading time</li>
+	</ul>
+	
+	
+	<div class="p-summary introduction">
+		This presentation was given at the OE Global 2024 conference in Brisbane, Australia, on the 14th of November 2024. 
+	</div>
+	
+
+	<p>The conference was on Open Education, and my aim for this presentation was to share the work I have been doing in developing elements of a Design System with the idea of providing it as a start to an open practice for learning designers. This is a bit of a test for presentation posts, I'm assessing the value of putting a talk here vs slides. Obviously this has more narrative, but also a bit more effort to pull together. Anyway enjoy and feel free to give me any feedback (contacts at the bottom)!</p>
+<hr>
+<h2>What is a design system?</h2>
+<p>To start off, I want to introduce you to Design Systems. They are common in web &amp; graphic design - but not necessarily in other &quot;design&quot; disciplines. I have been leading a team of learning designers for the last few years, and one of the big challenges I've been working on is developing a shared set of practices. A system for how we work. Given that learning design is relatively new as a profession, it made sense to apply something that works in another design discipline to this space.</p>
+<p>I really liked this definition from the Interaction Design Foundation:</p>
+<blockquote>
+<p>A design system is a set of <strong>standards</strong> to manage and scale design. It includes <strong>reusable components</strong>, <strong>design principles</strong> and <strong>guidelines</strong> to achieve consistency and efficiency<br>
+— <a href="https://www.interaction-design.org/literature/topics/design-systems" target="_blank" rel="noopener noreferrer">IxDF</a></p>
+</blockquote>
+<h2>What are the benefits?</h2>
+<p>Developing a system must have some clear benefits, so let's look at them first.</p>
+<h3>Efficiency</h3>
+<p>A design approach creates efficiency by reducing decisions and the work involved in making them. If this is your first time working on large projects, it can be difficult to grasp how many decisions need to be made and how many meetings, emails, research, and discussions are required.</p>
+<p>Instead of approaching each decision on a one-off basis, design systems provide repeatable solutions to common design problems<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. A systems approach to design reduces the number of decisions people must make which also helps to establish more consistent results.</p>
+<h3>Facilitate collaboration</h3>
+<p>A design system creates a lingua franca for the team developing the course. Having a language and a vocabulary to speak to one another reduces misunderstandings and talking past each other. When we can speak the same language and be on the same page, we can collaborate more effectively – especially when the work requires a team.</p>
+<h3>Scalability</h3>
+<p>Design systems embed the building blocks of design into teams and workflows to create consistent learning experiences, even when a design is distributed among numerous designers and other team members — academics, course authors, media production, and course builders. A shared language and shared components also mean that designs can be quickly developed by those without a huge amount of experience. By empowering the team involved, we can scale the resourcing requirements more appropriately and towards more important and valuable work.</p>
+<h3>Actionable Data</h3>
+<p>Once you have components, you can count them. You can see how and for what they are being used and can then assess their contribution to the overall experience. Being able to 'see' what's happening in your course allows you to seek out issues before they go live and, from a diagnostic perspective, understand your pain points.</p>
+<h3>Design sprints &amp; iteration</h3>
+<p>A design system allows you to design faster and get more done in a shorter period of time. Ideas can be sketched out and planned faster by using components. A huge benefit of a design system is the ability to adopt a more agile development process, one that focuses on iterative development.</p>
+<p><img src="/images/snowball-waterfall.jpeg" alt="Diagram depicting a snowball gathering size over multiple iterations, and a staggered waterfall similar to a staircase."></p>
+<p><strong>Snowball not Waterfall</strong>. Instead of a linear process where we start at the start of a course and end at the end, we have adopted an approach where the work is more focused on building layers of fidelity and information across the whole, rather than focusing on a purely linear and piecemeal approach.</p>
+<h2>What does a design system look like?</h2>
+<p>There are three key components involved in a design system.</p>
+<ol>
+<li>The first is <strong>Principles</strong> - the motivations &amp; drivers for your project .</li>
+<li>The second is <strong>Language</strong> - the words &amp; the visual language that you will use across your project.</li>
+<li>The third is <strong>Components</strong> - the more elemental parts of your system. The patterns &amp; styles that you can reuse.</li>
+</ol>
+<h2>What did we do at the University of Adelaide?</h2>
+<p>To help explain the use of a design system, let's look at the example through the work I've been focusing on at the university.</p>
+<h3>Principles</h3>
+<p>A lot of course development focuses on the resources, the delivery, the teaching, the technology and the tools. But we were a team of learning designers, so it’s probably not a surprise that we wanted to shift our perspective and focus on learning. Our journey started by defining what we wanted the learning experience to look like.</p>
+<p>We developed the Adelaide Online Learning Experience<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>. This framework consisted of five areas we wanted every course to address:</p>
+<ol>
+<li>Clear</li>
+<li>Contextual</li>
+<li>Interactive</li>
+<li>Challenging</li>
+<li>Personalised</li>
+</ol>
+<p>These principles framed our thinking about the courses we wanted to develop. They became embedded in our processes, shaped our ways of working, and drove our decisions. If something didn't align with these principles, it didn't happen.</p>
+<h3>Language</h3>
+<p>We then needed to define learning and what it meant to us as a team to ensure that we had a shared approach. What we do in the Education space is related to learning, but it's often in an indirect way. We help create and build resources for learning, assessments of learning, instructions, and activities that promote learning — but at the end of the day, learning is not our domain.</p>
+<p>Each person learns in their <em><strong>own</strong></em> way. I found this challenging to get my head around until I was introduced to <strong>schema theory</strong> - the concept that our brains function as a map of connections.</p>
+<p><img src="/images/schema.png" alt="A network diagram symbolising the connections between points, similar to a schema map"></p>
+<p>In that sense, we all develop our own schema, linking information with our perceptions, physicality, locations, relationships, sights, smells, and sounds. Learning is the ability to take new information, concepts, and skills and connect them to our existing schema — to make connections between things and add to our network. To learn, we must form a connection, so learning is the process of creating new connections.</p>
+<h4>Learning Types</h4>
+<p>The next step was agreeing on how learning is done — what students do to learn and make connections. Diana Laurillard helped by introducing the concept of Learning Types in her conversational framework, mapping the dialogic relationship between teachers and students. As a team working on asynchronous online courses that didn't really allow this kind of conversation, we needed to adapt these to our circumstances, and we took the opportunity to do so.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p10-1-bg"><strong>Assimilative</strong> </td>
+<td class="p10-1-bg">Learning through presented information      </td>
+</tr>
+<tr>
+<td class="p10-7-bg"><strong>Investigative</strong></td>
+<td class="p10-7-bg">Learning by seeking information             </td>
+</tr>
+<tr>
+<td class="p10-3-bg"><strong>Formative</strong>    </td>
+<td class="p10-3-bg">Learning by trying                          </td>
+</tr>
+<tr>
+<td class="p10-2-bg"><strong>Discursive</strong>   </td>
+<td class="p10-2-bg">Learning by engaging with other perspectives</td>
+</tr>
+<tr>
+<td class="p10-4-bg"><strong>Productive</strong>   </td>
+<td class="p10-4-bg">Learning by creating artefacts              </td>
+</tr>
+<tr>
+<td class="p10-5-bg"><strong>Evaluative</strong>   </td>
+<td class="p10-5-bg">Learning through feedback                   </td>
+</tr>
+<tr>
+<td class="p10-6-bg"><strong>Social</strong>       </td>
+<td class="p10-6-bg">Learning with others                        </td>
+</tr>
+</tbody>
+</table>
+<p>We developed these seven learning types, describing how we form connections in our schema. Finding out the one that works is a challenge that depends as much on the topic as it does the learner. But having these types means that we can talk with our course developers, discuss learning, and find commonalities in our approach.</p>
+<p>We paired these types with activities, and this became our shared language. If we wanted to create a specific type of learning - then it was paired with a particular activity for our course developers to complete. This made visible the kinds of work and where the effort is more transparent.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Activity</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p10-1-bg">Assimilative </td>
+<td class="p10-1-bg"><strong>Content</strong>           </td>
+<td class="p10-1-bg">Creating information for the student to learn from.                    </td>
+</tr>
+<tr>
+<td class="p10-7-bg">Investigative</td>
+<td class="p10-7-bg"><strong>External Resources</strong></td>
+<td class="p10-7-bg">Curating information for the student to engage with.                   </td>
+</tr>
+<tr>
+<td class="p10-3-bg">Formative    </td>
+<td class="p10-3-bg"><strong>Practice</strong>          </td>
+<td class="p10-3-bg">Providing opportunities for learners to try things out.                </td>
+</tr>
+<tr>
+<td class="p10-2-bg">Discursive   </td>
+<td class="p10-2-bg"><strong>Discussion</strong>        </td>
+<td class="p10-2-bg">Creating opportunities to share and engage with different perspectives.</td>
+</tr>
+<tr>
+<td class="p10-4-bg">Productive   </td>
+<td class="p10-4-bg"><strong>Assessment</strong>        </td>
+<td class="p10-4-bg">Students produce artefacts as evidence of learning.                    </td>
+</tr>
+<tr>
+<td class="p10-5-bg">Evaluative   </td>
+<td class="p10-5-bg"><strong>Review</strong>            </td>
+<td class="p10-5-bg">Creating opportunities to learn from reflection and feedback.          </td>
+</tr>
+<tr>
+<td class="p10-6-bg">Social       </td>
+<td class="p10-6-bg"><strong>Interactive</strong>       </td>
+<td class="p10-6-bg">Creating opportunities to learn from others.                           </td>
+</tr>
+</tbody>
+</table>
+<h4>Example</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Activity</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="p10-1-bg">1. Introduce a concept via a video</span></td>
+<td><span class="p10-1-bg"><em>Assimilative</em></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="p10-7-bg">2. An activity where students are asked to find their own example of the concept</span></td>
+<td><span class="p10-7-bg"><em>Investigative</em></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="p10-6-bg">3. Share it with the group via the discussion board</span></td>
+<td><span class="p10-6-bg"><em>Social</em></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="p10-4-bg">4. Have a go at trying to summarise the concept into a meme</span></td>
+<td><span class="p10-4-bg"><em>Productive</em></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="p10-5-bg">5. Share and comment on other's work</span></td>
+<td><span class="p10-5-bg"><em>Evaluative</em></span></td>
+</tr>
+</tbody>
+</table>
+<h4>Learning Sequences</h4>
+<p>We immediately noticed that a good learning experience does not consist of a singular learning type but is constructed by combining different learning types and arranging them in a sequence or lesson.</p>
+<p>A well-constructed lesson provides multiple connection points and opportunities to connect the lesson to the student's prior knowledge or experience. Because everyone's schema is unique, the more diversity, the greater the chance of creating connections.</p>
+<p><img src="/images/learning-sequence.jpeg" alt="Diagram showing coloured blocks representing lesson activities and those connected to different schemas through matching colour areas"></p>
+<p>Good learning design increases the surface area for learning and the opportunity for connection.</p>
+<h4>Visual Language</h4>
+<p>The learning types became an invaluable part of our language system. We associated them with the <strong>colour palette</strong> here and used that as a visual indicator throughout our workflow – creating a cohesive visual language as well. The colours are used throughout our workflow to help define learning at different stages and levels. Recently, I've added icons to add a visual descriptor of the learning type – but the colours are a feature used throughout our work.</p>
+<p><img src="/images/learning-types.png" alt="A graphic showing the 7 learning types in differnt colour and an icon for each symbolising the type of learning"></p>
+<p>One that works in our planning and whiteboarding stage – in Miro – or via Post-Its</p>
+<p><img src="/images/planning.jpeg" alt="A course map showing a course structure of 12 weeks and blocks of learning types for each week colour coded to the type of learning."></p>
+<p>Our homemade development tool that we created to author, manage and measure our entire development process.</p>
+<p><img src="/images/developing.jpeg" alt="A screenshot from the Smart Storyboard tool showing graphs for related learning types used in the course."></p>
+<p>Through to our reporting tools - allowing us to see the experience of learning in an unprecedented way.</p>
+<p><img src="/images/reporting.jpeg" alt="A donut graph showing the total number of hours in a course and matched to the different learning types."></p>
+<h3>Components</h3>
+<p>An essential part of a design system are the components. These reusable elements speed up the process and allow work to be developed more quickly by short-cutting the decision-making process and having some ready-made elements that can be utilised. Components need to be small elements, building blocks and pieces that can be fitted together to form the whole. A common metaphor is atomic design<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>, where there are <strong>atoms</strong> that form into <strong>molecules</strong> that make up <strong>organisms</strong>.</p>
+<h4>A Pattern Language</h4>
+<p>The idea of a Pattern Language came from Christopher Alexander, an architect who wanted to empower his clients to define a space's features and functions. He realised that there were common &quot;patterns&quot; that could describe these features and functions and that these patterns could be reused to solve individual design problems.</p>
+<p>The value of creating our own “pattern language” of descriptive design elements that can be used and reused across contexts, technologies, modes and modalities of study would be enormous.</p>
+<h4>No Templates</h4>
+<p><img src="/images/no-templates.jpeg" alt="A picture of a sausage overlaid with the text Templates with a strike through the word."></p>
+<p>Templates are the most common approach to developing courses at scale. They can help provide structure, but they do so in a restrictive way. They make the student experience one of repetition, sameness, and conformity, which isn’t the kind of experience we should strive for. Templates are fine for looks and consistency but not the experience or the kinds of engaging learning we want. Templates are the “sausage factory” for learning design, mushing everything together and squeezing it into the same shape.</p>
+<p>Our approach was to move far away from the template approach and embrace patterns. The patterns acted more like Lego bricks—pieces that can be recombined and shaped according to the specific needs of the course and discipline.</p>
+<p>So, I built a library of common patterns related to each of the Learning Types so that we could help develop and scaffold the creation of activities.</p>
+<p><img src="/images/pattern-library.jpg" alt="A screen shot of the pattern library available at learning-patterns.com"></p>
+<p>They provide prompts for both the learning designer and the course developer, which can help shortcut the design process and make it participatory. These are grouped according to the learning type or activity and provide a prompt and scaffolding to aid the creation process.</p>
+<h4>Example Lesson</h4>
+<p>Using the learning types and patterns together allows us to create rapid prototypes and construct lessons quickly based on the information around the topic and the kinds of learning that suit what we want the students to learn and experience. An example lesson:</p>
+<p><img src="/images/Lesson-Sequence.png" alt="A stack of Lego shaped bricks that represent the different patterns pieced together to create a lesson."></p>
+<ol>
+<li>Starting off with assimilative learning and provide an <strong>Orientation</strong> to the concept,</li>
+<li>Then, you might want to engage in some investigative learning, so we might ask a <strong>Question</strong> for students to go away and explore — maybe to find a definition of the concept.</li>
+<li>You might bring them back together and provide them with our agreed-to <strong>Definition</strong>.</li>
+<li>You then provide more details about the concept and include an <strong>Explanation</strong> of how it works in practice.</li>
+<li>Then, you want students to put what they have learnt into practice, so give them a <strong>Case Study</strong> to work through.</li>
+<li>Once they've completed that task, they can evaluate their approach to the case and <strong>Reflect</strong> on how they made their decisions.</li>
+<li>This might be a good time to illustrate the concept with an <strong>Analogy</strong>, something they can relate to.</li>
+<li>You will then provide some <strong>Instruction</strong> on how to use the concept.</li>
+<li>It's essential for the students to see how that can happen, so you demonstrate how the concept can be applied using a <strong>Worked Example</strong> where you walk through applying the concept.</li>
+<li>Then next task is for students to go and find their own example of the concept being applied and <strong>Share Example</strong>s with the class.</li>
+<li>They then write up their <strong>Observations</strong> of what the class found, looking for ideas that are different or unique to theirs.</li>
+</ol>
+<p>The lesson design is agnostic to the mode, modality, and technology available, using the learning types and patterns. Because it is structured and formed around learning, this same lesson can be adapted to run face-to-face, online, and using both available low-tech and high-tech tools.</p>
+<p>Combining the types and patterns is easy, and you can quickly outline an effective learning sequence. Using that iterative snowball approach might involve choosing the type of learning, assigning a pattern, and creating a couple of dot points. From that, you can iterate and add details as you go and change and evolve the course.</p>
+<p>In this example, we have a large connection surface; learners can engage with the concepts in a variety of highly engaging ways. This learning sequence could be easily adapted to run online or in a classroom and tailored to suit the cohort of students you’re working with.</p>
+<p><img src="/images/learning-sequence.jpeg" alt="Diagram showing coloured blocks representing lesson activities and those connected to different schemas through matching colour areas"></p>
+<h2>Where are we now?</h2>
+<p>Our system has been embedded into our practices. The <strong>Principles</strong>, <strong>Language</strong> and <strong>Components</strong> support our design process and our collaborations. Three years on, and we have a process that is efficient, collaborative, scalable, data-supported, iterative, and adaptable. We've been able to achieve a lot in that time frame:</p>
+<ul>
+<li>Two fully online undergraduate programs consisting of 36 courses</li>
+<li>We've worked with more than 50 academic staff</li>
+<li>Produced more than 660 videos, 740 interactives and over 2300 images across those courses.</li>
+<li>Built over 3000 pages of content and 6084 hours of learning.</li>
+</ul>
+<p>We've created some videos covering that work and the processes we've developed:</p>
+<div id="tR5PW51ImJI" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/tR5PW51ImJI?start=2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div id="IPv_zKrab7k" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/IPv_zKrab7k?start=5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div id="lhXJx7BUwf0" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/lhXJx7BUwf0?start=4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>I've also created site for both the Learning Types and Learning Patterns that are open and available to use:</p>
+<ul>
+<li><a href="https://learning-types.com" target="_blank" rel="noopener noreferrer">learning-types.com</a></li>
+<li><a href="http://learning-patterns.com" target="_blank" rel="noopener noreferrer">learning-patterns.com</a></li>
+</ul>
+<p>Our project is now wrapping up and the team is moving into other projects, but I am really proud of what we have created and can see a huge benefit of openly sharing what has worked for us and to seed the idea of a Design System for Learning.</p>
+<h2>Where to next?</h2>
+<p>I’ve spent the last couple of months pulling together the <a href="https://learning-types.com" target="_blank" rel="noopener noreferrer">types</a> and <a href="http://learning-patterns.com" target="_blank" rel="noopener noreferrer">patterns</a> into resources available online. They are available for you to use - but I am keen to develop this further. If you'd like to incorporate these resources into your own process, or have any discussion on how to do it and what is possible - please get in contact with me via <a href="mailto:tim@patternlearning.co?subject=Contact%20via%20OEFlobal24%20Online%20Presentation" target="_blank" rel="noopener noreferrer">Email</a> or <a href="https://mastodon.social/@timklapdor" target="_blank" rel="noopener noreferrer">Mastodon</a>.</p>
+<p>Thank you.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Based on this article from <a href="https://www.contentful.com/blog/design-system-explained/" target="_blank" rel="noopener noreferrer">Contentful</a>. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>The <a href="https://docs.google.com/document/d/1CkhLNQQerji4yn3vKQLvnCUS2OtWBLqcQEssxP7-f2U/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Adelaide Online Learning Experience</a> was developed to underpin the quality assurance framework used internally at the university. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">Atomic Design</a> has been broadly adopted in the web design community. It is specific to web design, but the thinking behind how things can be structured and made up of atomic elements is useful. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+	<ul class="metadata">
+		<li class="p-author author">Tim Klapdor</li>
+		<li class="p-locality location">Adelaide, Australia</li>
+		<li class="p-category tags">posts, Presentation, LearningTypes, LearningDesign, LearningPatterns, &amp; DesignSystem </li>
+		
+		
+	</ul>
+	<footer>
+    <p>© Tim Klapdor 2024</p>
+    <p class="name">Heart  |  Soul  |  Machine</p>
+</footer>
+</article>
+    </main>
+
+  </body>
+</html>
