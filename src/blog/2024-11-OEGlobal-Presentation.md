@@ -21,7 +21,7 @@ summary: "This presentation was given at the OE Global 2024 conference in Brisba
 
 ---
 
-The conference was on Open Education, and my aim for this presentation was to share the work I have been doing in developing elements of a Design System with the idea of providing it as a start to an open practice for learning designers. This is a bit of a test for presentation posts, I'm assessing the value of putting a talk here vs slides. Obviously this has more narrative, but also a bit more effort to pull together. Anyway enjoy and feel free to give me any feedback (contacts at the bottom)!
+The conference was on Open Education, and my aim for this presentation was to share the work I have been doing in developing elements of a Design System with the idea of providing it as a start to an open practice for learning designers. It was a 20 minute presentation - so I do glide across a lot and not hit a lot of depth as a result. This is a bit of a test for presentation posts, I'm assessing the value of putting a talk here vs slides. Obviously this has more narrative, but also a bit more effort to pull together. Anyway enjoy and feel free to give me any feedback (contacts at the bottom)!
 
 ---
 
@@ -203,6 +203,10 @@ Combining the types and patterns is easy, and you can quickly outline an effecti
 In this example, we have a large connection surface; learners can engage with the concepts in a variety of highly engaging ways. This learning sequence could be easily adapted to run online or in a classroom and tailored to suit the cohort of students you’re working with. 
 
 ![Diagram showing coloured blocks representing lesson activities and those connected to different schemas through matching colour areas]({{'/images/learning-sequence.jpeg' |url }})
+
+#### Other components
+
+One of the other components we have in out design system is a [Style Guide](https://mediaproduction.adelaide.edu.au/uoa-styles/) for our LMS. This helps us know what things will look like in platform and aids the decision making process as well. It's been developed specifically for our LMS and needs - and is the least open part of what we've done. I would recommend exploring some [web design systems](https://designsystemsrepo.com/) for inspiration. 
 
 ## Where are we now?
 Our system has been embedded into our practices. The **Principles**, **Language** and **Components** support our design process and our collaborations. Three years on, and we have a process that is efficient, collaborative, scalable, data-supported, iterative, and adaptable. We've been able to achieve a lot in that time frame:
