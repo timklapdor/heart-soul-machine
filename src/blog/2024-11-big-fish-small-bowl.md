@@ -13,7 +13,7 @@ updateDescription:
 tags:
   - Fishbowl
 location: 
-coverImage: "/images/fishbowl.jpg"
+coverImage: "/images/fishbowl.jpeg"
 summary: Weaving some thoughts on what's happening at work and on the socials and reflecting on what I should be doing. Staying in the fishbowl, or jumping into the ocean.
 ---
 ### The Fishbowl and the Ocean
