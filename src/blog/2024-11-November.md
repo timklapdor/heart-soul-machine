@@ -41,9 +41,10 @@ The following week I went to[ DDD Adelaide](https://dddadelaide.com/) and by the
 ![Frankie on his third birthday]({{'/images/frankie.jpg' | url }})
 
 Worth noting that Frankie turned 3 this month as well. It is hard to think back to when he was a puppy, but flicking back through the photos so much has happened. I was never a dog guy, but I've enjoyed having him around, and yeah, I love him - he's very hard not to!
+
 ## Photos
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/timklapdor/albums/72177720314386151" title="2024"><img src="https://live.staticflickr.com/65535/54115523219_b9aaa750cf_c.jpg" width="1024" height="768" alt="2024"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/timklapdor/albums/72177720314386151" title="2024"><img src="https://live.staticflickr.com/65535/54174108049_33d2ec24ba_c.jpg" width="1024" height="768" alt="2024"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ## Watched
 I spent the start of the month fully immersed in The Expanse - rewatching the TV series and smashing out another audiobook in the series.  
