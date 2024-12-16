@@ -4,12 +4,42 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2024-12-15T00:00:00Z</updated>
+  <updated>2024-12-16T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>2024 and what I&#39;m using</title>
+    <link href="https://heartsoulmachine.com/blog/2024/12-16-2024-and-what-i&#39;m-using/"/>
+    <updated>2024-12-16T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2024/12-16-2024-and-what-i&#39;m-using/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/2024-and-what-i&#39;m-using-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>Going back to my Uses page and looking at what&#39;s changed over the year.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;📨 Mail Client: &lt;s&gt;Mail.app&lt;/s&gt; &lt;strong&gt;&lt;a href=&quot;https://canarymail.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Canary&lt;/a&gt;&lt;/strong&gt; (free) + Outlook (work)&lt;/p&gt;
+&lt;p&gt;I struggled to find a mail app I liked to use that does the simple things right. I don’t need 100 automations or AI summaries - I want a search that works and finds the email from 6 months ago. Canary does that really well. The interface is simple and easy to use, it has the right functions I want, and I’ve been able to get away with the free plan so far.&lt;/p&gt;
+&lt;p&gt;✅ To-Do: Obsidian &amp;amp; &lt;strong&gt;Things&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’ve spent this year trying to get my shit together and have honestly found most apps wanting. I’ve got a decent thing going in Obsidian, but I did a big GTD dump into Things during the year and I love how it’s all organised. That said, I spent soooo much time in Obsidian that having to go into a different app to manage that seems to get in the way. I’ve found a few plugins recently that might help, as I love the workflow I’ve got in Obsidian at the moment and just need a couple of simple functions for it to be my full-time organisational app.&lt;/p&gt;
+&lt;p&gt;📖 RSS: &lt;strong&gt;Readwise&lt;/strong&gt;&lt;br /&gt;
+📑 Read It Later: &lt;s&gt;Pocket&lt;/s&gt;, &lt;s&gt;Omnivore&lt;/s&gt; &lt;strong&gt;Readwise&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’m going to lump these two together, and I decided to dump some $s down for Readwise. I’d started the year using Omnivore and enjoyed the annotation features and syncing - and then they shut it down. After a couple of tests, I figured Readwise did everything right - in particular, having an option to voice-generate the article for me.&lt;/p&gt;
+&lt;p&gt;📜 Word Processing: &lt;strong&gt;Obsidian&lt;/strong&gt; &lt;s&gt;and Word&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;Obsidian has gobbled up word processing for me. I might do a copy and paste into Word at the end, but in terms of writing - Obsidian, hands down.&lt;/p&gt;
+&lt;p&gt;📊 Spreadsheets: &lt;s&gt;Google Sheets&lt;/s&gt; &lt;strong&gt;Excel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I haven’t opened any Google tools for the past year. It’s odd, as Google Docs was a previous mainstay, but I guess when you don’t need to collaborate as much or your organisation has shifted to whatever Microsoft offers (&lt;em&gt;Shitpoint&lt;/em&gt;?), you don’t need it.&lt;/p&gt;
+&lt;p&gt;🖥️ Presentations: &lt;s&gt;Powerpoint&lt;/s&gt; &lt;strong&gt;&lt;a href=&quot;https://ia.net/presenter&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;iA Presenter&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A big plus for me this year was going in on iA Presenter. This markdown presentation tool fits my way of working to a tee, allowing me to create, develop and write up my talks quickly and easily. I’ve usually had to swap out to PowerPoint for the delivery format (conferences now lock down the computers to use to avoid all the tech woes), but this, too is pretty simple.&lt;/p&gt;
+&lt;p&gt;🍴 Meal Planning: &lt;strong&gt;Reminders.app&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Reminders for a couple of interesting updates this year, one was the ability to create Kanban boards. Creating a simple Backlog and days of the week was easy and a nice way to do this planning.&lt;/p&gt;
+&lt;h3&gt;Hardware&lt;/h3&gt;
+&lt;p&gt;No significant changes, but I have to give an &lt;strong&gt;Honorable Mention&lt;/strong&gt; to my &lt;strong&gt;AirPods Pro 2&lt;/strong&gt;s, which received quite the workout over the last year. See my Podcast Diet and add a healthy dose of audiobooks and plane travel. These bad boys have outperformed anything I’ve ever owned: sound quality and noise cancellation far beyond what you reasonably could expect from such a small package. I hope the next version adds some of the Smart Case features that the Jabra models have, allowing you to plug into a plane&#39;s entertainment system and stream the audio to your Pods. Also, I’ve never really got great feedback from the sound quality of calls from my end - I can hear them fine, but sometimes they can’t hear me particularly well would love some control over that.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>A Year in Podcasts</title>
     <link href="https://heartsoulmachine.com/blog/2024/12-15-a-year-in-podcasts/"/>

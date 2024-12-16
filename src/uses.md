@@ -9,7 +9,7 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 ## Software
 
 - 📨 Mail Client: Mail.app
-- 📮 Mail Server: Gmail (personal) & Outlook (professional)
+- 📮 Mail Server: Canary (personal) & Outlook (professional)
 - 📝 Notes: Obsidian
 - ✅ To-Do: Obsidian
 - 📷 iPhone Photo Shooting: iOS Camera
@@ -17,18 +17,18 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 - 📆 Calendar: Calendar.app + Fantastical
 - 📅 Calendar Backend: iCloud
 - 📁 Cloud file storage: Dropbox & iCloud Drive
-- 📖 RSS: —
+- 📖 RSS: Readwise
 - 🙍🏻‍♂️ Contacts: Contacts.app
 - 🌐 Browser: Arc
 - 💬 Chat: Messages.app, WhatsApp
 - 🔖 Bookmarks: Arc
-- 📑 Read It Later: Pocket
-- 📜 Word Processing: Obsidian and Word
+- 📑 Read It Later: Readwise
+- 📜 Word Processing: Obsidian
 - 📊 Spreadsheets: Google Sheets
-- 🖥️ Presentations: Powerpoint
+- 🖥️ Presentations: iA Presenter
 - 🛒 Shopping Lists: Reminders.app
-- 🍴 Meal Planning: —
-- 💰 Budgeting & Personal Finance: Google Sheets
+- 🍴 Meal Planning: Reminders.app
+- 💰 Budgeting & Personal Finance: Excel
 - 📰 News: Mastodon (via Ivory)
 - 🎵 Music: Apple Music
 - 🎤 Podcasts: Overcast
@@ -44,6 +44,7 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 ## Hardware
 
 - iPhone 15 Pro
+- AirPods Pro 2
 - M2 MacBook Pro for work
 - M1 Macook Air for personal
 - iPad Mini + Apple Pencil
