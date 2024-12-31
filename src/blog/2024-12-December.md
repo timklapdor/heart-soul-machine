@@ -26,6 +26,8 @@ It was also the last month of having an old friend in town. It's been great havi
 
 Spent some nice time outdoors despite some of the hotter days. Got to see my first "shark spotting" with a plane overhead circling what must have been a large shark just off the beach I was walking on (not swimming). 
 
+Christmas was nice - loud and crazy with all of the nieces in fine form. We went back to Wagga - or, more correctly [The Rock](https://en.wikipedia.org/wiki/The_Rock,_New_South_Wales#) - where my sister now lives. We travelled via Mildura on both legs as we took Frankie with us and found a pet-friendly hotel on the way. I enjoyed stopping off in Gol Gol (the NSW side of the river) and being close to the water. I got the chance to catchup up with Ben and Rob from [the good 'ol days](https://26fifty.com.au/). 
+
 ## Photos
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/timklapdor/albums/72177720314386151" title="2024"><img src="https://live.staticflickr.com/65535/54237063451_e7f9b4acfd_b.jpg" width="1024" height="768" alt="2024"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
