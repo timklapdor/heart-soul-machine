@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">	
 	<title>{{ title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 	<meta property="og:title" content="{% if page.url == "/" %}Heart | Soul | Machine • by Tim Klapdor {% else %}{{ title }}{% endif %}" />
 	<meta property="og:url" content="{{ page.url }}" />
+	{% if summary %}
+	<meta name="description" content="{{ page.summary }}">
+	<meta property="og:description" content="{{ page.summary }}">	
+	{% else %}
+	<meta name="description" content="Thoughts from an expert generalist working in Higher Education in Adelaide Australia">
+	<meta property="og:description" content="Thoughts from an expert generalist working in Higher Education in Adelaide Australia">	
+	{% endif %}
+	<meta name="fediverse:creator" content="@timklapdor@mastodon.social">
 	{% if tags %}
 	<meta property="og:image" content="/assets/social-previews/{{ preview.data.title | slug }}-preview.jpeg" />
 	<meta property="og:image:secure_url" content="/assets/social-previews/{{ preview.data.title | slug }}-preview.jpeg" /> 
