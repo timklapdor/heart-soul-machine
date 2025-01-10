@@ -25,6 +25,13 @@ section#comments {
         height: 4rem;
         position: relative;
         width: 4rem;
+
+        &:hover {
+        background: none;
+        border: 2px outset var(--heart);
+        border-radius: 50%;
+        transition: all 0.1s ease-out;
+        }
   
         .avatar {
           height: 100%;
@@ -64,6 +71,7 @@ section#comments {
         grid-area: post;
         min-height: fit-content;
         background: none;
+        padding: 0;
   
         p:first-child {
           margin-top: 0.25em;
@@ -71,6 +79,13 @@ section#comments {
   
         p:last-child {
           margin-bottom: 0;
+        }
+
+        p { 
+          font-size: 1rem;
+          a {
+            word-break: break-all;
+          }
         }
       }
   
