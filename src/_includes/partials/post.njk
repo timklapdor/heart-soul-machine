@@ -29,5 +29,10 @@ layout: /layouts/grid.njk
 		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate | postDate }}</li>{% endif %}
 		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
 	</ul>
+
+	{%- if commentId | length -%}
+		{% include "partials/comments.njk" %}
+	{% endif %}
+
 	{% include "partials/footer.njk" %}
 </article>

@@ -1,6 +1,7 @@
 ---
 title: Learning Type Iconography
 date: 2025-01-07
+commentId: "113790585031265811"
 categories:
   - Concepts
   - Learning Design
@@ -11,6 +12,7 @@ tags:
 location: 
 coverImage: /images/icons.png
 summary: I created my first set of icons last year. Encapsulating an idea in a simple visual was much more challenging than I thought.
+
 ---
 I wanted to bring the [Learning Types](https://learning-types.com) to life and give them a more visual identity that extended beyond the colour scheme I've adopted for their use. The process was challenging! I dived into the [Noun Project](https://thenounproject.com/) for inspiration and to explore what was on offer. While there are a few icons that I liked, nothing actually fit the bill, and what was there was a mishmash of styles, but rather than move on, I thought to myself — "I can do this", even though I never had. 
 

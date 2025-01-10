@@ -2,5 +2,8 @@
     "layout": "/partials/post.njk", 
     "author": "Tim Klapdor",
     "tags": "posts", 
-    "permalink": "blog/{{ page.date | date: '%Y/' }}{{page.date | monthDay | slug}}-{{ title | slug}}/index.html"
+    "permalink": "blog/{{ page.date | date: '%Y/' }}{{page.date | monthDay | slug}}-{{ title | slug}}/index.html",
+    "commentHost": "mastodon.social",
+    "commentUsername": "timklapdor", 
+    "commentVerifiedId": "@timklapdor@mastodon.social"
 }

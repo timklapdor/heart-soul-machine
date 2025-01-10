@@ -1,0 +1,121 @@
+section#comments {
+
+    #comments-wrapper {
+        width: 100%;
+    }
+
+    h5 {margin: 0;}
+
+    .comment {
+      display: grid;
+      column-gap: 1rem;
+      grid-template-areas:
+        "avatar name"
+        "avatar time"
+        "avatar post"
+        "...... actions";
+      grid-template-columns: min-content;
+      justify-items: start;
+      margin: 2em auto 2em -1em;
+      padding: 1em;
+      border-radius: .5rem;
+  
+      .avatar-link {
+        grid-area: avatar;
+        height: 4rem;
+        position: relative;
+        width: 4rem;
+  
+        .avatar {
+          height: 100%;
+          width: 100%;
+        }
+      }
+  
+      .author {
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+        gap: 0.5em;
+        grid-area: name;
+  
+        .account {
+          display: none;
+        }
+  
+        .instance {
+          background-color: var(--faint);
+          border-radius: 9999px;
+          color: var(--neutral);
+          cursor: default;
+          font-size: smaller;
+          font-weight: normal;
+          padding: 0.25em 0.75em;
+        }
+      }
+  
+      time {
+        grid-area: time;
+        line-height: 1.5rem;
+        margin-top: .2rem;
+      }
+  
+      main {
+        grid-area: post;
+        min-height: fit-content;
+        background: none;
+  
+        p:first-child {
+          margin-top: 0.25em;
+        }
+  
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+  
+      .emoji {
+        display: inline;
+        height: 1.25em;
+        vertical-align: middle;
+        width: 1.25em;
+      }
+  
+      .invisible {
+        display: none;
+      }
+  
+      .ellipsis::after {
+        content: "…";
+      }
+  
+      &.verified {
+       .avatar-link::after {
+          background-color: var(--secondary-accent-color);
+          border-radius: 50%;
+          bottom: -0.25rem;
+          color: var(--p10-5-juicy);
+          content: "✓";
+          display: block;
+          font-size: 1.25rem;
+          font-weight: bold;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          position: absolute;
+          right: -0.25rem;
+          text-align: center;
+          width: 1.5rem;
+        }
+  
+        .instance {
+          background-color: var(--secondary-accent-color);
+          color: var(--p10-5-juicyt);
+  
+          &::before {
+            content: "✓ ";
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }

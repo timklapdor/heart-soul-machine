@@ -99,7 +99,6 @@ main {
             grid-column: 3 / span 3;
         }
 
-
         footer {
             width: 100%;
             grid-column: 4;
@@ -323,6 +322,7 @@ main {
 
             
         }
+        
         ul.metadata {
                 list-style: none;
                 display: flex;
@@ -427,6 +427,12 @@ main {
                     font-size: 1em;
                 }
             }
+
+
+        #comments {
+            width: 100%;
+            grid-column: 4;
+        }
         
 
     & > * + * {
