@@ -10,13 +10,14 @@
 
     <meta property="og:title" content="{% if page.url == "/" %}Heart | Soul | Machine • by Tim Klapdor {% else %}{{ title }}{% endif %}" />
     <meta property="og:url" content="{{ page.url }}" />
-    {% if summary %}
-	  <meta name="description" content="{{ page.summary }}">
-	  <meta property="og:description" content="{{ page.summary }}">	
-	  {% else %}
+
+  {% if summary  %}
+	  <meta name="description" content="{{ summary }}">
+	  <meta property="og:description" content="{{ summary }}">	
+  {% else %}
 	  <meta name="description" content="Thoughts from an expert generalist working in Higher Education in Adelaide Australia">
 	  <meta property="og:description" content="Thoughts from an expert generalist working in Higher Education in Adelaide Australia">	
-	  {% endif %}
+  {% endif %}
 	  
     <meta name="fediverse:creator" content="@timklapdor@mastodon.social">
 
