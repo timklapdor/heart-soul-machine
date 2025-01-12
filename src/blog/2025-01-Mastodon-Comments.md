@@ -1,5 +1,5 @@
 ---
-title: Template
+title: Mastodon Comments
 date: 2025-01-12
 categories:
   - Technology

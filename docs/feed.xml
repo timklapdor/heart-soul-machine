@@ -11,13 +11,13 @@
     <email>tim.klapdor@gmail.com</email>
   </author>
   <entry>
-    <title>Template</title>
-    <link href="https://heartsoulmachine.com/blog/2025/01-12-template/"/>
+    <title>Mastodon Comments</title>
+    <link href="https://heartsoulmachine.com/blog/2025/01-12-mastodon-comments/"/>
     <updated>2025-01-12T00:00:00Z</updated>
-    <id>https://heartsoulmachine.com/blog/2025/01-12-template/</id>
+    <id>https://heartsoulmachine.com/blog/2025/01-12-mastodon-comments/</id>
     <media:content 
         xmlns:media="http://search.yahoo.com/mrss/" 
-        url="https://heartsoulmachine.com/assets/social-previews/template-preview.jpeg" 
+        url="https://heartsoulmachine.com/assets/social-previews/mastodon-comments-preview.jpeg" 
         medium="image" 
         type="image/jpeg" />
     <summary>Looking to add comments to a static site? Maybe try Mastodon.</summary>
