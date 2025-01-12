@@ -4,12 +4,49 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2025-01-07T00:00:00Z</updated>
+  <updated>2025-01-12T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Template</title>
+    <link href="https://heartsoulmachine.com/blog/2025/01-12-template/"/>
+    <updated>2025-01-12T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2025/01-12-template/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/template-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>Looking to add comments to a static site? Maybe try Mastodon.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;Around this time last year, I started working on this blog. It was a project I really got my teeth into, and I had a few must-haves. The biggest was that I wanted it to be a static site - just files on a server - with no backend, database, admin, or maintenance required. I also wanted to have the whole thing run on files - markdown in particular - so whatever I wrote was easy to reuse and repurpose but stored and accessed without needing a website or technology to run.&lt;/p&gt;
+&lt;p&gt;I set up the site using  Eleventy (11ty) to do all this. I’d been a Jekyll user before and had encountered a few limitations that 11ty didn’t have. Being built in JavaScript rather than Ruby meant there was a larger community of developers engaged and a lot more portability of code.&lt;/p&gt;
+&lt;p&gt;One of the missing features of a static site is the lack of Web 2.0 features that enable user-generated content, such as comments. So essentially, the site has been operating as an OG weblog - and I liked that. Just me and some words&lt;/p&gt;
+&lt;p&gt;Then along comes agent provocateur Jim Groom:&lt;/p&gt;
+&lt;iframe src=&quot;https://social.ds106.us/@jimgroom/113746590194162654/embed&quot; width=&quot;400&quot; allowfullscreen=&quot;allowfullscreen&quot; sandbox=&quot;allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;To be honest over the last year I have looked at a few options to add comments but I didn’t find many that didn’t leverage specific publishing systems (Netlify, GitHub) or weren’t a paid for service. Given this site currently costs me the fee for the domain and that’s it - paying for a service is not a cost I will bear. Also, IM not doing this site for clicks or user engagement, the only metric I’m worried about is my output and post count.  and while the site currently sits on GitHub Pages given the current rate of enshitification I didn’t want to move away from having the freedom to FTP the site anywhere and point the domain at somewhere new.&lt;/p&gt;
+&lt;p&gt;So at Jim’s behest, and using it as motivation I resumed my search, but this time I went to the search bar with a specific question – can you use Mastodon for comments?&lt;/p&gt;
+&lt;p&gt;I started here because I could see that Mastodon and ActivityPub could be an awesome way of combining blogs and interactions into the future. And while my simple 11ty blog wasn’t going to be able to run as an ActivityPub server - it had a lot of what’s needed to connect into that eco system.&lt;/p&gt;
+&lt;p&gt;And what I found was, &lt;a href=&quot;https://fietkau.blog/2023/another_blog_resurrection_fediverse_new_comment_system&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Yes! Yes you can use Mastodon for comments&lt;/a&gt;. A number of posts discussed how they’d gone about it, &lt;a href=&quot;https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;were sharing their code&lt;/a&gt; - so I thought how hard could it be?&lt;/p&gt;
+&lt;p&gt;Well surprisingly simple! In about an hour I’d managed to copy the code, integrate, test and style it - and as a version 1.0 I’m very happy.&lt;/p&gt;
+&lt;h3&gt;How does it work?&lt;/h3&gt;
+&lt;p&gt;On my end I copied the code that Casey wrote - his c&lt;a href=&quot;https://github.com/cassidyjames/cassidyjames.github.io/blob/main/_includes/comments.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;omments template&lt;/a&gt; (which includes the js file) and the associated css files for the &lt;a href=&quot;https://github.com/cassidyjames/cassidyjames.github.io/blob/main/_sass/_comments.scss&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;comments&lt;/a&gt; and &lt;a href=&quot;https://github.com/cassidyjames/cassidyjames.github.io/blob/main/_sass/_avatars.scss&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;avatars&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From there I made a couple of tweaks to the variables used - and added those to my template metadata.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;commentUsername&lt;/code&gt; = your Mastodon name (the first @)&lt;br /&gt;
+&lt;code&gt;commentHost&lt;/code&gt; = your Mastodon host (the second @)&lt;br /&gt;
+&lt;code&gt;commentId&lt;/code&gt; = the Mastodon post ID that refers to the blog post&lt;/p&gt;
+&lt;p&gt;I tweaked the setup for 11ty - so I&#39;ve put the &lt;a href=&quot;https://github.com/timklapdor/heart-soul-machine/blob/main/src/_includes/partials/comments.njk&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;comments template&lt;/a&gt; as a Partial that I can include in my template and I have the template pull in the comments section only if there is an Mastodon post ID is linked. This was to give me an opt in to comments - some posts I might not want them at all.&lt;/p&gt;
+&lt;p&gt;I’ve already set up &lt;a href=&quot;https://echofeed.app/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;EchoFeed&lt;/a&gt; which automatically posts to Mastodon via the sites RSS. So once I&#39;ve got that post - I can add the idea back into the post and republish. So rather than automatic there is a manual step - but it also gives me the power to opt in and out. Choices are a good thing.&lt;/p&gt;
+&lt;p&gt;If there is a comment ID attached to the post then the template will pick that  up and add the comment template - which all works client side via the Mastodon API:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{%- if commentId | length -%}
+  {% include &amp;quot;partials/comments.njk&amp;quot; %} 
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And from my end that&#39;s it. I found &lt;a href=&quot;https://www.fabriziomusacchio.com/blog/2023-07-31-mastodon_blog_comment_system/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Fabrizio Musacchio&#39;s post&lt;/a&gt; which added some other features - an API token so you can get more than 60 replies etc. But I also noted that he&#39;s not using his own Mastodon comments on the site... not sure why. I&#39;ll keep looking at this and see if any other features might be useful to add and poke around old posts and see which ones to add comments to.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Learning Type Iconography</title>
     <link href="https://heartsoulmachine.com/blog/2025/01-07-learning-type-iconography/"/>

@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, p, li  {
+h1, h2, h3, h4, h5, p, li, code  {
     font-size: clamp(var(--fluid-type-min, 1rem), calc(1rem + var(--fluid-type-target, 3vw)),var(--fluid-type-max, 1.3rem));
 }
 
@@ -30,3 +30,8 @@ h1 {
     --fluid-type-min: 1.1rem;
     --fluid-type-max: 1.4rem;
   }
+
+code {
+  --fluid-type-min: .9rem;
+  --fluid-type-max: 1rem;
+}
