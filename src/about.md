@@ -9,7 +9,7 @@ cover-image:
 summary: | 
     Hej! 👋 I'm Tim Klapdor
 
-    I'm a 43-year-old cisgender male (he/him) based in [Adelaide, South Australia](https://duckduckgo.com/?q=adelaide&ia=web&iaxm=about). I'm married, and our family consists of an 11-year-old daughter and a 2-year-old Kelpie. I work in Higher Education and am passionate about learning, technology and jumping into a problem space.
+    I'm a 43-year-old cisgender male (he/him) based in [Adelaide, South Australia](https://duckduckgo.com/?q=adelaide&ia=web&iaxm=about). I'm married, and our family consists of an 13-year-old daughter and a 3-year-old Kelpie. I work in Higher Education and am passionate about learning, technology and jumping into a problem space.
 ---
 
 ![Photo of Tim Klapdor, lit using a neon colour palette]({{'/images/IMG_3394.jpg'}}){.img-left}
