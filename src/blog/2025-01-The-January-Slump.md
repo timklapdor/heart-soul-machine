@@ -11,7 +11,7 @@ tags:
 location: 
 coverImage: 
 summary: Coming into the last throes of January, a lot of that New Year's enthusiasm has been zapped from my psyche. A couple of weeks back at work will do that to you.
-commentId: 
+commentId: "113899297691416240"
 ---
 I find January such a rollercoaster month of emotions. The first week is usually spent with family and having a well-needed rest to get over the year that was. At the same time, there's the bulk of 365 days in front of you and a certain level of enthusiasm for making change, taking a fresh start, and getting things done. But once you head back to work and the routine kicks in, you realise, "Hey, this job takes up a lot of time and effort, and I don't feel there's much left over for everything I wanted to do". It starts to weigh you down, even though the sun is shining^[At least here in Australia.] and the weather is probably too hot. 
 
