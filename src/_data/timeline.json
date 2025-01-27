@@ -146,7 +146,7 @@
     {
         "eventtype": "Life",
         "date": "2015-09-22T14:30:00.000Z",
-        "description": "[[The Fire | The Fire]]",
+        "description": "[The Fire](https://timklapdor.wordpress.com/2015/09/25/the-fire/) and [the aftermath](https://flic.kr/s/aHsm6EKsBY)",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -176,7 +176,7 @@
     {
         "eventtype": "Life",
         "date": "2017-05-25T14:30:00.000Z",
-        "description": "Moved back into the house after [[the fire]]",
+        "description": "Moved back into the house after [the fire](https://timklapdor.wordpress.com/2015/09/25/the-fire/)",
         "location": "Wagga Wagga, Australia"
     },
     {
@@ -284,7 +284,7 @@
     {
         "eventtype": "Life",
         "date": "2021-02-26T13:30:00.000Z",
-        "description": "Bought our \"[[hexadome]]\" home in Adelaide. ",
+        "description": "Bought our \"[hexadome](https://view.com.au/news/nsw/ever-heard-of-a-hexadome-house-one-of-the-rare-find-homes-is-on-the-market/)\" home in Adelaide. ",
         "location": "Adelaide, Australia"
     },
     {
@@ -310,5 +310,17 @@
         "date": "2023-10-07T13:30:00.000Z",
         "description": "Trip with Mrs K to Port Lincoln. Dived with sharks, saw 4 great whites on the day! Ate oysters and a seafood feast in Coffin Bay and explored the National Parks. ",
         "location": "Port Lincoln, Australia"
+    }, 
+    {
+        "eventtype": "Life",
+        "date": "2023-05-07T13:30:00.000Z",
+        "description": "Family trip to Tasmania. Landed in Hobart, drove a Tesla Model Y, saw [MONA](https://mona.net.au/), ran a corn maze, climbed a mountain, drank pinot, and had fun seeing friends",
+        "location": "Launceston, Australia"
+    }, 
+    {
+        "eventtype": "Life",
+        "date": "2023-10-21T13:30:00.000Z",
+        "description": "Three months since it started and we finally have [a new kitchen](https://www.flickr.com/photos/timklapdor/54115523054/in/datetaken-public/) in the house!",
+        "location": "Adelaide, Australia"
     }
 ]
