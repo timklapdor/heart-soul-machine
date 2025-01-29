@@ -13,7 +13,7 @@ tags:
 location: 
 coverImage: 
 summary: The desire to outsource and centralise in organisations tends to do more harm and cost more when it comes to knowledge work.
-commentId:
+commentId: "113908798772468484"
 ---
 I wrote the bulk of this post almost a decade ago as the university I was working at was undergoing a formal review by a consulting firm to propose a restructure aimed at improving “efficiency”. Given that I am in that situation again (the university I am currently working at is merging with another university) and the same consulting firm is managing the process - I thought I’d publish an update. Firstly, to argue about their two pillars, which I predict will form part of their key recommendations for the organisational structure. The other is to make a point that we still don't understand or appreciate knowledge work as being 
 
