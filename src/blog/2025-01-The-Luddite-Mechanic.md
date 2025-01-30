@@ -7,11 +7,11 @@ categories:
   - Technology
 updatedDate: 
 updateDescription: 
-tags: 
+tags: podcasts
 location: 
 coverImage: 
 summary: Looking at tech criticism and critique through the lens of the Luddite and the Mechanic.
-commentId:
+commentId: "113919871804646507"
 ---
 I was listening to the [Tech Won't Save Us](https://www.techwontsave.us/episode/259_how_to_see_tech_like_a_luddite_w_jathan_sadowski) podcast episode with Jathan Sadowski discussing his new book, *[The Mechanic and the Luddite - A Ruthless Criticism of Technology and Capitalism](https://www.ucpress.edu/books/the-mechanic-and-the-luddite/paper)*. In the podcast, Jathan introduces a few concepts that I found interesting and engaging, even if it was first thing in the morning when I listened. 
 
