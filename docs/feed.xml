@@ -4,12 +4,34 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2025-01-30T00:00:00Z</updated>
+  <updated>2025-01-31T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>The Luddite &amp; the Mechanic</title>
+    <link href="https://heartsoulmachine.com/blog/2025/01-31-the-luddite-and-the-mechanic/"/>
+    <updated>2025-01-31T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2025/01-31-the-luddite-and-the-mechanic/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/the-luddite-and-the-mechanic-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>Looking at tech criticism and critique through the lens of the Luddite and the Mechanic.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;I was listening to the &lt;a href=&quot;https://www.techwontsave.us/episode/259_how_to_see_tech_like_a_luddite_w_jathan_sadowski&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tech Won&#39;t Save Us&lt;/a&gt; podcast episode with Jathan Sadowski discussing his new book, &lt;em&gt;&lt;a href=&quot;https://www.ucpress.edu/books/the-mechanic-and-the-luddite/paper&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Mechanic and the Luddite - A Ruthless Criticism of Technology and Capitalism&lt;/a&gt;&lt;/em&gt;. In the podcast, Jathan introduces a few concepts that I found interesting and engaging, even if it was first thing in the morning when I listened.&lt;/p&gt;
+&lt;p&gt;The first one was around the &lt;strong&gt;Idealist versus Materialist&lt;/strong&gt; forms of analysis and critique. The way it was explained in the podcast, and the way I interpreted it, was the idealistic analysis is like trying to &lt;em&gt;fight fire with fire&lt;/em&gt;. In the sense that a lot happening in tech is driven by just hype and ideal future states. They are trying to sell the possible and idealistic because there isn&#39;t a material object or real thing to latch on to - just possibilities and potential. So an idealistic critique attacks those same possibilities, proposing alternative ideals and futures.&lt;/p&gt;
+&lt;p&gt;In contrast, a Materialistic analysis is thinking about how it works, why it works, and what is tangible – like where is the money coming from? Who do the people involved work for? What does the technology actually do (not what do you think it&#39;s going to do in the future)?&lt;/p&gt;
+&lt;p&gt;I hadn’t really thought about critique in this way and that different types of critique and analysis were possible. It prompted some thoughts on the kinds of analysis that I and others in edtech have done and why some critiques resonate with a large audience, and some fall flat. I’m also thinking at some of the more spiteful critiques and critics out there and what kinds of analysis they’re actually engaged in.&lt;/p&gt;
+&lt;p&gt;The central idea of Jathan&#39;s book is the Mechanic and the Luddite. I really liked their use of these perspectives in framing critiques and perspectives of technology.&lt;/p&gt;
+&lt;p&gt;The Mechanic&#39;s perspective is involved in the technical aspects of things. Thinking about and knowing how technology works underpins their approach. Here, the focus is on whether and how the technology works (or doesn&#39;t). The critique is more on the nuts and bolts, technical machinery, and approaches embedded in the technology.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the Luddite&#39;s focus is on technology&#39;s social and community impacts, thinking about how it affects, changes and shapes society. The Luddite critique wasn&#39;t against technology per se but against its impact on people, their welfare and livelihoods and the downstream effects on their communities. Their concerns arose from losing good jobs, good work, and work-from-home privileges – which were hallmarks not just of today&#39;s struggles but at the time of the Industrial Revolution.&lt;/p&gt;
+&lt;p&gt;This is one of those books I&#39;d like to read through and get into these ideas a bit more. Some books cover the essentials in the podcast, but this one seems to go deeper than the introduction to the ideas in the podcast. I hadn&#39;t encountered Jathan before, and I liked how he discussed the the idealistic and materialistic analysis side of things. I looked him up and found the &lt;a href=&quot;https://soundcloud.com/thismachinekillspod&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;This Machine Kills podcast&lt;/a&gt; which he does with Edward Ongweso Jr., who I also found great to listen to on the &lt;a href=&quot;https://linktr.ee/betteroffline&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Better Offline&lt;/a&gt; podcast&#39;s coverage of CES.&lt;/p&gt;
+&lt;p&gt;One thing I came away with was the ability to contextualise critique with a bit more nuance. It&#39;s interesting to think about the work of critics I like, say, the work of &lt;a href=&quot;https://audreywatters.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Audrey Watters&lt;/a&gt;, who I&#39;ve always loved but can be polarising (although I&#39;ve never understood why).&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Intellectual Outsourcing</title>
     <link href="https://heartsoulmachine.com/blog/2025/01-30-intellectual-outsourcing/"/>
