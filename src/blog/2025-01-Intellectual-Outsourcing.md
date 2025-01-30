@@ -13,7 +13,7 @@ tags:
 location: 
 coverImage: 
 summary: One of the things that I fear within the AI hype and the desire to inject it into all aspects of life is that it's a process of outsourcing.
-commentId:
+commentId: "113915403779661958"
 ---
 
 I've been trying to connect a few thoughts together to get to this point. I put together a note on what I feel about [[outsourcing]], which frames my thinking about it as a more general concept, and in doing so, I dug up an old post in which I discussed [[Outsource & Centralise|outsourcing and centralising]] as typical features organisations use to find "efficiency". In that same way, I've started to see AI implementation as a form and extension of outsourcing. 
