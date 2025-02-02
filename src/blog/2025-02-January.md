@@ -10,7 +10,7 @@ tags:
 location: 
 coverImage: 
 summary: Thirty-one days into the year. How's it all going?
-commentId:
+commentId: "113931509998122778"
 ---
 ## The Vibe
 
@@ -23,9 +23,7 @@ My mum visited for Ms A's birthday and the sleepover party - so we survived that
 
 We went and checked out the[ Chihuly in the Botanic Garden](https://www.botanicgardens.sa.gov.au/chihuly) exhibition which was cool - although the highlight for me was watching the little family of [grebes](https://birdlife.org.au/bird-profiles/australasian-grebe/) that had made their home of a floating nest near one of the artworks. (Also - I love the animal identification system built into iOS that helped with finding out what kind of birds they are!)
 
-We rounded out the last week of month with very hot and dry week. Monday there was a high fire danger day, and after picking the girls up from the airport, there were a lot of sirens and aircraft near us. The SA Alert app warned of a fire in Panorama and that we were to wait for advice. As a precaution, we packed up an emergency bag and waited to see what happened. Fortunately, the fire was under control within the hour. 
-
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbelaircfs%2Fposts%2Fpfbid02WzEbyGHmSuqZ7gKXNCcxCbvQXbk1Po4iWn4iiaKKfjwnDSGwv68qeDKyBpswwfSvl&show_text=true&width=500" width="500" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+We rounded out the last week of month with very hot and dry week. Monday there was a high fire danger day, and after picking the girls up from the airport, there were a lot of sirens and aircraft near us. The SA Alert app warned of a fire in Panorama and that we were to wait for advice. As a precaution, we packed up an emergency bag and waited to see what happened. Fortunately, [the fire was under control within the hour](https://www.facebook.com/share/p/1A5oca5F5Y/). 
 
 We then had to deal with the opposite problem - a flood in the laundry! Fortunately, the plumber advised contacting SA Water as we have an easement on the property. they came out pretty quickly, checked the problem and cleared out the blockage (which was on out end but he helped out and worked on it for us). 
 

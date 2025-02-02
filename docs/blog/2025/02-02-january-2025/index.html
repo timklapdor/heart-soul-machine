@@ -143,8 +143,7 @@
 <p>The girls had their birthdays. Ms A is now thirteen, which means I have become the parent of a teenager. So far, it's been pretty positive; she's taking a lot more responsibility for herself, has put her hand up to do things around the house, and we had a proper, unprompted conversation about school after her first day at the new school. The new school is a big change for the year. She didn't have a great experience at the closest school to us - so the change is a chance at a new start and it seems to be positive so far. Mrs K took Ms A up to Sydney for her birthday to see her family up that way, and I got to hang with Frankie.</p>
 <p>My mum visited for Ms A's birthday and the sleepover party - so we survived that and the next day, went for a morning swim and had a chance encounter with a dolphin who swam by almost within arm's distance! Ms A and I went go-carting which was good fun.</p>
 <p>We went and checked out the<a href="https://www.botanicgardens.sa.gov.au/chihuly" target="_blank" rel="noopener noreferrer"> Chihuly in the Botanic Garden</a> exhibition which was cool - although the highlight for me was watching the little family of <a href="https://birdlife.org.au/bird-profiles/australasian-grebe/" target="_blank" rel="noopener noreferrer">grebes</a> that had made their home of a floating nest near one of the artworks. (Also - I love the animal identification system built into iOS that helped with finding out what kind of birds they are!)</p>
-<p>We rounded out the last week of month with very hot and dry week. Monday there was a high fire danger day, and after picking the girls up from the airport, there were a lot of sirens and aircraft near us. The SA Alert app warned of a fire in Panorama and that we were to wait for advice. As a precaution, we packed up an emergency bag and waited to see what happened. Fortunately, the fire was under control within the hour.</p>
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbelaircfs%2Fposts%2Fpfbid02WzEbyGHmSuqZ7gKXNCcxCbvQXbk1Po4iWn4iiaKKfjwnDSGwv68qeDKyBpswwfSvl&show_text=true&width=500" width="500" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<p>We rounded out the last week of month with very hot and dry week. Monday there was a high fire danger day, and after picking the girls up from the airport, there were a lot of sirens and aircraft near us. The SA Alert app warned of a fire in Panorama and that we were to wait for advice. As a precaution, we packed up an emergency bag and waited to see what happened. Fortunately, <a href="https://www.facebook.com/share/p/1A5oca5F5Y/" target="_blank" rel="noopener noreferrer">the fire was under control within the hour</a>.</p>
 <p>We then had to deal with the opposite problem - a flood in the laundry! Fortunately, the plumber advised contacting SA Water as we have an easement on the property. they came out pretty quickly, checked the problem and cleared out the blockage (which was on out end but he helped out and worked on it for us).</p>
 <p>As a side note - as an event I've also signed up for the <a href="https://mastodon.social/tags/blogging4life" target="_blank" rel="noopener noreferrer">#blogging4life</a> happening that's going on.</p>
 <h2>Photos</h2>
@@ -182,7 +181,175 @@
 		<li class="p-category tags">&amp; posts </li>
 		
 		
-	</ul>
+	</ul><section id="comments" class="comments">
+  <hr>
+  <h4>Comments</h4>
+  <p>Comment on this blog post by publicly replying to <a href="https://mastodon.social/@timklapdor/113931509998122778">this Mastodon post</a> using a Mastodon or other ActivityPub/&ZeroWidthSpace;Fediverse account.</p>
+
+  <div id="comments-wrapper">
+    <p><small>No known comments, yet. Reply to <a href="https://mastodon.social/@timklapdor/113931509998122778">this Mastodon post</a> to add your own!</small></p>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https:///@/">the original post</a> on Mastodon.</p></noscript>
+  </div>
+
+  <script src="/assets/purify.min.js"></script>
+  <script>
+    loadComments ();
+
+    function loadComments() {
+      let commentsWrapper = document.getElementById("comments-wrapper");
+      let postUrl = "https://mastodon.social/api/v1/statuses/113931509998122778";
+
+      fetch(postUrl)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(op) {
+        fetch(postUrl + "/context")
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          let descendants = data['descendants'];
+          if(
+            descendants &&
+            Array.isArray(descendants) &&
+            descendants.length > 0
+          ) {
+            commentsWrapper.innerHTML = "";
+            descendants.unshift(op);
+
+            data['descendants'].forEach(function(status) {
+              if( status.account.display_name.length > 0 ) {
+                status.account.display_name = escapeHtml(status.account.display_name);
+                status.account.display_name = emojify(status.account.display_name, status.account.emojis);
+              } else {
+                status.account.display_name = status.account.username;
+              };
+
+              let instance = "";
+              let verified = false;
+
+
+              status.content = emojify(status.content, status.emojis);
+
+              let avatarSource = document.createElement("source");
+              avatarSource.setAttribute("srcset", escapeHtml(status.account.avatar));
+              avatarSource.setAttribute("media", "(prefers-reduced-motion: no-preference)");
+
+              let avatarImg = document.createElement("img");
+              avatarImg.className = "avatar";
+              avatarImg.setAttribute("src", escapeHtml(status.account.avatar_static));
+              avatarImg.setAttribute("alt", `Avatar for @${ status.account.acct }`);
+
+              let avatarPicture = document.createElement("picture");
+              avatarPicture.appendChild(avatarSource);
+              avatarPicture.appendChild(avatarImg);
+
+              let avatarLink = document.createElement("a");
+              avatarLink.className = "avatar-link";
+              avatarLink.setAttribute("href", status.account.url);
+              avatarLink.setAttribute("rel", "external nofollow");
+              avatarLink.appendChild(avatarPicture);
+
+              let instanceBadge = document.createElement("a");
+              instanceBadge.className = "instance";
+              instanceBadge.setAttribute("href", status.account.url);
+              instanceBadge.setAttribute("title", `@${ status.account.username }@${ instance }`);
+              instanceBadge.setAttribute("rel", "external nofollow");
+              instanceBadge.textContent = instance;
+
+              let account = document.createElement("a");
+              account.className = "account";
+              account.setAttribute("href", status.account.url);
+              account.setAttribute("itemprop", "author");
+              account.setAttribute("itemtype", "http://schema.org/Person");
+              account.setAttribute("rel", "external nofollow");
+              account.textContent = `@${ status.account.display_name }`;
+
+              let header = document.createElement("h5");
+              header.className = "author";
+              header.innerHTML = status.account.display_name;
+              header.appendChild(account);
+              header.appendChild(instanceBadge);
+
+              let permalink = document.createElement("a");
+              permalink.setAttribute("href", status.url);
+              permalink.setAttribute("itemprop", "url");
+              permalink.setAttribute("title", `View comment at ${ instance }`);
+              permalink.setAttribute("rel", "external nofollow");
+              permalink.textContent = new Date( status.created_at ).toLocaleString('en-US', {
+                dateStyle: "long",
+                timeStyle: "short",
+              });
+
+              let timestamp = document.createElement("time");
+              timestamp.setAttribute("datetime", status.created_at);
+              timestamp.appendChild(permalink);
+
+              let main = document.createElement("main");
+              main.setAttribute("itemprop", "text");
+              main.innerHTML = status.content;
+
+              let comment = document.createElement("article");
+              comment.id = `comment-${ status.id }`;
+              comment.className = "comment";
+              comment.setAttribute("itemprop", "comment");
+              comment.setAttribute("itemtype", "http://schema.org/Comment");
+              comment.appendChild(avatarLink);
+              comment.appendChild(header);
+              comment.appendChild(timestamp);
+              comment.appendChild(main);
+
+              if (verified === true) {
+                comment.classList.add("verified");
+              }
+
+              commentsWrapper.innerHTML += DOMPurify.sanitize(comment.outerHTML);
+            });
+          }
+        });
+      });
+    }
+
+    function emojify(input, emojis) {
+      let output = input;
+
+      emojis.forEach(emoji => {
+        let picture = document.createElement("picture");
+
+        let source = document.createElement("source");
+        source.setAttribute("srcset", escapeHtml(emoji.url));
+        source.setAttribute("media", "(prefers-reduced-motion: no-preference)");
+
+        let img = document.createElement("img");
+        img.className = "emoji";
+        img.setAttribute("src", escapeHtml(emoji.static_url));
+        img.setAttribute("alt", `:${ emoji.shortcode }:`);
+        img.setAttribute("title", `:${ emoji.shortcode }:`);
+        img.setAttribute("width", "20");
+        img.setAttribute("height", "20");
+
+        picture.appendChild(source);
+        picture.appendChild(img);
+
+        output = output.replace(`:${ emoji.shortcode }:`, picture.outerHTML);
+      });
+
+      return output;
+    }
+
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/'/g, "&apos;")
+        .replace(/"/g, "&quot;")
+      ;
+    }
+  </script>
+</section>
+	
 
 	<footer>
     <p>© Tim Klapdor 2025</p>
