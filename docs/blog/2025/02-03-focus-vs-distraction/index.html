@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus vs Distraction</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <meta property="og:title" content="Focus vs Distraction" />
+    <meta property="og:url" content="/blog/2025/02-03-focus-vs-distraction/" />
+
+  
+	  <meta name="description" content="Trying to make sense of how I feel in a world that is being shaped by a strategy of distraction.">
+	  <meta property="og:description" content="Trying to make sense of how I feel in a world that is being shaped by a strategy of distraction.">	
+  
+	  
+    <meta name="fediverse:creator" content="@timklapdor@mastodon.social">
+
+    
+    <meta property="og:image" content="/assets/social-previews/focus-vs-distraction-preview.jpeg" />
+    <meta property="og:image:secure_url" content="/assets/social-previews/focus-vs-distraction-preview.jpeg" /> 
+    
+
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml">
+
+    <!-- Matomo -->
+      <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDoNotTrack", true]);
+        _paq.push(["disableCookies"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//timklapdor.me/analytics/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '3']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//timklapdor.me/analytics/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+
+
+  </head>
+
+  <body>
+
+    <aside>
+
+    <header>
+        <h1>Focus vs Distraction</h1>
+        <a href="/">
+            <h1 class="logo-present">Focus vs Distraction</h1>
+            <img src="/assets/heart-soul-machine-logo.svg" alt="Focus vs Distraction Logo">
+          </a>
+    </header>
+
+
+
+    <nav role="navigation">
+        <button class="menu-toggle" id="toggle" aria-expanded="false" aria-label="Menu Toggle">
+
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <ul id="menu">
+            
+                 <li><a href="/">Home</a></li>
+            
+                 <li><a href="/blog/">Posts</a></li>
+            
+                 <li><a href="/notes/">Notes</a></li>
+            
+                 <li><a href="/about/">About</a></li>
+            
+                 <li><a href="/timeline/">Timeline</a></li>
+            
+                 <li><a href="/now/">Now</a></li>
+            
+                 <li><a href="/uses/">Uses</a></li>
+            
+        </ul>
+    </nav>    
+    <script>
+        var toggle = document.querySelector('#toggle');
+        var menu = document.querySelector('#menu');
+        var menuItems = document.querySelectorAll('#menu li a');
+
+        toggle.addEventListener('click', function(){
+          if (menu.classList.contains('is-active')) {
+            this.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active'); 
+            this.setAttribute('aria-expanded', 'true');
+            //menuItems[0].focus();
+          }
+        });
+    </script>
+    <a rel="me" href="https://mastodon.social/@timklapdor" style="display: none;">Mastodon</a>
+    <div class="rss">
+      <a href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+        </a>
+     </div>
+
+    </aside>
+
+    <main>
+      <article class="h-entry blogpost">
+
+		
+	<h1 class="p-name title ">Focus vs Distraction</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">Feb 3, 2025</li>
+		<li class="categories"> Reflection, Social Media, Technology, &amp; Politics </li>
+		<li class="time">3 minutes reading time</li>
+	</ul>
+	
+	
+	<div class="p-summary introduction">
+		Trying to make sense of how I feel in a world that is being shaped by a strategy of distraction.
+	</div>
+	
+
+	<p>In January 2024, I started working on the <a href="/notes/focus-course/">Focus Course</a>. Part of that program involved developing your goals and ways of achieving them. The program gave me a good sense of where I wanted to go in the longer term, but I've struggled with how to actually do what I need to do. I still need to improve my focus.</p>
+<p>While part of being focused is having goals to provide direction, focus requires you not to be distracted. Distraction is something that's weighing on me at the moment. Over the last two decades, I've witnessed the world that we live in become one giant distraction machine. Through the proliferation of social media into every daily moment and the atomisation of news, it's challenging to see and find what's important these days and what to focus on.</p>
+<p>Filtering to stay focused or even turn off the firehose of distraction isn't as easy as it should be. Work, life, and family all synced with modern technology and life so they are intertwined and tangled in messy ways. Our reality is that life is just dealing with distractions at almost every level – family, house, car, pets, job, school,  social commitments, and community. All of these things have a required level of attention which, as a whole, feel just like one distraction after another. With each distraction, it's so hard to see what to do next and this compounds with interest each day.</p>
+<p>Over the last week, I've also noticed that distraction is an actual tactic and a strategy inflicted being used on us. Trump and Elon have just released an absolute barrage of shitfuckery (my new favourite term from <a href="https://www.thejuicemedia.com/" target="_blank" rel="noopener noreferrer">The Juice Media</a>). The fact Trump comes in with 200 executive orders on day one, each one worse and more heinous than the last, is tactical. Each of these orders impacts countless lives and the functions of families, peoples, and individuals who are being attacked in very direct ways - and there is no way to address every single one. And when we try and focus on one, we are distracted by the other 199 potential attrocities. And then along comes King Twit, who's out there parading Nazi salutes and sieg-heiling around publicly, which just adds to the distraction. And then when he denies it, we get distracted again, but you can see that it's all just a game.</p>
+<p>I find all this just incredibly disappointing. This is where we live now.</p>
+<p>This is the milieu. This is the environment we are in. This is the river that we're swimming in, full of sludge and shit. I think we just need to acknowledge that this isn't just a coincidence that we've ended up here. This is a specific strategy. This is the outcome of specific actions people have taken. There are people who think this stuff up and engage to make it happen. It is their job, their <em>career</em>, to put us in this place.</p>
+<p>Seeing distraction as a tactic has made me more attentive. Now, as I look at what's happening, it feels like I'm living in an Adam Curtis documentary. I can imagine the 80s graphic overlays and stock footage almost as I walk through town and hear whatever next travesty is going on.</p>
+<p>The aim is for us to be so caught up in our distractions that we feel paralyzed, unable to act, move, or unite. Finding focus requires us to reduce distractions and reduce the noise. To find quiet. To find some peace. To unplug.</p>
+
+	<ul class="metadata">
+		<li class="p-author author">Tim Klapdor</li>
+		<li class="p-locality location">Adelaide, Australia</li>
+		<li class="p-category tags">&amp; posts </li>
+		
+		
+	</ul>
+
+	<footer>
+    <p>© Tim Klapdor 2025</p>
+    <p class="name">Heart  |  Soul  |  Machine</p>
+</footer>
+</article>
+    </main>
+
+  </body>
+</html>
