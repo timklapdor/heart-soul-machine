@@ -12,7 +12,7 @@ tags:
 location: 
 coverImage: 
 summary: Trying to make sense of how I feel in a world that is being shaped by a strategy of distraction.
-commentId:
+commentId: "113937676516452557"
 ---
 In January 2024, I started working on the [[Focus Course]]. Part of that program involved developing your goals and ways of achieving them. The program gave me a good sense of where I wanted to go in the longer term, but I've struggled with how to actually do what I need to do. I still need to improve my focus.
 
