@@ -10,7 +10,7 @@ tags:
 location: 
 coverImage: 
 summary: What are the ideals of AI? What is the vision we are being asked to buy into?
-commentId:
+commentId: "114022515884207093"
 ---
 I’m really curious about framing the critique of technology through the Idealist vs Materialist lens, as per [[Catching Up with Critique|Jathan Sadowski]]. So after listening to another raft of news about AI valuations, I was trying to think about the Idealism of AI – and I’m wondering if they forgot to do the homework. 
 
