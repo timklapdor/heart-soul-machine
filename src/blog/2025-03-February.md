@@ -10,7 +10,7 @@ tags:
 location: 
 coverImage: 
 summary: Ok the year has really kicked in as we settled back into the school and work routine.
-commentId:
+commentId: "114098072885292892"
 ---
 ## The Vibe
 February was the official return to the grind. School was back into swing and work kicked back in as if nothing had changed. The weather was hot this year. We had a few scorchers, with a high of 43º on one day, and still no rain. Our garden looks far from healthy, but at the same time we're not active in it. I've used my last couple of Rostered Days Off ^[If you have the opportunity, have a look at doing a 9-day fortnight! In an age of stolen wages and overworking, this has been my salvation.] to start working on a new venture. At the moment we are definitely in side hustle territory, but I have now done a massive chunk of proper business plan and quite a bit of financial details to make it feel more real than before. I'm keen to share more about it in the near future. 
