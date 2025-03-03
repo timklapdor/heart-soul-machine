@@ -1,3 +1,6 @@
+@use "svg-factory";
+
+
 div.timeline {
     width: 100%;
 
@@ -16,7 +19,7 @@ div.timeline {
         gap: 2ch;
         margin-top: 2ch;
         padding-bottom: 2ch;
-        border-bottom: 1px solid $soul;
+        border-bottom: 1px solid var(--soul);
 
         &:last-child {
            border-bottom: none;
@@ -35,10 +38,10 @@ div.timeline {
             font-size: 80%;
             width: 2rem;
 
-            &.work {background: url(svg-encode($work-light)) no-repeat;}
-            &.life {background: url(svg-encode($life-light)) no-repeat;}
-            &.school {background: url(svg-encode($school-light)) no-repeat;}
-            &.project {background: url(svg-encode($project-light)) no-repeat;}
+            &.work {background: url(svg-factory.svg-encode(svg-factory.$work-light)) no-repeat;}
+            &.life {background: url(svg-factory.svg-encode(svg-factory.$life-light)) no-repeat;}
+            &.school {background: url(svg-factory.svg-encode(svg-factory.$school-light)) no-repeat;}
+            &.project {background: url(svg-factory.svg-encode(svg-factory.$project-light)) no-repeat;}
 
 
         }

@@ -1,3 +1,5 @@
+@use "svg-factory";
+
 main {
     background-color: var(--flexoki-paper);
     color: var(--flexoki-black);
@@ -346,7 +348,7 @@ main {
                 li.date {
                     &::before{
                         content: "";
-                        background-image: url(svg-encode($calendar-light));
+                        background-image: url(svg-factory.svg-encode(svg-factory.$calendar-light));
                         background-size: contain;
                         display: inline-block;
                         width: 1em;
@@ -359,7 +361,7 @@ main {
                 li.categories {
                     &::before{
                         content: "";
-                        background-image: url(svg-encode($categories-light));
+                        background-image: url(svg-factory.svg-encode(svg-factory.$categories-light));
                         background-size: contain;
                         display: inline-block;
                         width: 1em;
@@ -372,7 +374,7 @@ main {
                 li.time {
                     &::before{
                         content: "";
-                        background-image: url(svg-encode($time-light));
+                        background-image: url(svg-factory.svg-encode(svg-factory.$time-light));
                         background-size: contain;
                         display: inline-block;
                         width: 1em;
@@ -385,7 +387,7 @@ main {
                 li.author {
                     &::before{
                         content: "";
-                        background-image: url(svg-encode($author-light));
+                        background-image: url(svg-factory.svg-encode(svg-factory.$author-light));
                         background-size: contain;
                         display: inline-block;
                         width: 1em;
@@ -399,7 +401,7 @@ main {
                     text-transform: capitalize;
                     &::before{
                         content: "";
-                        background-image: url(svg-encode($tag-light));
+                        background-image: url(svg-factory.svg-encode(svg-factory.$tag-light));
                         background-size: contain;
                         display: inline-block;
                         width: 1em;
@@ -412,7 +414,7 @@ main {
                 li.location {
                     &::before{
                         content: "";
-                        background-image: url(svg-encode($map-light));
+                        background-image: url(svg-factory.svg-encode(svg-factory.$map-light));
                         background-size: contain;
                         display: inline-block;
                         width: 1em;

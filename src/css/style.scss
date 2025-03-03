@@ -2,19 +2,19 @@ $heart: #ff0e69;
 $soul: #ffae2c; 
 
 
-@import "modules/reset";
-@import "modules/colour";
-@import "modules/svg-factory";
-@import "modules/font-size";
-@import 'modules/grid.scss';
-@import 'modules/main';
-@import 'modules/timeline';
-@import 'modules/hamburger';
-@import 'modules/iframe';
-@import 'modules/presentation';
-@import 'modules/p10-colours';
-@import 'modules/comments';
-@import 'modules/avatars';
+@use "modules/reset";
+@forward "modules/colour";
+@forward "modules/svg-factory";
+@use "modules/font-size";
+@use 'modules/grid.scss';
+@use 'modules/main';
+@use 'modules/timeline';
+@use 'modules/hamburger';
+@use 'modules/iframe';
+@use 'modules/presentation';
+@use 'modules/p10-colours';
+@use 'modules/comments';
+@use 'modules/avatars';
 
 
 body {

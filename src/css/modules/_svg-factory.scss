@@ -12,84 +12,85 @@
 
  // Icons from https://iconsvg.xyz/ & https://tablericons.com/
 
-
+ @use "colour";
+ @use "sass:string";
 
 @function svg-tag($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="' + $colour + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>';
   }
-  $tag-light: svg-tag($flexoki-500);
-  $tag-dark: svg-tag($flexoki-paper);
+  $tag-light: svg-tag(colour.$flexoki-500);
+  $tag-dark: svg-tag(colour.$flexoki-paper);
 
   @function svg-calendar($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>';
   }
-  $calendar-light: svg-calendar($flexoki-500);
-  $calendar-dark: svg-calendar($flexoki-paper);
+  $calendar-light: svg-calendar(colour.$flexoki-500);
+  $calendar-dark: svg-calendar(colour.$flexoki-paper);
 
   @function svg-author($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>';
   }
-  $author-light: svg-author($flexoki-500);
-  $author-dark: svg-author($flexoki-paper);
+  $author-light: svg-author(colour.$flexoki-500);
+  $author-dark: svg-author(colour.$flexoki-paper);
 
   @function svg-map($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>';
   }
-  $map-light: svg-map($flexoki-500);
-  $map-dark: svg-map($flexoki-paper);
+  $map-light: svg-map(colour.$flexoki-500);
+  $map-dark: svg-map(colour.$flexoki-paper);
 
   @function svg-categories($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6h-6z" /><path d="M4 14h6v6h-6z" /><path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>';
   }
-  $categories-light: svg-categories($flexoki-500);
-  $categories-dark: svg-categories($flexoki-paper);
+  $categories-light: svg-categories(colour.$flexoki-500);
+  $categories-dark: svg-categories(colour.$flexoki-paper);
 
   @function svg-time($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>';
   }
-  $time-light: svg-time($flexoki-500);
-  $time-dark: svg-time($flexoki-paper);
+  $time-light: svg-time(colour.$flexoki-500);
+  $time-dark: svg-time(colour.$flexoki-paper);
 
   @function svg-work($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>';
   }
-  $work-light: svg-work($flexoki-500);
-  $work-dark: svg-work($flexoki-paper);
+  $work-light: svg-work(colour.$flexoki-500);
+  $work-dark: svg-work(colour.$flexoki-paper);
 
   @function svg-life($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l4 0" /><path d="M10 21l0 -18" /><path d="M10 4l9 4l-9 4" /></svg>';
   }
-  $life-light: svg-life($flexoki-500);
-  $life-dark: svg-life($flexoki-paper);
+  $life-light: svg-life(colour.$flexoki-500);
+  $life-dark: svg-life(colour.$flexoki-paper);
 
   @function svg-school($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>';
   }
-  $school-light: svg-school($flexoki-500);
-  $school-dark: svg-school($flexoki-paper);
+  $school-light: svg-school(colour.$flexoki-500);
+  $school-dark: svg-school(colour.$flexoki-paper);
 
   @function svg-project($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 12a9 9 0 1 0 -8.012 8.946" /><path d="M9 10h.01" /><path d="M15 10h.01" /><path d="M9.5 15a3.59 3.59 0 0 0 2.774 .99" /><path d="M18.994 21.5l2.518 -2.58a1.74 1.74 0 0 0 .004 -2.413a1.627 1.627 0 0 0 -2.346 -.005l-.168 .172l-.168 -.172a1.627 1.627 0 0 0 -2.346 -.004a1.74 1.74 0 0 0 -.004 2.412l2.51 2.59z" /></svg>';
   }
-  $project-light: svg-project($flexoki-500);
-  $project-dark: svg-project($flexoki-paper);
+  $project-light: svg-project(colour.$flexoki-500);
+  $project-dark: svg-project(colour.$flexoki-paper);
 
   @function svg-rss($colour) {
     @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>';
   }
-  $rss-light: svg-rss($flexoki-500);
-  $rss-dark: svg-rss($flexoki-paper);
+  $rss-light: svg-rss(colour.$flexoki-500);
+  $rss-dark: svg-rss(colour.$flexoki-paper);
 
 // Thanks to Hugo Giraudel for his str-replace function (http://www.sassmeister.com/gist/1b4f2da5527830088e4d)
 @function str-replace($string, $search, $replace: '') {
-    $index: str-index($string, $search);
+    $index: string.index($string, $search);
     @if $index {
-      @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+      @return string.slice($string, 1, $index - 1) + $replace + str-replace(string.slice($string, $index + string.length($search)), $search, $replace);
     }
     @return $string;
   }
   
-  
+
   $encoding-reference: (
     //('%','%25'),  // Encode "%" first, otherwise the "%" from encoded code would be encoded again (which would be bad)
     ('<','%3C'),
