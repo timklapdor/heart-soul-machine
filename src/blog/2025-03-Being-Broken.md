@@ -11,7 +11,7 @@ tags:
 location: 
 coverImage: 
 summary: In the depths of COVID we turned to technology to connect us and express ourselves. Then to entertain us through the lockdowns. Then to distract us from our disrupted lives. Then we succumbed to the addiction. I think the addiction broke us and turned us into ... (looks around) ... this.
-commentId:
+commentId: "114129970671254226"
 ---
 I read a couple of posts this week that really got into my head. The first was [The State of the Culture, 2024](https://www.honest-broker.com/p/the-state-of-the-culture-2024). It's a bit of a ride through ideas about Art and Entertainment and the trend for growing entertainment to eat art. It then zooms out and all of a sudden, Distraction is there to eat Entertainment. As a society, we're no longer seeking to be entertained; we're here to be distracted. 
 
