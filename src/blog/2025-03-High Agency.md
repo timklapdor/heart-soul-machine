@@ -14,7 +14,7 @@ coverImage:
 summary: Some thoughts on an Agency Spectrum and reflecting on what agency means for me and my work.
 commentId:
 ---
-Somewhat buried in this problematic article, [High Agency — In 30 Minutes](https://www.highagency.com/?__readwiseLocation=) by George Mack, is a solid idea here around Agency. I'm not a huge fan of the writing style and the armchair psychology used throughout. Some of the explanations, analogies and metaphors leave a lot to be desired - but at the heart of it is something useful.
+Somewhat buried in this problematic article, [High Agency — In 30 Minutes](https://www.highagency.com/) by George Mack, is a solid idea here around Agency. I'm not a huge fan of the writing style and the armchair psychology used throughout. Some of the explanations, analogies and metaphors leave a lot to be desired - but at the heart of it is something useful.
 
 Mack outlines that there is a **Spectrum of Agency**, high to low, that tends to inform and elicit certain behaviours and traits. Mack defines these as skills (which I'm not sure they are) and has an odd list of "typical" traits of High Agency people - so I am having to put aside a great deal of this article.
 
