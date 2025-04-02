@@ -12,7 +12,7 @@ tags:
 location: 
 coverImage: 
 summary: Some thoughts on an Agency Spectrum and reflecting on what agency means for me and my work.
-commentId:
+commentId: "114268611950931047"
 ---
 Somewhat buried in this problematic article, [High Agency — In 30 Minutes](https://www.highagency.com/) by George Mack, is a solid idea here around Agency. I'm not a huge fan of the writing style and the armchair psychology used throughout. Some of the explanations, analogies and metaphors leave a lot to be desired - but at the heart of it is something useful.
 
