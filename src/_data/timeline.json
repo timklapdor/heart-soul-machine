@@ -313,14 +313,20 @@
     }, 
     {
         "eventtype": "Life",
-        "date": "2023-05-07T13:30:00.000Z",
+        "date": "2024-05-07T13:30:00.000Z",
         "description": "Family trip to Tasmania. Landed in Hobart, drove a Tesla Model Y, saw [MONA](https://mona.net.au/), ran a corn maze, climbed a mountain, drank pinot, and had fun seeing friends",
         "location": "Launceston, Australia"
     }, 
     {
         "eventtype": "Life",
-        "date": "2023-10-21T13:30:00.000Z",
+        "date": "2024-10-21T13:30:00.000Z",
         "description": "Three months since it started and we finally have [a new kitchen](https://www.flickr.com/photos/timklapdor/54115523054/in/datetaken-public/) in the house!",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2025-03-17T13:30:00.000Z",
+        "description": "25 years together with my partner Mrs K. Started dating on St Patrick's Dy in 2000 and we have shared most of this journey together.",
         "location": "Adelaide, Australia"
     }
 ]
