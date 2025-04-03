@@ -5,7 +5,6 @@ categories:
   - Higher Education
   - Leadership
   - Work
-  - "[[Blog]]"
 updatedDate: 
 updateDescription: 
 tags:
