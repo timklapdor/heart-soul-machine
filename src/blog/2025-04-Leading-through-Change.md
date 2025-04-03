@@ -14,8 +14,9 @@ tags:
 location: 
 coverImage: 
 summary: Here's my somewhat anti-Change Management approach to leading through change.
-commentId:
+commentId: "114271252000130976"
 ---
+
 My workplace is set to undergo a mammoth change over the coming months as two universities ([UoA](https://www.adelaide.edu.au/) and [UniSA](https://www.unisa.edu.au/)) become one. This is not my first rodeo when it comes to large-scale change at a university, and I've been thinking about the role of leadership in change management. This is mainly because Change Management has become a formalised process with texts instructing you how to behave and what to do and creating a formulaic way in which Change happens. From my experience, this formula creates more problems than it solves, and it isn't necessarily the right approach. Leaders can (and should!) step in and intervene, not to undermine the process but to enable it to happen, knowing that change is not a simple process. So here's my anti-Change Management approach to leading through change. 
 ### Change should be a shared experience.
 
