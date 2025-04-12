@@ -1,4 +1,4 @@
-<div class="latest-posts">{% set top = 2 %}
+<div class="latest-posts" data-pagefind-ignore>{% set top = 2 %}
 <h2>Latest Posts</h2>{%- for post in collections.posts | reverse %}{% if (loop.index <= top) and (top <= loop.length) %}
     <div class="card"><h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3><p>{{ post.data.summary }}</p></div>{% endif %}{% endfor %}
 <p><a href="/blog/">...read more</a></p>

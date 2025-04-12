@@ -27,6 +27,10 @@
         {
             "text":"Uses", 
             "url":"/uses/"
+        },
+        {
+            "text":"Search", 
+            "url":"/search/"
         }
     ]
 }

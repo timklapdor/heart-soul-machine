@@ -1,0 +1,21 @@
+---
+layout: /layouts/grid.njk
+---
+
+<article class="search">
+
+<h1 class="">{{ title }}</h1>
+
+{{ content | safe }}
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
+	
+  {% include "partials/footer.njk" %}
+</article>

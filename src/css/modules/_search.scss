@@ -1,0 +1,12 @@
+article.search {
+  min-height: 95vh;
+  grid-template-rows: min-content min-content min-content auto;
+
+  footer {
+    align-self: flex-end;
+  }
+}
+
+#search {
+  width: 100%;
+}

@@ -1,7 +1,6 @@
 {
     "layout": "/partials/presentation.njk", 
     "author": "Tim Klapdor",
-    "tags": "presentations", 
     "permalink": "presentations/{{ page.date | date: '%Y/' }}/{{ title | slug}}/index.html",
     "categories": "presentations"
 }

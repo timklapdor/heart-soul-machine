@@ -2,7 +2,7 @@
 Creating a Domain of Ones Own (DoOO) using 11ty. 
 
 Incorporated in the site:
-
+- [Pagefind](https://pagefind.app/) for search. To rebuild index you need to run ```npx -y pagefind --site docs```
 - [eleventy-plugin-time-to-read](https://www.npmjs.com/package/eleventy-plugin-time-to-read#speed) - Adds the handy reading time estimate.
 - [eleventy-plugin-rss](https://www.11ty.dev/docs/plugins/rss/) - Added the default RSS plugin. I've previously made my own, but XML sucks, and this was a 5-minute job. 
 - [SVG Factory](https://codepen.io/kevinweber/pen/dXWoRw) - borrowed this from Kevin Weber a while ago and I use it and SCSS to create all the icons you see around the site. 

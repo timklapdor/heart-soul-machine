@@ -8,7 +8,7 @@ description: >
     This presetation was developed for the TALAS Symposium, an event that brought together the Learning & Teaching services from University of Adelaide and University of South Australia together to share our ways of working. This presentation kicked off the event and was an attempt to engage with our central purpose - designing for learning. 
 slide-folder: 
 categories: 
-tags: Learning Design # thematic key words 
+# tags: Learning Design # thematic key words 
 updatedDate:
 updateDescription: 
 coverImage: slide21.jpeg
