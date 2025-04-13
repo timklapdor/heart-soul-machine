@@ -1,6 +1,6 @@
 ---
 layout: partials/note-archive.njk
-title: Evergreen Notes
+title: Notes
 updatedDate:
 updateDescription: 
 tags:
