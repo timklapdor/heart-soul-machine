@@ -14,6 +14,7 @@ const Image = require("@11ty/eleventy-img");
 const path = require('path');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const yaml = require("js-yaml");
+const { execSync } = require('child_process');
 
 
 module.exports = function (eleventyConfig) {
@@ -51,6 +52,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("monthDay", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('LL dd');
+  });
+
+  eleventyConfig.addFilter("simpleDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('LLL dd, yyyy');
   });
 
   	// Filters
@@ -146,6 +151,11 @@ module.exports = function (eleventyConfig) {
 
     return lines;
 });
+
+eleventyConfig.on('eleventy.after', () => {
+  execSync(`npx -y pagefind --site docs`, { encoding: 'utf-8' })
+});
+
 
 eleventyConfig.on('afterBuild', () => {
   const socialPreviewImagesDir = "docs/assets/social-previews/";

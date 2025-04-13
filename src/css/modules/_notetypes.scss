@@ -1,0 +1,51 @@
+@use "svg-factory";
+
+ul.notes {
+  list-style: none;
+  li::marker {
+    content: ""
+  }
+}
+
+li.evergreen {
+  text-transform: capitalize;
+  &::before{
+      content: "";
+      background-image: url(svg-factory.svg-encode(svg-factory.$evergreen-light));
+      background-size: contain;
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      position: relative;
+      top: 0.1rem;
+      margin-right: 0.2rem;
+  }
+}
+li.budding {
+  text-transform: capitalize;
+  &::before{
+      content: "";
+      background-image: url(svg-factory.svg-encode(svg-factory.$budding-light));
+      background-size: contain;
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      position: relative;
+      top: 0.1rem;
+      margin-right: 0.2rem;
+  }
+}
+li.seed {
+  text-transform: capitalize;
+  &::before{
+      content: "";
+      background-image: url(svg-factory.svg-encode(svg-factory.$seed-light));
+      background-size: contain;
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      position: relative;
+      top: 0.1rem;
+      margin-right: 0.2rem;
+  }
+}

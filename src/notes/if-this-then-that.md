@@ -1,15 +1,20 @@
 ---
+category:
+  - "[[Notes]]"
 title: if-this-then-that
 aliases: 
-- IFTTT
+  - IFTTT 
+type: 
+  - "evergreen"
 date: 2023-01-04
-categories: 
 updatedDate:
 updateDescription: 
 tags: 
-location: 
-cover-image: 
+  - Logic
+  - Programming
 summary: "" 
+status: 
+  - published
 ---
 
 A simple conditional statement that forms the basis for much of programming. 

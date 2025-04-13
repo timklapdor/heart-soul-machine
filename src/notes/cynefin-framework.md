@@ -1,20 +1,24 @@
 ---
+category:
+  - "[[Notes]]"
 title: "Cynefin Framework"
 aliases: 
-- cynefin
+  - cynefin
+type: evergreen
 date: 2024-01-05
-categories: 
 updatedDate:
 updateDescription: 
 tags: 
-location: 
-cover-image: 
+  - systems
+  - SystemsThinking
 summary: "" 
+status: 
+  - published
 ---
 
 The Cynefin Framework provides a conceptual framework to make sense of the world around us. The revised framework (I'm old school where it was just four!)five decision-making contexts or "domains"—
 
-1. Clear (known as simple until 2014, then obvious until being recently renamed)
+1. Simple^[known as simple until 2014, then obvious until being recently renamed]
 2. Complicated
 3. Complex
 4. Chaotic

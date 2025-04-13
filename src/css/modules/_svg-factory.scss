@@ -81,6 +81,24 @@
   $rss-light: svg-rss(colour.$flexoki-500);
   $rss-dark: svg-rss(colour.$flexoki-paper);
 
+  @function svg-evergreen($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l4 4l-2 1l4 4l-3 1l4 4h-14l4 -4l-3 -1l4 -4l-2 -1z" /><path d="M14 17v3a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-3" /></svg>';
+  }
+  $evergreen-light: svg-evergreen(colour.$flexoki-500);
+  $evergreen-dark: svg-evergreen(colour.$flexoki-paper);
+
+  @function svg-budding($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" /><path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" /><path d="M12 20l0 -10" /></svg>';
+  }
+  $budding-light: svg-budding(colour.$flexoki-500);
+  $budding-dark: svg-budding(colour.$flexoki-paper);
+
+  @function svg-seed($colour) {
+    @return'<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="' + $colour + '" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" /><path d="M7 12h11" /></svg>';
+  }
+  $seed-light: svg-seed(colour.$flexoki-500);
+  $seed-dark: svg-seed(colour.$flexoki-paper);
+
 // Thanks to Hugo Giraudel for his str-replace function (http://www.sassmeister.com/gist/1b4f2da5527830088e4d)
 @function str-replace($string, $search, $replace: '') {
     $index: string.index($string, $search);

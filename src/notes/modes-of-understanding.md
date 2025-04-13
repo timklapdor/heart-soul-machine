@@ -1,15 +1,16 @@
 ---
+category:
+  - "[[Notes]]"
 title: "Modes of Understanding"
 date: 2023-12-09
-categories: Learning Design
+type: budding
 updatedDate:
 updateDescription: 
 tags: 
 - Learning Design
 - Learning
-location: 
-cover-image: 
 summary: "From a presentation by Bret Victor, a simple description of the ways that we can gain an understanding. It is a meta-model, pulling together the ideas from Bruner, Gardner and Egan." 
+status: published
 ---
 
 From a presentation by Bret Victor, The Humane Representation of Thought,  the *Modes of Understanding* is a simple description of the ways that humans can gain an understanding. It is a meta-model, pulling together the ideas from Bruner, Gardner and Egan.

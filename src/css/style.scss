@@ -16,6 +16,8 @@ $soul: #ffae2c;
 @use 'modules/comments';
 @use 'modules/avatars';
 @use 'modules/search';
+@use 'modules/notetypes';
+
 
 body {
   font-family: system-ui;

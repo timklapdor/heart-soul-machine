@@ -1,6 +1,10 @@
 ---
+category:
+  - "[[Notes]]"
 title: I don't think in words
+aliases: 
 date: 2024-03-04
+type: evergreen
 categories:
   - Concepts
   - Reflection
@@ -9,9 +13,9 @@ updatedDate:
 updateDescription: 
 tags:
   - Thinking
-location: 
-coverImage: 
 summary: This was published back in 2016 and summarises an issue that I have. It's been one of the most popular posts on my old blog, which is surprising, but it might point more to the fact that I'm not alone.
+status:
+  - published
 ---
 
 One of my personal frustrations is my inability to get my thoughts into words. What seems so clear in my head usually comes out as a jumbled mess and needs to be carefully crafted into something that can be communicated. It slows the process down a lot, and an idea often has to spend months dwelling around in various forms, being nibbled at and moulded into shapes before it’s ready to come out.

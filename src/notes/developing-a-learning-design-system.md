@@ -1,5 +1,5 @@
 ---
-title: Developing a Learning Design System
+title: ESSAY Developing a Learning Design System
 aliases: 
   - Learning Design System
 date: 2023-08-06
@@ -13,7 +13,7 @@ updateDescription:
 tags: 
 location: 
 coverImage: 
-summary: This was my submission to the 2023 Ascilite conference. The paper wasn't accepted and it has been sitting on my harddrive since August 2023. So here is the paper, in it's original form.
+summary: This was my submission to the 2023 Ascilite conference. The paper wasn't accepted and it has been sitting on my harddrive since August 2023. So here is the paper, in it's original form. Am planning to move this soon out of the notes area. 
 ---
 ### Abstract
 

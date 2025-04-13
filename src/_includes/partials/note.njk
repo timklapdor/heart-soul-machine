@@ -7,6 +7,7 @@ layout: /layouts/grid.njk
 	<ul class="metadata">
 		<li class="dt-published date">{{ page.date | postDate }}</li>
 		{% if categories %}<li class="categories">{{ categories}} </li>{% endif %}
+		{% if type %}<li class="{{ type }}">{{ type }} </li>{% endif %}
 		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
 	
@@ -34,8 +35,7 @@ layout: /layouts/grid.njk
 		{% if author | length  %}<li class="p-author author">{{ author}}</li>{% endif %}
 		{% if location %}<li class="p-locality location">{{ location }}</li>{% endif %}
 		{% if tags | length  %}<li class="p-category tags">{%for item in tags %}{% if loop.last %} & {{ item}} {% else %}{{item}}, {%endif%} {% endfor %} </li>{% endif %}
-		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate}}</li>{% endif %}
-		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
+		{% if updatedDate %}<li class="dt-updated updatedDate">Updated on the {{ updatedDate | simpleDate}} – <span class="update-description">{{ updateDescription }}</span></li>{% endif %}
 	</ul>
 	{% include "partials/footer.njk" %}
 </article>

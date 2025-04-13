@@ -1,19 +1,22 @@
 ---
+category:
+  - "[[Notes]]"
 title: Focus Course
 aliases:
   - focus course
   - the focus course
 date: 2024-01-28
-categories:
-  - Planning
-  - Reflection
+categories: 
 updatedDate: 
 updateDescription: 
+type: 
+  - "evergreen"
 tags:
-  - FocusCourse
-location: 
-cover-image: 
+  - Planning
+  - Reflection
 summary: For 2024 I signed up for Shawn Blanc's Focus Course to help me work through my current state and bring back some focus into my life.
+status:
+ - published
 ---
 The [Focus Course](https://thefocuscourse.com/Course/) is a short course that sells itself on the concept of focus:
 

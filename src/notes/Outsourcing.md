@@ -1,20 +1,21 @@
 ---
+category:
+  - "[[Notes]]"
 title: Outsourcing
 aliases:
   - outsourcing
-date: 2025-01-29
-categories:
-  - Concepts
-updatedDate: 
+created: 2025-01-28
+updatedDate:
 updateDescription: 
+type:
+  - evergreen
 tags:
+  - concepts
   - work
-  - organisations
-location: 
-cover-image: 
-summary: ""
+summary: When organisations use external providers to perform essential functions that would otherwise be handled internally.
+status:
+  - published
 ---
-
 **Outsourcing** occurs when organisations use external providers to perform essential functions that would otherwise be handled internally. 
 
 These functions can include business processes, infrastructure, services and support. They can also extend to areas of governance such as decision-making and the associated responsibility and accountability that comes along with any form of governance. 

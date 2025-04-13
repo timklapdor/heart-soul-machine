@@ -1,16 +1,21 @@
 ---
+category:
+  - "[[Notes]]"
 title: "Connected Curriculum"
 aliases: 
-- "connected curriculum"
-- "Connected Curriculum"
+  - "connected curriculum"
+  - "Connected Curriculum"
 date: 2024-01-04
-categories: 
-updatedDate:
-updateDescription: 
+type: seed
+updatedDate: 2025-04-13
+updateDescription: Fixing metadata and adding summary.
 tags: 
-location: 
-cover-image: 
-summary: "" 
+  - LearningDesign
+  - Idea
+  - Innovation
+summary: "Imagining a curriculum that has bottom-up and top-down design elements mapped to both inform learning and demonstrate learning experiences." 
+status:
+  - published
 ---
 
 A **connected curriculum** is the idea of a data informed design of courses and programs. Thinking wholistically, the process is bi-directional with the initial program design informing courses, and courses then feeding back information on how they have been developed. 
