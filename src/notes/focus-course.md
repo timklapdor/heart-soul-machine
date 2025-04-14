@@ -5,6 +5,7 @@ title: Focus Course
 aliases:
   - focus course
   - the focus course
+  - The Focus Course
 date: 2024-01-28
 categories: 
 updatedDate: 
