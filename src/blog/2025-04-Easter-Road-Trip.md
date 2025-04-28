@@ -14,7 +14,7 @@ tags:
 location: 
 coverImage: 
 summary: A brief holiday on the road with Ms 13.
-commentId:
+commentId: "114416137593281841"
 ---
 I just got back from a short vacation with my daughter. We've had a few road trips over the years and they always feel like a really strong bonding time. We listen to podcasts in the car, eat random food, we stop and see the roadside attractions and take in the sites along the way. 
 
