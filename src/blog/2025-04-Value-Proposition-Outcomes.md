@@ -20,7 +20,7 @@ tags:
 location: 
 coverImage: 
 summary: With an imminent restructure in mind, I thought I'd take a stab at starting to define what I bring to the table and what I've achieved beyond the tangible.
-commentId:
+commentId: "114420226599573017"
 ---
 Well, the countdown is on for our proposed restructure. They've put out the call for the senior director-level roles, and while it would be nice to think I could do them, I know that in the world of hierarchy that is the modern university – there's not much hope I'd be successful. 
 
