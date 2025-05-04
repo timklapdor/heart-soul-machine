@@ -2,7 +2,7 @@
 category:
   - "[[Notes]]"
 title: The Rule of One
-aliases: 
+aliases: Rule of One
 date: 2025-03-31
 type:
   - seed
@@ -20,7 +20,6 @@ loc:
 
 A simple idea from Sean Blanc of [[The Focus Course]] – the [Rule of One](https://www.instagram.com/p/DGYPQ5CpJ4v/). 
 
-> [!important] 
 > You can only have **one goal** as a company. 
 > 
 > Each member of the team works on one aspect in their own way to get there. 
