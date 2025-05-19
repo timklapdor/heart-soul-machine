@@ -15,7 +15,7 @@ tags:
 location: 
 coverImage: 
 summary: Thinking out loud about why I need to write and what I get out of it.
-commentId:
+commentId: 114534208272592203
 ---
 Inspired by [Lee Skallerup Bessette,](https://blog.reclaimhosting.com/becoming-readywriting/) this post explores why I write. 
 
