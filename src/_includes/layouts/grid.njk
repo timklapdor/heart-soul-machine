@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
     <link rel="icon" type="image/svg+xml" href="{{'/assets/favicon.svg' | url}}">
     <link rel="icon" type="image/png" href="{{'/assets/favicon.png' | url}}">
 
     <meta property="og:title" content="{% if page.url == "/" %}Heart | Soul | Machine • by Tim Klapdor {% else %}{{ title }}{% endif %}" />
     <meta property="og:url" content="{{ page.url }}" />
+
+    <link rel="me" href="https://github.com/timklapdor" />
+    <link rel="me" href="https://timklapdor.me/" />
+    <link rel="me" href="https://www.linkedin.com/in/timklapdor/" />
+    <link rel="me" href="https://youtube.com/c/timklapdor/videos" />
+    <link rel="me" href="https://flickr.com/timklapdor" />
+    <link rel="me" href="https://mastodon.social/@timklapdor" />
+    <link rel="me" href="https://timklapdor.com" />
 
   {% if summary  %}
 	  <meta name="description" content="{{ summary }}">
