@@ -14,7 +14,7 @@ tags:
 location: 
 coverImage: 
 summary: The rise of the "I Got Mine" ideology
-commentId:
+commentId: 114605475339436601
 ---
 As the Australian Election Day approached in 2025, you could see a troubling cultural shift: the rise of the "I got mine" ideology, where individualism has overtaken community values and empathy. This mindset, accelerated by COVID-19 isolation, has eroded social norms, fractured our collective identity, and threatens the ideals of a democratic society – presenting us with a critical choice between continuing down this path of atomised self-interest or rebuilding our sense of shared purpose and responsibility.
 
