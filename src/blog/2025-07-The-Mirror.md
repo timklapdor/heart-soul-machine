@@ -17,7 +17,7 @@ tags:
 location: 
 coverImage: 
 summary: Every now and then, a series of articles, videos, and ideas emerges that helps form a connection and uncover a somewhat hidden aspect of a concept.
-commentId:
+commentId: 114923485984077408
 ---
 It started for me with this video of Philomena Cunk and Brian Cox: 
 
