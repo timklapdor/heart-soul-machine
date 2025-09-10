@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limits</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <meta property="og:title" content="Limits" />
+    <meta property="og:url" content="/blog/2025/09-10-limits/" />
+
+    <link rel="me" href="https://github.com/timklapdor" />
+    <link rel="me" href="https://timklapdor.me/" />
+    <link rel="me" href="https://www.linkedin.com/in/timklapdor/" />
+    <link rel="me" href="https://youtube.com/c/timklapdor/videos" />
+    <link rel="me" href="https://flickr.com/timklapdor" />
+    <link rel="me" href="https://mastodon.social/@timklapdor" />
+    <link rel="me" href="https://timklapdor.com" />
+
+    <link rel="webmention" href="https://webmention.io/heartsoulmachine.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/heartsoulmachine.com/xmlrpc" />
+
+  
+	  <meta name="description" content="Having some time to think in August, I spent some time thinking about my limits.">
+	  <meta property="og:description" content="Having some time to think in August, I spent some time thinking about my limits.">	
+  
+	  
+    <meta name="fediverse:creator" content="@timklapdor@mastodon.social">
+
+    
+    <meta property="og:image" content="/assets/social-previews/limits-preview.jpeg" />
+    <meta property="og:image:secure_url" content="/assets/social-previews/limits-preview.jpeg" /> 
+    
+
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml">
+
+    <!-- Matomo -->
+      <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDoNotTrack", true]);
+        _paq.push(["disableCookies"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//timklapdor.me/analytics/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '3']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//timklapdor.me/analytics/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+
+
+  </head>
+
+  <body>
+
+    <aside>
+
+    <header>
+        <h1>Limits</h1>
+        <a href="/">
+            <h1 class="logo-present">Limits</h1>
+            <img src="/assets/heart-soul-machine-logo.svg" alt="Limits Logo">
+          </a>
+    </header>
+
+
+
+    <nav role="navigation">
+        <button class="menu-toggle" id="toggle" aria-expanded="false" aria-label="Menu Toggle">
+
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <ul id="menu">
+            
+                 <li><a href="/">Home</a></li>
+            
+                 <li><a href="/blog/">Posts</a></li>
+            
+                 <li><a href="/notes/">Notes</a></li>
+            
+                 <li><a href="/about/">About</a></li>
+            
+                 <li><a href="/timeline/">Timeline</a></li>
+            
+                 <li><a href="/now/">Now</a></li>
+            
+                 <li><a href="/uses/">Uses</a></li>
+            
+                 <li><a href="/search/">Search</a></li>
+            
+        </ul>
+    </nav>    
+    <script>
+        var toggle = document.querySelector('#toggle');
+        var menu = document.querySelector('#menu');
+        var menuItems = document.querySelectorAll('#menu li a');
+
+        toggle.addEventListener('click', function(){
+          if (menu.classList.contains('is-active')) {
+            this.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active'); 
+            this.setAttribute('aria-expanded', 'true');
+            //menuItems[0].focus();
+          }
+        });
+    </script>
+    <a rel="me" href="https://mastodon.social/@timklapdor" style="display: none;">Mastodon</a>
+    <div class="rss">
+      <a href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="24" height="24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+        </a>
+     </div>
+
+    </aside>
+
+    <main>
+      <article class="h-entry blogpost">
+
+		
+	<h1 class="p-name title ">Limits</h1>
+	
+	<ul class="metadata">
+		<li class="dt-published date">Sep 10, 2025</li>
+		<li class="categories"> Concepts, Journal, Reflection, &amp; Work </li>
+		<li class="time">6 minutes reading time</li>
+	</ul>
+	
+	
+	<div class="p-summary introduction">
+		Having some time to think in August, I spent some time thinking about my limits.
+	</div>
+	
+
+	<p>In drafting my <a href="/stubs/">August 2025</a> post, I had been mulling over another point, but that post had become quite lengthy. It could be due to quietly turning 45 and starting to feel my age, but I have begun to become much more attuned to limits.</p>
+<p>Growing up and throughout my teens and 20s, limits tended to focus on the physical, on how far you could push your body. What I'm starting to feel in my 40s is the psychological side of that equation. It's not that psychological limits didn't exist until now – it's just I was not attuned to it. As I did in my teens and 20s, I've pushed the limits and definitely crashed and burned a few times because I didn't comprehend these limits and what they were. There were definitely periods of burnout and heavy periods of trauma in my life that I didn't ever deal with. I wasn't particularly aware of what trauma was and how it comes to bear on the way that you do things.</p>
+<p>One of the aspects of the past month has been an inability to concentrate on productive work – essentially sitting down to write, but also just to be creative and sit with thoughts. My mind is constantly wandering. A lot of this has to do with the issues at work, but also with issues at home – finances and the feeling of having too little time to address all the things. I've found it really hard to filter out the constant noise and distractions of wanting to feel plugged in and aware of what's going on. Even the idea of 'productive work' has evolved for me to just the ability to be distraction-free and having the discipline to stay focused on a single task.</p>
+<p>Part of it might be to do with my phone and having that as a crutch to lean on. Another part that I've really started to think about is being an introvert and needing to have quiet time for myself to recharge. Yes, I can do the social things but I also have to recognise that it drains rather than feeds me. I think it was friends Mark and Kahiwa who introduced me to the <a href="https://en.wikipedia.org/wiki/Spoon_theory" target="_blank" rel="noopener noreferrer">spoon theory</a> – this acknowledgement that we have limits, and there are only so many spoons per day, and once you're out, you're out. Applying this to decision making or socialising and acknowledging that we only have so much to give on a certain day – that regardless of our ambitions, we have limitations. There's only so much each of us has to give. What might be unique is in what our limits are, not that we don't have them at all.</p>
+<p>Right now, I feel like I don't have a lot left in the bank. My supply of spoons across a variety of areas is in short supply. This is when opting for defaults and the path of least resistance (which inevitably has bad consequences) becomes the easiest thing to do. It's what leads to getting takeaway on the way home rather than cooking. Of staying on the couch and not getting out for exercise. Of doom scrolling for hours rather than engaging with your list of amazing cinematic experiences you have access to. In an increasingly electrified world, this may make more sense. EVs, phones and batteries all need to charge and come with different capacities and chemistry – so it should make more sense. What I think has changed for me is realising that the battery metaphor is not purely a physical one, but it's a mental one too.</p>
+<p>During my August introspection, I realised that I only have so many conversations in me per week. With most of those conversations happening at work, home has become the place I return to empty, needing time to recharge. Therefore, a lot of home time is not spent talking with my family or friends, as I don't have the spoons for that. I might be physically with them in the same house, but a lot of the time, I'm not necessarily present. As a family, we share similar psychological profiles – so with the three of us, the toll of work and school as the places where the vast majority of conversations happen, it means that there's very little that happens at home. At the moment, this is just something that I am now aware of – it's not wrong or bad, but it has an effect.</p>
+<p>With this information, it's made me consider the need to rejig my work schedule to make time for days without conversation. This isn't a negative against the people I work with, but from a mental health perspective, the ability to tune things out, to focus, to be distraction-free is challenged when the day is full of conversations. This conversation-heavy work pattern also affects home life because, as an introvert, it takes time to process them, it takes time to engage, and it takes effort to go through that process.</p>
+<p>I'm also not having a lot of &quot;meetings&quot;, I've managed to eliminate a lot of those but I am left with a considerable amount of conversations, whether they're face-to-face or on video, they require me to be present. Most of what I need and want to talk about is not suited to chats, emails or other technology-mediated things. It is about being present with people. And there's an internal acknowledgement that this is an <em>effort</em>.</p>
+<p>I really liked <a href="https://www.afterbabel.com/p/reclaiming-conversation-age-of-ai" target="_blank" rel="noopener noreferrer">this Sherry Turkle article</a> because it really spelled out that there is friction of face-to-face and friction of engaging with another human being. A lot of digital technology has made attempts to remove that friction, but the only real consequence of those attempts is the unlimited amount of hurt that people can inflict on one another (e.g. everything about Twitter, Meta, and 4chan for the last decade). In this world, there's no accountability, and there's no friction to calling people names, or saying really derogatory things, or doxing, or cruelty, or bullying. Online, people say things they would never say face-to-face because of the friction created by interacting with another human being. That friction is in the face, gestures and intonation that's all there in the 'meat space' that online cannot and doesn't want to replicate - operating in a world where the other person can and probably would react to the things that you say requires a very different set of rules.</p>
+<p>I know that the connection you make through conversation is an empowering part of life. There is a need to try to read signals, to have empathy for the other person – and that's work! That's effort, that's labour and it takes care to do those things – yet that is what's productive. Building relationships and rapport is productive. Yet so much of the 'productive work' that we are asked to do is really just the bullshit job stuff – filling in forms, having an output, making numbers go up, showing you're busy. Yet the hard work, the hard labour, the productive work is all the scene setting, the engagement, the questioning, the to and fro that happens from dialogue, conversation, through exchanging ideas. We so often just miss that or pay no attention to it. Or, as Sherry points out, it gets engineered away because it's not seen as useful, valid, or part of the process. It's engineered out of things.</p>
+<p>It's been good to be insular over the past month as I've needed time to evaluate and make sense of what's going on. I've needed to work out my limits, but also why it sometimes feels so hard to get through the day. Knowing you're limits isn't about stopping the dreams, but being real about what's possible. Appreciating the effort that goes into things. Acknowledging the labour, the work. And I need to see that in myself.</p>
+
+	<ul class="metadata">
+		<li class="p-author author">Tim Klapdor</li>
+		<li class="p-locality location">Adelaide, Australia</li>
+		<li class="p-category tags">posts, Limits, Spoons, &amp; Introversion </li>
+		
+		
+	</ul>
+
+	<footer data-pagefind-ignore>
+    <p>© Tim Klapdor 2025</p>
+    <p class="name">Heart  |  Soul  |  Machine</p>
+</footer>
+</article>
+    </main>
+
+  </body>
+</html>
