@@ -14,7 +14,7 @@ tags:
 location:
 coverImage:
 summary: The weather hasn't necessarily gotten warmer, but I'm noticing the distinct change in light.
-commentId:
+commentId: 115494717041203314
 ---
  *Catching up on the blog after a bit of time off and time away (which I’ll share in the upcoming October update, which will certainly come out before the end of November!).*
 
