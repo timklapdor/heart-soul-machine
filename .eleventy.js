@@ -131,8 +131,8 @@ module.exports = function (eleventyConfig) {
 
   // Filter for Social Images
   eleventyConfig.addFilter('splitlines', function(input) {
-    const parts = input.split(' ');
-    const lines = parts.reduce(function(prev, current) {
+    const parts = input?.split(' ');
+    const lines = parts?.reduce(function(prev, current) {
 
     if (!prev.length) {
         return [current];
