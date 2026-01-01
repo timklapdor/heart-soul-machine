@@ -14,7 +14,7 @@ tags:
 location:
 coverImage:
 summary: I am still catching up on the year that was!
-commentId:
+commentId: '115818511950901552'
 ---
 ## The Vibe
 The first couple of weeks of November we were in a post-Japan haze. I love how travel seeps into your pores and you experience it beyond the time itself. The vibe after Japan was a feeling of grief and longing. I really loved being in nature and the hustle of the city, the food and the freedom of being away from work. 

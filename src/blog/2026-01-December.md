@@ -14,7 +14,7 @@ tags:
 location:
 coverImage:
 summary: Rounding out the year.
-commentId:
+commentId: '115819579536445324'
 ---
 ## The Vibe
 OK – let's round out the year. December started with a bang – the annual Ascilite conference. This year, I encouraged the learning design contingent of my team to write and submit a paper for the conference as part of their professional development. We had completed a pretty significant project before all the merger malarkey – but hadn't actually written up anything. I did submit something previously, but it was hastily written (one day while on holiday in Fiji) and didn't pass muster with Reviewer Two. So the paper we worked on was important – to try and capture what we learnt from the process – in particular, what we could carry on into the future. 
