@@ -21,7 +21,7 @@ However, for the last couple of years, it hasn’t felt that positive. When prob
 
 The thing is, rather than the exception to the rule - problems have become the rule. In the beginning, we joked in the team that fires were always springing up. You put one out, and another would sprint up. For the last 18 months, it's felt very different — everything is on fire.
 
-![](https://duet-cdn.vox-cdn.com/thumbor/0x0:900x500/1200x800/filters:focal(450x250:451x251):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/6438793/this-is-fine.jpg)
+![](https://miro.medium.com/v2/format:webp/0*ZjYSm_q36J4KChdn)
 
 _From the comic strip from KC Green – [This is fine](http://gunshowcomic.com/648)_
 
