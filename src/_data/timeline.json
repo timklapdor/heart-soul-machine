@@ -328,5 +328,23 @@
         "date": "2025-03-17T13:30:00.000Z",
         "description": "25 years together with my partner Mrs K. Started dating on St Patrick's Dy in 2000 and we have shared most of this journey together.",
         "location": "Adelaide, Australia"
+    }, 
+    {
+        "eventtype": "Work",
+        "date": "2025-04-05T13:30:00.000Z",
+        "description": "We had the first graduate from the OUA program – [Owen](https://youtu.be/ky1e0dzbxsu) (or as he was known within the team OUAen). ",
+        "location": "Adelaide, Australia"
+    },
+    {
+        "eventtype": "Life",
+        "date": "2025-06-10T13:30:00.000Z",
+        "description": "First family trip to explore a new country! [10 days in Japan soaking up everything](https://flic.kr/s/aHBqjCxjXs) we could. We started in the cities before exploring some of the countryside. Keen to come back for more!",
+        "location": "Tokyo, Kyoto, Kanazawa & more in Japan"
+    },
+        {
+        "eventtype": "Work",
+        "date": "2025-12-01T13:30:00.000Z",
+        "description": "Team authored a paper, got peer reviewed and accepted into Ascilite 2025. We [presented to the conference](https://flic.kr/p/2rPzCQy) on Day 1.",
+        "location": "Adelaide, Australia"
     }
 ]

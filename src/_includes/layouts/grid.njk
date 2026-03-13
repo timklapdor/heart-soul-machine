@@ -23,6 +23,12 @@
     <link rel="webmention" href="https://webmention.io/heartsoulmachine.com/webmention" />
     <link rel="pingback" href="https://webmention.io/heartsoulmachine.com/xmlrpc" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dynamics.js/1.1.5/dynamics.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.6.0/tinycolor.min.js"></script>
+    <script src="{{'/assets/js/nav.js' | url}}"></script>
+    <script src="{{'/assets/js/glitch.js' | url}}"></script>
+
+
   {% if summary  %}
 	  <meta name="description" content="{{ summary }}">
 	  <meta property="og:description" content="{{ summary }}">	
@@ -69,13 +75,15 @@
 
     <aside>
 
-    <header>
+      {% include "partials/header.njk" %}
+
+    {# <header>
         <h1>{{ title }}</h1>
         <a href="{{ '/' | url }}">
             <h1 class="logo-present">{{ title }}</h1>
             <img src="{{ '/assets/heart-soul-machine-logo.svg' | url }}" alt="{{ title }} Logo">
           </a>
-    </header>
+    </header> #}
 
 
 
@@ -100,22 +108,7 @@
             {% endfor %}
         </ul>
     </nav>    
-    <script>
-        var toggle = document.querySelector('#toggle');
-        var menu = document.querySelector('#menu');
-        var menuItems = document.querySelectorAll('#menu li a');
 
-        toggle.addEventListener('click', function(){
-          if (menu.classList.contains('is-active')) {
-            this.setAttribute('aria-expanded', 'false');
-            menu.classList.remove('is-active');
-          } else {
-            menu.classList.add('is-active'); 
-            this.setAttribute('aria-expanded', 'true');
-            //menuItems[0].focus();
-          }
-        });
-    </script>
     <a rel="me" href="https://mastodon.social/@timklapdor" style="display: none;">Mastodon</a>
     <div class="rss">
       <a href="{{ '/feed.xml' | url }}">
@@ -129,5 +122,9 @@
       {{ content | safe }}
     </main>
 
+  {# Hidden SVG for glitch #}
+    <svg id="clip-paths" style="position:absolute;width:0;height:0;overflow:hidden">
+      <defs><g></g></defs>
+    </svg>
   </body>
 </html>
