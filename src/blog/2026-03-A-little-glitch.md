@@ -11,7 +11,7 @@ updatedDate:
 updateDescription:
 tags:
 location:
-coverImage:
+coverImage: /images/glitch.gif
 summary: Adding a little visual flair to reflect the times we're in.
 commentId:
 url:
