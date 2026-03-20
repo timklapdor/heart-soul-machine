@@ -14,7 +14,7 @@ tags:
 location:
 coverImage:
 summary: A case for expanding Bloom’s familiar triangle to include the Affective and Operative domains — and why it matters for modern education.
-commentId:
+commentId: "116259813728644162"
 url:
 ---
 I've been spending this week *exploring* program design at universities and what current practices look like, and importantly, what people are thinking about at this point in time. One key thing is around the ***[assurance of learning](https://needednowlt.substack.com/p/show-employers-what-they-are-looking)*** and in the age of AI it's definitely run up the ranks of priorities for universities. But I've just been reading broadly and actually surfing the web – clicking on links and mentions, working my way through references and going down rabbit holes along the way. 
