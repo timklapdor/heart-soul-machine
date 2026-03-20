@@ -1,0 +1,18 @@
+table {
+  
+  td {
+    vertical-align: top;
+  }
+
+  &.blooms {
+    grid-column: 3/span 3;
+    tbody {
+    tr:nth-child(1) {background-color: var(--p10-2-200)}
+    tr:nth-child(2) {background-color: var(--p10-4-200)}
+    tr:nth-child(3) {background-color: var(--p10-5-200)}
+    tr:nth-child(4) {background-color: var(--p10-6-200)}
+    tr:nth-child(5) {background-color: var(--p10-1-200)}
+    tr:nth-child(6) {background-color: var(--p10-7-200)}
+    }
+  }
+}

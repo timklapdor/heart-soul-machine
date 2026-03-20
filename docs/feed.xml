@@ -4,12 +4,164 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-03-13T00:00:00Z</updated>
+  <updated>2026-03-20T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Beyond the Cognitive: Rethinking Bloom’s Taxonomy</title>
+    <link href="https://heartsoulmachine.com/blog/2026/03-20-beyond-the-cognitive:-rethinking-bloom&#39;s-taxonomy/"/>
+    <updated>2026-03-20T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/03-20-beyond-the-cognitive:-rethinking-bloom&#39;s-taxonomy/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/beyond-the-cognitive:-rethinking-bloom&#39;s-taxonomy-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>A case for expanding Bloom’s familiar triangle to include the Affective and Operative domains — and why it matters for modern education.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;I&#39;ve been spending this week &lt;em&gt;exploring&lt;/em&gt; program design at universities and what current practices look like, and importantly, what people are thinking about at this point in time. One key thing is around the &lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://needednowlt.substack.com/p/show-employers-what-they-are-looking&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;assurance of learning&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt; and in the age of AI it&#39;s definitely run up the ranks of priorities for universities. But I&#39;ve just been reading broadly and actually surfing the web – clicking on links and mentions, working my way through references and going down rabbit holes along the way.&lt;/p&gt;
+&lt;p&gt;Much of this thinking was prompted by reading about Australia’s emerging &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/03-20-beyond-the-cognitive:-rethinking-bloom&#39;s-taxonomy/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;National Skills Taxonomy&lt;/a&gt;, which points to something important: the need for a common language to connect vocational education and training, higher education, industry,  learners and workers. &lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2026/03-20-beyond-the-cognitive:-rethinking-bloom&#39;s-taxonomy/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; Moving the conversation of learning beyond content delivery and toward genuinely transferable skills is critical and has been part of my recent work on course and program outcomes. The shift in framing — from content to skills — led me back to a familiar starting point: Bloom’s Taxonomy.&lt;/p&gt;
+&lt;h2&gt;The Bloom’s We Know&lt;/h2&gt;
+&lt;p&gt;Most educators know the Bloom’s triangle. It gives us a hierarchy of cognitive functions, from basic recall to synthesis and creation. The revised version, updated by Anderson and Krathwohl, usefully reframes each level as a verb, which is why it&#39;s been adopted so broadly as we shifted the language of education to an outcomes-focused one.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bloom%27s_revised_taxonomy.svg/3840px-Bloom%27s_revised_taxonomy.svg.png&quot; alt=&quot;By Tidema - Own work, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=152872571&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I was really only familiar with this view of Bloom&#39;s, and it wasn&#39;t until I was well and truly down a rabbit hole - bouncing from &lt;a href=&quot;https://magur.no/essays/frontier-modalities-of-learning-for-top-performance/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Frontier Modalities of Learning for Top Performance&lt;/a&gt; to &lt;a href=&quot;https://coming.gr/wp-content/uploads/2020/12/2_December2020_JEICOM_FINAL_Arthur-W-Shelley.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Reverse Bloom Learning Framework&lt;/a&gt; - that I learnt that Bloom always intended the cognitive domain to be accompanied by two companion frameworks: one for the Affective domain (emotions, attitudes, dispositions) and one for the Psychomotor domain (physical and spatial skill). These were developed later –Krathwohl for the Affective, Simpson for the Psychomotor – but they’ve never really entered mainstream educational practice the way the cognitive taxonomy has. They also lacked some of the clarity that helped with the adoption of Bloom&#39;s. But it&#39;s telling that the systemic approach to conceptualising learning, particularly in Higher Education, is only the cognitive domain.&lt;/p&gt;
+&lt;p&gt;An influential concept for me is from a talk that Bret Victor gave, &lt;a href=&quot;https://vimeo.com/115154289&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Humane Representation of Thought&lt;/a&gt; , in which he discusses the different models developed to articulate understanding:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/modes-of-understanding.png&quot; alt=&quot;Screenshot of Modes of Understanding from Bret Victor!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So while the cognitive realm has played a large part in my work, it&#39;s not without recognising many of the missing aspects. I&#39;ve tried to incorporate a fuller picture into my work, but not having a simple tool like Bloom&#39;s has made it challenging.&lt;/p&gt;
+&lt;h2&gt;What We’ve Been Missing&lt;/h2&gt;
+&lt;p&gt;Higher education has sought to address the gap through initiatives such as “graduate qualities” — broad statements about communication, collaboration, and ethical practice that sit alongside disciplinary knowledge. But these often remain aspirational rather than embedded. We acknowledge the affective and physical dimensions of learning, then design courses that don’t meaningfully develop them. Constructive alignment practices have tended to focus only on the alignment of outcomes across a course and a program of study, and because much of their development centres on the cognitive domain, we&#39;re missing vast swathes of context about the broader learning experience. The industry conversations about soft skills point to the same gap. Collaboration, empathy, ethical judgment, and hands-on capability aren’t cognitive skills, and if taxonomies don’t account for them, our program design won’t either.&lt;/p&gt;
+&lt;h2&gt;A Proposed Revision&lt;/h2&gt;
+&lt;p&gt;Part of my preferred learning process is being productive, making and creating something, which in turn stimulates the rest of my cognitive domain. So I started working on a revision that brings all three domains into alignment: similar language, equal levels, parallel structure, and all expressed as verb forms that ask, “What can the learner do?”&lt;/p&gt;
+&lt;p&gt;One immediate problem with the existing frameworks is inconsistency: Bloom’s cognitive domain has six levels, Krathwohl’s affective has five, and Simpson’s psychomotor has seven. That asymmetry makes it hard to use them together.&lt;/p&gt;
+&lt;p&gt;I’m also proposing to rename “Psychomotor” to “Operative” — a term that better captures the domain’s focus on physical and spatial understanding and sits more comfortably alongside the adjectives Cognitive and Affective as a trio.&lt;/p&gt;
+&lt;p&gt;To help balance the domains, ensure consistency across the levels, and support this as a framework, I&#39;ve added descriptions to align them across the three domains. These help us use the framework to develop outcomes, guiding how to think across the domains and apply experience from using the cognitive domain into the two new ones.&lt;/p&gt;
+&lt;h2&gt;Blooms in Three Domains&lt;/h2&gt;
+&lt;table class=&quot;blooms&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Level&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Cognitive&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Affective&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Operative&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Awareness&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Remembering&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Recalling facts, terms or concepts from memory.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Receiving&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Being able to notice and attend to a stimulus, experience or feeling.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Perceiving&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Using the senses to notice cues that guide physical action.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Concepts&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Understanding&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Making meaning from information by interpreting, classifying or explaining it.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Responding&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Actively reacting to a stimulus, not just noticing it; the learner can participate rather than just observe.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Preparing&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Readying the body and mind for a physical task, noting posture, movement, and spatial awareness.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Patterns&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Applying&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Using knowledge in a new or practical situation. The learner can transfer what they know into action.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Valuing&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Attaching worth or importance to something. The learner begins to show commitment rather than just compliance.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Imitating&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Copying a demonstrated action where performance is approximate and deliberate rather than fluent.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Practices&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Analysing&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Breaking information into parts to understand structure, relationships and what is or isn’t relevant.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Organising&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Making sense of competing feelings and experiences by building a personal framework. The learner begins to understand why some things matter more to them than others.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Practising&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Repeating an action until it becomes consistent and increasingly automatic. Effort shifts from thinking about the action to just doing it.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Principles&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Evaluating&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Making judgements based on criteria and evidence. The learner can justify a position or critique a method.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Characterising&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Emotional dispositions and responses to circumstances become consistent and recognisable, helping to contextualise situations.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Performing&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Executing complex actions confidently, fluently and with adaptability to real conditions without needing to plan each step.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Expression&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Creating&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Combining elements into a new, coherent whole, producing something original.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Advocating&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;The learner feels strongly enough to share, model and promote their outlook to others.&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Originating&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Creating new movement patterns or techniques to suit novel problems and environments.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Level Focus&lt;/h3&gt;
+&lt;p&gt;I put this together to help define the specific focuses of the different levels.&lt;/p&gt;
+&lt;table class=&quot;blooms&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Level&lt;/th&gt;
+&lt;th&gt;Cognitive&lt;/th&gt;
+&lt;th&gt;Affective&lt;/th&gt;
+&lt;th&gt;Operative&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Awareness&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Discrete pieces of information&lt;/td&gt;
+&lt;td&gt;Sensations &amp;amp; feelings&lt;/td&gt;
+&lt;td&gt;Sensory cues&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Concepts&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Categories and ideas&lt;/td&gt;
+&lt;td&gt;Emotions &amp;amp; attitudes&lt;/td&gt;
+&lt;td&gt;Body mechanics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Patterns&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;How things work and relate&lt;/td&gt;
+&lt;td&gt;Recurring emotional responses&lt;/td&gt;
+&lt;td&gt;Habitual movement and posture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Practices&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Step-by-step methods for doing&lt;/td&gt;
+&lt;td&gt;Deliberate ways of reflecting and responding&lt;/td&gt;
+&lt;td&gt;Structured sequences and routines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Principles&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Rules that govern understanding&lt;/td&gt;
+&lt;td&gt;Rules that govern ethical and emotional life&lt;/td&gt;
+&lt;td&gt;Rules that govern skilled performance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Expression&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Thinking in an original and generative way&lt;/td&gt;
+&lt;td&gt;Engaging authentically from a place of personal meaning&lt;/td&gt;
+&lt;td&gt;Moving and creating with individual voice and mastery&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Some notes&lt;/h2&gt;
+&lt;p&gt;In working on this I came across a few challenges and issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;One thing I’ve been careful about is keeping the Affective domain true to its emotional and experiential nature. It’s easy for descriptions of this domain to slide into the language of values and ethics which while related, may actually be Cognitive aspects creeping in. The domain begins with raw openness to experience and feeling, and it culminates not in having the &lt;em&gt;right&lt;/em&gt; values, but in actively living and modelling them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is something about the hierarchical nature of the original Blooms taxonomy that has always troubled me, and which is nicely expressed in the &lt;em&gt;&lt;a href=&quot;https://coming.gr/wp-content/uploads/2020/12/2_December2020_JEICOM_FINAL_Arthur-W-Shelley.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Reverse Blooms&lt;/a&gt;&lt;/em&gt; paper. The triangle implied a linear approach - you worked up from the foundations and creative work was the pinnacle. Good and engaging learning experiences often aren&#39;t linear - they don&#39;t require a vast foundation of information to be remembered before moving on to something else, learning is iterative and develops over time through cycles and movement. Creating holes in knowledge helps engage learners to willingly participate in filling them in. That&#39;s a lot more fun than enforcing absorption of the canon before you can actually do something.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;One final observation that has stayed with me: across all three domains, the lower levels tend to be internal and difficult to observe, while the upper levels become progressively more external and visible. Perceiving, receiving, remembering — these happen inside the learner. Originating, advocating, creating — these are things the world can see.&lt;/p&gt;
+&lt;p&gt;That inside-out progression feels like an important design principle. It suggests that our assessments, which tend to focus on observable outputs, may be systematically undervaluing the foundational work that makes those outputs possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Where to From Here&lt;/h2&gt;
+&lt;p&gt;This is a work in progress — a first sketch rather than a finished framework. I haven’t developed verb banks or detailed rubrics for each level. But the core argument feels worth making: if we want education to develop whole people, our taxonomies need to account for the whole person.&lt;/p&gt;
+&lt;p&gt;Thoughts and feedback very welcome.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The use of language as a connector is a driver of my work around &lt;a href=&quot;https://learning-types.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Learning Types&lt;/a&gt;. &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/03-20-beyond-the-cognitive:-rethinking-bloom&#39;s-taxonomy/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   <entry>
     <title>A little glitch</title>
     <link href="https://heartsoulmachine.com/blog/2026/03-13-a-little-glitch/"/>

@@ -13,7 +13,7 @@ summary: "From a presentation by Bret Victor, a simple description of the ways t
 status: published
 ---
 
-From a presentation by Bret Victor, The Humane Representation of Thought,  the *Modes of Understanding* is a simple description of the ways that humans can gain an understanding. It is a meta-model, pulling together the ideas from Bruner, Gardner and Egan.
+From a presentation by Bret Victor, The Humane Representation of Thought,  the *[Modes of Understanding](https://vimeo.com/115154289)* is a simple description of the ways that humans can gain an understanding. It is a meta-model, pulling together the ideas from Bruner, Gardner and Egan.
 
 ![Screenshot of Modes of Understanding from Bret Victor!]({{ '/images/modes-of-understanding.png' | url}})
 

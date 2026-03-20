@@ -32,7 +32,7 @@
  *   stutter  {number}  0–1 probability of a double-burst (default: 0.35)
  */
 
-Glitch.onHover('#header-logo').idle('#header-logo');
+// Glitch.onHover('#header-logo').idle('#header-logo');
 
 (function (root, factory) {
   if (typeof module !== 'undefined' && module.exports) {

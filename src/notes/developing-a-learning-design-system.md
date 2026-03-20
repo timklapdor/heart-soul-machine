@@ -57,9 +57,8 @@ These aspects came to define the Adelaide Online Learning Experience that was 
 
 Table 1: Mapping of alignment of the Adelaide Online Learning Experience with existing quality frameworks TELAS (2020), Quality Matters (2023) and HESF (2015).
 
-|   |   |   |   |   |
-|---|---|---|---|---|
 |**Domain**|**Learner Expectation**|**TELAS Alignment**|**QM Alignment**|**HESF Alignment**|
+|---|---|---|---|---|
 |Clear|-   accessible and inclusive to all students<br><br>-   easy to understand and navigate (with sufficient instruction)<br><br>-   has defined goals and expectations<br><br>-   utilises technology that doesn’t get in the way of learning<br><br>-   explains the requirements for interactions<br><br>-   tests learning with appropriately timed, varied and suitable assessments<br><br>-   delivers content that is contemporary and relevant|1.1, 1.2, 1.3, 2.1, 2.2, 3.1, 3.2, 3.3, 5.1|1.1, 1.2, 1.3, 1.4, 1.5, 1.7, 2.1, 2.3, 3.2, 4.2, 5.3, 5.4, 7.1, 7.2, 7.3, 7.4, 8.1, 8.2, 8.3. 8.4, 8.5, 8.6|1.4.1, 1.4.2, 1.4.3, 1.4.4, 1.4.5, 2.2.1, 2.3.3, 3.3.1, 3.3.2, 3.3.3, 3.3.4|
 |Contextual|-   articulates each activity with purpose and intention<br><br>-   contextualises learning in the real world|5.2, 5.3, 6.1, 7.1, 7.2, 8.1, 8.2|2.2, 2.4, 3.4, 4.4, 4.5|1.4.2, 1.4.4, 1.4.5, 3.1.2, 3.1.3, 3.2.1, 3.3.1|
 |Interactive|-   learning is actively constructed, students learn by doing, not consuming<br><br>-   provides feedback that can be implemented to improve learning<br><br>-   promotes flexible communication between tutor and student<br><br>-   has a vibrant exchange of ideas, opinions, perspectives, and experiences|1.4, 4.1, 4.3, 5.4, 5.5, 7.3|1.9, 3.3, 3.5, 4.1, 5.2, 6.2, 6.3|1.3.3, 1.4.2. 2.1.3, 3.2.1|

@@ -23,8 +23,8 @@
     <link rel="webmention" href="https://webmention.io/heartsoulmachine.com/webmention" />
     <link rel="pingback" href="https://webmention.io/heartsoulmachine.com/xmlrpc" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dynamics.js/1.1.5/dynamics.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.6.0/tinycolor.min.js"></script>
+    <script src="/assets/js/nav.js"></script>
+
 
   
 	  <meta name="description" content="April and it&#39;s time for a road trip and some driving time to clear my head.">
@@ -163,22 +163,7 @@
             
         </ul>
     </nav>    
-    <script>
-        var toggle = document.querySelector('#toggle');
-        var menu = document.querySelector('#menu');
-        var menuItems = document.querySelectorAll('#menu li a');
 
-        toggle.addEventListener('click', function(){
-          if (menu.classList.contains('is-active')) {
-            this.setAttribute('aria-expanded', 'false');
-            menu.classList.remove('is-active');
-          } else {
-            menu.classList.add('is-active'); 
-            this.setAttribute('aria-expanded', 'true');
-            //menuItems[0].focus();
-          }
-        });
-    </script>
     <a rel="me" href="https://mastodon.social/@timklapdor" style="display: none;">Mastodon</a>
     <div class="rss">
       <a href="/feed.xml">
@@ -242,122 +227,21 @@
 </article>
     </main>
 
-  
     <svg id="clip-paths" style="position:absolute;width:0;height:0;overflow:hidden">
       <defs><g></g></defs>
     </svg>
 
-    
+    <script src="/assets/js/glitch.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dynamics.js/1.1.5/dynamics.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.6.0/tinycolor.min.js"></script>
+
     <script>
-    (function () {
-      'use strict';
-
-      var clipIdx = 0;
-
-      // Tile the element's bounding box into horizontal stripes,
-      // distributing them randomly across `count` SVG clipPath masks.
-      function createStripeMasks(count, box, avgH) {
-        avgH = avgH || 10;
-        var masks = [], ids = [];
-        for (var i = 0; i < count; i++) { masks.push([]); ids.push('hsmClip' + clipIdx++); }
-
-        var mi = 0, x = 0, y = 0, sh = avgH;
-        while (true) {
-          var w = Math.max(sh * 10, Math.round(Math.random() * box.width));
-          masks[mi].push('M'+x+','+y+' L'+(x+w)+','+y+' L'+(x+w)+','+(y+sh)+' L'+x+','+(y+sh)+' Z');
-          mi = (mi + 1) % count;
-          x += w;
-          if (x > box.width) {
-            x = 0; y += sh;
-            sh = Math.round(Math.random() * avgH + avgH / 2);
-          }
-          if (y >= box.height) break;
-        }
-
-        var g = document.querySelector('#clip-paths defs g');
-        masks.forEach(function (rects, i) {
-          var cp = document.createElementNS('http://www.w3.org/2000/svg', 'clipPath');
-          cp.setAttribute('id', ids[i]);
-          var p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-          p.setAttribute('d', rects.join(' '));
-          p.setAttribute('fill', 'white');
-          cp.appendChild(p); g.appendChild(cp);
-        });
-        return ids;
-      }
-
-      // Clone the logo element, position it exactly over the original,
-      // apply a clip-path mask, and randomise the fill colours.
-      function cloneWithMask(el, clipId) {
-        var box = el.getBoundingClientRect();
-        var clone = el.cloneNode(true);
-        Object.assign(clone.style, {
-          position: 'fixed', margin: '0', pointerEvents: 'none',
-          left: box.left + 'px', top: box.top + 'px',
-          width: box.width + 'px', height: box.height + 'px',
-        });
-        clone.style.clipPath = 'url(#' + clipId + ')';
-        clone.style.webkitClipPath = 'url(#' + clipId + ')';
-
-        clone.querySelectorAll('path, polygon, rect').forEach(function (child) {
-          var hue = Math.round(Math.random() * 360);
-          child.style.fill = tinycolor('hsl(' + hue + ', 80%, 65%)').toRgbString();
-        });
-
-        document.body.appendChild(clone);
-        return clone;
-      }
-
-      function animateCrazyLogo() {
-        var el  = document.querySelector('#header-logo');
-        var box = el.getBoundingClientRect();
-        var n   = Math.round(8 + Math.random() * 8);
-        var ids = createStripeMasks(n, box, Math.round(100 / n));
-        var clones = ids.map(function (id) { return cloneWithMask(el, id); });
-
-        clones.forEach(function (clone) {
-          var d  = Math.random() * 100;
-          var tx = Math.random() * 100 - 50;
-
-          dynamics.setTimeout(function () {
-            dynamics.css(clone, { translateX: tx });
-          }, d);
-          dynamics.setTimeout(function () {
-            dynamics.css(clone, { translateX: tx / -5 });
-          }, d + 50);
-          dynamics.setTimeout(function () {
-            dynamics.css(clone, { translateX: tx / -10 });
-          }, d + 100);
-          dynamics.setTimeout(function () {
-            if (clone.parentNode) clone.parentNode.removeChild(clone);
-            // Clean up clip-path nodes to avoid DOM bloat
-            ids.forEach(function (id) {
-              var node = document.getElementById(id);
-              if (node) node.parentNode.removeChild(node);
-            });
-          }, d + 160);
-        });
-      }
-
-      var logo = document.querySelector('#header-logo');
-      if (logo) logo.addEventListener('mouseenter', animateCrazyLogo);
-
-      // Occasional idle glitch — fires every 4–12 seconds unprompted.
-      // 35% chance of a quick double-burst for a stutter effect.
-      function scheduleIdleGlitch() {
-        var delay = 4000 + Math.random() * 8000;
-        dynamics.setTimeout(function () {
-          animateCrazyLogo();
-          if (Math.random() < 0.35) {
-            dynamics.setTimeout(animateCrazyLogo, 300 + Math.random() * 300);
-          }
-          scheduleIdleGlitch();
-        }, delay);
-      }
-
-      dynamics.setTimeout(scheduleIdleGlitch, 3000);
-
-    })();
+      document.addEventListener('DOMContentLoaded', function () {
+        Glitch.idle('#header-logo').onHover('#header-logo');
+        Glitch.onHover('nav a', { stripes: 4, spread: 20 });
+      });
     </script>
   </body>
 </html>
