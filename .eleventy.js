@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 const { DateTime } = require("luxon");
 const timeToRead = require('eleventy-plugin-time-to-read');
@@ -7,7 +9,6 @@ const markdownItFootnote = require("markdown-it-footnote");
 const markdownLinks = require("markdown-it-link-attributes");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 const markdownItBracketed = require('markdown-it-bracketed-spans');
-
 
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
@@ -34,6 +35,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+//////////
+////////// FILTERS
+/////////
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
@@ -58,7 +62,6 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat('LLL dd, yyyy');
   });
 
-  	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
@@ -81,6 +84,24 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
+
+  eleventyConfig.addFilter("webmentionsByUrl", function (webmentions, url) {
+  const allowedTypes = {
+    likes: ["like-of"],
+    reposts: ["repost-of"],
+    comments: ["mention-of", "in-reply-to"],
+  };
+
+  const pageWebmentions = (webmentions || [])
+    .filter((mention) => mention["wm-target"] === "https://heartsoulmachine.com" + url)
+    .sort((a, b) => new Date(b.published) - new Date(a.published));
+
+  return {
+    likes: pageWebmentions.filter(m => allowedTypes.likes.includes(m["wm-property"])).map(m => m.author),
+    reposts: pageWebmentions.filter(m => allowedTypes.reposts.includes(m["wm-property"])).map(m => m.author),
+    comments: pageWebmentions.filter(m => allowedTypes.comments.includes(m["wm-property"])),
+  };
+});
 
   const markdownLibrary = markdownIt({
     html: true,

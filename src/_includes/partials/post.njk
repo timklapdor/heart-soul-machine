@@ -30,6 +30,8 @@ layout: /layouts/grid.njk
 		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
 	</ul>
 
+	{%- include "partials/webmentions.njk" -%}
+
 	{%- if commentId | length -%}
 		{% include "partials/comments.njk" %}
 	{% endif %}

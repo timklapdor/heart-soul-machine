@@ -1,0 +1,31 @@
+{% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
+
+{% if mentions.likes.length > 0 %}
+  <h3>Likes</h3>
+  <ul class="webmention-likes">
+    {% for author in mentions.likes %}
+      <li><a href="{{ author.url }}"><img src="{{ author.photo }}" alt="{{ author.name }}" width="40" height="40"></a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if mentions.reposts.length > 0 %}
+  <h3>Reposts</h3>
+  <ul class="webmention-reposts">
+    {% for author in mentions.reposts %}
+      <li><a href="{{ author.url }}"><img src="{{ author.photo }}" alt="{{ author.name }}" width="40" height="40"></a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if mentions.comments.length > 0 %}
+  <h3>Replies</h3>
+  <ul class="webmention-comments">
+    {% for mention in mentions.comments %}
+      <li>
+        <a href="{{ mention.url }}"><strong>{{ mention.author.name }}</strong></a>
+        <p>{{ mention.content.text }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

@@ -4,6 +4,7 @@ node_modules
 # secrets and errors
 .env
 .log
+.cache
 
 # macOS related files
 .DS_Store

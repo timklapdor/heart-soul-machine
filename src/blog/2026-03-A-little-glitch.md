@@ -13,7 +13,7 @@ tags:
 location:
 coverImage: /images/glitch.gif
 summary: Adding a little visual flair to reflect the times we're in.
-commentId:
+commentId: "116220404867071203"
 url:
 ---
 I've been slowly working away at developing a portfolio, and I was starting to get a bit lost. I decided to seek out some examples and get a bit of inspiration. I happened to stumble on a couple of portfolios that had a bit of 'glitch-aesthetic'. As an ex-graphic designer who grew up in the era of grunge design, I love these little flashback reminders to another time, where design wasn't flat or fucking liquid-(gl)ass. This was a time when digital was mediated through the analogue - that 9 times out of 10, your problem was a dodgy connection or cable. 
