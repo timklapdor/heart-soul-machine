@@ -10,3 +10,8 @@ article.search {
 #search {
   width: 100%;
 }
+
+:root {
+  --pagefind-ui-background: light-dark(var(--color-base-200), var(--color-base-950));
+  --pagefind-ui-text: light-dark(var(--color-base-900), var(--color-base-200));
+}

@@ -1,0 +1,344 @@
+:root {
+/*
+ * ============================================================
+ *  Australian Landscape Colours —
+ ============================================================ */
+  --hue-uluru:     26;
+  --chroma-uluru:     0.2398;
+
+  --hue-flinders:  37;
+  --chroma-flinders:  0.2207;
+
+  --hue-stockton:  65;
+  --chroma-stockton:  0.168;
+
+  --hue-otway:     141;
+  --chroma-otway:     0.1643;
+
+  --hue-daintree:  170;
+  --chroma-daintree:  0.1647;
+
+  --hue-hyams:     231;
+  --chroma-hyams:     0.1437;
+
+  --hue-grampians: 307;
+  --chroma-grampians: 0.155;
+
+  /*
+  * ============================================================
+  * Brand Colours - Base, Primary, Secondary and Accents  
+  * ============================================================ */
+  --hue-base:    73;
+  --chroma-base: 0.005;
+
+  --hue-primary:  10;
+  --chroma-primary: 0.253;
+  --lightness-primary: .642;
+  
+  --hue-secondary: 73;
+  --chroma-secondary:  0.161;
+  --lightness-secondary: .81;
+  
+  --hue-accent: 84;
+  --chroma-accent: 0.004;
+  --lightness-accent: .321;
+
+  /*
+  * ============================================================
+  * Function Colours - Success, Warning, Danger, Info
+  * ============================================================ */
+
+  --hue-success: 151; 
+  --chroma-success: 0.146;
+  --lightness-success: 0.594;  
+  
+  --hue-warning: 72; 
+  --chroma-warning: 0.144;
+  --lightness-warning: 0.827;
+  
+  --hue-danger: 28; 
+  --chroma-danger: 0.199;
+  --lightness-danger: 0.572;
+  
+  --hue-info: 263;
+  --chroma-info: 0.163;
+  --lightness-info: 0.339; 
+}
+
+
+/*
+* ============================================================
+* Colour Scales - Some require tweaking of lightness and chroma 
+* ============================================================ */
+
+:root {
+
+  /* ---- Absolute white and black ---- */
+  --color-base-light: oklch(1 0 0);
+  --color-base-dark:  oklch(0 0 0);
+
+  /* ---- BASE — neutral 50–950 ---- */
+  --color-base-50:  oklch(0.985 var(--chroma-base) var(--hue-base));
+  --color-base-100: oklch(0.960 var(--chroma-base) var(--hue-base));
+  --color-base-200: oklch(0.920 calc(var(--chroma-base) * 1.2) var(--hue-base));
+  --color-base-300: oklch(0.840 calc(var(--chroma-base) * 1.5) var(--hue-base));
+  --color-base-400: oklch(0.720 calc(var(--chroma-base) * 1.8) var(--hue-base));
+  --color-base-500: oklch(0.580 calc(var(--chroma-base) * 2.0) var(--hue-base));
+  --color-base-600: oklch(0.450 calc(var(--chroma-base) * 1.8) var(--hue-base));
+  --color-base-700: oklch(0.340 calc(var(--chroma-base) * 1.5) var(--hue-base));
+  --color-base-800: oklch(0.230 calc(var(--chroma-base) * 1.2) var(--hue-base));
+  --color-base-900: oklch(0.150 var(--chroma-base) var(--hue-base));
+  --color-base-950: oklch(0.095 var(--chroma-base) var(--hue-base));
+
+  /* ---- ULURU — warm sandstone red (19.6°) ---- */
+  --color-uluru-50:  oklch(0.975 calc(var(--chroma-uluru) * 0.15) var(--hue-uluru));
+  --color-uluru-100: oklch(0.940 calc(var(--chroma-uluru) * 0.25) var(--hue-uluru));
+  --color-uluru-200: oklch(0.880 calc(var(--chroma-uluru) * 0.35) var(--hue-uluru));
+  --color-uluru-300: oklch(0.820 calc(var(--chroma-uluru) * 0.50) var(--hue-uluru));
+  --color-uluru-400: oklch(0.680 calc(var(--chroma-uluru) * 0.80) var(--hue-uluru));
+  --color-uluru-500: oklch(0.570 var(--chroma-uluru) var(--hue-uluru));
+  --color-uluru-600: oklch(0.490 calc(var(--chroma-uluru) * 0.90) var(--hue-uluru));
+  --color-uluru-700: oklch(0.400 calc(var(--chroma-uluru) * 0.80) var(--hue-uluru));
+  --color-uluru-800: oklch(0.300 calc(var(--chroma-uluru) * 0.60) var(--hue-uluru));
+  --color-uluru-900: oklch(0.210 calc(var(--chroma-uluru) * 0.40) var(--hue-uluru));
+  --color-uluru-950: oklch(0.140 calc(var(--chroma-uluru) * 0.25) var(--hue-uluru));
+
+  /* ---- FLINDERS — ochre orange (50°) ---- */
+  --color-flinders-50:  oklch(0.975 calc(var(--chroma-flinders) * 0.4) var(--hue-flinders));
+  --color-flinders-100: oklch(0.945 calc(var(--chroma-flinders) * 0.5) var(--hue-flinders));
+  --color-flinders-200: oklch(0.890 calc(var(--chroma-flinders) * 0.6) var(--hue-flinders));
+  --color-flinders-300: oklch(0.800 calc(var(--chroma-flinders) * 0.7) var(--hue-flinders));
+  --color-flinders-400: oklch(0.700 calc(var(--chroma-flinders) * 0.8) var(--hue-flinders));
+  --color-flinders-500: oklch(0.610 var(--chroma-flinders) var(--hue-flinders));
+  --color-flinders-600: oklch(0.520 calc(var(--chroma-flinders) * 0.92) var(--hue-flinders));
+  --color-flinders-700: oklch(0.420 calc(var(--chroma-flinders) * 0.78) var(--hue-flinders));
+  --color-flinders-800: oklch(0.320 calc(var(--chroma-flinders) * 0.58) var(--hue-flinders));
+  --color-flinders-900: oklch(0.220 calc(var(--chroma-flinders) * 0.38) var(--hue-flinders));
+  --color-flinders-950: oklch(0.145 calc(var(--chroma-flinders) * 0.22) var(--hue-flinders));
+
+  /* ---- STOCKTON — warm golden sand (65°) ---- */
+  --color-stockton-50:  oklch(0.995 calc(var(--chroma-stockton) * 0.22) var(--hue-stockton));
+  --color-stockton-100: oklch(0.995 calc(var(--chroma-stockton) * 0.32) var(--hue-stockton));
+  --color-stockton-200: oklch(0.995 calc(var(--chroma-stockton) * 0.52) var(--hue-stockton));
+  --color-stockton-300: oklch(0.950 calc(var(--chroma-stockton) * 0.7) var(--hue-stockton));
+  --color-stockton-400: oklch(0.830 calc(var(--chroma-stockton) * 0.8) var(--hue-stockton));
+  --color-stockton-500: oklch(0.780 var(--chroma-stockton) var(--hue-stockton));
+  --color-stockton-600: oklch(0.540 calc(var(--chroma-stockton) * 0.90) var(--hue-stockton));
+  --color-stockton-700: oklch(0.430 calc(var(--chroma-stockton) * 0.75) var(--hue-stockton));
+  --color-stockton-800: oklch(0.330 calc(var(--chroma-stockton) * 0.55) var(--hue-stockton));
+  --color-stockton-900: oklch(0.225 calc(var(--chroma-stockton) * 0.38) var(--hue-stockton));
+  --color-stockton-950: oklch(0.150 calc(var(--chroma-stockton) * 0.22) var(--hue-stockton));
+
+  /* ---- OTWAY — eucalypt green (130°) ---- */
+  --color-otway-50:  oklch(0.975 calc(var(--chroma-otway) * 0.14) var(--hue-otway));
+  --color-otway-100: oklch(0.945 calc(var(--chroma-otway) * 0.25) var(--hue-otway));
+  --color-otway-200: oklch(0.885 calc(var(--chroma-otway) * 0.42) var(--hue-otway));
+  --color-otway-300: oklch(0.795 calc(var(--chroma-otway) * 0.62) var(--hue-otway));
+  --color-otway-400: oklch(0.690 calc(var(--chroma-otway) * 0.82) var(--hue-otway));
+  --color-otway-500: oklch(0.580 var(--chroma-otway) var(--hue-otway));
+  --color-otway-600: oklch(0.490 calc(var(--chroma-otway) * 0.90) var(--hue-otway));
+  --color-otway-700: oklch(0.390 calc(var(--chroma-otway) * 0.78) var(--hue-otway));
+  --color-otway-800: oklch(0.290 calc(var(--chroma-otway) * 0.58) var(--hue-otway));
+  --color-otway-900: oklch(0.200 calc(var(--chroma-otway) * 0.40) var(--hue-otway));
+  --color-otway-950: oklch(0.135 calc(var(--chroma-otway) * 0.25) var(--hue-otway));
+
+  /* ---- DAINTREE — rainforest teal (170.1°) ---- */
+  --color-daintree-50:  oklch(0.975 calc(var(--chroma-daintree) * 0.14) var(--hue-daintree));
+  --color-daintree-100: oklch(0.945 calc(var(--chroma-daintree) * 0.26) var(--hue-daintree));
+  --color-daintree-200: oklch(0.885 calc(var(--chroma-daintree) * 0.44) var(--hue-daintree));
+  --color-daintree-300: oklch(0.795 calc(var(--chroma-daintree) * 0.65) var(--hue-daintree));
+  --color-daintree-400: oklch(0.685 calc(var(--chroma-daintree) * 0.84) var(--hue-daintree));
+  --color-daintree-500: oklch(0.575 var(--chroma-daintree) var(--hue-daintree));
+  --color-daintree-600: oklch(0.485 calc(var(--chroma-daintree) * 0.90) var(--hue-daintree));
+  --color-daintree-700: oklch(0.385 calc(var(--chroma-daintree) * 0.78) var(--hue-daintree));
+  --color-daintree-800: oklch(0.285 calc(var(--chroma-daintree) * 0.58) var(--hue-daintree));
+  --color-daintree-900: oklch(0.195 calc(var(--chroma-daintree) * 0.40) var(--hue-daintree));
+  --color-daintree-950: oklch(0.130 calc(var(--chroma-daintree) * 0.25) var(--hue-daintree));
+
+  /* ---- HYAMS — deep ocean blue (226.6°) ---- */
+  --color-hyams-50:  oklch(0.975 calc(var(--chroma-hyams) * 0.14) var(--hue-hyams));
+  --color-hyams-100: oklch(0.940 calc(var(--chroma-hyams) * 0.25) var(--hue-hyams));
+  --color-hyams-200: oklch(0.875 calc(var(--chroma-hyams) * 0.42) var(--hue-hyams));
+  --color-hyams-300: oklch(0.780 calc(var(--chroma-hyams) * 0.62) var(--hue-hyams));
+  --color-hyams-400: oklch(0.670 calc(var(--chroma-hyams) * 0.82) var(--hue-hyams));
+  --color-hyams-500: oklch(0.555 var(--chroma-hyams) var(--hue-hyams));
+  --color-hyams-600: oklch(0.460 calc(var(--chroma-hyams) * 0.90) var(--hue-hyams));
+  --color-hyams-700: oklch(0.365 calc(var(--chroma-hyams) * 0.78) var(--hue-hyams));
+  --color-hyams-800: oklch(0.270 calc(var(--chroma-hyams) * 0.58) var(--hue-hyams));
+  --color-hyams-900: oklch(0.185 calc(var(--chroma-hyams) * 0.40) var(--hue-hyams));
+  --color-hyams-950: oklch(0.120 calc(var(--chroma-hyams) * 0.25) var(--hue-hyams));
+
+  /* ---- GRAMPIANS — wildflower purple (307°) ---- */
+  --color-grampians-50:  oklch(0.975 calc(var(--chroma-grampians) * 0.14) var(--hue-grampians));
+  --color-grampians-100: oklch(0.940 calc(var(--chroma-grampians) * 0.25) var(--hue-grampians));
+  --color-grampians-200: oklch(0.878 calc(var(--chroma-grampians) * 0.42) var(--hue-grampians));
+  --color-grampians-300: oklch(0.785 calc(var(--chroma-grampians) * 0.62) var(--hue-grampians));
+  --color-grampians-400: oklch(0.675 calc(var(--chroma-grampians) * 0.82) var(--hue-grampians));
+  --color-grampians-500: oklch(0.558 var(--chroma-grampians) var(--hue-grampians));
+  --color-grampians-600: oklch(0.465 calc(var(--chroma-grampians) * 0.90) var(--hue-grampians));
+  --color-grampians-700: oklch(0.368 calc(var(--chroma-grampians) * 0.78) var(--hue-grampians));
+  --color-grampians-800: oklch(0.272 calc(var(--chroma-grampians) * 0.58) var(--hue-grampians));
+  --color-grampians-900: oklch(0.188 calc(var(--chroma-grampians) * 0.40) var(--hue-grampians));
+  --color-grampians-950: oklch(0.122 calc(var(--chroma-grampians) * 0.25) var(--hue-grampians));
+
+  /* ---- PRIMARY — alias of --role-primary scale ----
+     These mirror whichever scale --role-primary points to.
+     Swap --role-primary in Layer 1a to re-theme instantly. */
+  --color-primary-50:  oklch(calc(var(--lightness-primary) * 1.6) calc(var(--chroma-primary) * 0.15) var(--hue-primary));
+  --color-primary-100: oklch(calc(var(--lightness-primary) * 1.5) calc(var(--chroma-primary) * 0.3) var(--hue-primary));
+  --color-primary-200: oklch(calc(var(--lightness-primary) * 1.2) calc(var(--chroma-primary) * 0.6) var(--hue-primary));
+  --color-primary-300: oklch(calc(var(--lightness-primary) * 1.2) calc(var(--chroma-primary) * 0.9) var(--hue-primary));
+  --color-primary-400: oklch(calc(var(--lightness-primary) * 1.1) calc(var(--chroma-primary) * 1) var(--hue-primary));
+  --color-primary-500: oklch(var(--lightness-primary) var(--chroma-primary) var(--hue-primary));
+  --color-primary-600: oklch(calc(var(--lightness-primary) * 0.9) calc(var(--chroma-primary) * 0.95) var(--hue-primary));
+  --color-primary-700: oklch(calc(var(--lightness-primary) * 0.7) calc(var(--chroma-primary) * 0.8) var(--hue-primary));
+  --color-primary-800: oklch(calc(var(--lightness-primary) * 0.5) calc(var(--chroma-primary) * 0.58) var(--hue-primary));
+  --color-primary-900: oklch(calc(var(--lightness-primary) * 0.3) calc(var(--chroma-primary) * 0.40) var(--hue-primary));
+  --color-primary-950: oklch(calc(var(--lightness-primary) * 0.2) calc(var(--chroma-primary) * 0.25) var(--hue-primary));
+
+  /* ---- SECONDARY — alias of --role-secondary scale ---- */
+  --color-secondary-50:  oklch(calc(var(--lightness-secondary) * 1.6) calc(var(--chroma-secondary) * 0.15) var(--hue-secondary));
+  --color-secondary-100: oklch(calc(var(--lightness-secondary) * 1.5) calc(var(--chroma-secondary) * 0.3) var(--hue-secondary));
+  --color-secondary-200: oklch(calc(var(--lightness-secondary) * 1.2) calc(var(--chroma-secondary) * 0.6) var(--hue-secondary));
+  --color-secondary-300: oklch(calc(var(--lightness-secondary) * 1.2) calc(var(--chroma-secondary) * 0.9) var(--hue-secondary));
+  --color-secondary-400: oklch(calc(var(--lightness-secondary) * 1.1) calc(var(--chroma-secondary) * 1) var(--hue-secondary));
+  --color-secondary-500: oklch(var(--lightness-secondary) var(--chroma-secondary) var(--hue-secondary));
+  --color-secondary-600: oklch(calc(var(--lightness-secondary) * 0.9) calc(var(--chroma-secondary) * 0.95) var(--hue-secondary));
+  --color-secondary-700: oklch(calc(var(--lightness-secondary) * 0.7) calc(var(--chroma-secondary) * 0.8) var(--hue-secondary));
+  --color-secondary-800: oklch(calc(var(--lightness-secondary) * 0.5) calc(var(--chroma-secondary) * 0.58) var(--hue-secondary));
+  --color-secondary-900: oklch(calc(var(--lightness-secondary) * 0.3) calc(var(--chroma-secondary) * 0.40) var(--hue-secondary));
+  --color-secondary-950: oklch(calc(var(--lightness-secondary) * 0.2) calc(var(--chroma-secondary) * 0.25) var(--hue-secondary));
+
+  /* ---- ACCENT — alias of --role-accent scale ---- */
+  --color-accent-50:  oklch(0.975 calc(var(--chroma-accent) * 0.14) var(--hue-accent));
+  --color-accent-100: oklch(0.940 calc(var(--chroma-accent) * 0.25) var(--hue-accent));
+  --color-accent-200: oklch(0.878 calc(var(--chroma-accent) * 0.42) var(--hue-accent));
+  --color-accent-300: oklch(0.785 calc(var(--chroma-accent) * 0.62) var(--hue-accent));
+  --color-accent-400: oklch(0.675 calc(var(--chroma-accent) * 0.82) var(--hue-accent));
+  --color-accent-500: oklch(0.558 var(--chroma-accent) var(--hue-accent));
+  --color-accent-600: oklch(0.465 calc(var(--chroma-accent) * 0.90) var(--hue-accent));
+  --color-accent-700: oklch(0.368 calc(var(--chroma-accent) * 0.78) var(--hue-accent));
+  --color-accent-800: oklch(0.272 calc(var(--chroma-accent) * 0.58) var(--hue-accent));
+  --color-accent-900: oklch(0.188 calc(var(--chroma-accent) * 0.40) var(--hue-accent));
+  --color-accent-950: oklch(0.122 calc(var(--chroma-accent) * 0.25) var(--hue-accent));
+
+  /* ---- SUCCESS — alias of --role-accent scale ---- */
+  --color-success-50:  oklch(calc(var(--lightness-success) * 1.6) calc(var(--chroma-success) * 0.15) var(--hue-success));
+  --color-success-100: oklch(calc(var(--lightness-success) * 1.5) calc(var(--chroma-success) * 0.3) var(--hue-success));
+  --color-success-200: oklch(calc(var(--lightness-success) * 1.4) calc(var(--chroma-success) * 0.7) var(--hue-success));
+  --color-success-300: oklch(calc(var(--lightness-success) * 1.2) calc(var(--chroma-success) * 0.9) var(--hue-success));
+  --color-success-400: oklch(calc(var(--lightness-success) * 1.1) calc(var(--chroma-success) * 1) var(--hue-success));
+  --color-success-500: oklch(var(--lightness-success) var(--chroma-success) var(--hue-success));
+  --color-success-600: oklch(calc(var(--lightness-success) * 0.8) calc(var(--chroma-success) * 0.95) var(--hue-success));
+  --color-success-700: oklch(calc(var(--lightness-success) * 0.7) calc(var(--chroma-success) * 0.8) var(--hue-success));
+  --color-success-800: oklch(calc(var(--lightness-success) * 0.5 ) calc(var(--chroma-success) * 0.58) var(--hue-success));
+  --color-success-900: oklch(calc(var(--lightness-success) * 0.3) calc(var(--chroma-success) * 0.40) var(--hue-success));
+  --color-success-950: oklch(calc(var(--lightness-success) * 0.2) calc(var(--chroma-success) * 0.25) var(--hue-success));  
+
+  /* ---- WARNING — alias of --role-accent scale ---- */
+  --color-warning-50:  oklch(calc(var(--lightness-warning) * 1.6) calc(var(--chroma-warning) * 0.15) var(--hue-warning));
+  --color-warning-100: oklch(calc(var(--lightness-warning) * 1.5) calc(var(--chroma-warning) * 0.3) var(--hue-warning));
+  --color-warning-200: oklch(calc(var(--lightness-warning) * 1.24) calc(var(--chroma-warning) * 0.6) var(--hue-warning));
+  --color-warning-300: oklch(calc(var(--lightness-warning) * 1.2) calc(var(--chroma-warning) * 0.9) var(--hue-warning));
+  --color-warning-400: oklch(calc(var(--lightness-warning) * 1.1) calc(var(--chroma-warning) * 1) var(--hue-warning));
+  --color-warning-500: oklch(var(--lightness-warning) var(--chroma-warning) var(--hue-warning));
+  --color-warning-600: oklch(calc(var(--lightness-warning) * 0.9) calc(var(--chroma-warning) * 0.95) var(--hue-warning));
+  --color-warning-700: oklch(calc(var(--lightness-warning) * 0.7) calc(var(--chroma-warning) * 0.8) var(--hue-warning));
+  --color-warning-800: oklch(calc(var(--lightness-warning) * 0.5) calc(var(--chroma-warning) * 0.58) var(--hue-warning));
+  --color-warning-900: oklch(calc(var(--lightness-warning) * 0.3) calc(var(--chroma-warning) * 0.40) var(--hue-warning));
+  --color-warning-950: oklch(calc(var(--lightness-warning) * 0.2) calc(var(--chroma-warning) * 0.25) var(--hue-warning));  
+
+  /* ---- DANGER — alias of --role-accent scale ---- */
+  --color-danger-50:  oklch(calc(var(--lightness-danger) * 1.6) calc(var(--chroma-danger) * 0.15) var(--hue-danger));
+  --color-danger-100: oklch(calc(var(--lightness-danger) * 1.5) calc(var(--chroma-danger) * 0.3) var(--hue-danger));
+  --color-danger-200: oklch(calc(var(--lightness-danger) * 1.4) calc(var(--chroma-danger) * 0.6) var(--hue-danger));
+  --color-danger-300: oklch(calc(var(--lightness-danger) * 1.2) calc(var(--chroma-danger) * 0.9) var(--hue-danger));
+  --color-danger-400: oklch(calc(var(--lightness-danger) * 1.1) calc(var(--chroma-danger) * 0.95) var(--hue-danger));
+  --color-danger-500: oklch(var(--lightness-danger) var(--chroma-danger) var(--hue-danger));
+  --color-danger-600: oklch(calc(var(--lightness-danger) * 0.8) calc(var(--chroma-danger) * 0.95) var(--hue-danger));
+  --color-danger-700: oklch(calc(var(--lightness-danger) * 0.7) calc(var(--chroma-danger) * 0.8) var(--hue-danger));
+  --color-danger-800: oklch(calc(var(--lightness-danger) * 0.5) calc(var(--chroma-danger) * 0.58) var(--hue-danger));
+  --color-danger-900: oklch(calc(var(--lightness-danger) * 0.3) calc(var(--chroma-danger) * 0.40) var(--hue-danger));
+  --color-danger-950: oklch(calc(var(--lightness-danger) * 0.2) calc(var(--chroma-danger) * 0.25) var(--hue-danger)); 
+
+  /* ---- INFO — alias of --role-accent scale ---- */
+  --color-info-50:  oklch(calc(var(--lightness-info) * 2.7) calc(var(--chroma-info) * 0.15) var(--hue-info));
+  --color-info-100: oklch(calc(var(--lightness-info) * 2.5) calc(var(--chroma-info) * 0.3) var(--hue-info));
+  --color-info-200: oklch(calc(var(--lightness-info) * 2.4) calc(var(--chroma-info) * 0.6) var(--hue-info));
+  --color-info-300: oklch(calc(var(--lightness-info) * 2.3) calc(var(--chroma-info) * 0.9) var(--hue-info));
+  --color-info-400: oklch(calc(var(--lightness-info) * 1.5) calc(var(--chroma-info) * 1) var(--hue-info));
+  --color-info-500: oklch(var(--lightness-info) var(--chroma-info) var(--hue-info));
+  --color-info-600: oklch(calc(var(--lightness-info) * 0.8) calc(var(--chroma-info) * 0.7) var(--hue-info));
+  --color-info-700: oklch(calc(var(--lightness-info) * 0.7) calc(var(--chroma-info) * 0.6) var(--hue-info));
+  --color-info-800: oklch(calc(var(--lightness-info) * 0.5) calc(var(--chroma-info) * 0.5) var(--hue-info));
+  --color-info-900: oklch(calc(var(--lightness-info) * 0.3) calc(var(--chroma-info) * 0.40) var(--hue-info));
+  --color-info-950: oklch(calc(var(--lightness-info) * 0.2) calc(var(--chroma-info) * 0.25) var(--hue-info));
+}
+
+
+/* ============================================================
+   LAYER 2 — SEMANTIC BASE TOKENS (light mode default)
+   Intent-based aliases. Only these flip in dark mode.
+   ============================================================ */
+
+:root {
+  --color-surface-base: light-dark(var(--color-base-50), var(--color-base-950));
+  --color-surface-raised: light-dark(var(--color-base-100), var(--color-base-800));
+  --color-surface-overlay: light-dark(var(--color-base-200), var(--color-base-700));
+  --color-surface-sunken:  light-dark(var(--color-base-300), var(--color-base-600));
+
+  --color-text-base: light-dark(var(--color-base-950), var(--color-base-100));
+  --color-text-muted: light-dark(var(--color-base-700), var(--color-base-200));
+  --color-text-subtle: light-dark(var(--color-base-400), var(--color-base-400));
+  --color-text-inverse: light-dark(var(--color-base-light), var(--color-base-dark));
+
+  --color-border-base:   light-dark(var(--color-base-300), var(--color-base-600));
+  --color-border-strong: light-dark(var(--color-base-500), var(--color-base-500));
+  --color-border-subtle: light-dark(var(--color-base-200), var(--color-base-700));
+
+  --color-focus-ring: oklch(0.55 0.18 var(--hue-hyams) / 0.6);
+}
+/* ============================================================
+   LAYER 3 — ROLE TOKENS
+   Override in your own :root {} block to re-theme.
+
+   Tip: to fully swap primary to otway green, update both
+   --role-primary in Layer 1a AND these role tokens. Or
+   just update the role tokens below for a quick override.
+   ============================================================ */
+
+:root {
+  --color-primary-fg: light-dark(var(--color-primary-500), var(--color-primary-500)); 
+  --color-primary-bg: light-dark(var(--color-primary-50), var(--color-primary-950));
+  --color-primary-border: light-dark(var(--color-primary-200), var(--color-primary-800));
+  --color-primary-hover:  light-dark(var(--color-primary-700), var(--color-primary-300));
+  --color-primary-active: light-dark(var(--color-primary-800), var(--color-primary-200));
+
+  --color-secondary-fg:     light-dark(var(--color-secondary-500), var(--color-secondary-400));
+  --color-secondary-bg:     light-dark(var(--color-secondary-50), var(--color-secondary-950));
+  --color-secondary-border: light-dark(var(--color-secondary-200), var(--color-secondary-800));
+  --color-secondary-hover:  light-dark(var(--color-secondary-700), var(--color-secondary-300));
+  --color-secondary-active: light-dark(var(--color-secondary-800), var(--color-secondary-200));
+
+  --color-accent-fg:     light-dark(var(--color-accent-500), var(--color-accent-400));
+  --color-accent-bg:     light-dark(var(--color-accent-50), var(--color-accent-950));
+  --color-accent-border: light-dark(var(--color-accent-200), var(--color-accent-800));
+  --color-accent-hover:  light-dark(var(--color-accent-600), var(--color-accent-300));
+  --color-accent-active: light-dark(var(--color-accent-700), var(--color-accent-200));
+
+  --color-success-fg:     light-dark(var(--color-success-500),  var(--color-success-400));
+  --color-success-bg:     light-dark(var(--color-success-50),  var(--color-success-900));
+  --color-success-border: light-dark(var(--color-success-300),  var(--color-success-800));
+
+  --color-warning-fg:     light-dark(var(--color-warning-500),  var(--color-warning-400));
+  --color-warning-bg:     light-dark(var(--color-warning-50),  var(--color-warning-900));
+  --color-warning-border: light-dark(var(--color-warning-400),  var(--color-warning-800));
+
+  --color-danger-fg:     light-dark(var(--color-danger-500),  var(--color-danger-300));
+  --color-danger-bg:     light-dark(var(--color-danger-50),  var(--color-danger-900));
+  --color-danger-border: light-dark(var(--color-danger-300),  var(--color-danger-700));
+
+  --color-info-fg:     light-dark(var(--color-info-500),  var(--color-info-300));
+  --color-info-bg:     light-dark(var(--color-info-50),  var(--color-info-900));
+  --color-info-border: light-dark(var(--color-info-300),  var(--color-info-500));
+}

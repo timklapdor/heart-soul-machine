@@ -1,8 +1,8 @@
 @use "svg-factory";
 
 main {
-    background-color: var(--flexoki-paper);
-    color: var(--flexoki-black);
+    background-color: light-dark(var(--color-base-200), var(--color-base-950));
+    color: light-dark(var(--color-base-900), var(--color-base-200));
     padding: 2ch;
     min-height: 100vh;;
 
@@ -43,14 +43,14 @@ main {
             transition: all 0.15s ease-out; 
 
             &:hover {
-                background: var(--heart);
-                color: var(--flexoki-paper);
+                background: light-dark(var(--color-primary-500), var(--color-primary-700));
+                color: var(--color-base-200);
             }
             }
         
         code {
-            background-color: var(--flexoki-100);
-            color: var(--flexoki-blue-600);
+            background-color: light-dark(var(--flexoki-100), var(--color-base-700));
+            color: light-dark(var(--color-info-600), var(--color-info-300));
             padding: 0 0.7ch;
         }
 
@@ -115,7 +115,7 @@ main {
             p {
                 text-align: end;
                 font-size: .8rem;
-                color: var(--flexoki-700);
+                color: light-dark(var(--color-base-700), var(--color-base-400));
 
                 &.name {
                     text-transform: uppercase;
@@ -210,7 +210,7 @@ main {
         }
 
         h1.hero {
-            color: var(--flexoki-paper);
+            color: light-dark(var(--color-base-900), var(--color-base-200));
             margin-bottom: 1ch;
             z-index: 9;
         }
@@ -221,8 +221,8 @@ main {
             font-size: 1.7rem;
             font-family: 'Aleo', 'Rockwell', 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
             font-weight: 900;
-            border-right: 2px dotted var(--flexoki-500);
-            border-bottom: 2px dotted var(--flexoki-500);
+            border-right: 2px dotted var(--color-base-500);
+            border-bottom: 2px dotted var(--color-base-500);
             max-width: 50ch;
             justify-self: center;
 
@@ -232,7 +232,7 @@ main {
             text-transform: uppercase;
             font-size: 45%;
             font-weight: bold;
-            background: var(--flexoki-100);
+            background: light-dark(var(--color-base-100), var(--color-base-700));
             padding: .5ch;
             border-radius: .5ch;
             vertical-align: middle;
@@ -333,7 +333,7 @@ main {
                 justify-content: flex-start;
                 padding: 2ch 0 0 0;
                 width: 100%;
-                color: var(--flexoki-700);
+                color: light-dark(var(--color-base-700), var(--color-base-400));
             
 
                 & li {
@@ -341,7 +341,7 @@ main {
                     font-size: 1.1rem;
                     padding: .2ch;
                     &::marker {
-                       content: ""
+                       content: "";
                     }
                 }
 
@@ -356,6 +356,7 @@ main {
                         position: relative;
                         top: 0.1rem;
                         margin-right: 0.2rem;
+                        stroke:light-dark(var(--color-base-700), var(--color-base-300));
                     }
                 }
                 li.categories {

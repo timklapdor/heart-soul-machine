@@ -1,10 +1,18 @@
 html {
-    background-color: var(--flexoki-850);
+    color-scheme: light dark;
+    
+    &[data-theme=light] {
+    color-scheme: light;
+    }
+
+    &[data-theme=dark] {
+    color-scheme: dark;
+    }
 }
 
 body {
     margin: 0;
-    background-color: var(--flexoki-850);
+    background-color: light-dark(var(--color-base-800), var(--color-base-900));
     display: grid;
     min-height: 100vh;
     grid-template-columns: 20ch minmax(60%, 1fr);
@@ -13,8 +21,8 @@ body {
         "aside main main";
 
         aside {
-            background-color: var(--flexoki-850);
-            color: var(--flexoki-paper);
+            background-color: light-dark(var(--color-base-800), var(--color-base-900));
+            color: var(--color-base-100);
             padding: 2ch;
             transition: transform 400ms;
             display: grid;
@@ -25,7 +33,7 @@ body {
             div.rss {
                 align-self: self-end;
                 justify-self: center;
-                color: var(--flexoki-paper);
+                color: var(--color-base-100);
                 &:hover {
                     color: var(--heart);
                 }
@@ -36,8 +44,7 @@ body {
         }
 
         header {
-            background-color: var(--flexoki-850);
-            color: var(--flexoki-paper);
+            color: var(--color-base-100);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -57,9 +64,6 @@ body {
             justify-content: center;
             align-items: flex-start;
 
- 
-
-
             button {
                 margin-right: 2ch;
                 display: none;
@@ -72,14 +76,10 @@ body {
                 text-transform: uppercase;
                 margin: 0;
                 padding: 0;
-                color: var(--flexoki-paper);
+                color: var(--color-base-100);
                 padding-left: 2ch;
                 transition: all 0.5s ease-out;
-
-
-
-
-                
+        
                 & a { 
                     text-decoration: dotted;
 
@@ -92,17 +92,17 @@ body {
                     font-size: .9rem;
                     margin: 2ch 0 2ch 0 ;
                     padding: 1ch;
-                    border-bottom: 1px solid var(--flexoki-800);
+                    border-bottom: 1px solid var(--color-base-600);
                     & a {
                         display: block;
                         &:hover {
-                            color: var(--flexoki-paper);
+                            color: var(--color-base-100);
                             text-decoration:dotted;
                         }
                     }
                     &:hover {
                         background-color: var(--heart);
-                        color: var(--flexoki-paper);
+                        color: var(--color-base-100);
                         transition: all 0.15s ease-out; 
 
                     }

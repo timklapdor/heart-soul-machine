@@ -3,6 +3,7 @@ $soul: #ffae2c;
 
 
 @use "modules/reset";
+@forward "modules/palette";
 @forward "modules/colour";
 @forward "modules/svg-factory";
 @use "modules/font-size";
@@ -21,5 +22,4 @@ $soul: #ffae2c;
 
 body {
   font-family: system-ui;
-  background-color: var(--flexoki-850);
 }
