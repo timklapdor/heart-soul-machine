@@ -2,8 +2,28 @@
     --heart: #ff0e69;
     --soul: #ffae2c; 
 
-    --flexoki-black: #100F0F;
-    --flexoki-paper: #FFFCF0;
+    --hue-base:    73;
+    --chroma-base: 0.005;
+
+    /* ---- Absolute white and black ---- */
+    --color-base-light: oklch(1 0 0);
+    --color-base-dark:  oklch(0 0 0);
+
+    /* ---- BASE — neutral 50–950 ---- */
+    --color-base-50:  oklch(0.985 var(--chroma-base) var(--hue-base));
+    --color-base-100: oklch(0.960 var(--chroma-base) var(--hue-base));
+    --color-base-200: oklch(0.920 calc(var(--chroma-base) * 1.2) var(--hue-base));
+    --color-base-300: oklch(0.840 calc(var(--chroma-base) * 1.5) var(--hue-base));
+    --color-base-400: oklch(0.720 calc(var(--chroma-base) * 1.8) var(--hue-base));
+    --color-base-500: oklch(0.580 calc(var(--chroma-base) * 2.0) var(--hue-base));
+    --color-base-600: oklch(0.450 calc(var(--chroma-base) * 1.8) var(--hue-base));
+    --color-base-700: oklch(0.340 calc(var(--chroma-base) * 1.5) var(--hue-base));
+    --color-base-800: oklch(0.230 calc(var(--chroma-base) * 1.2) var(--hue-base));
+    --color-base-900: oklch(0.150 var(--chroma-base) var(--hue-base));
+    --color-base-950: oklch(0.095 var(--chroma-base) var(--hue-base));
+
+    --flexoki-black: var(--color-base-950);
+    --flexoki-paper: var(--color-base-100);
   
     --flexoki-950:         #1C1B1A; 
     --flexoki-900:         #282726;

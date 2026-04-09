@@ -9,19 +9,19 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 ## Software
 
 - 📨 Mail Client: Mail.app
-- 📮 Mail Server: Canary (personal) & Outlook (professional)
+- 📮 Mail Server: Gmail (personal) & Outlook (professional)
 - 📝 Notes: Obsidian
-- ✅ To-Do: Obsidian
-- 📷 iPhone Photo Shooting: iOS Camera
-- 🖼️ Photo Management: Photos.app + Apeture
+- ✅ To-Do: OmniFocus ~~Obsidian~~
+- 📷 Photo Shooting: iPhone Camera + Olympus E-M5 MarkII 
+- 🖼️ Photo Management: Photos.app ~~+ Lightroom~~ (only using Lightroom to edit)
 - 📆 Calendar: Calendar.app + Fantastical
 - 📅 Calendar Backend: iCloud
 - 📁 Cloud file storage: Dropbox & iCloud Drive
 - 📖 RSS: Readwise
 - 🙍🏻‍♂️ Contacts: Contacts.app
-- 🌐 Browser: Arc
+- 🌐 Browser: Arc **+ Safari + Zen**
 - 💬 Chat: Messages.app, WhatsApp
-- 🔖 Bookmarks: Arc
+- 🔖 Bookmarks: **Readwise + Mastodon**
 - 📑 Read It Later: Readwise
 - 📜 Word Processing: Obsidian
 - 📊 Spreadsheets: Google Sheets
@@ -36,7 +36,7 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 
 ### Other apps
 - Plex
-- Bartender
+- Vanilla ~~Bartender~~
 - Visual Studio
 - iA Writer
 - Adobe Illustrator & Lightroom
@@ -47,10 +47,11 @@ This is a combo of the [Uses This](https://usesthis.com/interviews/nirav.patel/)
 - AirPods Pro 2
 - M2 MacBook Pro for work
 - M1 Macook Air for personal
+- **BOOX Go7** ~~Kindle Paperwhite~~
 - iPad Mini + Apple Pencil
 - Mac Mini as home theatre centre
 - Magic Trackpad
-- Dell 4k monitor at home
+- Dell **& LG** 4k monitor**s** at home
 - Black IKEA BEKANT sit/stand desk
 - Lifx smart lights
 - LG C2 65" OLED TV
