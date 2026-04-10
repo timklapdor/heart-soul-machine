@@ -36,14 +36,8 @@ div.timeline {
         div.eventtype {
             grid-column: 1;
             font-size: 80%;
-            width: 2rem;
-
-            &.work {background: url(svg-factory.svg-encode(svg-factory.$work-light)) no-repeat;}
-            &.life {background: url(svg-factory.svg-encode(svg-factory.$life-light)) no-repeat;}
-            &.school {background: url(svg-factory.svg-encode(svg-factory.$school-light)) no-repeat;}
-            &.project {background: url(svg-factory.svg-encode(svg-factory.$project-light)) no-repeat;}
-
-
+            width: 1.5rem;
+            color: light-dark(var(--color-base-500), var(--color-base-400))
         }
         div.date {
             grid-column: 2;

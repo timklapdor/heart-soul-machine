@@ -10,9 +10,9 @@ layout: /layouts/grid.njk
 	<h1 class="p-name title {{ 'hero' if coverImage | length }}">{{ title }}</h1>
 	
 	<ul class="metadata">
-		<li class="dt-published date">{{ page.date | postDate }}</li>
-		{%- if categories | length -%}<li class="categories">{%- if categories | length == 1 -%}{{ categories[0] }}{%- else -%}{%- for item in categories -%}{%- if loop.last -%}	& {{ item }}{%- elseif loop.first -%}{{ item }}{%- else -%}, {{ item }}{%- endif -%}{%- endfor -%}{%- endif -%}</li>{%- endif -%}
-		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
+		<li class="dt-published date">{% include "icons/calendar.svg" %} {{ page.date | postDate }}</li>
+		{%- if categories | length -%}<li class="categories">{%- if categories | length == 1 -%}{% include "icons/categories.svg" %} {{ categories[0] }}{%- else -%}{%- for item in categories -%}{%- if loop.last -%}	& {{ item }}{%- elseif loop.first -%}{{ item }}{%- else -%}, {{ item }}{%- endif -%}{%- endfor -%}{%- endif -%}</li>{%- endif -%}
+		<li class="time">{% include "icons/time.svg" %}{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
 	
 	{% if summary  %}
@@ -23,10 +23,10 @@ layout: /layouts/grid.njk
 
 	{{ content | safe }}
 	<ul class="metadata">
-		{% if author | length  %}<li class="p-author author">{{ author}}</li>{% endif %}
-		{% if location | length %}<li class="p-locality location">{{ location }}</li>{% else %}<li class="p-locality location">Adelaide, Australia</li>{% endif %}
-		{% if tags | length %}<li class="p-category tags">{%- for item in tags -%}{{ item }}{%- if loop.revindex == 2 -%} & {%- elseif not loop.last -%}, {%- endif -%}{%- endfor -%}</li>{%- endif -%}
-		{% if updatedDate %}<li class="dt-updated updatedDate">{{ updatedDate | postDate }}</li>{% endif %}
+		{% if author | length  %}<li class="p-author author">{% include "icons/author.svg" %}{{ author}}</li>{% endif %}
+		{% if location | length %}<li class="p-locality location">{% include "icons/map.svg" %}{{ location }}</li>{% else %}<li class="p-locality location">{% include "icons/map.svg" %} Adelaide, Australia</li>{% endif %}
+		{% if tags | length %}<li class="p-category tags">{% include "icons/tag.svg" %}{%- for item in tags -%}{{ item }}{%- if loop.revindex == 2 -%} & {%- elseif not loop.last -%}, {%- endif -%}{%- endfor -%}</li>{%- endif -%}
+		{% if updatedDate %}<li class="dt-updated updatedDate">{% include "icons/calendar.svg" %} {{ updatedDate | postDate }}</li>{% endif %}
 		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
 	</ul>
 
