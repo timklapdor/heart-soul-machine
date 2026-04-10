@@ -4,78 +4,17 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-04-10T00:00:00Z</updated>
+  <updated>2026-04-10T16:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
   <entry>
-    <title>To the Dark Side</title>
-    <link href="https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/"/>
-    <updated>2026-04-10T00:00:00Z</updated>
-    <id>https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/</id>
-    <media:content 
-        xmlns:media="http://search.yahoo.com/mrss/" 
-        url="https://heartsoulmachine.com/assets/social-previews/to-the-dark-side-preview.jpeg" 
-        medium="image" 
-        type="image/jpeg" />
-    <summary>Tweaking the website - adding a dark mode and moving CSS to more modern and vanilla.</summary>
-    <content xml:lang="en" type="html">&lt;p&gt;If you&#39;ve got &lt;code&gt;dark-mode&lt;/code&gt; enabled on your system or browser ,you might be seeing the website differently than normal. I&#39;ve been mucking around as a way of learning some of the newer CSS and what&#39;s possible these days. One of the things I&#39;ve been keen on is moving to a more &amp;quot;vanilla&amp;quot; approach to my websites – less reliance on frameworks, addons and plugins. So I&#39;ve been trying to suss out what you can do these days with just plain old vanilla CSS.&lt;/p&gt;
-&lt;p&gt;As a designer, one of the things that I&#39;ve relied heavily on in the past has been &lt;code&gt;SASS&lt;/code&gt;to handle the grunt work of creating colour systems - all of the darker and lighter tones for each of the available colours in your palette. That can be done now using the native colour-mixing that&#39;s available in CSS. To complement that, I&#39;ve been looking into making more &amp;quot;colourful&amp;quot; yet accessible use of colour across my sites. I love colour - huge, big, blocky chunks of it - and often the more eye-wateringly lush and juicy the better. I started this by updating the colours I used on the &lt;a href=&quot;https://learning-types.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Learning Types&lt;/a&gt; site. One of the tricky things in a colour system is tachievingconsistency across the range. If you use yellow , the palette quickly becomesmuddied into poo-brown. In steps the OKLCH for creating my colour system.&lt;/p&gt;
-&lt;p&gt;There are a great number of colour systems – ways of codifying the hues, tones, lightness and darkness of the colours we see. Many on the web are used to the hex-codes like &lt;code&gt;#ff0e69&lt;/code&gt; and &lt;code&gt;#ffae2c&lt;/code&gt; you see around the place. You might be familiar with RGBA where you can assign values to the red, green, blue and alpha (transparency) channels. Theres HSL, which does appear on this very website - which is your Hue, Saturation and Lightness. OKLCH is one of those - you define the values for the Lightness, Chroma and Hue. This is all nicely explained on &lt;a href=&quot;https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OKLCH in CSS: why we moved from RGB and HSL&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;oklch()&lt;/code&gt; is a new way to define CSS colors. In &lt;code&gt;oklch(L C H)&lt;/code&gt; or &lt;code&gt;oklch(L C H / a)&lt;/code&gt;, each item corresponds as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;L&lt;/code&gt; is &lt;em&gt;perceived&lt;/em&gt; lightness (&lt;code&gt;0&lt;/code&gt;-&lt;code&gt;1&lt;/code&gt;). “Perceived” means that it has consistent lightness for our eyes, unlike &lt;code&gt;L&lt;/code&gt; in &lt;code&gt;hsl()&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C&lt;/code&gt; is chroma, from gray to the most saturated color.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;H&lt;/code&gt; is the hue angle (&lt;code&gt;0&lt;/code&gt;-&lt;code&gt;360&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a&lt;/code&gt; is opacity (&lt;code&gt;0&lt;/code&gt;-&lt;code&gt;1&lt;/code&gt; or &lt;code&gt;0&lt;/code&gt;-&lt;code&gt;100%&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The big thing for me was this idea of &amp;quot;perceived&amp;quot; - especially because I&#39;d been using  &lt;code&gt;darken()&lt;/code&gt; and &lt;code&gt;lighten&lt;/code&gt; in Sass and while they might be mathematically correct, there was alway a lot of tonal differences across the colour palette. OKLCH improves that quite a bit, and while I still might tinker, it&#39;s reduced the massive variations I am used to.&lt;/p&gt;
-&lt;p&gt;So I wanted an excuse to explore OKLCH, but also some of the new variables and functions possible in CSS. Down the rabbit hole I went, but what I wanted to share was where I ended up. I&#39;ve now built a colour system I am happy with – I haven&#39;t applied it to anything yet, but I&#39;ve started incorporating it here. What I did was break down my OKLCH into its constituent parts.&lt;/p&gt;
-&lt;p&gt;For example I&#39;ve tweaked the colour palette here to use a tint of my &lt;code&gt;Soul&lt;/code&gt;yellow:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;--hue-base: 73;
---chroma-base: 0.005;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;These are now CSS variables that I can use. So I plug them into a repeatable palette:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;--color-base-50: oklch(0.985 var(--chroma-base) var(--hue-base));
---color-base-100: oklch(0.960 var(--chroma-base) var(--hue-base));
---color-base-200: oklch(0.920 calc(var(--chroma-base) * 1.2) var(--hue-base));
---color-base-300: oklch(0.840 calc(var(--chroma-base) * 1.5) var(--hue-base));
---color-base-400: oklch(0.720 calc(var(--chroma-base) * 1.8) var(--hue-base));
---color-base-500: oklch(0.580 calc(var(--chroma-base) * 2.0) var(--hue-base));
---color-base-600: oklch(0.450 calc(var(--chroma-base) * 1.8) var(--hue-base));
---color-base-700: oklch(0.340 calc(var(--chroma-base) * 1.5) var(--hue-base));
---color-base-800: oklch(0.230 calc(var(--chroma-base) * 1.2) var(--hue-base));
---color-base-900: oklch(0.150 var(--chroma-base) var(--hue-base));
---color-base-950: oklch(0.095 var(--chroma-base) var(--hue-base));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/base-colour.png&quot; alt=&quot;What the above code looks like&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;And now I have a full palette for those colours. I&#39;m using the &lt;code&gt;calc&lt;/code&gt; function to change the hue and chroma across the range to provide a better spread and consistency alongside the other colours in the palette.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/colour-palette.png&quot; alt=&quot;The full colour palette&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;I mean – &lt;em&gt;look at those beauties!!&lt;/em&gt; Look at the consistency across each level!&lt;/p&gt;
-&lt;p&gt;The other nifty CSS feature I&#39;ve started adding to the site is a &lt;code&gt;light-dark&lt;/code&gt;function. So instead of &lt;code&gt;color&lt;/code&gt;&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; having a single assigned value, you can have one colour for &lt;code&gt;light&lt;/code&gt; mode and one for &lt;code&gt;dark&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;So the background of this page element is written&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;background-color: light-dark(var(--color-base-200), var(--color-base-950));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now for the site, I am still using the &lt;a href=&quot;https://11ty.rocks/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;11ty Rocks Sass + LightningCSS&lt;/a&gt; which I found out does some nifty backwards compatible tweakery, so your source code might not show that – but that&#39;s what I write. And it just works!&lt;/p&gt;
-&lt;p&gt;So I spent last night and this morning tweaking things across the site to make dark mode work. There are a few bits I need to work on (and if you see them let me know!) but I&#39;m well underway on making the site more Dark Friendly.&lt;/p&gt;
-&lt;hr class=&quot;footnotes-sep&quot; /&gt;
-&lt;section class=&quot;footnotes&quot;&gt;
-&lt;ol class=&quot;footnotes-list&quot;&gt;
-&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;I am sticking to the American spelling as it&#39;s part of the mental model I&#39;ve had to build to work on the web all these years and finding errors in my code because I&#39;ve tried to spell colour correctly. &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  <entry>
     <title>All in the Verbs</title>
-    <link href="https://heartsoulmachine.com/blog/2026/04-10-all-in-the-verbs/"/>
-    <updated>2026-04-10T00:00:00Z</updated>
-    <id>https://heartsoulmachine.com/blog/2026/04-10-all-in-the-verbs/</id>
+    <link href="https://heartsoulmachine.com/blog/2026/04-11-all-in-the-verbs/"/>
+    <updated>2026-04-10T16:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/04-11-all-in-the-verbs/</id>
     <media:content 
         xmlns:media="http://search.yahoo.com/mrss/" 
         url="https://heartsoulmachine.com/assets/social-previews/all-in-the-verbs-preview.jpeg" 
@@ -144,6 +83,67 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</content>
+  </entry>
+  <entry>
+    <title>To the Dark Side</title>
+    <link href="https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/"/>
+    <updated>2026-04-10T10:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/to-the-dark-side-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>Tweaking the website - adding a dark mode and moving CSS to more modern and vanilla.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;If you&#39;ve got &lt;code&gt;dark-mode&lt;/code&gt; enabled on your system or browser ,you might be seeing the website differently than normal. I&#39;ve been mucking around as a way of learning some of the newer CSS and what&#39;s possible these days. One of the things I&#39;ve been keen on is moving to a more &amp;quot;vanilla&amp;quot; approach to my websites – less reliance on frameworks, addons and plugins. So I&#39;ve been trying to suss out what you can do these days with just plain old vanilla CSS.&lt;/p&gt;
+&lt;p&gt;As a designer, one of the things that I&#39;ve relied heavily on in the past has been &lt;code&gt;SASS&lt;/code&gt;to handle the grunt work of creating colour systems - all of the darker and lighter tones for each of the available colours in your palette. That can be done now using the native colour-mixing that&#39;s available in CSS. To complement that, I&#39;ve been looking into making more &amp;quot;colourful&amp;quot; yet accessible use of colour across my sites. I love colour - huge, big, blocky chunks of it - and often the more eye-wateringly lush and juicy the better. I started this by updating the colours I used on the &lt;a href=&quot;https://learning-types.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Learning Types&lt;/a&gt; site. One of the tricky things in a colour system is tachievingconsistency across the range. If you use yellow , the palette quickly becomesmuddied into poo-brown. In steps the OKLCH for creating my colour system.&lt;/p&gt;
+&lt;p&gt;There are a great number of colour systems – ways of codifying the hues, tones, lightness and darkness of the colours we see. Many on the web are used to the hex-codes like &lt;code&gt;#ff0e69&lt;/code&gt; and &lt;code&gt;#ffae2c&lt;/code&gt; you see around the place. You might be familiar with RGBA where you can assign values to the red, green, blue and alpha (transparency) channels. Theres HSL, which does appear on this very website - which is your Hue, Saturation and Lightness. OKLCH is one of those - you define the values for the Lightness, Chroma and Hue. This is all nicely explained on &lt;a href=&quot;https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OKLCH in CSS: why we moved from RGB and HSL&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;oklch()&lt;/code&gt; is a new way to define CSS colors. In &lt;code&gt;oklch(L C H)&lt;/code&gt; or &lt;code&gt;oklch(L C H / a)&lt;/code&gt;, each item corresponds as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;L&lt;/code&gt; is &lt;em&gt;perceived&lt;/em&gt; lightness (&lt;code&gt;0&lt;/code&gt;-&lt;code&gt;1&lt;/code&gt;). “Perceived” means that it has consistent lightness for our eyes, unlike &lt;code&gt;L&lt;/code&gt; in &lt;code&gt;hsl()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C&lt;/code&gt; is chroma, from gray to the most saturated color.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;H&lt;/code&gt; is the hue angle (&lt;code&gt;0&lt;/code&gt;-&lt;code&gt;360&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a&lt;/code&gt; is opacity (&lt;code&gt;0&lt;/code&gt;-&lt;code&gt;1&lt;/code&gt; or &lt;code&gt;0&lt;/code&gt;-&lt;code&gt;100%&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The big thing for me was this idea of &amp;quot;perceived&amp;quot; - especially because I&#39;d been using  &lt;code&gt;darken()&lt;/code&gt; and &lt;code&gt;lighten&lt;/code&gt; in Sass and while they might be mathematically correct, there was alway a lot of tonal differences across the colour palette. OKLCH improves that quite a bit, and while I still might tinker, it&#39;s reduced the massive variations I am used to.&lt;/p&gt;
+&lt;p&gt;So I wanted an excuse to explore OKLCH, but also some of the new variables and functions possible in CSS. Down the rabbit hole I went, but what I wanted to share was where I ended up. I&#39;ve now built a colour system I am happy with – I haven&#39;t applied it to anything yet, but I&#39;ve started incorporating it here. What I did was break down my OKLCH into its constituent parts.&lt;/p&gt;
+&lt;p&gt;For example I&#39;ve tweaked the colour palette here to use a tint of my &lt;code&gt;Soul&lt;/code&gt;yellow:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;--hue-base: 73;
+--chroma-base: 0.005;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These are now CSS variables that I can use. So I plug them into a repeatable palette:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;--color-base-50: oklch(0.985 var(--chroma-base) var(--hue-base));
+--color-base-100: oklch(0.960 var(--chroma-base) var(--hue-base));
+--color-base-200: oklch(0.920 calc(var(--chroma-base) * 1.2) var(--hue-base));
+--color-base-300: oklch(0.840 calc(var(--chroma-base) * 1.5) var(--hue-base));
+--color-base-400: oklch(0.720 calc(var(--chroma-base) * 1.8) var(--hue-base));
+--color-base-500: oklch(0.580 calc(var(--chroma-base) * 2.0) var(--hue-base));
+--color-base-600: oklch(0.450 calc(var(--chroma-base) * 1.8) var(--hue-base));
+--color-base-700: oklch(0.340 calc(var(--chroma-base) * 1.5) var(--hue-base));
+--color-base-800: oklch(0.230 calc(var(--chroma-base) * 1.2) var(--hue-base));
+--color-base-900: oklch(0.150 var(--chroma-base) var(--hue-base));
+--color-base-950: oklch(0.095 var(--chroma-base) var(--hue-base));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/base-colour.png&quot; alt=&quot;What the above code looks like&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And now I have a full palette for those colours. I&#39;m using the &lt;code&gt;calc&lt;/code&gt; function to change the hue and chroma across the range to provide a better spread and consistency alongside the other colours in the palette.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/colour-palette.png&quot; alt=&quot;The full colour palette&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I mean – &lt;em&gt;look at those beauties!!&lt;/em&gt; Look at the consistency across each level!&lt;/p&gt;
+&lt;p&gt;The other nifty CSS feature I&#39;ve started adding to the site is a &lt;code&gt;light-dark&lt;/code&gt;function. So instead of &lt;code&gt;color&lt;/code&gt;&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; having a single assigned value, you can have one colour for &lt;code&gt;light&lt;/code&gt; mode and one for &lt;code&gt;dark&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So the background of this page element is written&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;background-color: light-dark(var(--color-base-200), var(--color-base-950));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now for the site, I am still using the &lt;a href=&quot;https://11ty.rocks/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;11ty Rocks Sass + LightningCSS&lt;/a&gt; which I found out does some nifty backwards compatible tweakery, so your source code might not show that – but that&#39;s what I write. And it just works!&lt;/p&gt;
+&lt;p&gt;So I spent last night and this morning tweaking things across the site to make dark mode work. There are a few bits I need to work on (and if you see them let me know!) but I&#39;m well underway on making the site more Dark Friendly.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;I am sticking to the American spelling as it&#39;s part of the mental model I&#39;ve had to build to work on the web all these years and finding errors in my code because I&#39;ve tried to spell colour correctly. &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </content>
   </entry>
   <entry>

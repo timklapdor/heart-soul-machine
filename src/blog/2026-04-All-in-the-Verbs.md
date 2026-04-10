@@ -4,7 +4,7 @@ aliases:
 category:
   - "[[Blog]]"
 status:
-date: 2026-04-10
+date: 2026-04-10 16:00:00
 categories:
   - Concepts
   - Educational Technology
