@@ -16,8 +16,8 @@ tags:
 location:
 coverImage:
 summary: Continuing on my work on a three-dimensional approach to Blooms – time to tackle the verbs.
-commentId:
-url:
+commentId: "116378999416304597"
+url: https://heartsoulmachine.com/blog/2026/04-10-all-in-the-verbs/
 ---
 At work, I've started to be involved in developing a process for program design. I am particularly interested in thinking through the tools, techniques, and approaches that make for genuinely good learning experience design. A central piece of that work are the learning outcomes: what students are doing across the program and within each individual course. This is a real opportunity to expand constructive alignment beyond a box-ticking exercise and to use it more as a strategic approach to clearly thread multiple components of the broader student experience through an entire program, scaffolded across courses. 
 
