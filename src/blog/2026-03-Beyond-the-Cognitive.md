@@ -8,8 +8,8 @@ date: 2026-03-20
 categories:
   - Higher Education
   - Learning Design
-updatedDate:
-updateDescription:
+updatedDate: 2026-04-10
+updateDescription: Adding references - need to acknowledge original sources. 
 tags:
 location:
 coverImage:
@@ -88,4 +88,9 @@ This is a work in progress — a first sketch rather than a finished framework. 
 
 Thoughts and feedback very welcome.
 
-
+### References
+- Anderson, L. W. & Krathwohl, D. R. (Eds.). 2001. *A taxonomy for learning, teaching, and assessing: A revision of Bloom’s taxonomy of educational objectives* (abridged edition). New York, NY: Longman. 
+- Bloom, B. S. (1956). *Taxonomy of educational objectives: The classification of educational goals, by a committee of college and university examiners. Handbook I: Cognitive Domain*. New York, NY. Longmans Green.
+- Krathwohl. D. R., Bloom, B. S., and Masia, B. B. (1964). *Taxonomy of educational objectives*, Book II. Affective domain. New York, NY. David McKay Company
+- Harrow, A. (1972). *A taxonomy of psychomotor domain: A guide for developing behavioral objectives*. New York: David McKay. 
+- Simpson, E. J. (1972). *The classification of educational objectives in the psychomotor domain*. Washington, DC: Gryphon House.
