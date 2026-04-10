@@ -14,8 +14,8 @@ tags:
 location:
 coverImage:
 summary: Tweaking the website - adding a dark mode and moving CSS to more modern and vanilla.
-commentId:
-url:
+commentId: "116377819647683130"
+url: https://heartsoulmachine.com/blog/2026/04-10-to-the-dark-side/
 ---
 If you've got `dark-mode` enabled on your system or browser ,you might be seeing the website differently than normal. I've been mucking around as a way of learning some of the newer CSS and what's possible these days. One of the things I've been keen on is moving to a more "vanilla" approach to my websites – less reliance on frameworks, addons and plugins. So I've been trying to suss out what you can do these days with just plain old vanilla CSS. 
 
