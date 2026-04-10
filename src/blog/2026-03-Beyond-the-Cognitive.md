@@ -48,31 +48,31 @@ To help balance the domains, ensure consistency across the levels, and support t
 
 ## Blooms in Three Domains
 
-| **Level**  | **Cognitive** | **Affective** | **Operative** |
+|   | **Cognitive** | **Affective** | **Operative** |
 |:--- |:--- |:--- |:--- | 
-| **Awareness**  | **Remembering**<br><br>Recalling facts, terms or concepts from memory. | **Receiving**<br><br>Being able to notice and attend to a stimulus, experience or feeling. | **Perceiving**<br><br>Using the senses to notice cues that guide physical action. |
-| **Concepts**   | **Understanding**<br><br>Making meaning from information by interpreting, classifying or explaining it. | **Responding**<br><br>Actively reacting to a stimulus, not just noticing it; the learner can participate rather than just observe. | **Preparing**<br><br>Readying the body and mind for a physical task, noting posture, movement, and spatial awareness. |
-| **Patterns**   | **Applying**<br><br>Using knowledge in a new or practical situation. The learner can transfer what they know into action. | **Valuing**<br><br>Attaching worth or importance to something. The learner begins to show commitment rather than just compliance. | **Imitating**<br><br>Copying a demonstrated action where performance is approximate and deliberate rather than fluent. |
-| **Practices**  | **Analysing**<br><br>Breaking information into parts to understand structure, relationships and what is or isn’t relevant. | **Organising**<br><br>Making sense of competing feelings and experiences by building a personal framework. The learner begins to understand why some things matter more to them than others. | **Practising**<br><br>Repeating an action until it becomes consistent and increasingly automatic. Effort shifts from thinking about the action to just doing it. |
-| **Principles** | **Evaluating**<br><br>Making judgements based on criteria and evidence. The learner can justify a position or critique a method. | **Characterising**<br><br>Emotional dispositions and responses to circumstances become consistent and recognisable, helping to contextualise situations. | **Performing**<br><br>Executing complex actions confidently, fluently and with adaptability to real conditions without needing to plan each step. |
-| **Expression** | **Creating**<br><br>Combining elements into a new, coherent whole, producing something original. | **Advocating**<br><br>The learner feels strongly enough to share, model and promote their outlook to others. | **Originating**<br><br>Creating new movement patterns or techniques to suit novel problems and environments. |
+| **Awareness**  | **Remembering**<br>Recalling facts, terms or concepts from memory. | **Receiving**<br>Being able to notice and attend to a stimulus, experience or feeling. | **Perceiving**<br>Using the senses to notice cues that guide physical action. |
+| **Concepts**   | **Understanding**<br>Making meaning from information by interpreting, classifying or explaining it. | **Responding**<br>Actively reacting to a stimulus, not just noticing it; the learner can participate rather than just observe. | **Preparing**<br>Readying the body and mind for a physical task, noting posture, movement, and spatial awareness. |
+| **Patterns**   | **Applying**<br>Using knowledge in a new or practical situation. The learner can transfer what they know into action. | **Valuing**<br>Attaching worth or importance to something. The learner begins to show commitment rather than just compliance. | **Imitating**<br>Copying a demonstrated action where performance is approximate and deliberate rather than fluent. |
+| **Practices**  | **Analysing**<br>Breaking information into parts to understand structure, relationships and what is or isn’t relevant. | **Organising**<br>Making sense of competing feelings and experiences by building a personal framework. The learner begins to understand why some things matter more to them than others. | **Practising**<br>Repeating an action until it becomes consistent and increasingly automatic. Effort shifts from thinking about the action to just doing it. |
+| **Principles** | **Evaluating**<br>Making judgements based on criteria and evidence. The learner can justify a position or critique a method. | **Characterising**<br>Emotional dispositions and responses to circumstances become consistent and recognisable, helping to contextualise situations. | **Performing**<br>Executing complex actions confidently, fluently and with adaptability to real conditions without needing to plan each step. |
+| **Expression** | **Creating**<br>Combining elements into a new, coherent whole, producing something original. | **Advocating**<br>The learner feels strongly enough to share, model and promote their outlook to others. | **Originating**<br>Creating new movement patterns or techniques to suit novel problems and environments. |
 
-{.blooms}
+{.blooms-3d}
 
 
 ### Level Focus
 I put this together to help define the specific focuses of the different levels. 
 
-| Level          | Cognitive                                  | Affective                                               | Operative                                             |
-| -------------- | ------------------------------------------ | ------------------------------------------------------- | ----------------------------------------------------- |
-| **Awareness**  | Discrete pieces of information             | Sensations & feelings                                   | Sensory cues                                          |
-| **Concepts**   | Categories and ideas                       | Emotions & attitudes                                    | Body mechanics                                        |
-| **Patterns**   | How things work and relate                 | Recurring emotional responses                           | Habitual movement and posture                         |
-| **Practices**  | Step-by-step methods for doing             | Deliberate ways of reflecting and responding            | Structured sequences and routines                     |
-| **Principles** | Rules that govern understanding            | Rules that govern ethical and emotional life            | Rules that govern skilled performance                 |
+|       | Cognitive | Affective | Operative |
+| ----- | --------- | --------- | --------- |
+| **Awareness**  | Discrete pieces of information | Sensations & feelings | Sensory cues |
+| **Concepts**   | Categories and ideas | Emotions & attitudes | Body mechanics |
+| **Patterns**   | How things work and relate | Recurring emotional responses | Habitual movement and posture |
+| **Practices**  | Step-by-step methods for doing | Deliberate ways of reflecting and responding | Structured sequences and routines                     |
+| **Principles** | Rules that govern understanding | Rules that govern ethical and emotional life | Rules that govern skilled performance |
 | **Expression** | Thinking in an original and generative way | Engaging authentically from a place of personal meaning | Moving and creating with individual voice and mastery |
 
-{.blooms}
+{.blooms-3d}
 
 
 ## Some notes

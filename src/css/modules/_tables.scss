@@ -7,15 +7,33 @@ table {
 
   }
 
-  &.blooms {
+  &.blooms-3d {
     grid-column: 3/span 3;
-    tbody {
-    tr:nth-child(1) {background-color: var(--p10-2-200)}
-    tr:nth-child(2) {background-color: var(--p10-4-200)}
-    tr:nth-child(3) {background-color: var(--p10-5-200)}
-    tr:nth-child(4) {background-color: var(--p10-6-200)}
-    tr:nth-child(5) {background-color: var(--p10-1-200)}
-    tr:nth-child(6) {background-color: var(--p10-7-200)}
+    tr th:nth-child(1) {background-color: none; border: none; width: 15%;}
+    tr td:nth-child(1) {background-color: var(--color-base-300)}
+    tr th:nth-child(2) {color: var(--color-daintree-50); background-color: var(--color-daintree-600)}
+    tr td:nth-child(2) {background-color: var(--color-daintree-300)}
+    tr th:nth-child(3) {color: var(--color-hyams-50); background-color: var(--color-hyams-600)}
+    tr td:nth-child(3) {background-color: var(--color-hyams-300)}
+    tr th:nth-child(4) {color: var(--color-grampians-50); background-color: var(--color-grampians-600)}
+    tr td:nth-child(4) {background-color: var(--color-grampians-300)}
     }
+  &.blooms-verbs {
+    grid-column: 3/span 3;
+    & th strong {font-size: 1.5rem;}
+    & th em {font-size: .9rem; font-weight: 500;}
+    & td strong {text-transform: uppercase; margin-bottom: .6rem; display: inline-flex;}
+    & td em {font-size: .9rem; font-weight: 500; font-style: normal; display: inline-flex; line-height: 1.3; color: var(--color-base-600)}
+    tr th:nth-child(1) {background-color: none; border: none; width: 15%;}
+    tr td:nth-child(1) {background-color: var(--color-base-200);}
+    tr th:nth-child(2) {color: var(--color-base-50); background-color: var(--color-base-600); width: 25%;}
+    tr td:nth-child(2) {background-color: var(--color-base-300)}
+    tr th:nth-child(3) {color: var(--color-daintree-50); background-color: var(--color-daintree-600)}
+    tr td:nth-child(3) {background-color: var(--color-daintree-300)}
+    tr th:nth-child(4) {color: var(--color-hyams-50); background-color: var(--color-hyams-600)}
+    tr td:nth-child(4) {background-color: var(--color-hyams-300)}
+    tr th:nth-child(5) {color: var(--color-grampians-50); background-color: var(--color-grampians-600)}
+    tr td:nth-child(5) {background-color: var(--color-grampians-300)}
   }
-}
+
+  } 
