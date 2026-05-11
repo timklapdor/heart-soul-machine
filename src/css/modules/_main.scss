@@ -179,8 +179,8 @@ main {
             margin-left: 20ch;
             padding: 3%;
             clear: right;
-            border: 1px solid var(--flexoki-cyan-400);
-            background-color: color-mix(in srgb, var(--flexoki-cyan-400) 10%, white);
+            border: 1px solid var(--color-hyams-400);
+            background-color: light-dark(var(--color-hyams-50),var(--color-hyams-800));
         }
 
         img.header-image {

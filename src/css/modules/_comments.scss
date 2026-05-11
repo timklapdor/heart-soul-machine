@@ -123,7 +123,7 @@ section#comments {
         }
   
         .instance {
-          background-color: var(--secondary-accent-color);
+          background-color: light-dark(var(--secondary-accent-color), );
           color: var(--p10-5-juicyt);
   
           &::before {
