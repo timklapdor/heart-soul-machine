@@ -11,8 +11,8 @@ tags:
 location:
 coverImage:
 summary: While the news focuses on the hack, I wish we'd talk about the decision-making that made this thing an inevitability.
-commentId:
-url:
+commentId: '116550491273768735'
+url: https://heartsoulmachine.com/blog/2026/05-10-why-the-canvas-hack-was-innevitable/
 ---
 The news this week is full of stories about universities going offline after Instructure, the company behind the Canvas learning management system, was taken down by a cyberattack, shutting down LMS access for staff and students at institutions around the world.
 
