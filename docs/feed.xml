@@ -4,12 +4,37 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-05-10T00:00:00Z</updated>
+  <updated>2026-05-14T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>AI as UI</title>
+    <link href="https://heartsoulmachine.com/blog/2026/05-14-ai-as-ui/"/>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/05-14-ai-as-ui/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/ai-as-ui-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>While the generative components of AI capture the headlines, perhaps the chat interface is the more interesting.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;Over the past year, much of the conversation in higher education has centred on what we do about AI. I think AI has actually done a service by exposing some deep problems within the educational system. The ability of a large language model to generate plausible content that could get students a passing mark is a genuine challenge. But many of these flaws already existed. What AI has done is supercharge problems that were already there.&lt;/p&gt;
+&lt;p&gt;That said, I want to step away from the generative AI debate for a moment and consider some other use cases. Towards the end of last year, I had the opportunity to attend a few conferences and came across some examples I found genuinely compelling. Several of them centred on using the chat interface not for &lt;em&gt;generation&lt;/em&gt;, but as &lt;em&gt;navigation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Chat as a User Interface isn&#39;t something new; what&#39;s new is that it actually works!  Chatbots have been deployed before, but they were universally terrible experiences. Without sophisticated language processing, if you misspell something or phrase a question poorly, you quickly hit a dead end. That&#39;s a significant problem in a learning context, because a student doesn&#39;t necessarily know what they don&#39;t know - that&#39;s the whole point of learning!&lt;/p&gt;
+&lt;p&gt;What made the examples I saw different was the deliberate decision to constrain the AI&#39;s generative component. Rather than letting the model roam freely, these implementations used it as a tool for textual and structural analysis of source materials – essentially creating a smarter and more specific search engine. The chat interface allows students to ask questions that resemble Socratic dialogue, rather than reading through structured paragraphs of text.&lt;/p&gt;
+&lt;p&gt;When I think about what kind of learning is actually happening here, it&#39;s less innovative than it might first appear. Applying &lt;a href=&quot;https://heartsoulmachine.com/notes/learning-types/&quot;&gt;my own typology of learning&lt;/a&gt; to what&#39;s going on: despite the &amp;quot;chat&amp;quot; element, this isn&#39;t really discursive learning. It&#39;s not about presenting different ideas, opinions, or competing positions. In fact, most of the examples I saw actively tried to prevent that; they wanted the AI to stay anchored to the source content and not drift into generative territory. What this amounts to is a new way of &lt;em&gt;accessing&lt;/em&gt; information, not a new form of learning itself. So, while on the surface it appears to be a discussion, it masquerades as &lt;em&gt;assimilative&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This reminded me of an argument from human-computer interaction that most of what we call &amp;quot;interaction&amp;quot; — a click event, for instance — isn&#39;t really interaction at all. It&#39;s simply navigation. And that&#39;s where I land on chat in this particular context: the AI becomes the UI – the user interface through which we access content. Using the chat is simply the same as clicking next.&lt;/p&gt;
+&lt;p&gt;That framing matters because it shifts the conversation. We move away from the grandiose promises of AI and towards something more modest and more useful: an evolution of the user interface. Like every interface evolution before it, this one comes with both gains and losses.&lt;/p&gt;
+&lt;p&gt;The most obvious recent parallel is the shift from mechanical interfaces to touchscreens. Touch was a genuine breakthrough for visual navigation – panning, pinching, and zooming through a map on a mobile device feels completely natural in a way that using a mouse never did. But text on a touchscreen is a different story. Every slight movement triggers a scroll or an accidental text selection. There&#39;s no cursor to orient yourself with, and editing text is a constant source of frustration. Anyone who has spent time in the Kindle Paperwhite&#39;s comments section knows there are hundreds of requests to bring back physical buttons. The interface that&#39;s brilliant for one task can be actively hostile for another.&lt;/p&gt;
+&lt;p&gt;AI as UI is no different. There are contexts where I can see it being genuinely powerful – legal documentation, for instance, where navigating dense text with a traditional interface is painful, and being able to ask direct questions could be a real improvement. For review and study – generating practice questions, finding answers to specific queries – I can see clear value. These are tasks that play to what large language models are actually good at: &lt;em&gt;textual analysis&lt;/em&gt; and &lt;em&gt;retrieval&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;But for first encounters with new material, the case is much weaker. Text structured as a book or a chapter isn&#39;t just a container for information – it has a structure, a narrative, a sequence, and a flow that are deliberately designed to develop understanding. Concepts build on each other. The structure is part of the pedagogy. Replacing that with a chat interface, where a novice has to know what questions to ask before they even understand the terrain, doesn&#39;t remove friction – it just relocates it to a more dangerous place.&lt;/p&gt;
+&lt;p&gt;So where does that leave us? AI as UI is real, and it&#39;s new – but it&#39;s just a new user interface, not a revolution in learning. And like every interface before it, it will be genuinely useful in some contexts and actively counterproductive in others. The problem is that we don&#39;t yet have enough evidence to reliably distinguish between the two. We&#39;re in the middle of a hype cycle, and higher education has a long history of chasing the next medium as the thing that will finally replace or transform teaching, only to discover that the new medium works brilliantly in some situations but not at all in others.&lt;/p&gt;
+&lt;p&gt;The answer isn&#39;t to dismiss AI, nor to adopt it wholesale. It&#39;s about thoughtfully picking the right interface for the right situation — and remembering that no UI, however elegant, works well for everything.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Why the Canvas hack was innevitable</title>
     <link href="https://heartsoulmachine.com/blog/2026/05-10-why-the-canvas-hack-was-innevitable/"/>

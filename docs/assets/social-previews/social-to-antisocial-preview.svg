@@ -20,7 +20,7 @@
       }
 
       .date, .grey {
-        fill: #4d4d4d;
+        fill: #1f1c1a;
       }
 
       .description {
@@ -40,7 +40,7 @@
       }
 
       .paper {
-        fill: #fff9ed;
+        fill: #e7e4e0;
       }
 
       .cls-9 {
