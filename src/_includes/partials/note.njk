@@ -21,7 +21,11 @@ layout: /layouts/grid.njk
 				{%- endif -%}
 			</li>
 		{%- endif -%}
-		{% if type %}<li class="{{ type }}">{{ type }} </li>{% endif %}
+		{% if type %}<li class="{{ type }}">
+			{%- if type == "evergreen"-%}{% include "icons/evergreen.svg" %}{%- endif -%}
+			{%- if type == "seed"-%}{% include "icons/seed.svg" %}{%- endif -%}
+			{%- if type == "budding"-%}{% include "icons/budding.svg" %}{%- endif -%}
+				{{ type }} </li>{% endif %}
 		<li class="time">{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
 	

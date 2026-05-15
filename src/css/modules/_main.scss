@@ -363,9 +363,11 @@ main {
 
                 li.author {
                 }
-                li.tags {
+                li.tags, li.evergreen, li.seed, li.budding {
                     text-transform: capitalize;
                 }
+
+            
 
 
                 li::marker {
