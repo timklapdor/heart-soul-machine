@@ -11,7 +11,21 @@ layout: /layouts/grid.njk
 	
 	<ul class="metadata">
 		<li class="dt-published date">{% include "icons/calendar.svg" %} {{ page.date | postDate }}</li>
-		{%- if categories | length -%}<li class="categories">{%- if categories | length == 1 -%}{% include "icons/categories.svg" %} {{ categories[0] }}{%- else -%}{%- for item in categories -%}{%- if loop.last -%}	& {{ item }}{%- elseif loop.first -%}{{ item }}{%- else -%}, {{ item }}{%- endif -%}{%- endfor -%}{%- endif -%}</li>{%- endif -%}
+		{%- if categories | length -%}
+			<li class="categories">
+				{% include "icons/categories.svg" %}
+				{%- if categories | length == 1 -%}
+					{{ categories[0] }}
+				{%- else -%}
+					{%- for item in categories -%}
+						{%- if loop.last %} & {{ item }}
+						{%- elif loop.first %}{{ item }}
+						{%- else %}, {{ item }}
+						{%- endif %}
+					{%- endfor -%}
+				{%- endif -%}
+			</li>
+		{%- endif -%}
 		<li class="time">{% include "icons/time.svg" %}{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
 	
