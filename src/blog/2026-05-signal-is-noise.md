@@ -16,8 +16,8 @@ tags:
 location:
 coverImage:
 summary: The media has become a noise machine. The only way to find the signal is to connect with the people on the other end.
-commentId:
-url:
+commentId: '116601467168518074'
+url: https://heartsoulmachine.com/blog/2026/05-19-when-the-noise-is-the-signal/
 ---
 I've always loved the signal-versus-noise framework from information theory. James Gleick's _[The Information](https://en.wikipedia.org/wiki/The_Information:_A_History,_a_Theory,_a_Flood)_ was one of those books that genuinely changed how I see the world. It introduced me to the idea that the history of communication technology is essentially a long effort to improve the signal while reducing noise. The digital revolution itself was, at its core, a solution to that problem: hard-coding information in a way that was far less susceptible to degradation than analogue formats. The signal-to-noise concept helps to understand the world around us, and our information environment is in serious trouble, not because of the internet, but because of what's been done with it.
 
