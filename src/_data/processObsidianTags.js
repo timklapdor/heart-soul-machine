@@ -1,7 +1,8 @@
 module.exports = {
   eleventyComputed: {
     categories: (data) => {
-      const existing = data.categories || [];
+      const stripWikiLink = (s) => s.replace(/^\[\[(.+)\]\]$/, '$1');
+      const existing = (data.categories || []).map(stripWikiLink);
       const extracted = new Set(existing);
 
       for (const tag of data.tags || []) {
