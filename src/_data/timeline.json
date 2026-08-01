@@ -346,5 +346,11 @@
         "date": "2025-12-01T13:30:00.000Z",
         "description": "Team authored a paper, got peer reviewed and accepted into Ascilite 2025. We [presented to the conference](https://flic.kr/p/2rPzCQy) on Day 1.",
         "location": "Adelaide, Australia"
+    }, 
+            {
+        "eventtype": "Work",
+        "date": "2026-07-20T13:30:00.000Z",
+        "description": "Changed roles at the University - started as Capability Development Manager in Learning Futures.",
+        "location": "Adelaide, Australia"
     }
 ]

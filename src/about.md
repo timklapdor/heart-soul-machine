@@ -24,16 +24,10 @@ I would describe myself as an **Expert Generalist** with skills spanning graphic
 
 ---
   
-Currently, I am a Manager of Educational Design at the University of Adelaide. In this role I have led the capability and capacity development of the University's online programs. 
+Currently, I am the Capability Development Manager in the Learning Futures team at Adelaide University. I just started on the 20th of July - so need some time to really nail down my role!
 
-This includes:
 
-- Overseeing course development for all under-graduate and post-graduate programs.
-- Recruitment, training and development of staff and establishment of shared processes and practices. 
-- The development of the Online Quality Framework. 
-- Four fully online research capstone courses spanning the Masters of Business Administration, Data Science, Cyber Security and Psychology programs. 
-- The development and rollout of the MathTrackX series of MOOCs available through EdX.
-- Creation of a Learning Design system that is being adopted across the institution.
+Prior to that I was a Manager Educational Design and led the capability and capacity development of the University's online programs. I oversaw course development for all under-graduate and post-graduate programs, developed the Online Quality Framework, created four fully online research capstone courses, the development and rollout of the MathTrackX series of MOOCs available through EDx and the reation of a Learning Design system that is being adopted across the institution.
 
 ---
   
