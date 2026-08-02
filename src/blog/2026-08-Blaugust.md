@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: Long time blogger, first time Blaugger
-commentId:
-url:
+commentId: '117023937944934978'
+url: https://heartsoulmachine.com/blog/2026/08-02-blaugust/
 ---
 I came across this [toot from Tantek yesterday](https://fed.brid.gy/r/https://tantek.com/2026/213/t1/welcome-to-august-blaugust "Blaugust toot from Tantek Çelik")  (August 1st). I'd just published my [[July 2026|July recap]] and been feeling quite neglectful of the blog this year. I've started cleaning up my Obsidian space and now have a folder of drafts and half-arsed, half-finished posts. There are about 27 posts in there, so I started to put that together with the [Blaugust call to action](https://nerdgirlthoughts.game.blog/2026/07/15/blaugust-2026-is-coming/), and now I'm thinking - yes, let's aim for 31 posts in a month. 
 
