@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: When the political party, with its roots in the labour movement, no longer represents workers' needs, what has it become? With a lack of ideas and an agenda devoid of progress and change, I'd suggest that it's now the conservative party.
-commentId:
-url:
+commentId: '117031679235165148'
+url: https://heartsoulmachine.com/blog/2026/08-03-labor-are-the-new-conservatives/
 ---
 
 The Labor Party are now the conservatives. I've been sitting with this for a big chunk of the year, turning it over and over. I keep coming back to the same conclusion: the Australian Labor Party no longer represents working people in any meaningful sense. Not in its policies, not in its priorities, and not in the people who run it.
