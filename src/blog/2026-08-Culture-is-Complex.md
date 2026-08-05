@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: One of the things I keep coming back to is how poorly we understand culture as a system – and how that misunderstanding shapes the way we respond when something goes wrong.
-commentId:
-url:
+commentId: '117034289439041950'
+url: https://heartsoulmachine.com/blog/2026/08-04-culture-is-complex/
 ---
 Culture is a [[Container Words|container word]]. It describes something without actually describing anything in particular. We use it to gesture at something vast and real, but the word itself gives us no purchase on what's actually going on. It names the surface without capturing what's underneath.
 
