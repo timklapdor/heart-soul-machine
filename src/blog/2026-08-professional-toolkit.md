@@ -10,7 +10,7 @@ updateDescription:
 tags:
 location:
 coverImage:
-summary: Can you just roll up your tools and leave any more? Soe thopughts on the nature of labour and higher education.
+summary: Can you just roll up your tools and leave any more? Some thoughts on the nature of labour and higher education.
 commentId:
 url:
 ---
