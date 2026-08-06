@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: More thoughts on contemporary politics and the growing sense that something is missing from what's currently on offer.
-commentId:
-url:
+commentId: '117042339731521493'
+url: https://heartsoulmachine.com/blog/2026/08-05-the-politics-of-care/
 ---
 Most democratic parties are built around an underlying ideology that drives not just their appeal, but the principles guiding their decisions. Conservative politics is, at its core, about conserving the status quo – slowing change, maintaining what exists, keeping control of the conditions. That's a coherent position. Labour movements emerged as a direct counterweight, built around workers' rights at a time when labour had been so devalued it amounted to exploitation on a massive scale. They played an essential role in shifting that dynamic.
 
