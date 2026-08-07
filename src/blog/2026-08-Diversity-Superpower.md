@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: One of the things I want to do over the next little while is start sharing solutions – things I've done to solve problems, the approaches taken, and the lessons learned. Not theory. What actually worked. So here's some thoughts on building a team.
-commentId:
-url:
+commentId: '117052080406896222'
+url: https://heartsoulmachine.com/blog/2026/08-07-diversity-is-a-superpower/
 ---
 ### The Problem with Bubbles
 

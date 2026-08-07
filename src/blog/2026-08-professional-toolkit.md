@@ -11,8 +11,8 @@ tags:
 location:
 coverImage:
 summary: Can you just roll up your tools and leave any more? Some thoughts on the nature of labour and higher education.
-commentId:
-url:
+commentId: '117048682265063302'
+url: https://heartsoulmachine.com/blog/2026/08-06-the-professional-toolkit/
 ---
 My barber recently moved premises, set up on his own, and I found something genuinely compelling about that. The ability, as a professional, to essentially pick up your tools, find a new chair, and keep going. The skill is his. The relationship with his clients is his. The craft he's spent years developing is entirely portable. If a landlord puts the rent up, or an employer devalues his labour, he has real options. He can leave.
 
