@@ -14,6 +14,7 @@ location:
 coverImage:
 summary: When the political party, with its roots in the labour movement, no longer represents workers' needs, what has it become? With a lack of ideas and an agenda devoid of progress and change, I'd suggest that it's now the conservative party.
 commentId: '117031679235165148'
+mastodonTags: [Blaugust]
 url: https://heartsoulmachine.com/blog/2026/08-03-labor-are-the-new-conservatives/
 ---
 
