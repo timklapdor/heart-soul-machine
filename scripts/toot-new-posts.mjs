@@ -1,7 +1,8 @@
 // Reads an RSS/Atom feed, works out which items haven't been posted to
-// Mastodon yet, toots the new ones (title, <summary>, link, and any
-// enclosure/media image attached natively), and writes an updated record
-// of what's been posted back to data/posted-guids.json.
+// Mastodon yet, toots the new ones (a fixed prefix + title, <summary>,
+// link, hashtags built from any <category> tags, and any enclosure/media
+// image attached natively), and writes an updated record of what's been
+// posted back to data/posted-guids.json.
 //
 // Required env vars (set as GitHub Actions secrets/vars):
 //   FEED_URL              - e.g. https://heartsoulmachine.com/feed.xml
@@ -12,6 +13,12 @@
 // posted. On the very first run, if this file is empty, every current feed
 // item is recorded as "already posted" WITHOUT tooting, so you don't dump
 // your entire back catalogue onto Mastodon in one go.
+//
+// Hashtags: any <category> elements on a feed item become hashtags,
+// CamelCased for screen-reader accessibility (e.g. "learning design"
+// -> #LearningDesign). Posts with no categories just get no hashtags -
+// nothing to opt into per post beyond adding the front matter field your
+// feed template reads.
 
 import { readFile, writeFile } from "node:fs/promises";
 import Parser from "rss-parser";
@@ -23,6 +30,7 @@ const STATUSES_URL = `${MASTODON_INSTANCE_URL}/api/v1/statuses`;
 const MEDIA_URL = `${MASTODON_INSTANCE_URL}/api/v2/media`;
 const STATE_PATH = "data/posted-guids.json";
 const MAX_POSTS_PER_RUN = 5; // safety valve against accidental floods
+const STATUS_PREFIX = "NEW POST: "; // set to "" to drop the prefix entirely
 
 if (!FEED_URL || !MASTODON_INSTANCE_URL || !MASTODON_TOKEN) {
   console.error("Missing FEED_URL, MASTODON_INSTANCE_URL, or MASTODON_TOKEN.");
@@ -47,16 +55,37 @@ async function saveState(idSet) {
   await writeFile(STATE_PATH, JSON.stringify(sorted, null, 2) + "\n", "utf8");
 }
 
-// Title, then the feed's <summary>, then the link. Edit the `parts` array
-// below to change what's included or the order it appears in.
+// Turns a raw tag string into a CamelCase hashtag, e.g. "learning design"
+// -> "#LearningDesign". CamelCasing multi-word hashtags (rather than
+// #learningdesign) is a common accessibility convention - screen readers
+// announce each capitalised word separately instead of reading the whole
+// thing as one run-together word.
+function toHashtag(tag) {
+  return (
+    "#" +
+    tag
+      .split(/[^a-zA-Z0-9]+/)
+      .filter(Boolean)
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join("")
+  );
+}
+
+// Prefix + title, then the feed's <summary>, then the link, then hashtags
+// built from any <category> elements on the item (empty if there are
+// none). Edit the `parts` array below to change what's included, drop
+// STATUS_PREFIX above to "" if you don't want the prefix, or reorder to
+// put hashtags before the link, etc.
 function buildStatusText(item) {
   const title = (item.title || "").trim();
   const summary = (item.summary || "").trim();
   const link = item.link || "";
+  const hashtags = (item.categories || []).map(toHashtag).join(" ");
 
-  const parts = [title];
+  const parts = [`${STATUS_PREFIX}${title}`];
   if (summary) parts.push(summary);
   if (link) parts.push(link);
+  if (hashtags) parts.push(hashtags);
   return parts.join("\n\n");
 }
 
