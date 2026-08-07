@@ -1,0 +1,77 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "24"
+
+      - name: Persist npm cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+
+      - name: Persist Eleventy .cache
+        uses: actions/cache@v3
+        with:
+          path: ./.cache
+          key: ${{ runner.os }}-eleventy-fetch-cache
+
+      - run: npm install
+      - run: npm run build-ghpages
+        env:
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+
+  toot:
+    needs: deploy
+    if: github.ref == 'refs/heads/main' && success()
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm install rss-parser
+
+      - name: Check feed and post new items
+        env:
+          FEED_URL: ${{ vars.FEED_URL }}
+          MASTODON_INSTANCE_URL: ${{ vars.MASTODON_INSTANCE_URL }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: node scripts/toot-new-posts.mjs
+
+      - name: Commit updated state file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posted-guids.json
+          git diff --staged --quiet || git commit -m "Update posted-guids state [skip ci]"
+          git push
