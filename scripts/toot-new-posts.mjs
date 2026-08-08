@@ -309,9 +309,27 @@ async function postToBluesky({ accessJwt, did, text, facets, imageBlob }) {
   }
 }
 
+// Fetches the feed with a cache-busting query param and no-cache headers,
+// rather than using parser.parseURL() directly. GitHub Pages sits behind a
+// CDN, and a plain repeated request to the same feed URL can keep hitting
+// a cached copy that predates your latest deploy - a unique URL each run
+// forces a fresh copy from origin instead of just hoping the cache has
+// expired by the time this runs.
+async function fetchFeedXml(feedUrl) {
+  const bustUrl = `${feedUrl}${feedUrl.includes("?") ? "&" : "?"}_=${Date.now()}`;
+  const res = await fetch(bustUrl, {
+    headers: { "Cache-Control": "no-cache", Pragma: "no-cache" },
+  });
+  if (!res.ok) {
+    throw new Error(`Feed fetch failed: ${res.status}`);
+  }
+  return res.text();
+}
+
 async function main() {
   const parser = new Parser({ customFields: { item: ["media:content"] } });
-  const feed = await parser.parseURL(FEED_URL);
+  const xml = await fetchFeedXml(FEED_URL);
+  const feed = await parser.parseString(xml);
   const posted = await loadState();
 
   const enabledPlatforms = ["mastodon"];
