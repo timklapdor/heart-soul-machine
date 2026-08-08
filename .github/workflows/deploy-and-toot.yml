@@ -44,7 +44,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          cname: heartsoulmachine.com
 
   toot:
     needs: deploy
@@ -67,6 +66,8 @@ jobs:
           FEED_URL: ${{ vars.FEED_URL }}
           MASTODON_INSTANCE_URL: ${{ vars.MASTODON_INSTANCE_URL }}
           MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          BLUESKY_HANDLE: ${{ vars.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
         run: node scripts/toot-new-posts.mjs
 
       - name: Commit updated state file

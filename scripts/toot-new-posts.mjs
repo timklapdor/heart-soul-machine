@@ -1,24 +1,32 @@
-// Reads an RSS/Atom feed, works out which items haven't been posted to
-// Mastodon yet, toots the new ones (a fixed prefix + title, <summary>,
-// link, hashtags built from any <category> tags, and any enclosure/media
-// image attached natively), and writes an updated record of what's been
-// posted back to data/posted-guids.json.
+// Reads an RSS/Atom feed, works out which items haven't been posted yet,
+// and posts new ones to Mastodon and (optionally) Bluesky independently -
+// a failure on one platform doesn't block or duplicate on the other.
+// Writes an updated record of what's been posted to each platform back to
+// data/posted-guids.json.
 //
 // Required env vars (set as GitHub Actions secrets/vars):
 //   FEED_URL              - e.g. https://heartsoulmachine.com/feed.xml
 //   MASTODON_INSTANCE_URL - e.g. https://your.instance  (no trailing slash)
 //   MASTODON_TOKEN        - access token with write:statuses scope
 //
-// State file: data/posted-guids.json - a JSON array of item ids already
-// posted. On the very first run, if this file is empty, every current feed
-// item is recorded as "already posted" WITHOUT tooting, so you don't dump
-// your entire back catalogue onto Mastodon in one go.
+// Optional, to also post to Bluesky:
+//   BLUESKY_HANDLE        - e.g. yourname.bsky.social
+//   BLUESKY_APP_PASSWORD  - an App Password (Settings -> App Passwords),
+//                            NOT your main account password
+//   Both must be set together, or Bluesky posting is skipped entirely.
+//
+// State file: data/posted-guids.json - a JSON array of "platform:id"
+// entries already posted (e.g. "mastodon:https://example.com/post-1").
+// Entries from before Bluesky support are plain ids with no platform
+// prefix; these are treated as already-posted Mastodon items on load, so
+// existing history isn't lost. Each platform gets its own "first run":
+// if a platform has zero history, every current feed item is recorded as
+// already-posted for that platform WITHOUT actually posting, so turning
+// on a new platform later doesn't dump your whole archive onto it.
 //
 // Hashtags: any <category> elements on a feed item become hashtags,
 // CamelCased for screen-reader accessibility (e.g. "learning design"
-// -> #LearningDesign). Posts with no categories just get no hashtags -
-// nothing to opt into per post beyond adding the front matter field your
-// feed template reads.
+// -> #LearningDesign). Posts with no categories just get no hashtags.
 
 import { readFile, writeFile } from "node:fs/promises";
 import Parser from "rss-parser";
@@ -28,6 +36,12 @@ const MASTODON_INSTANCE_URL = (process.env.MASTODON_INSTANCE_URL || "").replace(
 const MASTODON_TOKEN = process.env.MASTODON_TOKEN;
 const STATUSES_URL = `${MASTODON_INSTANCE_URL}/api/v1/statuses`;
 const MEDIA_URL = `${MASTODON_INSTANCE_URL}/api/v2/media`;
+
+const BLUESKY_HANDLE = process.env.BLUESKY_HANDLE;
+const BLUESKY_APP_PASSWORD = process.env.BLUESKY_APP_PASSWORD;
+const BLUESKY_SERVICE_URL = "https://bsky.social";
+const BLUESKY_MAX_LENGTH = 300; // approximate - see buildBlueskyText note
+
 const STATE_PATH = "data/posted-guids.json";
 const MAX_POSTS_PER_RUN = 5; // safety valve against accidental floods
 const STATUS_PREFIX = "NEW POST: "; // set to "" to drop the prefix entirely
@@ -37,6 +51,13 @@ if (!FEED_URL || !MASTODON_INSTANCE_URL || !MASTODON_TOKEN) {
   process.exit(1);
 }
 
+if ((BLUESKY_HANDLE && !BLUESKY_APP_PASSWORD) || (!BLUESKY_HANDLE && BLUESKY_APP_PASSWORD)) {
+  console.warn(
+    "Only one of BLUESKY_HANDLE / BLUESKY_APP_PASSWORD is set - Bluesky posting disabled this run."
+  );
+}
+const BLUESKY_ENABLED = Boolean(BLUESKY_HANDLE && BLUESKY_APP_PASSWORD);
+
 function itemId(item) {
   return item.guid || item.id || item.link;
 }
@@ -44,7 +65,17 @@ function itemId(item) {
 async function loadState() {
   try {
     const raw = await readFile(STATE_PATH, "utf8");
-    return new Set(JSON.parse(raw));
+    const arr = JSON.parse(raw);
+    const set = new Set();
+    for (const entry of arr) {
+      if (entry.startsWith("mastodon:") || entry.startsWith("bluesky:")) {
+        set.add(entry);
+      } else {
+        // Pre-multi-platform entry - treat as an already-posted Mastodon item.
+        set.add(`mastodon:${entry}`);
+      }
+    }
+    return set;
   } catch {
     return new Set(); // no state file yet
   }
@@ -72,10 +103,8 @@ function toHashtag(tag) {
 }
 
 // Prefix + title, then the feed's <summary>, then the link, then hashtags
-// built from any <category> elements on the item (empty if there are
-// none). Edit the `parts` array below to change what's included, drop
-// STATUS_PREFIX above to "" if you don't want the prefix, or reorder to
-// put hashtags before the link, etc.
+// built from any <category> elements on the item. Edit the `parts` array
+// to change what's included or reorder it.
 function buildStatusText(item) {
   const title = (item.title || "").trim();
   const summary = (item.summary || "").trim();
@@ -87,6 +116,71 @@ function buildStatusText(item) {
   if (link) parts.push(link);
   if (hashtags) parts.push(hashtags);
   return parts.join("\n\n");
+}
+
+function truncate(str, maxLen) {
+  if (str.length <= maxLen) return str;
+  return str.slice(0, Math.max(0, maxLen - 1)) + "…";
+}
+
+// Bluesky's limit is 300 *grapheme clusters*, which JS string .length
+// doesn't measure precisely for things like emoji or combining characters.
+// This uses .length as a close-enough approximation - fine for plain
+// title text, could overcount for exotic Unicode in a title.
+//
+// No summary here by design (there isn't room for title + link + hashtags
+// + a meaningful summary in 300 chars). If the title itself is long, it
+// gets truncated with an ellipsis so the link and hashtags always survive
+// intact - the link in particular needs to stay a byte-for-byte match for
+// the facet below to make it clickable.
+function buildBlueskyText(item) {
+  const rawTitle = `${STATUS_PREFIX}${(item.title || "").trim()}`;
+  const link = item.link || "";
+  const hashtags = (item.categories || []).map(toHashtag).join(" ");
+
+  const fixedParts = [link, hashtags].filter(Boolean);
+  const fixedLength = fixedParts.reduce((sum, p) => sum + p.length + 2, 0);
+  const titleBudget = Math.max(20, BLUESKY_MAX_LENGTH - fixedLength);
+  const title = truncate(rawTitle, titleBudget);
+
+  return [title, link, hashtags].filter(Boolean).join("\n\n");
+}
+
+function utf8ByteLength(s) {
+  return Buffer.byteLength(s, "utf8");
+}
+
+// AT Protocol needs "facets" - explicit byte-range annotations - to make
+// a link or hashtag clickable/searchable. Just having the text present
+// isn't enough, unlike Mastodon which auto-linkifies.
+function buildBlueskyFacets(text, link, hashtagTokens) {
+  const facets = [];
+
+  if (link) {
+    const idx = text.indexOf(link);
+    if (idx !== -1) {
+      const byteStart = utf8ByteLength(text.slice(0, idx));
+      const byteEnd = byteStart + utf8ByteLength(link);
+      facets.push({
+        index: { byteStart, byteEnd },
+        features: [{ $type: "app.bsky.richtext.facet#link", uri: link }],
+      });
+    }
+  }
+
+  for (const tag of hashtagTokens) {
+    const idx = text.indexOf(tag);
+    if (idx !== -1) {
+      const byteStart = utf8ByteLength(text.slice(0, idx));
+      const byteEnd = byteStart + utf8ByteLength(tag);
+      facets.push({
+        index: { byteStart, byteEnd },
+        features: [{ $type: "app.bsky.richtext.facet#tag", tag: tag.slice(1) }],
+      });
+    }
+  }
+
+  return facets;
 }
 
 // Pulls an image URL from the feed's enclosure or media:content tag, if
@@ -105,35 +199,32 @@ function getImageUrl(item) {
   return null;
 }
 
-// Downloads the image and uploads it to Mastodon, returning the media id
-// to attach to the status. Returns null (and logs a warning) on failure,
-// so a broken image never blocks the toot itself.
-async function uploadImage(imageUrl) {
-  try {
-    const imgRes = await fetch(imageUrl);
-    if (!imgRes.ok) throw new Error(`fetch ${imgRes.status}`);
-    const bytes = await imgRes.arrayBuffer();
-    const contentType = imgRes.headers.get("content-type") || "image/jpeg";
+// Downloads the image once - the raw bytes get reused for whichever
+// platform(s) need them, rather than fetching it twice.
+async function fetchImageBytes(imageUrl) {
+  const res = await fetch(imageUrl);
+  if (!res.ok) throw new Error(`fetch ${res.status}`);
+  const bytes = await res.arrayBuffer();
+  const contentType = res.headers.get("content-type") || "image/jpeg";
+  return { bytes, contentType };
+}
 
-    const form = new FormData();
-    form.append("file", new Blob([bytes], { type: contentType }), "image");
+async function uploadImageToMastodon(bytes, contentType) {
+  const form = new FormData();
+  form.append("file", new Blob([bytes], { type: contentType }), "image");
 
-    const uploadRes = await fetch(MEDIA_URL, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${MASTODON_TOKEN}` },
-      body: form,
-    });
+  const uploadRes = await fetch(MEDIA_URL, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${MASTODON_TOKEN}` },
+    body: form,
+  });
 
-    if (!uploadRes.ok) {
-      throw new Error(`upload ${uploadRes.status}: ${await uploadRes.text()}`);
-    }
-
-    const data = await uploadRes.json();
-    return data.id;
-  } catch (err) {
-    console.warn(`Could not attach image (${imageUrl}): ${err.message}`);
-    return null;
+  if (!uploadRes.ok) {
+    throw new Error(`upload ${uploadRes.status}: ${await uploadRes.text()}`);
   }
+
+  const data = await uploadRes.json();
+  return data.id;
 }
 
 async function postToMastodon(text, mediaIds = []) {
@@ -155,59 +246,179 @@ async function postToMastodon(text, mediaIds = []) {
   }
 }
 
+// Exchanges the app password for a short-lived session. Called once per
+// run (lazily, on the first item that needs Bluesky), not once per post.
+async function blueskyLogin() {
+  const res = await fetch(`${BLUESKY_SERVICE_URL}/xrpc/com.atproto.server.createSession`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ identifier: BLUESKY_HANDLE, password: BLUESKY_APP_PASSWORD }),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Bluesky login failed ${res.status}: ${await res.text()}`);
+  }
+
+  const data = await res.json();
+  return { accessJwt: data.accessJwt, did: data.did };
+}
+
+async function uploadBlueskyImage(accessJwt, bytes, contentType) {
+  const res = await fetch(`${BLUESKY_SERVICE_URL}/xrpc/com.atproto.repo.uploadBlob`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${accessJwt}`,
+      "Content-Type": contentType,
+    },
+    body: bytes,
+  });
+
+  if (!res.ok) {
+    throw new Error(`Bluesky image upload failed ${res.status}: ${await res.text()}`);
+  }
+
+  const data = await res.json();
+  return data.blob;
+}
+
+async function postToBluesky({ accessJwt, did, text, facets, imageBlob }) {
+  const record = {
+    $type: "app.bsky.feed.post",
+    text,
+    createdAt: new Date().toISOString(),
+  };
+  if (facets.length) record.facets = facets;
+  if (imageBlob) {
+    record.embed = {
+      $type: "app.bsky.embed.images",
+      images: [{ image: imageBlob, alt: "" }],
+    };
+  }
+
+  const res = await fetch(`${BLUESKY_SERVICE_URL}/xrpc/com.atproto.repo.createRecord`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${accessJwt}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ repo: did, collection: "app.bsky.feed.post", record }),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Bluesky post failed ${res.status}: ${await res.text()}`);
+  }
+}
+
 async function main() {
   const parser = new Parser({ customFields: { item: ["media:content"] } });
   const feed = await parser.parseURL(FEED_URL);
   const posted = await loadState();
-  const isFirstRun = posted.size === 0;
 
-  // Oldest first, so if there's a backlog to toot, it goes out in
-  // chronological order rather than newest-first.
+  const enabledPlatforms = ["mastodon"];
+  if (BLUESKY_ENABLED) enabledPlatforms.push("bluesky");
+
+  // Oldest first, so a backlog (or a newly-enabled platform's first real
+  // post) goes out in chronological order.
   const items = [...feed.items].reverse();
 
-  const newItems = items.filter((item) => !posted.has(itemId(item)));
-
-  if (isFirstRun) {
-    console.log(
-      `First run: seeding state with ${items.length} existing item(s), posting none.`
-    );
-    for (const item of items) posted.add(itemId(item));
-    await saveState(posted);
-    return;
+  // Each platform gets its own "first run": if it has zero history in the
+  // state file, seed it with every current item, posting none, so turning
+  // on Bluesky later doesn't dump the whole archive onto it.
+  let seeded = false;
+  for (const platform of enabledPlatforms) {
+    const hasHistory = [...posted].some((e) => e.startsWith(`${platform}:`));
+    if (!hasHistory) {
+      console.log(`First run for ${platform}: seeding ${items.length} item(s), posting none.`);
+      for (const item of items) posted.add(`${platform}:${itemId(item)}`);
+      seeded = true;
+    }
   }
+  if (seeded) await saveState(posted);
 
-  if (newItems.length === 0) {
+  const pending = items
+    .map((item) => ({
+      item,
+      platforms: enabledPlatforms.filter((p) => !posted.has(`${p}:${itemId(item)}`)),
+    }))
+    .filter((entry) => entry.platforms.length > 0);
+
+  if (pending.length === 0) {
     console.log("No new items.");
     return;
   }
 
-  const toPost = newItems.slice(0, MAX_POSTS_PER_RUN);
-  if (newItems.length > toPost.length) {
+  const toProcess = pending.slice(0, MAX_POSTS_PER_RUN);
+  if (pending.length > toProcess.length) {
     console.warn(
-      `Found ${newItems.length} new items, only posting the first ${toPost.length} this run (MAX_POSTS_PER_RUN).`
+      `Found ${pending.length} item(s) needing posts, only processing the first ${toProcess.length} this run (MAX_POSTS_PER_RUN).`
     );
   }
 
-  for (const item of toPost) {
-    const text = buildStatusText(item);
-    const imageUrl = getImageUrl(item);
-    const mediaIds = [];
+  let blueskySession = null;
 
-    if (imageUrl) {
-      console.log(`Uploading image for: ${item.title}`);
-      const mediaId = await uploadImage(imageUrl);
-      if (mediaId) mediaIds.push(mediaId);
+  for (const { item, platforms } of toProcess) {
+    const id = itemId(item);
+    const imageUrl = getImageUrl(item);
+    let imageBytes = null; // fetched at most once, shared across platforms
+
+    if (platforms.includes("mastodon")) {
+      try {
+        const text = buildStatusText(item);
+        const mediaIds = [];
+
+        if (imageUrl) {
+          try {
+            imageBytes ??= await fetchImageBytes(imageUrl);
+            mediaIds.push(await uploadImageToMastodon(imageBytes.bytes, imageBytes.contentType));
+          } catch (err) {
+            console.warn(`Mastodon: could not attach image (${imageUrl}): ${err.message}`);
+          }
+        }
+
+        console.log(`Mastodon: posting "${item.title}"`);
+        await postToMastodon(text, mediaIds);
+        posted.add(`mastodon:${id}`);
+      } catch (err) {
+        console.error(`Mastodon: failed to post "${item.title}": ${err.message}`);
+        // left unmarked, so it's retried next run
+      }
     }
 
-    console.log(`Posting: ${item.title}`);
-    await postToMastodon(text, mediaIds);
-    posted.add(itemId(item));
-    // Items we're deliberately skipping this run are left out of `posted`,
-    // so they get picked up next run.
+    if (platforms.includes("bluesky")) {
+      try {
+        blueskySession ??= await blueskyLogin();
+
+        const link = item.link || "";
+        const hashtagTokens = (item.categories || []).map(toHashtag);
+        const text = buildBlueskyText(item);
+
+        let imageBlob = null;
+        if (imageUrl) {
+          try {
+            imageBytes ??= await fetchImageBytes(imageUrl);
+            imageBlob = await uploadBlueskyImage(
+              blueskySession.accessJwt,
+              imageBytes.bytes,
+              imageBytes.contentType
+            );
+          } catch (err) {
+            console.warn(`Bluesky: could not attach image (${imageUrl}): ${err.message}`);
+          }
+        }
+
+        const facets = buildBlueskyFacets(text, link, hashtagTokens);
+        console.log(`Bluesky: posting "${item.title}"`);
+        await postToBluesky({ ...blueskySession, text, facets, imageBlob });
+        posted.add(`bluesky:${id}`);
+      } catch (err) {
+        console.error(`Bluesky: failed to post "${item.title}": ${err.message}`);
+        // left unmarked, so it's retried next run
+      }
+    }
   }
 
   await saveState(posted);
-  console.log(`Done. Posted ${toPost.length} item(s).`);
+  console.log("Done.");
 }
 
 main().catch((err) => {
