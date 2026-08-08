@@ -58,6 +58,13 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Wait for Pages CDN to catch up
+        run: sleep 60
+        # The deploy job just pushed to gh-pages, but GitHub's CDN can take
+        # a short while to actually serve the new content. Without this,
+        # the feed fetch below can occasionally hit a stale cached version
+        # of feed.xml, missing whatever changed in the most recent deploy.
+
       - name: Install dependencies
         run: npm install rss-parser
 
