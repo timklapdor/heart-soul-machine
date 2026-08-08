@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: There has always been a very human drive to find the Answer Machine – a device that reduces the effort required to arrive at solutions to our many problems.
-commentId:
-url:
+commentId: 
+url: https://heartsoulmachine.com/blog/2026/08-08-the-answer-machine/
 mastodonTags:
   - Blaugust
   - AI
