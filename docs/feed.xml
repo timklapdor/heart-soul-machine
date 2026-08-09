@@ -4,12 +4,42 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-08-08T00:00:00Z</updated>
+  <updated>2026-08-09T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Some People Say</title>
+    <link href="https://heartsoulmachine.com/blog/2026/08-09-some-people-say/"/>
+    <updated>2026-08-09T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/08-09-some-people-say/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/some-people-say-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>The implication of numerical weight implied by a phrase like &#39;some people say&#39; is just shorthand for detecting bullshit.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;I absolutely hate this phrase. I fucking loathe it. “Some people say” is shorthand in the media for here is an opinion, a hunch or a gut feeling that no one is willing to lend their name to. It’s a term that borrows substance from the implication that a numerical body of people sits behind what is being said. It’s an attempt to achieve credibility simply by implying that a number of people share an opinion. These people often don&#39;t exist, they&#39;re a device to put forward a notion or support an agenda. This use of language plays into our way of thinking that when a thing has a number attached to it, it has weight, can exert force and has presence, but it&#39;s just a trick.&lt;/p&gt;
+&lt;p&gt;This same trick applies to what Joan Westenberg explores in their post &lt;a href=&quot;https://archive.is/ijcqg&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Experience Doesn&#39;t Stack The Myth of Collective Knowledge&lt;/a&gt;. This phenomenon of numerical presence in this piece is used as a substitute for experience and individual knowledge. - that in some way a numerical advantage of individuals trumps the expertise of an individual.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Twenty smart people, each with a year of experience, must be just as good as one person with twenty years. Right?&lt;br /&gt;
+...&lt;br /&gt;
+But knowledge isn’t additive. It’s not clay you pile. It’s not sandbags on a levee. It doesn’t obey volume. It compounds, condenses, crystallizes. And it does so slowly, painfully, across thousands of iterations, not from reading the same book, but from living the same questions until they evolve into different ones.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This post resonated with me as it perfectly describes my experience working in Higher Education. It happened on the first big project I was assigned. We were looking at an institutional video system, something I had initiated because I was spending vast parts of my working week converting videos. I was the expert in the room, yet when it came to choosing the video codec to use, it became a democratic process, and every member had a vote. I called this out immediately, was overruled, and then raised it with my superiors, who, on this occasion, had my back. I wouldn&#39;t be making recommendations about databases or server infrastructure, as they&#39;re outside my expertise; they should stay outside mine. I got my way, and life moved on. Thank god I was listened to and we adopted mp4 and not Windows Media Player!&lt;/p&gt;
+&lt;p&gt;My experience in higher education also shows that it&#39;s not just a numerical count that seems to trump expertise but your number in the hierarchy – those in positions above you have more weight than your expertise. Spending many years working in EdTech, I heard all kinds of pronouncements of &amp;quot;wisdom&amp;quot; from those more senior than me. That the technology would just be &amp;quot;plug and play&amp;quot;, &amp;quot;this will be seamless&amp;quot;, or that it will &amp;quot;revolutionise learning and teaching&amp;quot;. I&#39;ve watched projects fall on their arse because they didn&#39;t engage anyone with expertise or experience - of course, the consequences of those decisions were little to none - &amp;quot;these things can happen with radical new technologies&amp;quot; and &amp;quot;we need to fail forward&amp;quot;.&lt;/p&gt;
+&lt;p&gt;I know that expertise is often associated with ego – and in some cases, they can go hand in hand. My counter is that &amp;quot;real&amp;quot; experts tend not to be gung-ho about things; they tend to listen more and work through the complexities. As Joan points out:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One expert with twenty years doesn’t just know more facts. They see differently. They carry mental models that weren’t taught but discovered. They’ve built intuition from friction. They’ve made the same mistakes enough times to recognize them three steps before they appear. They don’t look at problems as they are but as what they become.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&#39;d love there to be a better counter to &amp;quot;some people say&amp;quot;, but it is probably best thought of as a bullshit indicator. Once detected, there is an imperative to ask, &lt;em&gt;&amp;quot;Which people? Who are they? What have they got at stake? What&#39;s their experience of this? What have they done before?&amp;quot;&lt;/em&gt; It would be great if we could acknowledge that knowledge accumulates over time. It&#39;s not the same as data or information - that&#39;s often readily available at the drop of a hat. Knowing what that data or information means, how it applies and what it doesn&#39;t show - that&#39;s far more valuable, and it should carry more weight than any number of things.&lt;/p&gt;
+</content>
+    
+    <category>Blaugust</category>
+    
+  </entry>
   <entry>
     <title>The Answer Machine</title>
     <link href="https://heartsoulmachine.com/blog/2026/08-08-the-answer-machine/"/>
