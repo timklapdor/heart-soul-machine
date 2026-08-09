@@ -86,6 +86,19 @@ async function saveState(idSet) {
   await writeFile(STATE_PATH, JSON.stringify(sorted, null, 2) + "\n", "utf8");
 }
 
+// rss-parser gives back a category entry in different shapes depending on
+// the feed's own <category> syntax: a plain string for text-content style
+// (<category>X</category>), or an object for attribute style
+// (<category term="X"/>) since that's what the Atom spec actually
+// requires. This normalizes either into a plain string before it's turned
+// into a hashtag below.
+function categoryText(entry) {
+  if (typeof entry === "string") return entry;
+  if (entry?.$?.term) return entry.$.term;
+  if (typeof entry?._ === "string") return entry._;
+  return "";
+}
+
 // Turns a raw tag string into a CamelCase hashtag, e.g. "learning design"
 // -> "#LearningDesign". CamelCasing multi-word hashtags (rather than
 // #learningdesign) is a common accessibility convention - screen readers
@@ -102,6 +115,13 @@ function toHashtag(tag) {
   );
 }
 
+function getHashtags(item) {
+  return (item.categories || [])
+    .map(categoryText)
+    .filter(Boolean)
+    .map(toHashtag);
+}
+
 // Prefix + title, then the feed's <summary>, then the link, then hashtags
 // built from any <category> elements on the item. Edit the `parts` array
 // to change what's included or reorder it.
@@ -109,7 +129,7 @@ function buildStatusText(item) {
   const title = (item.title || "").trim();
   const summary = (item.summary || "").trim();
   const link = item.link || "";
-  const hashtags = (item.categories || []).map(toHashtag).join(" ");
+  const hashtags = getHashtags(item).join(" ");
 
   const parts = [`${STATUS_PREFIX}${title}`];
   if (summary) parts.push(summary);
@@ -136,7 +156,7 @@ function truncate(str, maxLen) {
 function buildBlueskyText(item) {
   const rawTitle = `${STATUS_PREFIX}${(item.title || "").trim()}`;
   const link = item.link || "";
-  const hashtags = (item.categories || []).map(toHashtag).join(" ");
+  const hashtags = getHashtags(item).join(" ");
 
   const fixedParts = [link, hashtags].filter(Boolean);
   const fixedLength = fixedParts.reduce((sum, p) => sum + p.length + 2, 0);
@@ -415,7 +435,7 @@ async function main() {
         blueskySession ??= await blueskyLogin();
 
         const link = item.link || "";
-        const hashtagTokens = (item.categories || []).map(toHashtag);
+        const hashtagTokens = getHashtags(item);
         const text = buildBlueskyText(item);
 
         let imageBlob = null;
