@@ -327,7 +327,15 @@ async function fetchFeedXml(feedUrl) {
 }
 
 async function main() {
-  const parser = new Parser({ customFields: { item: ["media:content"] } });
+  // rss-parser's Atom parser doesn't extract <category> at all by default
+  // (only its RSS 2.0 parser does) - the second customField explicitly
+  // pulls it in as `categories`, keepArray: true so multiple tags aren't
+  // collapsed down to just the first one.
+  const parser = new Parser({
+    customFields: {
+      item: ["media:content", ["category", "categories", { keepArray: true }]],
+    },
+  });
   const xml = await fetchFeedXml(FEED_URL);
   const feed = await parser.parseString(xml);
   const posted = await loadState();
