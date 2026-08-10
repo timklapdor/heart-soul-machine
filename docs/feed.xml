@@ -4,12 +4,34 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-08-09T00:00:00Z</updated>
+  <updated>2026-08-10T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Blaugust - 10 days in</title>
+    <link href="https://heartsoulmachine.com/blog/2026/08-10-blaugust-10-days-in/"/>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/08-10-blaugust-10-days-in/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/blaugust-10-days-in-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>First time doing this whole &#39;blaugust&#39; thing and it&#39;s coming along OK.</summary>
+    <content xml:lang="en" type="html"><![CDATA[&lt;p&gt;So it&#39;s day ten of &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-02-blaugust/&quot;&gt;Blaugust&lt;/a&gt;, and this is probably the longest writing streak I&#39;ve ever managed. It&#39;s been genuinely challenging – but worthwhile. I&#39;ve been using it to work through draft posts that have been sitting in a folder for too long, and there&#39;s something satisfying about finally getting those words out into the world.&lt;/p&gt;
+&lt;p&gt;That said, the prospect of keeping it up for 31 days is a little daunting from where I&#39;m standing. Consider this a slightly cheeky buffer post while I buy myself some time!&lt;/p&gt;
+&lt;p&gt;One thing that has come out of this past week is a technical change to the blog worth writing about properly. I&#39;ve swapped out &lt;a href=&quot;https://echofeed.app/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;EchoFeed&lt;/a&gt; (which I used to post updates on the blog over to Mastodon) as it&#39;s shutting down. I went and rebuilt my cross-posting setup directly into my existing GitHub Actions pipeline. New posts now automatically push to Mastodon and Bluesky (which is new) as part of the build process, which feels like exactly the kind of thing I should have done earlier. It&#39;s a vibe-coded solution, I used Claude, and had to do more tweaking than I&#39;d like to admit – but it works. Building back into my current stack feels good. I know a lot of people have moved away from GitHub over the past few years, but it still gives me what I need. The yearly subscription feels well justified.&lt;/p&gt;
+&lt;p&gt;Starting Blaugust while also starting a new job was probably not the smartest timing. It&#39;s been a hectic couple of weeks, and adding a daily post commitment on top of it wasn&#39;t exactly a recipe for calm. But it&#39;s worked out better than expected, and I&#39;m hoping to carry some of this momentum forward.&lt;/p&gt;
+&lt;p&gt;Twenty-one more days. Three more weeks. The backlog is mostly cleared now, which means the remaining posts will need to be genuinely new – and honestly, given where my work is heading at the moment, I think there&#39;s plenty to write about.&lt;/p&gt;
+&lt;p&gt;Here&#39;s to the rest of Blaugust.&lt;/p&gt;
+]]></content>
+    
+    <category term="Blaugust"/>
+    
+  </entry>
   <entry>
     <title>Some People Say</title>
     <link href="https://heartsoulmachine.com/blog/2026/08-09-some-people-say/"/>

@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: The implication of numerical weight implied by a phrase like 'some people say' is just shorthand for detecting bullshit.
-commentId:
-url:
+commentId: '117063283467875290'
+url: https://heartsoulmachine.com/blog/2026/08-09-some-people-say/ 
 mastodonTags:
   - Blaugust
 ---
