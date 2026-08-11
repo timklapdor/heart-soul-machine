@@ -4,12 +4,150 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-08-10T00:00:00Z</updated>
+  <updated>2026-08-11T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Tooting from the Blog</title>
+    <link href="https://heartsoulmachine.com/blog/2026/08-11-tooting-from-the-blog/"/>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/08-11-tooting-from-the-blog/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/tooting-from-the-blog-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>My approach to sharing via the fediverse has had to change with the closure of Echofeed. So here&#39;s my approach to replacing EchoFeed with a GitHub Action.</summary>
+    <content xml:lang="en" type="html"><![CDATA[&lt;p&gt;I&#39;ve been using &lt;a href=&quot;https://echofeed.app/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;EchoFeed&lt;/a&gt; to crosspost from my blog to Mastodon for a while now. It&#39;s a solid little tool, but I&#39;ve been slack and have been relying on someone else&#39;s free hosted service to keep my POSSE workflow running. I&#39;m a massive fan of Robb and have been so appreciative of this tool, which came along at exactly the right time for me. But someone&#39;s generosity often hides the amount of effort that goes into it, and &lt;a href=&quot;https://rknight.me/blog/shutting-down-echofeed/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;now it&#39;s been shuttered &lt;/a&gt; I need to look for a new solution. Thanks Robb for all the work that you&#39;ve put into this service and the value it&#39;s given my tiny little corner of the web.&lt;/p&gt;
+&lt;p&gt;With the news, I decided I needed to replace what Echofeed provided - posting to Mastodon is literally the only promotion I do for the site- and rather than migrate to another third-party service, I wondered if I could just use my existing stack instead. The result is a GitHub Action that reads my blog&#39;s RSS feed, works out which posts haven&#39;t been shared yet, and toots the new ones to Mastodon. I&#39;ve set it up to also post to Bluesky as well. It runs as part of your existing deployment pipeline, keeps its own state in a JSON file committed to the repo, and requires no server, database, or any other subscription.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: This was vibe-coded with Claude. While I appreciate the craft that goes into coding, I am not blessed with that skill. I know my way around web systems well enough to know what&#39;s possible - I just can&#39;t make the magic happen. If this puts you off - that&#39;s fine. If it inspires you to write something yourself - let me know. I&#39;d be more than happy to swap out the AI slop with something hand-crafted.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;p&gt;Three pieces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;state file&lt;/strong&gt; (&lt;code&gt;data/posted-guids.json&lt;/code&gt;) that records which feed items have already been posted, so nothing gets duplicated.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;script&lt;/strong&gt; that fetches the feed, compares it against that state file, and posts anything new to Mastodon&#39;s API.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;workflow&lt;/strong&gt; that runs the script, either on a schedule or as a step in your existing build and deploy pipeline.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the very first run, it records everything currently in your feed as &amp;quot;already posted&amp;quot; without tooting any of it. That matters, otherwise your entire back catalogue lands on Mastodon in one go the moment you turn this on. From then on, only genuinely new items get posted.&lt;/p&gt;
+&lt;h2&gt;The script&lt;/h2&gt;
+&lt;p&gt;This is Node, using &lt;code&gt;rss-parser&lt;/code&gt; to handle the feed and the built-in &lt;code&gt;fetch&lt;/code&gt; for talking to both platforms&#39; APIs. Each post gets a fixed prefix and the title, the feed&#39;s &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; (Mastodon only, see below), the link, and hashtags built from any &lt;code&gt;&amp;lt;category&amp;gt;&lt;/code&gt; elements on the item. If the item has an enclosure or &lt;code&gt;&amp;lt;media:content&amp;gt;&lt;/code&gt; image, it downloads that once and attaches it natively wherever it&#39;s needed, rather than just linking to it.&lt;/p&gt;
+&lt;p&gt;Mastodon and Bluesky post independently of each other. If one fails, the other still goes out, and only the failed one is retried on the next run.&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://gist.github.com/timklapdor/54eeccd33dae2eeac307665872090f80&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;check out the script on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Adding hashtags&lt;/h2&gt;
+&lt;p&gt;Hashtags come from RSS&#39;s own &lt;code&gt;&amp;lt;category&amp;gt;&lt;/code&gt; element, which &lt;code&gt;rss-parser&lt;/code&gt; already collects into &lt;code&gt;item.categories&lt;/code&gt; with no extra parsing needed. Add a field to a post&#39;s front matter:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;
+---
+title: All in the Verbs
+date: 2026-04-10
+mastodonTags: [ai, learningdesign]
+---
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Keeping it a separate field from whatever tags your site already uses for its own taxonomy or nav matters, since those often include values like &lt;code&gt;&amp;quot;posts&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;nav&amp;quot;&lt;/code&gt; you wouldn&#39;t want turning into hashtags. Then in the feed template:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-liquid&quot;&gt;
+{% for post in collections.posts %}
+  &amp;lt;item&amp;gt;
+    &amp;lt;title&amp;gt;{{ post.data.title }}&amp;lt;/title&amp;gt;
+    &amp;lt;link&amp;gt;{{ post.url | url }}&amp;lt;/link&amp;gt;
+    &amp;lt;guid&amp;gt;{{ post.url | url }}&amp;lt;/guid&amp;gt;
+    &amp;lt;summary&amp;gt;{{ post.data.summary }}&amp;lt;/summary&amp;gt;
+    {% for tag in post.data.mastodonTags %}
+    &amp;lt;category&amp;gt;{{ tag }}&amp;lt;/category&amp;gt;
+    {% endfor %}
+  &amp;lt;/item&amp;gt;
+{% endfor %}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since it&#39;s a plain loop over an optional array, posts without &lt;code&gt;mastodonTags&lt;/code&gt; just emit zero &lt;code&gt;&amp;lt;category&amp;gt;&lt;/code&gt; tags, no conditional needed. A post with &lt;code&gt;[ai, learningdesign]&lt;/code&gt; in front matter comes out as &lt;code&gt;#Ai #LearningDesign&lt;/code&gt; in the toot.&lt;/p&gt;
+&lt;h2&gt;The workflow&lt;/h2&gt;
+&lt;p&gt;If you already build and deploy your site through a GitHub Actions workflow as I do, you can fold this in as a second job instead, gated with &lt;code&gt;needs:&lt;/code&gt; so it only runs after a successful deploy:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;
+toot:
+  needs: deploy
+  if: github.ref == &#39;refs/heads/main&#39; &amp;amp;&amp;amp; success()
+  runs-on: ubuntu-22.04
+  permissions:
+    contents: write
+  steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: &amp;quot;24&amp;quot;
+
+    - name: Wait for Pages CDN to catch up
+      run: sleep 60
+      # The deploy job just pushed to gh-pages, but GitHub&#39;s CDN can take
+      # a short while to actually serve the new content. Without this,
+      # the feed fetch below can occasionally hit a stale cached version
+      # of feed.xml, missing whatever changed in the most recent deploy.
+
+    - name: Install dependencies
+      run: npm install rss-parser
+
+    - name: Check feed and post new items
+      env:
+        FEED_URL: ${{ vars.FEED_URL }}
+        MASTODON_INSTANCE_URL: ${{ vars.MASTODON_INSTANCE_URL }}
+        MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        BLUESKY_HANDLE: ${{ vars.BLUESKY_HANDLE }}
+        BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+      run: node scripts/toot-new-posts.mjs
+
+    - name: Commit updated state file
+      run: |
+        git config user.name &amp;quot;github-actions[bot]&amp;quot;
+        git config user.email &amp;quot;github-actions[bot]@users.noreply.github.com&amp;quot;
+        git add data/posted-guids.json
+        git diff --staged --quiet || git commit -m &amp;quot;Update posted-guids state [skip ci]&amp;quot;
+        git push
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want, you could run this  as a standalone version that polls every 30 minutes, independent of however your site actually gets built and deployed. That might be useful for you, but that doesn&#39;t suit the light touch workflow I have on my personal blog.&lt;/p&gt;
+&lt;h2&gt;Setting it up&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Get a Mastodon access token.&lt;/strong&gt; Settings → Development → New Application on your instance, tick &lt;code&gt;write:statuses&lt;/code&gt;, create it, copy the token.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add the two files&lt;/strong&gt; to your repo: &lt;code&gt;scripts/toot-new-posts.mjs&lt;/code&gt; and an empty &lt;code&gt;data/posted-guids.json&lt;/code&gt; containing just &lt;code&gt;[]&lt;/code&gt;, both at the repo root, plus whichever workflow file fits your setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add repo secrets and variables&lt;/strong&gt; (Settings → Secrets and variables → Actions): secret &lt;code&gt;MASTODON_TOKEN&lt;/code&gt;, and variables &lt;code&gt;FEED_URL&lt;/code&gt; and &lt;code&gt;MASTODON_INSTANCE_URL&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Push, and check the Actions tab.&lt;/strong&gt; The first run should complete without posting anything, just seeding the state file with your existing posts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Publish something new&lt;/strong&gt; to confirm it actually toots.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you want a different post format, hashtags, a different field from the feed, whatever, it&#39;s all in &lt;code&gt;buildStatusText()&lt;/code&gt;. That&#39;s the only function you&#39;d realistically need to touch.&lt;/p&gt;
+&lt;h2&gt;Adding Bluesky&lt;/h2&gt;
+&lt;p&gt;Bluesky (AT Protocol) is a different enough API that it&#39;s worth knowing the gaps before turning it on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Auth is a handle + app password&lt;/strong&gt;, not a static token. Generate one in Bluesky&#39;s Settings → App Passwords (not your main login password), and the script exchanges it for a short-lived session at the start of each run.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;300 characters, not ~500.&lt;/strong&gt; There isn&#39;t room for title, link, hashtags, &lt;em&gt;and&lt;/em&gt; a summary, so the Bluesky post drops the summary entirely and just sends the prefix, title, link, and hashtags. If the title alone is long, it&#39;s truncated with an ellipsis so the link and hashtags always survive intact.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Links and hashtags need &amp;quot;facets.&amp;quot;&lt;/strong&gt; Unlike Mastodon, having a URL or &lt;code&gt;#tag&lt;/code&gt; in the text doesn&#39;t make it clickable or searchable, AT Protocol needs an explicit byte-range annotation pointing at each one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Images upload through a different endpoint&lt;/strong&gt; (a blob upload, not a multipart form), producing a blob reference rather than a media ID.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&#39;s genuinely optional. Without both &lt;code&gt;BLUESKY_HANDLE&lt;/code&gt; and &lt;code&gt;BLUESKY_APP_PASSWORD&lt;/code&gt; set, Bluesky posting is skipped entirely and Mastodon behaves exactly as before. Turn it on later and it gets its own silent first-run seed, same as Mastodon did, so it won&#39;t try to post your whole archive the moment it&#39;s switched on. State entries are tracked per platform (&lt;code&gt;mastodon:&amp;lt;id&amp;gt;&lt;/code&gt;, &lt;code&gt;bluesky:&amp;lt;id&amp;gt;&lt;/code&gt;), so a failure on one never causes a duplicate or a skip on the other.&lt;/p&gt;
+&lt;h2&gt;One gotcha: give your feed items a stable guid&lt;/h2&gt;
+&lt;p&gt;The script tells &amp;quot;already posted&amp;quot; from &amp;quot;new&amp;quot; using each item&#39;s &lt;code&gt;guid&lt;/code&gt;, falling back to its &lt;code&gt;link&lt;/code&gt; if the feed doesn&#39;t set one:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;function itemId(item) {
+  return item.guid || item.id || item.link;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If your feed template doesn&#39;t set an explicit &lt;code&gt;&amp;lt;guid&amp;gt;&lt;/code&gt;, most static site generators fall back to using the post&#39;s URL as the guid too, which is fine right up until that URL changes. Fix a typo in a slug, correct a post&#39;s date, move it between folders, and the URL changes, which means the script sees a &amp;quot;new&amp;quot; item it&#39;s never encountered before and toots it again, even though nothing about the content actually changed. I hit exactly this: correcting a post&#39;s date shifted its permalink by one day, and the next deploy dutifully re-tooted it as if it were brand new.&lt;/p&gt;
+&lt;p&gt;Nothing breaks when this happens, you just get a duplicate toot linking to the same post under its corrected URL. Harmless, but avoidable.&lt;/p&gt;
+&lt;h2&gt;Would this work on Codeberg?&lt;/h2&gt;
+&lt;p&gt;Mostly, with caveats. Codeberg (running Forgejo) has two CI options: Woodpecker CI, which is the more established, production-ready offering, and Forgejo Actions, which is closer to GitHub Actions in syntax but still in public alpha there and comes with tighter resource and time limits on hosted runs. Forgejo Actions supports scheduled triggers via cron, same as GitHub, so the shape of this workflow translates.&lt;/p&gt;
+&lt;p&gt;The friction is in the actions themselves. &lt;code&gt;actions/checkout&lt;/code&gt; and &lt;code&gt;actions/setup-node&lt;/code&gt; aren&#39;t guaranteed to exist as-is; Forgejo mirrors some GitHub Actions under its own namespace, but not the whole marketplace, and compatibility isn&#39;t guaranteed. You&#39;d likely swap those for Forgejo-native equivalents or a plain shell script that does the checkout and Node setup manually. The script itself doesn&#39;t care where it runs, since it&#39;s just Node hitting two HTTP APIs, so the actual logic ports over unchanged. The wrapper around it is what would need adjusting.&lt;/p&gt;
+&lt;p&gt;If your instinct is host-your-own generally, this would also run fine as a plain cron job on any server with Node installed, GitHub Actions isn&#39;t a requirement, just a convenient place to run it for free without maintaining a server yourself.&lt;/p&gt;
+]]></content>
+    
+    <category term="Blaugust"/>
+    
+    <category term="Echofeed"/>
+    
+    <category term="POSSE"/>
+    
+  </entry>
   <entry>
     <title>Blaugust - 10 days in</title>
     <link href="https://heartsoulmachine.com/blog/2026/08-10-blaugust-10-days-in/"/>
