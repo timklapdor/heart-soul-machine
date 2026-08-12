@@ -39,7 +39,7 @@
         medium="image" 
         type="image/jpeg" />
     <summary>{{ post.data.summary }}</summary>
-    <content xml:lang="{{ metadata.language }}" type="html"><![CDATA[{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}]]></content>
+    <content xml:lang="{{ metadata.language }}" type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</div></content>
     {% for tag in post.data.mastodonTags %}
     <category term="{{ tag }}"/>
     {% endfor %}
