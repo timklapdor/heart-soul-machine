@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: First time doing this whole 'blaugust' thing and it's coming along OK.
-commentId:
-url:
+commentId: '117070321748975931'
+url: https://heartsoulmachine.com/blog/2026/08-10-blaugust-10-days-in/
 mastodonTags:
   - Blaugust
 ---

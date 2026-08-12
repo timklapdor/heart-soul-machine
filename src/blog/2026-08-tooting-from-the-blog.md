@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: My approach to sharing via the fediverse has had to change with the closure of Echofeed. So here's my approach to replacing EchoFeed with a GitHub Action.
-commentId:
-url:
+commentId: '117075800933811823'
+url: https://heartsoulmachine.com/blog/2026/08-11-tooting-from-the-blog/
 mastodonTags:
   - Blaugust
   - Echofeed
