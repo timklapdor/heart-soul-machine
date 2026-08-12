@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: We're living in a world where the service and the product are two completely separate things. What we see are systems corrupted, eroded, and devalued to the extent that we can't trust them.
-commentId:
-url:
+commentId: '117079727912031406'
+url: https://heartsoulmachine.com/blog/2026/08-12-the-network-should-be-ours/
 mastodonTags:
   - Blaugust
 ---
