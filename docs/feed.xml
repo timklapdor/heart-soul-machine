@@ -4,12 +4,55 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-08-11T00:00:00Z</updated>
+  <updated>2026-08-12T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>The Network Should Be Ours</title>
+    <link href="https://heartsoulmachine.com/blog/2026/08-12-the-network-should-be-ours/"/>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/08-12-the-network-should-be-ours/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/the-network-should-be-ours-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>We&#39;re living in a world where the service and the product are two completely separate things. What we see are systems corrupted, eroded, and devalued to the extent that we can&#39;t trust them.</summary>
+    <content xml:lang="en" type="html"><![CDATA[&lt;h2&gt;The Network Should Be Ours&lt;/h2&gt;
+&lt;p&gt;After reading an interview with &lt;a href=&quot;https://clalliance.org/blog/what-every-adult-should-know-about-parasocial-media-and-teens/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;danah boyd&lt;/a&gt; on parasocial networks, it got me thinking about a distinction I keep coming back to: the difference between the service and the product:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The service is the value proposition&lt;/strong&gt;, why people show up.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The product is what&#39;s actually being sold&lt;/strong&gt;, where the money actually comes from.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In a ye&#39;olde world of commerce, these two things used to be the same. A stallholder attracted customers with their fair-priced fresh produce, and people paid a fair price for fresh produce. As businesses evolved, we realised we could abstract away from the connection between the two. In most big businesses today, these two things aren&#39;t the same. And nowhere is that more obvious than in social networks.&lt;/p&gt;
+&lt;h3&gt;Service vs. Product&lt;/h3&gt;
+&lt;p&gt;Take Instagram or Facebook. The service – the reason people signed up – is for social connection. Staying in touch with friends and family, getting a glimpse of what people are up to, that incidental sharing turns out to matter more than we&#39;d admit. The product, though, is an advertising platform. A highly targeted one, because you&#39;ve handed over enormous amounts of personal information in exchange for the service.&lt;/p&gt;
+&lt;p&gt;This isn&#39;t new. Broadcast television offered entertainment and news as the service, and sold advertising as the product. Newspapers offered a chronicle of the world and sold eyeballs to advertisers too. The difference with social networks is the precision of targeting and the fact that the confusion between service and product has become harder to ignore. When a third of what you see in your feed is an ad, the service starts to degrade noticeably.&lt;/p&gt;
+&lt;p&gt;We&#39;re at a point where that degradation is real enough that people are looking for alternatives. The platforms have become so ravenously commercial that the experience itself is suffering. And yet leaving is hard, because the network has value. Meta has been around long enough, and its networks have grown deep enough, that in many communities and cultures it simply is the infrastructure. I haven&#39;t been on Instagram for years and I genuinely feel the absence – not of the platform, but of the incidental social layer it provides.&lt;/p&gt;
+&lt;h3&gt;Infrastructure Shouldn&#39;t Be Private&lt;/h3&gt;
+&lt;p&gt;That&#39;s the crux of it. Networks become valuable because they are networks. And at the point where a network becomes infrastructure – where communities genuinely depend on it to function – the question of who owns it starts to matter a great deal.&lt;/p&gt;
+&lt;p&gt;Right now the answer is: private companies, running for profit, on servers they own, subject to the commercial imperatives of their investors. Governments aren&#39;t much better – most of them have outsourced their own digital infrastructure to AWS and equivalent cloud providers, which is a strange position for entities that like to talk about national sovereignty and security.&lt;/p&gt;
+&lt;p&gt;The advertising model exists partly because of an assumption that people won&#39;t pay for these services. That assumption is starting to look shaky – subscription-based media has proven there&#39;s a viable user-pays model, at least at the level of survival. But survival isn&#39;t the same as the year-on-year growth that keeps investors interested. And so the advertising model persists, because it&#39;s the one that scales to the returns investors expect.&lt;/p&gt;
+&lt;p&gt;The result is that we&#39;ve built communities on infrastructure that serves different masters than the communities themselves. The platform optimises for engagement and ad revenue. The community needs reliable, trustworthy communication. Those two things are increasingly in conflict.&lt;/p&gt;
+&lt;h3&gt;What Community Infrastructure Could Look Like&lt;/h3&gt;
+&lt;p&gt;What I&#39;d like to advocate for is publicly owned digital infrastructure – local, communal, scaled to the communities it serves.&lt;/p&gt;
+&lt;p&gt;Think about what community sports teams invest in private digital infrastructure right now. The soccer club my daughter joined ran almost entirely on Facebook – training schedules, game updates, last-minute changes. Not because anyone chose Facebook as the ideal tool, but because it was where everyone already was and there was nothing else. That dependency on a private platform, for something as straightforward as coordinating a kids&#39; football team, points to a real gap.&lt;/p&gt;
+&lt;p&gt;Local councils and local governments could fill that gap. Running servers and services at community scale keeps people employed, keeps data sovereign, and keeps the service actually oriented toward the community rather than toward advertisers. Yes, it costs more per user than a giant data centre. But that cost is partly the cost of employing someone – and there&#39;s value in that beyond the balance sheet.&lt;/p&gt;
+&lt;p&gt;The Trump era made visible what was always true: centralising so much of our digital life on US-based private services carries real risk. Europe has started responding to this, with moves toward public cloud infrastructure and digital sovereignty. I haven&#39;t seen even the beginning of that conversation in Australia.&lt;/p&gt;
+&lt;h3&gt;The Chronicle Worth Keeping&lt;/h3&gt;
+&lt;p&gt;One more thing worth pulling out. Among the services that have been lost or degraded in the shift to commercial platforms is something that sounds old-fashioned but matters: the chronicle.&lt;/p&gt;
+&lt;p&gt;Newspapers did something valuable – someone was paid to record the life and times of a community, a role that came with respect and purpose. The value of that work wasn&#39;t always immediate – often the real value is in the archives, only becoming clear much later, when someone goes looking for how things changed, how decisions were made, how a community evolved over time. We don&#39;t have great ways of seeing change as it happens. The chronicle is one of them.&lt;/p&gt;
+&lt;p&gt;Social networks, at their best, did something similar – created a record of connection and community that had real value. The problem is that record is held privately, monetised commercially, and could disappear tomorrow if the business model changes.&lt;/p&gt;
+&lt;p&gt;If communities owned their own infrastructure, they&#39;d own that record too. The network itself – the ability to form connections, build sub-networks, coordinate across geography – would be the service. And the service and the product would, for once, be the same thing.&lt;/p&gt;
+&lt;p&gt;We could return to the days when the service and the product are one and the same. The thing is, we need to accept the cost and be willing to pay for it. I like the idea of public infrastructure – paying through our taxes so we don&#39;t pay for someone else to profit.&lt;/p&gt;
+]]></content>
+    
+    <category term="Blaugust"/>
+    
+  </entry>
   <entry>
     <title>Tooting from the Blog</title>
     <link href="https://heartsoulmachine.com/blog/2026/08-11-tooting-from-the-blog/"/>
