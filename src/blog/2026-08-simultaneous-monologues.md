@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: Some thoughts on online dialogue and debate.
-commentId:
-url:
+commentId: '117097143163052139'
+url: https://heartsoulmachine.com/blog/2026/08-14-simultaneous-monologues/
 mastodonTags:
   - Blaugust
 ---
