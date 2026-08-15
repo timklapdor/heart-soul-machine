@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: Or how I learnt to stop fighting complexity and learned to work with it.
-commentId:
-url:
+commentId: '117088330458300165'
+url: https://heartsoulmachine.com/blog/2026/08-13-from-waterfall-to-snowball/
 mastodonTags:
   - Blaugust
 ---
