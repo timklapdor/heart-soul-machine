@@ -11,7 +11,7 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 const markdownItBracketed = require('markdown-it-bracketed-spans');
 
 const fs = require("fs");
-const Image = require("@11ty/eleventy-img");
+const Image = require("@11ty/eleventy-img").default;
 const path = require('path');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const yaml = require("js-yaml");

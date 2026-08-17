@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: Is AI an attempt to take the Rot Economy to its illogical conclusion? Can you maximise profit without solving a problem and without a quality product or user experience?
-commentId:
-url:
+commentId: '117107979517689363'
+url: https://heartsoulmachine.com/blog/2026/08-16-innovation-without-solving-problems/
 mastodonTags:
   - Blaugust
   - AI
