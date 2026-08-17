@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: I'm trying to change how I engage with technology – to move past ubiquity and towards intentionality.
-commentId:
-url:
+commentId: '117097511016465517'
+url: https://heartsoulmachine.com/blog/2026/08-15-intentional-engagement/
 mastodonTags:
   - Blaugust
 ---
