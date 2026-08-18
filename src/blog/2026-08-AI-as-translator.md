@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: AI as a translation layer unlocks access to things that were previously off-limits. Access isn't the same as mastery, but the empowerment that comes from going further than you could before is real and worth taking seriously.
-commentId:
-url:
+commentId: '117113823829494274'
+url: https://heartsoulmachine.com/blog/2026/08-18-ai-as-translator/
 mastodonTags:
   - Blaugust
 ---
