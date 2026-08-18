@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: In education, context determines what works – not ideology.
-commentId:
-url:
+commentId: '117113539221462588'
+url: https://heartsoulmachine.com/blog/2026/08-17-the-binaries-of-education/
 mastodonTags:
   - Blaugust
 ---
