@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: A personal learning system built on Obsidian, your own Domain, and ActivityPub Hubs could finally make the Distributed Learning System I sketched in 2017 a buildable reality.
-commentId:
-url:
+commentId: '117137344370648107'
+url: https://heartsoulmachine.com/blog/2026/08-21-obsidian-and-the-distributed-learning-system/
 mastodonTags:
   - Blaugust
 ---
