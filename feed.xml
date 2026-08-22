@@ -4,12 +4,82 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-08-21T00:00:00Z</updated>
+  <updated>2026-08-22T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>New Laptop, New Setup</title>
+    <link href="https://heartsoulmachine.com/blog/2026/08-22-new-laptop-new-setup/"/>
+    <updated>2026-08-22T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/08-22-new-laptop-new-setup/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/new-laptop-new-setup-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>A quick list and quick install of my go-to apps for a new Mac.</summary>
+    <content xml:lang="en" type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">&lt;p&gt;Getting a new work laptop is always a mixed experience. On one hand, new machine. On the other, institutional IT has a habit of locking things down in ways that make setup more of a negotiation than a process. This time around, I have to request admin access to install things, and I only get a 30-minute window to do it in.&lt;/p&gt;
+&lt;p&gt;So I thought carefully about how to set up my Mac quickly and efficiently. Over time I&#39;ve evolved a fairly stable list of applications I genuinely depend on, and rather than clicking through installers one by one, I used &lt;a href=&quot;https://brew.sh/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Homebrew&lt;/a&gt; — a command-line package manager that can install applications in bulk. I gave Claude my app list and asked it to generate the Brewfile script to do it, and it worked a treat. Apps are installed - now I just need to log in to everything and set them all up!&lt;/p&gt;
+&lt;p&gt;Here&#39;s the list — my go-to tools for starting up a new Mac.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dev Essentials&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Node&lt;/a&gt; - for 11ty / npm projects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;NVM&lt;/a&gt; – Node version manager&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Visual Studio Code&lt;/a&gt; – Code editor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Browsers&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://zen-browser.app/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Zen Browser&lt;/a&gt; – Firefox-based browser with vertical tabs and spaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Notes &amp;amp; Writing&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Obsidian&lt;/a&gt; – Local, Markdown-based knowledge management and note-taking&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ia.net/writer&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;iA Writer&lt;/a&gt; – Distraction-free writing Markdown editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ia.net/presenter&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;iA Presenter&lt;/a&gt; – Markdown-based presentation tool&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.grammarly.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Grammarly&lt;/a&gt; – Grammar checker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Productivity&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://freemacsoft.net/appcleaner/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;AppCleaner&lt;/a&gt; – Thorough app uninstaller&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://daisydiskapp.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;DaisyDisk&lt;/a&gt; – Disk space visualiser&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cleanshot.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;CleanShot X&lt;/a&gt; – Screenshot and screen recording tool&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Stengo/DeskPad&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;DeskPad&lt;/a&gt; – Virtual display for screen sharing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/thaw-app/Thaw&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Thaw&lt;/a&gt; – Menu bar manager&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://soulver.app/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Soulver&lt;/a&gt; – Notepad calculator&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.omnigroup.com/omnifocus/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OmniFocus&lt;/a&gt; – Task management&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.whatcable.uk/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;WhatCable&lt;/a&gt; – Identifies what a USB-C cable can actually do&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Audio &amp;amp; Dictation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://handy.computer/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Handy&lt;/a&gt; – Free, open-source offline speech-to-text dictation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://goodsnooze.gumroad.com/l/macwhisper&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;MacWhisper&lt;/a&gt; – Audio transcription&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.brain.fm/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Brain.fm&lt;/a&gt; – Focus music&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Security&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://1password.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;1Password&lt;/a&gt; – Password manager&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Media&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.videolan.org/vlc/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;VLC&lt;/a&gt; – Media player&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gif.ski/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Gifski&lt;/a&gt; – Video-to-GIF converter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cloud Storage&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Dropbox&lt;/a&gt; – Cloud storage and file sync&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you&#39;re keen to do this yourself, there&#39;s the two files you&#39;ll need: &lt;code&gt;Brewfile&lt;/code&gt; and &lt;code&gt;Install.sh&lt;/code&gt;. You can &lt;a href=&quot;https://gist.github.com/timklapdor/75cde5a65ea5744b5c770998dee8bbc5&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;go ahead and edit these&lt;/a&gt; to suit your needs - then just type into the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chmod +x install.sh
+./install.sh
+&lt;/code&gt;&lt;/pre&gt;
+</div></content>
+    
+    <category term="Blaugust"/>
+    
+  </entry>
   <entry>
     <title>Obsidian and the Distributed Learning System</title>
     <link href="https://heartsoulmachine.com/blog/2026/08-21-obsidian-and-the-distributed-learning-system/"/>
