@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: A quick list and quick install of my go-to apps for a new Mac.
-commentId:
-url:
+commentId: '117137359703347229'
+url: https://heartsoulmachine.com/blog/2026/08-22-new-laptop-new-setup/
 mastodonTags:
   - Blaugust
 ---
