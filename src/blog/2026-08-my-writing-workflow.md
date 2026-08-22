@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: Sharing how I am writing posts these days – being open about how I'm using AI to help edit and structure my words but not generate them.
-commentId:
-url:
+commentId: '117121277715109745'
+url: https://heartsoulmachine.com/blog/2026/08-19-my-writing-workflow/
 mastodonTags:
   - Blaugust
 ---
