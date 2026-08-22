@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: A silhouette strips away everything that makes us three-dimensional, yet somehow still carries something unmistakably true.
-commentId:
-url:
+commentId: '117137035503828628'
+url: https://heartsoulmachine.com/blog/2026/08-20-silhouettes/
 mastodonTags:
   - Blaugust
 ---
