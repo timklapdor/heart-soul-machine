@@ -20,7 +20,7 @@
       }
 
       .date, .grey {
-          fill: #1f1c1a;
+        fill: #1f1c1a;
       }
 
       .description {
@@ -56,7 +56,7 @@
   </text>
   <text class="description" transform="translate(380 220)">
       
-        <tspan x="0" y="0">On Rails</tspan>
+        <tspan x="0" y="0">AI and Value</tspan>
           
     </text>
   <g>
