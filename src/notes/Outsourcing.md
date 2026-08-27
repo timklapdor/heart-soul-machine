@@ -4,7 +4,8 @@ category:
 title: Outsourcing
 aliases:
   - outsourcing
-created: 2025-01-28
+  - outsource
+date: 2025-01-28
 updatedDate:
 updateDescription: 
 type:

@@ -3,7 +3,7 @@ category:
   - "[[Notes]]"
 title: On Rails
 aliases: 
-created: 2021-10-09
+date: 2021-10-09
 updatedDate:
 updateDescription: 
 type:

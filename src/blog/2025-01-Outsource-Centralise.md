@@ -1,5 +1,7 @@
 ---
 title: Outsource & Centralise
+aliases: 
+  - Outsource & Centralise
 date: 2025-01-29
 categories:
   - Higher Education
@@ -25,7 +27,7 @@ Yes, we require "labour" to function, but that term doesn't reflect what most pe
 
 With that distinction in mind, let’s look at the concepts of outsourcing and centralisation.
 
-If we Outsourcing knowledge, we lose on many fronts. We lose access to the people who possess it, and we lose it as an organisational asset. We also add a cost to the business. To access outsourced knowledge, we now have to pay for it; the "vendor" of that knowledge knows that and will ensure we pay for it – forever. We also lose the ability for that knowledge to grow, adapt and change. This is a key difference between knowledge and labour - labour has a static value^[Or at least a more predictable value based on wages and inflation], but knowledge can grow and decline. Knowledge can develop and change organically, but labour can't. So [[outsourcing]] treats knowledge as static, robbing it of its very essence so that it can fit nicely on someone's spreadsheet.
+If we're outsourcing knowledge, we lose on many fronts. We lose access to the people who possess it, and we lose it as an organisational asset. We also add a cost to the business. To access outsourced knowledge, we now have to pay for it; the "vendor" of that knowledge knows that and will ensure we pay for it – forever. We also lose the ability for that knowledge to grow, adapt and change. This is a key difference between knowledge and labour - labour has a static value^[Or at least a more predictable value based on wages and inflation], but knowledge can grow and decline. Knowledge can develop and change organically, but labour can't. So [[outsourcing]] treats knowledge as static, robbing it of its very essence so that it can fit nicely on someone's spreadsheet.
 
 Centralisation also suffers the same fate because it treats knowledge as a static value. The thinking that centralising knowledge into specific units fails to comprehend that knowledge is how we deal with complexity. To deal with complexity, we have to experience it, and through that experience, we learn. Learning is the basis of growing knowledge, not sticking it in a vacuum. Centralisation stifles knowledge creation as it starves it of the nutrients that diversity brings. The differences we encounter is key for learning because it is fundamentally about challenging, changing and reforming models and patterns of thinking. Centralisation, as [Taleb](http://en.wikipedia.org/wiki/Antifragile) might put it, ensures an organisation becomes fragile. It robs it of the ability to grow knowledge, which eventually makes the organisation dumber and less able to adapt to a changing environment.
 
