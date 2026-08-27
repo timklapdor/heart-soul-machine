@@ -4,12 +4,72 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-08-23T00:00:00Z</updated>
+  <updated>2026-08-27T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Blaugust 2026</title>
+    <link href="https://heartsoulmachine.com/blog/2026/08-27-blaugust-2026/"/>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/08-27-blaugust-2026/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/blaugust-2026-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>Twenty-three posts, roughly 19,000 words, and one broken writing dry spell – Blaugust 2026 is done for me.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;So it&#39;s Thursday and I haven&#39;t posted to the blog since Sunday, and I don&#39;t think I have another post in me. This was my first crack at #Blaugust and, to be honest, I lasted a lot longer than I expected.&lt;/p&gt;
+&lt;p&gt;I can&#39;t remember another recent sustained writing spell, and not one that has gone for so long. I did clear out the drafts folder – what&#39;s left are some incoherent thoughts that need more than a light massage – and I broke the writing dry spell as well. So it&#39;s been a positive experience. Would I do it again? I wouldn&#39;t say no, but I wouldn&#39;t jump straight back in. I think I&#39;d be more willing to commit to a shorter time period – a week or two – mainly because I just don&#39;t have that many words in me. I know some people have a lot to say, but I tend to listen and absorb more than I need to say. Less is sometimes more, but I recognise that being silent for so long is not great either.&lt;/p&gt;
+&lt;p&gt;What this has reminded me is the importance of these words as records. I&#39;ve got most of my blogging history tied up on an old WordPress site, and I need to move it here. These posts are markers, reference points along a journey – and they are contiguous. It is one life and one journey, and it seems ridiculous to have them scattered across platforms and spaces. Linking to another URL which is also, in essence, me seems odd and at odds with my desire to be sovereign and control my own &lt;a href=&quot;http://stuff.so/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;stuff.So&lt;/a&gt; that&#39;s probably what comes next.&lt;/p&gt;
+&lt;p&gt;In the meantime — here&#39;s a Blaugust summary.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;23 posts.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approximately 19,000 words.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Around 95 minutes of reading.&lt;/strong&gt;**&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;(Roughly the length of a short novella, written in a month, while starting a new job! Not a bad effort)&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Themes&lt;/h3&gt;
+&lt;p&gt;Three broad threads ran through the month:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Technology and its discontents&lt;/strong&gt; — Several of posts form a loose argument: that technology has moved from something requiring intent to something demanding attention, and that reclaiming intentionality is both possible and necessary.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work, learning, and how to do things well&lt;/strong&gt; — Shared solutions on building learning design teams, working in complexity, moving from waterfall to snowball, and the role of retrospectives. The professional toolkit and the question of portable versus non-portable skills. The binaries of education and why context always defeats ideology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Culture, politics, and value&lt;/strong&gt; — The politics of care. Labor as the new conservatives. Culture as a complex system. The devaluation of creative work and the cyclical nature of value. The pond metaphor for culture. The town square versus the cozy bar.&lt;/p&gt;
+&lt;h3&gt;Topics Covered&lt;/h3&gt;
+&lt;p&gt;AI and creativity, vibe coding, the LMS, Obsidian, ActivityPub, Cynefin, Bloom&#39;s taxonomy, parasocial networks, the fediverse, Blaugust itself, the Mac setup, writing workflow, silhouettes, the Canvas outage, the rot economy, craft beer economics, fast fashion, music streaming, consent-based decision making, agile retrospectives, learning design teams, portable skills, political ideology, care as a political principle, and the answer machine from religion to Google to AI.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aug 23 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-23-ai-and-value/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;AI and Value&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 22 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-22-new-laptop-new-setup/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;New Laptop, New Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 21 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-21-obsidian-and-the-distributed-learning-system/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Obsidian and the Distributed Learning System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 20 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-20-silhouettes/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Silhouettes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 19 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-19-my-writing-workflow/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;My Writing Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 18 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-18-ai-as-translator/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;AI as Translator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 17 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-17-the-binaries-of-education/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Binaries of Education&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 16 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-16-innovation-without-solving-problems/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Innovation without solving problems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 15 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-15-intentional-engagement/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Intentional Engagement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 14 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-14-simultaneous-monologues/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Simultaneous Monologues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 13 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-13-from-waterfall-to-snowball/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;From Waterfall to Snowball&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 12 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-12-the-network-should-be-ours/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Network Should Be Ours&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 11 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-11-tooting-from-the-blog/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tooting from the Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 10 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-10-blaugust-10-days-in/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Blaugust - 10 days in&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 09 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-09-some-people-say/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Some People Say&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 08 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-08-the-answer-machine/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Answer Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 07 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-07-diversity-is-a-superpower/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Diversity is a Superpower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 06 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-06-the-professional-toolkit/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Professional Toolkit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 05 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-05-the-politics-of-care/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Politics of Care&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 04 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-04-culture-is-complex/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Culture is Complex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 03 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-03-labor-are-the-new-conservatives/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Labor are the new conservatives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 02 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-02-blaugust/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Blaugust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aug 01 — &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/08-01-july-2026/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;July 2026&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <category term="Blaugust"/>
+    
+  </entry>
   <entry>
     <title>AI and Value</title>
     <link href="https://heartsoulmachine.com/blog/2026/08-23-ai-and-value/"/>
@@ -2509,7 +2569,7 @@ Mirrortocracy rather than a Meritocracy which did stick with me. Their aim is no
         medium="image" 
         type="image/jpeg" />
     <summary>One of the things that I fear within the AI hype and the desire to inject it into all aspects of life is that it&#39;s a process of outsourcing.</summary>
-    <content xml:lang="en" type="html">&lt;p&gt;I&#39;ve been trying to connect a few thoughts together to get to this point. I put together a note on what I feel about &lt;a href=&quot;https://heartsoulmachine.com/notes/outsourcing/&quot;&gt;outsourcing&lt;/a&gt;, which frames my thinking about it as a more general concept, and in doing so, I dug up an old post in which I discussed &lt;a href=&quot;https://heartsoulmachine.com/blog/2025/01-29-outsource-and-centralise/&quot;&gt;outsourcing and centralising&lt;/a&gt; as typical features organisations use to find &amp;quot;efficiency&amp;quot;. In that same way, I&#39;ve started to see AI implementation as a form and extension of outsourcing.&lt;/p&gt;
+    <content xml:lang="en" type="html">&lt;p&gt;I&#39;ve been trying to connect a few thoughts together to get to this point. I put together a note on what I feel about &lt;a href=&quot;https://heartsoulmachine.com/notes/outsourcing/&quot;&gt;Outsourcing&lt;/a&gt;, which frames my thinking about it as a more general concept, and in doing so, I dug up an old post in which I discussed &lt;a href=&quot;https://heartsoulmachine.com/blog/2025/01-29-outsource-and-centralise/&quot;&gt;outsourcing and centralising&lt;/a&gt; as typical features organisations use to find &amp;quot;efficiency&amp;quot;. In that same way, I&#39;ve started to see AI implementation as a form and extension of outsourcing.&lt;/p&gt;
 &lt;p&gt;I feel it’s important to note that the current generation of AI tools available are &lt;em&gt;&lt;strong&gt;not&lt;/strong&gt;&lt;/em&gt; “intelligence” but language analysis tools. They are sophisticated and in many ways masquerade as lifelike&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2025/01-30-intellectual-outsourcing/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. Still, they are not intelligent beyond language analysis. They are not fact machines. They don’t understand concepts or meaning beyond statistical analysis and probability. They are derivative machines, highly capable of simulating thought only because we’ve associated output and product with thinking.&lt;/p&gt;
 &lt;p&gt;Humans have developed language as a way to communicate thoughts. Language is a way we can share life&#39;s intangible aspects alongside various artistic endeavours - from painting to music to dance. The words aren’t the thinking or emotions themselves, they are descriptions of what we experience - attachments and appendages to our lived reality. They express meaning, but the meaning itself is something else, not the language or the words - the meaning is the experience.&lt;/p&gt;
 &lt;p&gt;As I listen to the latest murmurings about “AI’s” applications, I keep hearing exclamations that have confused the ability to produce language with the ability to think. They are not the same. An ability to recite numbers not correspond with an ability to complete mathematical tasks.&lt;/p&gt;
@@ -2550,7 +2610,7 @@ Mirrortocracy rather than a Meritocracy which did stick with me. Their aim is no
 &lt;p&gt;The playbook for most consulting firms is pretty limited, and most advice they essentially boils down to two things - outsource and centralise. Why? Because it&#39;s worked in the past. There are great exemplars of business transformation being achieved through these types of measures. I&#39;m not going to debate that, but what I would suggest is that those examples only occurred when dealing with issues of &lt;em&gt;labour&lt;/em&gt; - not knowledge. A business based on manual labour can reduce costs through outsourcing to a cheaper labour market, and centralisation can produce savings at scale. However, labour is a simplified concept that has little to do with many businesses today, especially in my case - a university.&lt;/p&gt;
 &lt;p&gt;Yes, we require &amp;quot;labour&amp;quot; to function, but that term doesn&#39;t reflect what most people within the organisation do. What they do is deal with is people and information. To do this requires &lt;em&gt;understanding&lt;/em&gt;, and understanding requires the development of &lt;em&gt;knowledge&lt;/em&gt;. So the work our people do looks less like traditional manual labour and more like knowledge work&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2025/01-29-outsource-and-centralise/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
 &lt;p&gt;With that distinction in mind, let’s look at the concepts of outsourcing and centralisation.&lt;/p&gt;
-&lt;p&gt;If we Outsourcing knowledge, we lose on many fronts. We lose access to the people who possess it, and we lose it as an organisational asset. We also add a cost to the business. To access outsourced knowledge, we now have to pay for it; the &amp;quot;vendor&amp;quot; of that knowledge knows that and will ensure we pay for it – forever. We also lose the ability for that knowledge to grow, adapt and change. This is a key difference between knowledge and labour - labour has a static value&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2025/01-29-outsource-and-centralise/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;, but knowledge can grow and decline. Knowledge can develop and change organically, but labour can&#39;t. So &lt;a href=&quot;https://heartsoulmachine.com/notes/outsourcing/&quot;&gt;outsourcing&lt;/a&gt; treats knowledge as static, robbing it of its very essence so that it can fit nicely on someone&#39;s spreadsheet.&lt;/p&gt;
+&lt;p&gt;If we&#39;re outsourcing knowledge, we lose on many fronts. We lose access to the people who possess it, and we lose it as an organisational asset. We also add a cost to the business. To access outsourced knowledge, we now have to pay for it; the &amp;quot;vendor&amp;quot; of that knowledge knows that and will ensure we pay for it – forever. We also lose the ability for that knowledge to grow, adapt and change. This is a key difference between knowledge and labour - labour has a static value&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2025/01-29-outsource-and-centralise/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;, but knowledge can grow and decline. Knowledge can develop and change organically, but labour can&#39;t. So &lt;a href=&quot;https://heartsoulmachine.com/notes/outsourcing/&quot;&gt;outsourcing&lt;/a&gt; treats knowledge as static, robbing it of its very essence so that it can fit nicely on someone&#39;s spreadsheet.&lt;/p&gt;
 &lt;p&gt;Centralisation also suffers the same fate because it treats knowledge as a static value. The thinking that centralising knowledge into specific units fails to comprehend that knowledge is how we deal with complexity. To deal with complexity, we have to experience it, and through that experience, we learn. Learning is the basis of growing knowledge, not sticking it in a vacuum. Centralisation stifles knowledge creation as it starves it of the nutrients that diversity brings. The differences we encounter is key for learning because it is fundamentally about challenging, changing and reforming models and patterns of thinking. Centralisation, as &lt;a href=&quot;http://en.wikipedia.org/wiki/Antifragile&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Taleb&lt;/a&gt; might put it, ensures an organisation becomes fragile. It robs it of the ability to grow knowledge, which eventually makes the organisation dumber and less able to adapt to a changing environment.&lt;/p&gt;
 &lt;p&gt;So, despite what the spreadsheets might say, outsourcing and centralisation significantly harm the organisation as a whole. It adds a cost rather than removes one, ensuring the organisation is less agile and adaptable.&lt;/p&gt;
 &lt;hr class=&quot;footnotes-sep&quot; /&gt;
