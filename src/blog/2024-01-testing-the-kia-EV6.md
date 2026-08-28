@@ -12,7 +12,7 @@ summary: Back with another EV review - this time it's the Kia EV6
 ---
 A year ago, over the Christmas break, I rented a Polestar 2 as my first foray into the land of electric vehicles. This year, I was in a similar predicament - a week away from home in Sydney and needing to rent a car. Europcar came to the party this time, adding a raft of new Kia EV6s to their fleet. The car looks great. I like the design and shape, especially the details in the lights and body panels. 
 
-![Kia EV6](../../../images/kia-ev6.png)
+![Kia EV6]({{'/images/kia-ev6.png' | url }})
 
 ### Getting Started
 Our pickup didn't really go smoothly with Europcar. I've done a few rentals with them recently and not had any issues - but when we arrived at 7.30pm there was no car ready on the lot and the only one available had around 50% charge. The fact that I had to book in advance and have the booking confirmed for this specific vehicle meant they knew I was coming and what time I would be there. After enquiring about a charge card or credit, I was informed that it wasn't on offer - take it or they can allocate a different car. I decided to go ahead and take the one available as we were hungry and keen to get on the road to eat and make a tour we had booked at [Observatory Hill](https://www.sydneypoint.com.au/attractions/sydney-observatory/) (which I recommend!). 
