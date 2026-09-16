@@ -12,8 +12,8 @@ tags:
 location:
 coverImage:
 summary: We don't have artificial intelligence – we have text processors. Calling them that makes the whole discourse clearer, the doomerism more absurd, and the actual use cases more obvious.
-commentId:
-url:
+commentId: '117281142987147251'
+url: https://heartsoulmachine.com/blog/2026/09-16-ai-is-just-a-text-processor/
 mastodonTags:
 ---
 The hype machine is at full volume around AI right now, and It's going to kill us all, and we *really* need to regulate it now, apparently. 
