@@ -6,6 +6,7 @@ $soul: #ffae2c;
 @forward "modules/palette";
 @forward "modules/colour";
 @forward "modules/svg-factory";
+@use "modules/fonts";
 @use "modules/font-size";
 @use 'modules/grid.scss';
 @use 'modules/main';

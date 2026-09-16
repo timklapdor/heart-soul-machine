@@ -1,0 +1,13 @@
+// Self-hosted webfonts.
+//
+// Aleo (weight 900 / "Black" only, latin + latin-extended subset) is used
+// as an accent display font in _main.scss and _presentation.scss.
+// Source: https://github.com/google/fonts/tree/main/ofl/aleo
+// License: SIL Open Font License 1.1 — see ../../assets/fonts/aleo/OFL.txt
+@font-face {
+    font-family: 'Aleo';
+    src: url('/assets/fonts/aleo/aleo-black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
