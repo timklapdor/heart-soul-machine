@@ -4,12 +4,49 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-09-08T00:00:00Z</updated>
+  <updated>2026-09-16T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>AI is just a Text Processor</title>
+    <link href="https://heartsoulmachine.com/blog/2026/09-16-ai-is-just-a-text-processor/"/>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/09-16-ai-is-just-a-text-processor/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/ai-is-just-a-text-processor-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>We don&#39;t have artificial intelligence – we have text processors. Calling them that makes the whole discourse clearer, the doomerism more absurd, and the actual use cases more obvious.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;The hype machine is at full volume around AI right now, and It&#39;s going to kill us all, and we &lt;em&gt;really&lt;/em&gt; need to regulate it now, apparently.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/hold-me-back.png&quot; alt=&quot;Meme image of two not very tough kids, one loosely holding the other one&#39;s arms behind their back, with the caption &amp;quot;Hold us back, or the world gets it&amp;quot;.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Love this image from &lt;a href=&quot;https://blog.edtechie.net/ai/hold-me-back/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Martin&#39;s post&lt;/a&gt; that I had to share&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I want to remind everyone – we don&#39;t actually have artificial intelligence. Yes, we have some fancy tools, but fancy tools are a long way from actual intelligence. The conflation of the two has become embedded in the media, politics, and even the pushback against the technology. It&#39;s now just assumed that Anthropic and OpenAI have already built an outsourced intelligence. They haven&#39;t, and I don&#39;t see how, based on the toolset they are working on, they could form anything like intelligence from an LLM.&lt;/p&gt;
+&lt;p&gt;Here&#39;s my alternative take:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;They haven&#39;t built AI, but *&lt;em&gt;&lt;strong&gt;they have finally built real text processors!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I remember the 80s and the first raft of personal computers coming to market. I remember hearing the hype about these newfangled &amp;quot;Text Processors&amp;quot; - and when I finally got to play with it, I was soooo disappointed. I&#39;m not sure what I imagined it would be, but it certainly wasn&#39;t what turned out to be a typewriter missing all the cool mechanical gizmos, hums and clicks.&lt;/p&gt;
+&lt;p&gt;But now we have actual real text processors, tools that can take text and actually process it, turn it into something new and different. It&#39;s way better than the shitty typewriter-lite of yesteryear, and who are we kidding, better than the default text processor we&#39;ve all been held hostage by – Microsoft Word. Neither a text processor nor a proper layout tool - it took the name but failed to deliver on every single front.&lt;/p&gt;
+&lt;p&gt;So let&#39;s look at what Large Language Model tools do. Well, they take text and turn it into something else. They apply processes to text – converting it, restructuring it, transforming it from one form or format into another. A prompt is text. The output code is text. A narrative is text. A spreadsheet converted to a summary is text processed into different text. The model doesn&#39;t understand any of it in the way a human does, it&#39;s pattern-matching at extraordinary scale, finding the most probabilistically appropriate output for a given input. And that&#39;s processing – real-fair-dinkum text processing. It is not... intelligence.&lt;/p&gt;
+&lt;p&gt;This reframe matters when we get to the doomerism end of the conversation. The argument that text processors are going to end the world relies on treating text processing as a viable threat. Yes, apparently the smartest men on the planet have made a text processor that can end the world. Really? ... Well, it could transform text that could launch a nuclear bomb! What? How? The argument becomes absurd much faster and with more truthiness than anything in the current press. Now, you could make the argument that someone could leave a text processor in charge of the nuclear codes - and I would say you have a people problem, and that is your root cause of armageddon - don&#39;t blame the text processor!&lt;/p&gt;
+&lt;h3&gt;Text Processing is Good&lt;/h3&gt;
+&lt;p&gt;I&#39;ve started to get a lot out of my time spent with these new text processors. I mean it actually processes the text! What I&#39;ve found is that they&#39;re genuinely good at the mundane – and genuinely bad at the things that require judgement, nuance, and context. And I would expect that from a text processor.&lt;/p&gt;
+&lt;p&gt;In his &lt;a href=&quot;https://johnnydecimal.com/blog/0249-this-week-2026-09-16/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;latest post&lt;/a&gt; Johnny Decimal makes this point well: use AI for the grunt work and use the humans for the creative stuff. That might seem radical, but if you take out the AI and describe what is actually happening - using text processors for the grunt work, damn, it just makes sense. If we swap out AI in this quote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[Text Processors are] &lt;em&gt;amazing&lt;/em&gt; at this sort of thing. Because it&#39;s technical, repetitive grunt-work. It&#39;s work that I &lt;em&gt;could&lt;/em&gt; have done, had I wanted to spend two of the most boring hours of my life&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Calling the technology by what it actually is makes so much of the discourse clearer and more bearable (and sadly way less profound).&lt;/p&gt;
+&lt;p&gt;Of course these text processors are a significant time saver, well suited to mundane tasks – mainly because text processors of old &lt;strong&gt;never actually processed text before&lt;/strong&gt;. Taking data from one source and putting it into another – that was a human&#39;s job. Collating from multiple sources into one – human. Converting between document types – human. Building a scaffold quickly so you can fill in the details – human. Producing a rough first draft that establishes length and structure – human.&lt;/p&gt;
+&lt;p&gt;The fact that we can automate some of the most mundane tasks on the planet with a tool we were promised more than 40 years ago is amazing! I would happily celebrate the fact that we now have a tool capable of processing text – but it&#39;s not AI. It&#39;s not intelligence. It&#39;s not really going to end the world.&lt;/p&gt;
+&lt;p&gt;I spent the last two weeks &lt;a href=&quot;https://patternlearning.co/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;building out a new website&lt;/a&gt; and used the text processor extensively for the back-end and front-end work. I&#39;ve built plenty of websites from scratch – that&#39;s not the challenge. The challenge was time, and while I wanted to set things up &lt;em&gt;my way&lt;/em&gt;, I just couldn&#39;t spend weeks on it. What I could do was set the rules, give the instructions and make the decisions. The text processor took those words and turned them into code I could review, iterate on, and adjust. The key decisions were mine. The text processing was the tool&#39;s.&lt;/p&gt;
+&lt;p&gt;That&#39;s the value proposition: it gives me back my time to put into the high-value work – being creative, making decisions, applying editorial judgement, reviewing outputs against what I actually know is right. It freed up &lt;em&gt;my intelligence&lt;/em&gt; so I could apply it more fully to the task at hand. Writing the code out as text - that&#39;s not intelligence; that&#39;s just processing.&lt;/p&gt;
+</content>
+    
+  </entry>
   <entry>
     <title>August 2026</title>
     <link href="https://heartsoulmachine.com/blog/2026/09-08-august-2026/"/>
