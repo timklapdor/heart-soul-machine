@@ -12,9 +12,9 @@ tags:
 location:
 coverImage:
 summary: Every technology sits on a continuum between tool and weapon, and the "it's just a tool" argument almost always comes from someone who benefits from ignoring that.
-commentId:
-url:
-mastodonTags:
+commentId: '117286628746066179'
+url: https://heartsoulmachine.com/blog/2026/09-17-technology-is-a-tool-and-a-weapon/
+mastodonTags: 
 ---
 "Technology is just a tool" is a phrase used to imply neutrality – an attempt to place technology outside the realm of ethical consideration. The tool, the argument goes, is neither good nor evil. It simply is.
 
