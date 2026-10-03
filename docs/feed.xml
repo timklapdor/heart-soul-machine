@@ -4,12 +4,78 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-10-01T00:00:00Z</updated>
+  <updated>2026-10-03T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Learning in 3D</title>
+    <link href="https://heartsoulmachine.com/blog/2026/10-03-learning-in-3d/"/>
+    <updated>2026-10-03T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/10-03-learning-in-3d/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/learning-in-3d-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>We have spent decades writing learning outcomes with only a third of a framework. It&#39;s time to extend Bloom&#39;s taxonomy.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;This is the presentation given at the &lt;a href=&quot;https://www.herga.com.au/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;HERGA conference&lt;/a&gt; on the 30th September 2026.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;The problem with verbs&lt;/h2&gt;
+&lt;p&gt;I&#39;ve spent the last two and a half years knee-deep in curriculum development at Adelaide University. I spent much of that time working on learning outcomes, and the more I worked with them, the more I noticed how much we lean on them. Outcomes shape the course, the assessments, and its structure. The verbs we choose shape those outcomes, and the verbs almost always come from Bloom&#39;s.&lt;/p&gt;
+&lt;p&gt;What I didn&#39;t know, despite years of working with it, was that the Bloom&#39;s we all use is incomplete. Bloom&#39;s team planned three handbooks: cognitive, affective and psychomotor, but only the cognitive one was finished on schedule, and it gained institutional authority. Other people did work on the affective and psychomotor domains later, but that work never made it into everyday outcome writing.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/cognitive-assimiltaive-operative.jpg&quot; alt=&quot;&quot; title=&quot;The three Domains - Cognitive, Affective and Psychomotor&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So the pyramid on the wall of every curriculum team is just one third of what was intended. That isn&#39;t a minor gap. It&#39;s a structural narrowing of what we design our education to be. Not as a broad encompassing of the student and their relation to the people and space around them.&lt;/p&gt;
+&lt;h2&gt;The Skills Gap&lt;/h2&gt;
+&lt;p&gt;Employers keep naming the same capabilities as critical: collaboration, empathy, adaptability, ethical judgement. The gap between what they expect and what graduates arrive with is well documented in Australia.&lt;/p&gt;
+&lt;p&gt;Learning outcomes are the mechanism institutions use to specify and assure graduate capability. If that mechanism is weighted toward cognition, then the quality assurance system we&#39;ve built will just reproduce the capability gap it&#39;s supposed to close.&lt;/p&gt;
+&lt;p&gt;We can&#39;t develop what we can&#39;t name, and we can&#39;t assess what we haven&#39;t designed for.&lt;/p&gt;
+&lt;h2&gt;Finishing the framework&lt;/h2&gt;
+&lt;p&gt;My answer wasn&#39;t to replace Bloom&#39;s. It was to finish what was started.&lt;/p&gt;
+&lt;p&gt;That meant treating learning as a system of three connected domains instead of one, and fixing the structural inconsistencies that have kept the other two at the margins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Psychomotor became Operative.&lt;/strong&gt; Doing, making and performing – a name that sits alongside Cognitive and Affective without sounding at odds.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Six dimensions across all three domains.&lt;/strong&gt; The existing work had five, six and seven levels depending on the domain. I balanced them to a consistent six: Perceptual, Conceptual, Contextual, Practical, Critical and Original. The dimensions also step away from the hierarchy often associated with Bloom&#39;s. The result isn&#39;t a hierarchical pyramid but volume – a 3D space where you can map outcomes, see what&#39;s missing, and design a learning experience with more precision.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A verb list built for use.&lt;/strong&gt; Verbs organised by domain and dimension, plus a Shared column, because many verbs work across domains and pretending otherwise just causes confusion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/domains-dimensions.png&quot; alt=&quot;&quot; title=&quot;Table of the Domains and Dimensions&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Testing it&lt;/h2&gt;
+&lt;p&gt;Then I tested it. I coded 142 course learning outcomes from third-year courses (AQF Level 7) across ten disciplines at one Australian university using my [verb list]&lt;/p&gt;
+&lt;p&gt;The overall split: &lt;strong&gt;61% Cognitive, 23.5% Operative, 15.4% Affective.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The discipline-level results were more interesting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Psychology&lt;/strong&gt; – 92% cognitive, 0% affective. A discipline built around people, with no outcomes about feeling, valuing or relating.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industrial Design&lt;/strong&gt; – 31% cognitive, 69% operative. The one discipline where doing outweighs thinking.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Law&lt;/strong&gt; – the highest affective share of any discipline, at 38%.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Using it&lt;/h2&gt;
+&lt;p&gt;Part of this process has been uncovering ways to use the Blooms 3D version to drive change. Learning outcomes that didn&#39;t fit a specific domain led me to consider how you could use the tool to provide better focus. Take this one from Law:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Communicate in a professional and effective manner, recognising different stakeholder perspectives.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;quot;Communicate&amp;quot; isn&#39;t in the framework, and the outcome doesn&#39;t say which domain matters. If the goal is performance, it becomes an Operative outcome: &lt;em&gt;Present legal advice professionally, adapting register and content to different stakeholder audiences.&lt;/em&gt; If the goal is relational judgement, it becomes an Affective one: &lt;em&gt;Engage stakeholder perspectives with professional sensitivity when advising on legal matters.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/verb-choice.jpg&quot; alt=&quot;&quot; title=&quot;Visual of the example explained in the text&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;That isn&#39;t a mistake or a sloppiness by the person who wrote it - but rather an unmade decision. The domain is a design choice, and Bloom&#39;s 3D makes you make it.&lt;/p&gt;
+&lt;h2&gt;Using it as a diagnostic&lt;/h2&gt;
+&lt;p&gt;That&#39;s where I think the framework earns its keep. You can use it as a quick diagnostic on any course or program:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find the lead verb in each outcome.&lt;/li&gt;
+&lt;li&gt;Check it against the verb lists – which domain and dimension does it belong to?&lt;/li&gt;
+&lt;li&gt;If the verb is shared, read the outcome in context to see which domain it&#39;s really targeting.&lt;/li&gt;
+&lt;li&gt;Map the full set of outcomes, then look for what&#39;s missing across all three domains, not just what&#39;s there.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This innovation is deliberately small. It doesn&#39;t need a new policy, platform or restructured curriculum. It just forces us to ask a deeper question about learning – not just what learners should know, but what they should feel, value and be able to do – and then changes single words. That&#39;s how small innovations turn into lasting change.&lt;/p&gt;
+&lt;h2&gt;Version 1.0, and an invitation&lt;/h2&gt;
+&lt;p&gt;I was very upfront at HERGA that this is version 1.0. I&#39;m happy to put it out into the world with my name on it, and while it&#39;s viable, it&#39;s not final. The room responded really well to that, and the conversations afterwards were some of the best feedback I&#39;ve had on anything I&#39;ve done.&lt;/p&gt;
+&lt;h3&gt;What comes next&lt;/h3&gt;
+&lt;p&gt;There is more to do with Blooms 3D. My study was merely a proof of concept - there&#39;s definitely scope for a larger study with better reliability and analysis. I think the framework has some really interesting potential for mapping at a program level, not just individual courses. I also think there is space to start to design and align existing assessments to each domain. It&#39;s great to have the outcome, but assessment is the real key.&lt;/p&gt;
+&lt;p&gt;And I need help with it. I want people to stress test this – to run their own outcomes through it, to find the verbs that sit in the wrong place, the dimensions that don&#39;t hold up in their discipline, and the edge cases I haven&#39;t thought of. If it breaks, I want to know where.&lt;/p&gt;
+&lt;p&gt;Have a look at the &lt;a href=&quot;https://patternlearning.co/blooms/domains-dimensions/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;domains and dimensions&lt;/a&gt;, grab the &lt;a href=&quot;https://patternlearning.co/blooms/verbs/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;verb taxonomy&lt;/a&gt;, and if you try it on your own outcomes, &lt;a href=&quot;mailto:tim@patternlearning.co&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;tell me how it went&lt;/a&gt;. The good, the bad and the bits that make no sense at all.&lt;/p&gt;
+</content>
+    
+  </entry>
   <entry>
     <title>Pattern Learning</title>
     <link href="https://heartsoulmachine.com/blog/2026/10-01-pattern-learning/"/>
