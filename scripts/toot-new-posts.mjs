@@ -63,22 +63,28 @@ function itemId(item) {
 }
 
 async function loadState() {
+  let raw;
   try {
-    const raw = await readFile(STATE_PATH, "utf8");
-    const arr = JSON.parse(raw);
-    const set = new Set();
-    for (const entry of arr) {
-      if (entry.startsWith("mastodon:") || entry.startsWith("bluesky:")) {
-        set.add(entry);
-      } else {
-        // Pre-multi-platform entry - treat as an already-posted Mastodon item.
-        set.add(`mastodon:${entry}`);
-      }
-    }
-    return set;
-  } catch {
-    return new Set(); // no state file yet
+    raw = await readFile(STATE_PATH, "utf8");
+  } catch (err) {
+    if (err.code === "ENOENT") return new Set(); // no state file yet
+    throw err;
   }
+  // Parse outside the try above: a malformed state file (e.g. a trailing
+  // comma from a hand edit) must stop the run rather than be treated as
+  // "no history", which would silently re-seed every platform and mark
+  // unposted items as posted.
+  const arr = JSON.parse(raw);
+  const set = new Set();
+  for (const entry of arr) {
+    if (entry.startsWith("mastodon:") || entry.startsWith("bluesky:")) {
+      set.add(entry);
+    } else {
+      // Pre-multi-platform entry - treat as an already-posted Mastodon item.
+      set.add(`mastodon:${entry}`);
+    }
+  }
+  return set;
 }
 
 async function saveState(idSet) {
