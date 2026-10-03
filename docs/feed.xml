@@ -4,12 +4,42 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-09-17T00:00:00Z</updated>
+  <updated>2026-10-01T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Pattern Learning</title>
+    <link href="https://heartsoulmachine.com/blog/2026/10-01-pattern-learning/"/>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/10-01-pattern-learning/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/pattern-learning-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>We have spent decades writing learning outcomes with only a third of a framework.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;I presented my &lt;a href=&quot;https://patternlearning.co/blooms/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Blooms 3D&lt;/a&gt; work at the &lt;a href=&quot;https://www.herga.com.au/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;HERGA conference&lt;/a&gt; yesterday – the first time I&#39;ve stood up in public and talked through Blooms 3D. It&#39;s a project that has been rattling around my head (and this blog) for most of the year, so it felt good to finally put it in front of a room of people who write, review and assure learning outcomes for a living.&lt;/p&gt;
+&lt;p&gt;This presentation, and the paper I wrote for Ascilite that details my initial research, pushed me to give the framework a home somewhere. My other related work - learning &lt;a href=&quot;https://learning-types.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;types&lt;/a&gt; and &lt;a href=&quot;https://learning-patterns.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;patterns&lt;/a&gt;- that have their own URLs, but I&#39;ve been wanting to bring them all together for a while now.&lt;/p&gt;
+&lt;p&gt;A couple of years ago I purchased &lt;a href=&quot;https://patternlearning.co/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PatternLearning.co&lt;/a&gt; and have had a placeholder page there ever since. I’ve been toying with the idea of developing some of my own content and maybe doing some external consulting, but got distracted by work and family. But I decided to dust off the URL and completely redesign the site, brand and styles - and start to bring all my projects into a shared common space. So Blooms 3D has a home now, and I really love the new site design. I updated my colour scheme, added light and dark modes, and consolidated the types and patterns into the site.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/p10-logo.png&quot; alt=&quot;Logos&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/p10-mark.png&quot; alt=&quot;Mark&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/p10-styles.png&quot; alt=&quot;Styles&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I&#39;ve also built out a new 11ty starter – basically standardising my CSS styles, plugins and setup, and the plan is to roll this out across those other domains and eventually this one. I&#39;m really in the mood to try and consolidate as much as I can and reduce some of the fractured setups that I have.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://heartsoulmachine.com/images/p10-sections.png&quot; alt=&quot;Sections&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Bringing this work together has been a long time coming, and it&#39;s made the connection between them much clearer to me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bloom&#39;s 3D&lt;/strong&gt; describes what learners should come away with – outcomes across thinking, feeling and doing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning Types&lt;/strong&gt; describes what learners actually do – the seven kinds of activity that make up a learning experience.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning Patterns&lt;/strong&gt; describes how we design for it – reusable solutions to recurring learning design problems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outcomes, activities and designs – these are elements of an open learning system: a shared vocabulary for the whole design process, to use and adapt.&lt;/p&gt;
+&lt;p&gt;So take a poke around the new site - let me know if there&#39;s any quirks or problems - or if it&#39;s just working for you!&lt;/p&gt;
+</content>
+    
+  </entry>
   <entry>
     <title>Technology is a Tool and a Weapon</title>
     <link href="https://heartsoulmachine.com/blog/2026/09-17-technology-is-a-tool-and-a-weapon/"/>
