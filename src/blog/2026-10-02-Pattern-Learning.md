@@ -12,7 +12,7 @@ updatedDate:
 updateDescription:
 location:
 coverImage: /images/pattern.jpeg
-summary: We have spent decades writing learning outcomes with only a third of a framework.
+summary: Bringing new and old work into a new space. 
 commentId:
 url:
 mastodonTags:
