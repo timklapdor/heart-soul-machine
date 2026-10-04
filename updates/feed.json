@@ -5,5 +5,15 @@
   "feed_url": "https://heartsoulmachine.com/updates/feed.json",
   "authors": [{ "name": "Tim Klapdor", "url": "https://heartsoulmachine.com/" }],
   "items": [
+    {
+      "id": "https://heartsoulmachine.com/updates/2026/10/04/191555/",
+      "url": "https://heartsoulmachine.com/updates/2026/10/04/191555/",
+      "date_published": "2026-10-04T19:15:55+10:30",
+      "content_html": "<p>Testing a new way of posting here – short updates written on my own site first, then shared out – trying to go #POSSE #IndieWeb</p>\n",
+      "tags": [],
+      "_photos": [
+        { "url": "https://timklapdor.me/micropub/uploads/2026-10-04-185910-789d3a.png", "alt": "Testing an image" }
+      ]
+    }
   ]
 }
