@@ -1,36 +1,40 @@
 {
-    "nav" : [
+    "nav": [
         {
-            "text":"Home",
-            "url":"/"
+            "text": "Home",
+            "url": "/"
         },
         {
-            "text":"Posts", 
-            "url":"/blog/"
-        }, 
-        {
-            "text":"Notes", 
-            "url":"/notes/"
-        }, 
-        {
-            "text":"About", 
-            "url":"/about/"
-        }, 
-        {
-            "text":"Timeline", 
-            "url":"/timeline/"
-        }, 
-        {
-            "text":"Now", 
-            "url":"/now/"
-        }, 
-        {
-            "text":"Uses", 
-            "url":"/uses/"
+            "text": "Posts",
+            "url": "/blog/"
         },
         {
-            "text":"Search", 
-            "url":"/search/"
+            "text": "Notes",
+            "url": "/notes/"
+        },
+        {
+            "text": "Updates",
+            "url": "/updates/"
+        },
+        {
+            "text": "About",
+            "url": "/about/"
+        },
+        {
+            "text": "Timeline",
+            "url": "/timeline/"
+        },
+        {
+            "text": "Now",
+            "url": "/now/"
+        },
+        {
+            "text": "Uses",
+            "url": "/uses/"
+        },
+        {
+            "text": "Search",
+            "url": "/search/"
         }
     ]
 }

@@ -1,0 +1,9 @@
+{
+  "layout": "/partials/update.njk",
+  "tags": "updates",
+  "author": "Tim Klapdor",
+  "permalink": "updates/{{ page.fileSlug }}/index.html",
+  "eleventyComputed": {
+    "title": "Update – {{ page.date | localDateTime }}"
+  }
+}

@@ -1,20 +1,30 @@
 ---
 layout: /layouts/grid.njk
 ---
-<article class="h-entry blogpost" data-pagefind-ignore>
+<article class="h-feed blogpost" data-pagefind-ignore>
 	<h1 class="p-name">{{ title }}</h1>
 
-    {% if summary  %}
+	{% if summary %}
 	<div class="p-summary introduction">
 		{{ summary }}
 	</div>
 	{% endif %}
 
-    	{{ content | safe }}
+	{{ content | safe }}
 
-    <ul>
-    {% for post in collections.updates %}
-        <li><a href="{{ post.url }}"><h3>{{post.data.title}}</h3></a>
-    {% endfor %}
-    </ul>
+	<ol class="updates-stream">
+	{%- for post in collections.updates | reverse %}
+		{%- set photos = post.data.photos %}
+		{%- set synd = syndication[post.url] %}
+		<li class="h-entry update">
+			<div class="e-content">{{ post.templateContent | safe }}</div>
+			{% include "partials/update-photos.njk" %}
+			<ul class="metadata">
+				<li class="date"><a class="u-url" href="{{ post.url }}"><time class="dt-published" datetime="{{ post.date | isoDateTime }}">{{ post.date | localDateTime }}</time></a></li>
+				{%- if synd.mastodon %}<li><a class="u-syndication" href="{{ synd.mastodon }}">Mastodon</a></li>{% endif %}
+				{%- if synd.bluesky %}<li><a class="u-syndication" href="{{ synd.bluesky }}">Bluesky</a></li>{% endif %}
+			</ul>
+		</li>
+	{%- endfor %}
+	</ol>
 </article>

@@ -1,0 +1,30 @@
+---
+permalink: updates/feed.json
+eleventyExcludeFromCollections: true
+siteUrl: https://heartsoulmachine.com
+---
+{%- set items = collections.updates | reverse -%}
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Heart Soul Machine – Updates",
+  "home_page_url": "{{ siteUrl }}/updates/",
+  "feed_url": "{{ siteUrl }}/updates/feed.json",
+  "authors": [{ "name": "Tim Klapdor", "url": "{{ siteUrl }}/" }],
+  "items": [
+  {%- for post in items | head(30) %}
+    {%- set absoluteUrl = siteUrl + post.url %}
+    {
+      "id": {{ absoluteUrl | dump | safe }},
+      "url": {{ absoluteUrl | dump | safe }},
+      "date_published": {{ post.date | isoDateTime | dump | safe }},
+      "content_html": {{ post.templateContent | htmlToAbsoluteUrls(absoluteUrl) | dump | safe }},
+      "tags": {{ (post.data.updateTags or []) | dump | safe }},
+      "_photos": [
+        {%- for photo in post.data.photos or [] %}
+        { "url": {{ (photo.url if "://" in photo.url else siteUrl + photo.url) | dump | safe }}, "alt": {{ (photo.alt or "") | dump | safe }} }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ]
+    }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ]
+}

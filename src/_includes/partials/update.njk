@@ -1,0 +1,29 @@
+---
+layout: /layouts/grid.njk
+---
+{%- set synd = syndication[page.url] -%}
+<article class="h-entry update">
+	<a class="p-author h-card" href="https://heartsoulmachine.com/" hidden>Tim Klapdor</a>
+
+	<div class="e-content">
+		{{ content | safe }}
+	</div>
+
+	{% include "partials/update-photos.njk" %}
+
+	<ul class="metadata">
+		<li class="date">{% include "icons/calendar.svg" %} <a class="u-url" href="{{ page.url }}"><time class="dt-published" datetime="{{ page.date | isoDateTime }}">{{ page.date | localDateTime }}</time></a></li>
+		{% if updateTags | length %}<li class="p-category tags">{% include "icons/tag.svg" %}{%- for item in updateTags -%}{{ item }}{% if loop.revindex == 2 %} & {% elseif not loop.last %}, {% endif %}{%- endfor -%}</li>{% endif %}
+		{% if synd.mastodon or synd.bluesky %}
+		<li class="syndication">Also on
+			{%- if synd.mastodon %} <a class="u-syndication" rel="syndication" href="{{ synd.mastodon }}">Mastodon</a>{% endif %}
+			{%- if synd.mastodon and synd.bluesky %} and{% endif %}
+			{%- if synd.bluesky %} <a class="u-syndication" rel="syndication" href="{{ synd.bluesky }}">Bluesky</a>{% endif %}
+		</li>
+		{% endif %}
+	</ul>
+
+	{%- include "partials/webmentions.njk" -%}
+
+	{% include "partials/footer.njk" %}
+</article>

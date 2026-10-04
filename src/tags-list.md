@@ -8,6 +8,7 @@ pagination:
     - post
     - posts
     - tagList
+    - updates
   addAllPagesToCollections: true
 layout: partials/page.njk
 # eleventyComputed:

@@ -1,0 +1,9 @@
+{%- if photos and photos.length -%}
+<div class="update-photos update-photos--{{ photos.length if photos.length < 4 else 4 }}">
+	{%- for photo in photos %}
+	<figure>
+		<a href="{{ photo.url }}"><img class="u-photo" src="{{ photo.url }}" alt="{{ photo.alt | escape }}" loading="lazy"></a>
+	</figure>
+	{%- endfor %}
+</div>
+{%- endif -%}

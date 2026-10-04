@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy("./src/updates/images");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
@@ -42,6 +43,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
+  // Updates: show times in Adelaide time, whatever timezone the build runs in
+  eleventyConfig.addFilter("localDateTime", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "Australia/Adelaide" }).toFormat("d LLL yyyy, h:mma").replace(/AM$/, "am").replace(/PM$/, "pm");
+  });
+  eleventyConfig.addFilter("isoDateTime", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "Australia/Adelaide" }).toISO({ suppressMilliseconds: true });
+  });
+  eleventyConfig.addFilter("head", (arr, n) => (Array.isArray(arr) ? arr.slice(0, n) : arr));
+
   eleventyConfig.addFilter("monthDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('LLL yyyy');
   });
@@ -82,7 +92,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "updates"].indexOf(tag) === -1);
 	});
 
   eleventyConfig.addFilter("webmentionsByUrl", function (webmentions, url) {

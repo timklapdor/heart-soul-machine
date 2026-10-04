@@ -20,6 +20,7 @@ $soul: #ffae2c;
 @use 'modules/search';
 @use 'modules/notetypes';
 @use 'modules/tables';
+@use 'modules/updates';
 
 body {
   font-family: system-ui;

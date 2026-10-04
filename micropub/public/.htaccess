@@ -1,0 +1,18 @@
+# Micropub endpoint routing – upload this with index.php to the micropub/ folder
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Some shared hosts drop the Authorization header before PHP sees it.
+  # This passes it through so access tokens work.
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+  # Never run scripts from the uploads folder
+  RewriteRule ^uploads/.*\.(php|phtml|phar|pl|py|cgi)$ - [F,NC]
+
+  # Pretty endpoint URLs
+  RewriteRule ^(auth|token|revoke|media|metadata)/?$ index.php?endpoint=$1 [QSA,L]
+</IfModule>

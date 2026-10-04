@@ -52,6 +52,11 @@ jobs:
     runs-on: ubuntu-22.04
     permissions:
       contents: write
+    # One cross-posting run at a time, so two quick pushes can't both post
+    # the same update before either has recorded it.
+    concurrency:
+      group: toot-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 
@@ -78,10 +83,45 @@ jobs:
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
         run: node scripts/toot-new-posts.mjs
 
-      - name: Commit updated state file
+      - name: Post new updates
+        id: updates
+        if: ${{ !cancelled() }}
+        env:
+          FEED_URL: ${{ vars.FEED_URL }}
+          MASTODON_INSTANCE_URL: ${{ vars.MASTODON_INSTANCE_URL }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          BLUESKY_HANDLE: ${{ vars.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: node scripts/post-updates.mjs
+
+      - name: Commit updated state files
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/posted-guids.json
-          git diff --staged --quiet || git commit -m "Update posted-guids state [skip ci]"
-          git push
+          git add data/posted-guids.json src/_data/syndication.json
+          if ! git diff --staged --quiet; then
+            git commit -m "Update cross-posting state [skip ci]"
+            # main may have moved on (e.g. a new post arrived) since checkout
+            git pull --rebase --autostash origin main
+            git push
+          fi
+
+      # Pushes made with GITHUB_TOKEN don't trigger another workflow run, so
+      # when new syndication links were recorded, rebuild and redeploy here
+      # to show the "Also on Mastodon / Bluesky" links on the site.
+      - name: Rebuild site with syndication links
+        if: ${{ !cancelled() && steps.updates.outputs.changed == 'true' }}
+        run: |
+          npm install
+          npm run build-ghpages
+        env:
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+
+      - name: Redeploy
+        if: ${{ !cancelled() && steps.updates.outputs.changed == 'true' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          cname: heartsoulmachine.com

@@ -3,6 +3,7 @@ module.exports = function (data) {
 
   return Object.keys(collections).filter(name =>
     name !== "all" &&
-    name !== "posts"
+    name !== "posts" &&
+    name !== "updates"
   );
 };

@@ -36,7 +36,10 @@
 	  
     <meta name="fediverse:creator" content="@timklapdor@mastodon.social">
 
-    {% if tags %}
+    {% if photos and photos.length %}
+    <meta property="og:image" content="{{ photos[0].url if '://' in photos[0].url else 'https://heartsoulmachine.com' + photos[0].url }}" />
+    <meta property="og:image:alt" content="{{ photos[0].alt | escape }}" />
+    {% elif tags and not ('updates' in tags) %}
     <meta property="og:image" content="/assets/social-previews/{{ title | slug }}-preview.jpeg" />
     <meta property="og:image:secure_url" content="/assets/social-previews/{{ title | slug }}-preview.jpeg" /> 
     {% else %}
@@ -45,6 +48,12 @@
     {% endif %}
 
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ '/feed.xml' | url }}">
+    <link rel="alternate" type="application/feed+json" title="Updates" href="{{ '/updates/feed.json' | url }}">
+
+    <link rel="micropub" href="https://timklapdor.me/micropub/">
+    <link rel="indieauth-metadata" href="https://timklapdor.me/micropub/metadata">
+    <link rel="authorization_endpoint" href="https://timklapdor.me/micropub/auth">
+    <link rel="token_endpoint" href="https://timklapdor.me/micropub/token">
 
     <!-- Matomo -->
       <script>
