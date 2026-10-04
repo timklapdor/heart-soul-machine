@@ -209,7 +209,7 @@
 	<h2>The Vibe</h2>
 <p>I honestly can't believe how fast September has gone. It's been a month, let me tell you. Highs and lows, laughs and tears, drama and calm – all happening all the time and all at once.</p>
 <p>Work-wise, I've settled into the new role. I've started on some of the systems work that I need to get done - I haven't been able to finish any of it but it's all in progress. We've been in a few discussions with Qantas, who are setting up a new <a href="https://australianaviation.com.au/2026/09/qantas-adelaide-innovation-centre-open-for-business/" target="_blank" rel="noopener noreferrer">Product Innovations Centre</a> here in Adelaide and it looks positive so far to partner with them on a few things. I've been thigh deep in tenders and proposals – so lots of new work, but that's probably been at the expense of some of the day to day. I've enjoyed meeting new SMEs who we can partner with – I forget sometimes that I actually like meeting and learning about new people, especially engaging in their passions and interests.</p>
-<p>On the personal projects, I've put a lot of work into the new <a href="https://patternlearning.co/" target="_blank" rel="noopener noreferrer">Pattern Learning</a> site. I redid the logos, colour palette, CSS, 11ty components and pulled it all together so that I could publish a link to my <a href="https://patternlearning.co/blooms/" target="_blank" rel="noopener noreferrer">Blooms 3D</a> work in my Ascilite paper submission (which is accepted now!). This coincided with a previous submission to present at the Higher Education Research Group Adelaide conference, where I debuted <a href="/stubs/">Blooms 3D</a> to a live audience.</p>
+<p>On the personal projects, I've put a lot of work into the new <a href="https://patternlearning.co/" target="_blank" rel="noopener noreferrer">Pattern Learning</a> site. I redid the logos, colour palette, CSS, 11ty components and pulled it all together so that I could publish a link to my <a href="https://patternlearning.co/blooms/" target="_blank" rel="noopener noreferrer">Blooms 3D</a> work in my Ascilite paper submission (which is accepted now!). This coincided with a previous submission to present at the Higher Education Research Group Adelaide conference, where I debuted <a href="/blog/2026/10-04-learning-in-3d/">Blooms 3D</a> to a live audience.</p>
 <p>I received some great feedback straight away – which was a relief more than anything – but it seems to have landed really well. I originally developed it to scratch my own itch and found it incredibly useful, but having now spent so much time in learning outcomes (and still doing it in the new role) - having a better framework really matters.</p>
 <h2>Events</h2>
 <p>While there were no big events this month, we did have some nice family moments. A few nice meals out and some quality time together. Ms A has been going through a rough spell, and after things got a bit dark during the month, it ended on some positive news. Sometimes those emotional events are more substantial than going anywhere or doing anything.</p>
@@ -242,6 +242,186 @@
 
 
 
+  <h3>Replies</h3>
+  <ul class="webmention-comments">
+    
+      <li>
+        <a href="https://bsky.app/profile/did:plc:fi65jpl25ordv2cholxgww52/post/3mwzrtyjyk52k"><strong>Tim Klapdor</strong></a>
+        <p>NEW POST: September 2026
+
+https://heartsoulmachine.com/blog/2026/10-04-september-2026/</p>
+      </li>
+    
+  </ul>
+<section id="comments" class="comments">
+  <hr>
+  <h4>Comments</h4>
+  <p>Comment on this blog post by publicly replying to <a href="https://mastodon.social/@timklapdor/117381244327093914">this Mastodon post</a> using a Mastodon or other ActivityPub/&ZeroWidthSpace;Fediverse account.</p>
+
+  <div id="comments-wrapper">
+    <p><small>No known comments, yet. Reply to <a href="https://mastodon.social/@timklapdor/117381244327093914">this Mastodon post</a> to add your own!</small></p>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https:///@/">the original post</a> on Mastodon.</p></noscript>
+  </div>
+
+  <script src="/assets/js/purify.min.js"></script>
+  <script>
+    loadComments ();
+
+    function loadComments() {
+      let commentsWrapper = document.getElementById("comments-wrapper");
+      let postUrl = "https://mastodon.social/api/v1/statuses/117381244327093914";
+
+      fetch(postUrl)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(op) {
+        fetch(postUrl + "/context")
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          let descendants = data['descendants'];
+          if(
+            descendants &&
+            Array.isArray(descendants) &&
+            descendants.length > 0
+          ) {
+            commentsWrapper.innerHTML = "";
+            descendants.unshift(op);
+
+            data['descendants'].forEach(function(status) {
+              if( status.account.display_name.length > 0 ) {
+                status.account.display_name = escapeHtml(status.account.display_name);
+                status.account.display_name = emojify(status.account.display_name, status.account.emojis);
+              } else {
+                status.account.display_name = status.account.username;
+              };
+
+              let instance = "";
+              let verified = false;
+
+
+              status.content = emojify(status.content, status.emojis);
+
+              let avatarSource = document.createElement("source");
+              avatarSource.setAttribute("srcset", escapeHtml(status.account.avatar));
+              avatarSource.setAttribute("media", "(prefers-reduced-motion: no-preference)");
+
+              let avatarImg = document.createElement("img");
+              avatarImg.className = "avatar";
+              avatarImg.setAttribute("src", escapeHtml(status.account.avatar_static));
+              avatarImg.setAttribute("alt", `Avatar for @${ status.account.acct }`);
+
+              let avatarPicture = document.createElement("picture");
+              avatarPicture.appendChild(avatarSource);
+              avatarPicture.appendChild(avatarImg);
+
+              let avatarLink = document.createElement("a");
+              avatarLink.className = "avatar-link";
+              avatarLink.setAttribute("href", status.account.url);
+              avatarLink.setAttribute("rel", "external nofollow");
+              avatarLink.appendChild(avatarPicture);
+
+              let instanceBadge = document.createElement("a");
+              instanceBadge.className = "instance";
+              instanceBadge.setAttribute("href", status.account.url);
+              instanceBadge.setAttribute("title", `@${ status.account.username }@${ instance }`);
+              instanceBadge.setAttribute("rel", "external nofollow");
+              instanceBadge.textContent = instance;
+
+              let account = document.createElement("a");
+              account.className = "account";
+              account.setAttribute("href", status.account.url);
+              account.setAttribute("itemprop", "author");
+              account.setAttribute("itemtype", "http://schema.org/Person");
+              account.setAttribute("rel", "external nofollow");
+              account.textContent = `@${ status.account.display_name }`;
+
+              let header = document.createElement("h5");
+              header.className = "author";
+              header.innerHTML = status.account.display_name;
+              header.appendChild(account);
+              header.appendChild(instanceBadge);
+
+              let permalink = document.createElement("a");
+              permalink.setAttribute("href", status.url);
+              permalink.setAttribute("itemprop", "url");
+              permalink.setAttribute("title", `View comment at ${ instance }`);
+              permalink.setAttribute("rel", "external nofollow");
+              permalink.textContent = new Date( status.created_at ).toLocaleString('en-US', {
+                dateStyle: "long",
+                timeStyle: "short",
+              });
+
+              let timestamp = document.createElement("time");
+              timestamp.setAttribute("datetime", status.created_at);
+              timestamp.appendChild(permalink);
+
+              let main = document.createElement("main");
+              main.setAttribute("itemprop", "text");
+              main.innerHTML = status.content;
+
+              let comment = document.createElement("article");
+              comment.id = `comment-${ status.id }`;
+              comment.className = "comment";
+              comment.setAttribute("itemprop", "comment");
+              comment.setAttribute("itemtype", "http://schema.org/Comment");
+              comment.appendChild(avatarLink);
+              comment.appendChild(header);
+              comment.appendChild(timestamp);
+              comment.appendChild(main);
+
+              if (verified === true) {
+                comment.classList.add("verified");
+              }
+
+              commentsWrapper.innerHTML += DOMPurify.sanitize(comment.outerHTML);
+            });
+          }
+        });
+      });
+    }
+
+    function emojify(input, emojis) {
+      let output = input;
+
+      emojis.forEach(emoji => {
+        let picture = document.createElement("picture");
+
+        let source = document.createElement("source");
+        source.setAttribute("srcset", escapeHtml(emoji.url));
+        source.setAttribute("media", "(prefers-reduced-motion: no-preference)");
+
+        let img = document.createElement("img");
+        img.className = "emoji";
+        img.setAttribute("src", escapeHtml(emoji.static_url));
+        img.setAttribute("alt", `:${ emoji.shortcode }:`);
+        img.setAttribute("title", `:${ emoji.shortcode }:`);
+        img.setAttribute("width", "20");
+        img.setAttribute("height", "20");
+
+        picture.appendChild(source);
+        picture.appendChild(img);
+
+        output = output.replace(`:${ emoji.shortcode }:`, picture.outerHTML);
+      });
+
+      return output;
+    }
+
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/'/g, "&apos;")
+        .replace(/"/g, "&quot;")
+      ;
+    }
+  </script>
+</section>
+	
 
 	<footer data-pagefind-ignore>
     <p>© Tim Klapdor 2026</p>
