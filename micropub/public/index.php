@@ -590,7 +590,7 @@ function parse_entry(): array
         error_out('invalid_request', 'Only creating new updates is supported here. Edit or delete them in the repo.');
     }
 
-    $entry = ['content' => '', 'html' => false, 'name' => '', 'photos' => [], 'tags' => []];
+    $entry = ['content' => '', 'html' => false, 'name' => '', 'photos' => [], 'tags' => [], 'status' => 'published'];
 
     if ($isJson) {
         $props = $body['properties'] ?? [];
@@ -608,6 +608,7 @@ function parse_entry(): array
                 : ['url' => (string)$p, 'alt' => ''];
         }
         $entry['tags'] = array_map('strval', $props['category'] ?? []);
+        $entry['status'] = (string)($props['post-status'][0] ?? 'published');
         return $entry;
     }
 
@@ -619,6 +620,7 @@ function parse_entry(): array
     }
     $entry['content'] = (string)$content;
     $entry['name'] = (string)($body['name'] ?? '');
+    $entry['status'] = (string)($body['post-status'] ?? 'published');
 
     $photos = $body['photo'] ?? [];
     $alts = (array)($body['mp-photo-alt'] ?? $body['photo-alt'] ?? []);
@@ -762,14 +764,29 @@ function endpoint_micropub(): never
 
     $token = require_token('create');
     $entry = extract_inline_images(parse_entry());
+    log_request($entry);
 
-    if ($entry['name'] !== '') {
-        // Updates have no titles; keep a title if the app sent one.
+    // Some apps (iA Writer included) send a "title" that is just the first
+    // line of the text, cut short. Updates have no titles, so drop it when
+    // it repeats the start of the text; keep it (bold) only if it's real.
+    if ($entry['name'] !== '' && !starts_with_name($entry['content'], $entry['name'])) {
         $entry['content'] = ($entry['html'] ? '<p><strong>' . h($entry['name']) . '</strong></p>' : '**' . $entry['name'] . "**\n\n") . $entry['content'];
     }
     if (trim(strip_tags($entry['content'])) === '' && !$entry['photos']) {
         error_out('invalid_request', 'The update is empty.');
     }
+
+    // Guard against double posts: if the same update arrives again within
+    // 15 minutes (an app retrying, or Publish pressed twice), don't commit
+    // it again – just point the app at the first one.
+    $fingerprint = hash('sha256', trim($entry['content']) . '|' . implode('|', array_column($entry['photos'], 'url')) . '|' . $entry['status']);
+    $recent = store('recent', fn($r) => array_filter($r, fn($v) => $v['time'] > time() - 900));
+    if (isset($recent[$fingerprint])) {
+        http_response_code(201);
+        header('Location: ' . $recent[$fingerprint]['location']);
+        exit;
+    }
+    $isDraft = $entry['status'] === 'draft';
 
     try {
         [$photos, $files] = collect_photos($entry['photos']);
@@ -784,7 +801,17 @@ function endpoint_micropub(): never
         $slug = $now->format('Y-m-d-His');
         $permalink = '/updates/' . $now->format('Y/m/d/His') . '/';
 
-        $fm = ['---', 'date: ' . $now->format('c'), 'permalink: ' . $permalink];
+        $fm = ['---', 'date: ' . $now->format('c')];
+        if ($isDraft) {
+            // Saved to the repo but not built, listed or cross-posted.
+            $fm[] = '# Draft. To publish: delete the next three lines and remove the # before permalink.';
+            $fm[] = 'draft: true';
+            $fm[] = 'permalink: false';
+            $fm[] = 'eleventyExcludeFromCollections: true';
+            $fm[] = '# permalink: ' . $permalink;
+        } else {
+            $fm[] = 'permalink: ' . $permalink;
+        }
         if ($photos) {
             $fm[] = 'photos:';
             foreach ($photos as $p) {
@@ -805,16 +832,50 @@ function endpoint_micropub(): never
         $files['src/updates/' . $slug . '.md'] = implode("\n", $fm) . "\n" . $entry['content'] . "\n";
 
         $preview = mb_substr(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($entry['content']), ENT_QUOTES | ENT_HTML5, 'UTF-8')), 0, 50);
-        commit_files($files, 'Update: ' . ($preview !== '' ? $preview : 'photo') . "\n\nPosted via Micropub from " . $token['client_id']);
+        commit_files($files, ($isDraft ? 'Draft update: ' : 'Update: ') . ($preview !== '' ? $preview : 'photo') . "\n\nPosted via Micropub from " . $token['client_id']);
+
+        $location = $isDraft
+            ? 'https://github.com/' . $config['github_repo'] . '/blob/' . ($config['github_branch'] ?? 'main') . '/src/updates/' . $slug . '.md'
+            : $config['site_url'] . $permalink;
+        store('recent', function ($r) use ($fingerprint, $location) {
+            $r[$fingerprint] = ['time' => time(), 'location' => $location];
+            return $r;
+        });
     } catch (Throwable $e) {
         error_log('micropub: ' . $e->getMessage());
         error_out('server_error', 'Could not save the update: ' . $e->getMessage(), 500);
     }
 
     // The page goes live once GitHub Actions has built the site (1–2 min).
+    // Drafts point to the file on GitHub instead.
     http_response_code(201);
-    header('Location: ' . $config['site_url'] . $permalink);
+    header('Location: ' . $location);
     exit;
+}
+
+/** True when $content begins with $name (ignoring markup, case, spacing and a trailing "…"). */
+function starts_with_name(string $content, string $name): bool
+{
+    $norm = fn($s) => trim(mb_strtolower(preg_replace('/\s+/u', ' ', preg_replace('/[*_#>`\[\]]/', '', html_entity_decode(strip_tags($s), ENT_QUOTES | ENT_HTML5, 'UTF-8')))));
+    $n = rtrim($norm($name), " .…");
+    return $n !== '' && str_starts_with($norm($content), $n);
+}
+
+/** Keeps a short log of what apps send (last 50 requests) to help debug clients. */
+function log_request(array $entry): void
+{
+    $line = [
+        'time' => date('c'),
+        'type' => $_SERVER['CONTENT_TYPE'] ?? '',
+        'fields' => array_keys(request_body()),
+        'name' => $entry['name'],
+        'status' => $entry['status'],
+        'html' => $entry['html'],
+        'photos' => $entry['photos'],
+        'tags' => $entry['tags'],
+        'content_start' => mb_substr($entry['content'], 0, 120),
+    ];
+    store('requests', fn($log) => array_slice(array_merge($log, [$line]), -50));
 }
 
 // -------------------------------------------------------------- router --
