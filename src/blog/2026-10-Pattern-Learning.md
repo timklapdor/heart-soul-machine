@@ -13,8 +13,8 @@ updateDescription:
 location:
 coverImage: /images/pattern.jpeg
 summary: Bringing new and old work into a new space. 
-commentId:
-url:
+commentId: '117375903080130868'
+url: https://heartsoulmachine.com/blog/2026/10-01-pattern-learning/
 mastodonTags:
 ---
 I presented my [Blooms 3D](https://patternlearning.co/blooms/) work at the [HERGA conference](https://www.herga.com.au/) yesterday – the first time I've stood up in public and talked through Blooms 3D. It's a project that has been rattling around my head (and this blog) for most of the year, so it felt good to finally put it in front of a room of people who write, review and assure learning outcomes for a living.
