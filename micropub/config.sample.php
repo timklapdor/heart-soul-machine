@@ -31,6 +31,10 @@ return [
     // Tokens, login codes and the form secret are kept here
     'data_dir' => __DIR__ . '/data',
 
+    // Apps that can only send drafts (like iA Writer). Their "drafts" are
+    // published straight away. Drafts from any other app stay as drafts.
+    'publish_drafts_from' => ['https://ia.net/writer'],
+
     // Images are resized to fit this (longest side) and kept under ~1 MB
     'max_image_px' => 2000,
     'jpeg_quality' => 82,

@@ -697,16 +697,26 @@ function collect_photos(array $photos): array
     global $config;
     $files = [];
     $out = [];
+    $saved = []; // staged file name => site URL, recorded after the commit
+    $alreadySaved = store('media-map');
     foreach (array_slice($photos, 0, 4) as $p) {
         $url = $p['url'];
         $bytes = null;
         if (str_starts_with($url, $config['upload_url'])) {
-            $local = $config['upload_dir'] . '/' . basename(parse_url($url, PHP_URL_PATH));
-            if (is_file($local)) {
-                $bytes = file_get_contents($local);
-                @unlink($local);
-                $ext = pathinfo($local, PATHINFO_EXTENSION);
+            $name = basename(parse_url($url, PHP_URL_PATH));
+            // Apps like iA Writer reuse an image's upload URL when you publish
+            // the same document again. If it's already in the repo, reuse it.
+            if (isset($alreadySaved[$name])) {
+                $out[] = ['url' => $alreadySaved[$name], 'alt' => $p['alt']];
+                continue;
             }
+            $local = $config['upload_dir'] . '/' . $name;
+            if (!is_file($local)) {
+                throw new RuntimeException("The image $name is no longer on the server. Remove it from the document, add it again, and republish.");
+            }
+            // Kept for a week (see purge_uploads) in case the app sends it again.
+            $bytes = file_get_contents($local);
+            $ext = pathinfo($local, PATHINFO_EXTENSION);
         } elseif (preg_match('#^https?://#i', $url)) {
             $ch = curl_init($url);
             curl_setopt_array($ch, [CURLOPT_RETURNTRANSFER => true, CURLOPT_FOLLOWLOCATION => true, CURLOPT_TIMEOUT => 20, CURLOPT_MAXFILESIZE => 25_000_000]);
@@ -726,11 +736,14 @@ function collect_photos(array $photos): array
             $out[] = ['url' => $url, 'alt' => $p['alt']];
             continue;
         }
-        $name = new_image_name($ext);
-        $files['src/updates/images/' . $name] = $bytes;
-        $out[] = ['url' => '/updates/images/' . $name, 'alt' => $p['alt']];
+        $repoName = new_image_name($ext);
+        $files['src/updates/images/' . $repoName] = $bytes;
+        $out[] = ['url' => '/updates/images/' . $repoName, 'alt' => $p['alt']];
+        if (isset($name) && str_starts_with($url, $config['upload_url'])) {
+            $saved[$name] = '/updates/images/' . $repoName;
+        }
     }
-    return [$out, $files];
+    return [$out, $files, $saved];
 }
 
 function yaml_string(string $s): string
@@ -779,17 +792,22 @@ function endpoint_micropub(): never
     // Guard against double posts: if the same update arrives again within
     // 15 minutes (an app retrying, or Publish pressed twice), don't commit
     // it again – just point the app at the first one.
-    $fingerprint = hash('sha256', trim($entry['content']) . '|' . implode('|', array_column($entry['photos'], 'url')) . '|' . $entry['status']);
+    // iA Writer (and some other apps) can only send drafts. For apps listed
+    // in publish_drafts_from, a "draft" is treated as published.
+    $publishDraftsFrom = $config['publish_drafts_from'] ?? ['https://ia.net/writer'];
+    $isDraft = $entry['status'] === 'draft'
+        && !in_array(rtrim($token['client_id'], '/'), array_map(fn($c) => rtrim($c, '/'), $publishDraftsFrom), true);
+
+    $fingerprint = hash('sha256', trim($entry['content']) . '|' . implode('|', array_column($entry['photos'], 'url')) . '|' . ($isDraft ? 'draft' : 'published'));
     $recent = store('recent', fn($r) => array_filter($r, fn($v) => $v['time'] > time() - 900));
     if (isset($recent[$fingerprint])) {
         http_response_code(201);
         header('Location: ' . $recent[$fingerprint]['location']);
         exit;
     }
-    $isDraft = $entry['status'] === 'draft';
 
     try {
-        [$photos, $files] = collect_photos($entry['photos']);
+        [$photos, $files, $savedMedia] = collect_photos($entry['photos']);
 
         // One update per second at most, so two quick posts can't share a URL.
         $now = new DateTimeImmutable();
@@ -833,6 +851,10 @@ function endpoint_micropub(): never
 
         $preview = mb_substr(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($entry['content']), ENT_QUOTES | ENT_HTML5, 'UTF-8')), 0, 50);
         commit_files($files, ($isDraft ? 'Draft update: ' : 'Update: ') . ($preview !== '' ? $preview : 'photo') . "\n\nPosted via Micropub from " . $token['client_id']);
+
+        if ($savedMedia) {
+            store('media-map', fn($m) => array_slice(array_merge($m, $savedMedia), -500, null, true));
+        }
 
         $location = $isDraft
             ? 'https://github.com/' . $config['github_repo'] . '/blob/' . ($config['github_branch'] ?? 'main') . '/src/updates/' . $slug . '.md'
