@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Post an update</title>
+<meta name="description" content="Post an update to heartsoulmachine.com">
+<meta name="theme-color" content="#FFFCF0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#100F0F" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Update">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<style>
+  /* Flexoki, matching heartsoulmachine.com */
+  :root {
+    --bg: #FFFCF0;
+    --surface: #F2F0E5;
+    --fg: #100F0F;
+    --muted: #6F6E69;
+    --line: #DAD8CE;
+    --accent: #ff0e69;
+    --accent-fg: #ffffff;
+    --ok: #66800B;
+    --warn: #AD8301;
+    --err: #AF3029;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #100F0F;
+      --surface: #1C1B1A;
+      --fg: #CECDC3;
+      --muted: #878580;
+      --line: #343331;
+      --ok: #879A39;
+      --warn: #D0A215;
+      --err: #D14D41;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  main { max-width: 36rem; margin: 0 auto; padding: 12px 16px 120px; }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; padding: 8px 0 12px;
+  }
+  header h1 { font-size: 1.05rem; margin: 0; display: flex; align-items: center; gap: 8px; }
+  header img { width: 28px; height: 28px; border-radius: 6px; }
+  [hidden] { display: none !important; }
+
+  label { display: block; font-weight: 600; font-size: .9rem; margin: 18px 0 6px; }
+  .hint { color: var(--muted); font-size: .85rem; font-weight: 400; }
+  textarea, input[type=text] {
+    width: 100%; font: inherit; color: inherit; background: var(--surface);
+    border: 1px solid var(--line); border-radius: var(--radius); padding: 12px;
+  }
+  textarea:focus, input[type=text]:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  #text { min-height: 9.5rem; resize: vertical; }
+
+  .counter { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .85rem; color: var(--muted); margin-top: 6px; }
+  .counter .over { color: var(--warn); font-weight: 600; }
+  .counter-note { font-size: .85rem; color: var(--warn); margin-top: 4px; }
+
+  button {
+    font: inherit; border-radius: var(--radius); border: 1px solid var(--line);
+    background: var(--surface); color: var(--fg); padding: 10px 14px; cursor: pointer;
+    min-height: 44px;
+  }
+  button.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); font-weight: 600; }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.link { background: none; border: 0; padding: 8px 4px; color: var(--muted); text-decoration: underline; min-height: 0; }
+
+  .photos { display: grid; gap: 12px; margin-top: 4px; }
+  .photo {
+    display: grid; grid-template-columns: 88px 1fr; gap: 12px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px;
+  }
+  .photo img { width: 88px; height: 88px; object-fit: cover; border-radius: 6px; background: var(--line); }
+  .photo textarea { min-height: 4.5rem; padding: 8px; font-size: .95rem; background: var(--bg); }
+  .photo .row { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 4px; }
+  .photo .status { font-size: .8rem; color: var(--muted); }
+  .photo .status.err { color: var(--err); }
+  .photo .status.ok { color: var(--ok); }
+  .photo.needs-alt textarea { border-color: var(--warn); }
+  .photo label { margin: 0 0 4px; font-size: .8rem; }
+
+  .tags-preview { font-size: .85rem; color: var(--muted); margin-top: 6px; min-height: 1.2em; }
+
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--bg); border-top: 1px solid var(--line);
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  }
+  .bar-inner { max-width: 36rem; margin: 0 auto; display: grid; gap: 6px; }
+  .bar .why { font-size: .8rem; color: var(--muted); text-align: center; min-height: 1em; }
+  .bar button { width: 100%; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-top: 12px; }
+  .card h2 { margin: 0 0 8px; font-size: 1.15rem; }
+  .card p { margin: 8px 0; }
+  .card a { color: var(--accent); word-break: break-all; }
+  .error { color: var(--err); }
+  .ok { color: var(--ok); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1><img src="icon-192.png" alt="">Post an update</h1>
+    <button type="button" class="link" id="signout" hidden>Sign out</button>
+  </header>
+
+  <!-- Signed out -->
+  <section id="view-signin" hidden>
+    <div class="card">
+      <h2>Sign in</h2>
+      <p>Sign in with your heartsoulmachine.com password to post updates from this phone.</p>
+      <p class="error" id="signin-error" hidden></p>
+      <button type="button" class="primary" id="signin">Sign in</button>
+    </div>
+  </section>
+
+  <!-- Compose -->
+  <section id="view-compose" hidden>
+    <label for="text">Update</label>
+    <textarea id="text" placeholder="What's happening?" autocapitalize="sentences"></textarea>
+    <div class="counter" id="counter" aria-live="polite"></div>
+    <div class="counter-note" id="counter-note" hidden></div>
+
+    <label>Photos <span class="hint">– up to 4, each needs a description</span></label>
+    <div class="photos" id="photos"></div>
+    <input type="file" id="file" accept="image/*" multiple hidden>
+    <button type="button" id="add-photo" style="margin-top:10px">Add photo</button>
+
+    <label for="tags">Hashtags <span class="hint">– optional, separate with commas</span></label>
+    <input type="text" id="tags" placeholder="IndieWeb, AdelaideHills" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off">
+    <div class="tags-preview" id="tags-preview"></div>
+
+    <div class="bar">
+      <div class="bar-inner">
+        <div class="why" id="why"></div>
+        <button type="button" class="primary" id="publish" disabled>Publish</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Done -->
+  <section id="view-done" hidden>
+    <div class="card">
+      <h2 class="ok">Published</h2>
+      <p>Your update will be live in about 2 minutes, then on Mastodon and Bluesky about a minute later.</p>
+      <p><a id="done-link" href="#" target="_blank" rel="noopener"></a></p>
+      <button type="button" class="primary" id="another">Write another</button>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  // ------------------------------------------------------------ config --
+  const BASE = new URL('../', location.href).href;            // https://timklapdor.me/micropub/
+  const CLIENT_ID = location.origin + location.pathname.replace(/index\.html$/, '');
+  const ME = 'https://heartsoulmachine.com/';
+  const MAX_PHOTOS = 4;
+  const MAX_PX = 2000;
+  const LIMITS = { Bluesky: 300, Mastodon: 500 };
+
+  const $ = (id) => document.getElementById(id);
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+    del(k) { try { localStorage.removeItem(k); } catch {} },
+  };
+
+  function show(view) {
+    for (const v of ['signin', 'compose', 'done']) $('view-' + v).hidden = v !== view;
+    $('signout').hidden = view === 'signin';
+  }
+
+  // -------------------------------------------------------------- auth --
+  const b64url = (bytes) => btoa(String.fromCharCode(...new Uint8Array(bytes)))
+    .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const randomString = () => b64url(crypto.getRandomValues(new Uint8Array(32)));
+
+  async function signIn() {
+    const verifier = randomString();
+    const state = randomString();
+    const challenge = b64url(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier)));
+    store.set('hsm-auth', JSON.stringify({ verifier, state }));
+    const params = new URLSearchParams({
+      response_type: 'code', client_id: CLIENT_ID, redirect_uri: CLIENT_ID,
+      state, scope: 'create media', me: ME,
+      code_challenge: challenge, code_challenge_method: 'S256',
+    });
+    location.href = BASE + 'auth?' + params;
+  }
+
+  async function finishSignIn(params) {
+    history.replaceState(null, '', CLIENT_ID);
+    const saved = JSON.parse(store.get('hsm-auth') || '{}');
+    store.del('hsm-auth');
+    if (!saved.state || params.get('state') !== saved.state) throw new Error('Sign-in was interrupted. Please try again.');
+    if (params.get('iss') && params.get('iss') !== BASE) throw new Error('Unexpected sign-in server.');
+    const res = await fetch(BASE + 'token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' },
+      body: new URLSearchParams({
+        grant_type: 'authorization_code', code: params.get('code'),
+        client_id: CLIENT_ID, redirect_uri: CLIENT_ID, code_verifier: saved.verifier,
+      }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.access_token) throw new Error(data.error_description || 'Sign-in failed.');
+    store.set('hsm-token', data.access_token);
+  }
+
+  function token() { return store.get('hsm-token'); }
+
+  async function signOut() {
+    const t = token();
+    store.del('hsm-token');
+    if (t) fetch(BASE + 'revoke', { method: 'POST', body: new URLSearchParams({ token: t }) }).catch(() => {});
+    show('signin');
+  }
+
+  function sessionExpired() {
+    store.del('hsm-token');
+    $('signin-error').textContent = 'Your sign-in has expired. Please sign in again.';
+    $('signin-error').hidden = false;
+    show('signin');
+  }
+
+  // ----------------------------------------------------------- counter --
+  const segmenter = 'Segmenter' in Intl ? new Intl.Segmenter('en', { granularity: 'grapheme' }) : null;
+  const length = (s) => segmenter ? [...segmenter.segment(s)].length : [...s].length;
+
+  const toHashtag = (tag) => '#' + tag.split(/[^a-zA-Z0-9]+/).filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('');
+  const tagList = () => $('tags').value.split(',').map((t) => t.replace(/^#/, '').trim()).filter(Boolean);
+
+  function updateCounter() {
+    // Same text the cross-poster builds: the update, then the hashtags.
+    const hashtags = tagList().map(toHashtag).join(' ');
+    const full = [$('text').value.trim(), hashtags].filter(Boolean).join('\n\n');
+    const n = length(full);
+    $('counter').innerHTML = '';
+    const over = [];
+    for (const [name, max] of Object.entries(LIMITS)) {
+      const span = document.createElement('span');
+      span.textContent = `${name} ${n}/${max}`;
+      if (n > max) { span.className = 'over'; over.push(name); }
+      $('counter').append(span);
+    }
+    $('counter-note').hidden = !over.length;
+    $('counter-note').textContent = over.length === 2
+      ? 'Too long for both – Mastodon and Bluesky will get a shortened version with a link to the full update.'
+      : over.length ? 'Too long for Bluesky – it will get a shortened version with a link to the full update.' : '';
+    $('tags-preview').textContent = hashtags;
+    updatePublishState();
+  }
+
+  // ------------------------------------------------------------ photos --
+  const photos = []; // { id, file, previewUrl, url, alt, state: 'uploading'|'ready'|'error', error }
+  let nextId = 1;
+
+  // Resize to MAX_PX and re-encode as JPEG on the phone: faster uploads on
+  // mobile data, and it strips location data from the photo. GIFs are sent
+  // as they are, to keep animation.
+  async function preparePhoto(file) {
+    if (file.type === 'image/gif') return file;
+    try {
+      const bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' });
+      const scale = Math.min(1, MAX_PX / Math.max(bitmap.width, bitmap.height));
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(bitmap.width * scale);
+      canvas.height = Math.round(bitmap.height * scale);
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+      const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/jpeg', 0.85));
+      return blob ? new File([blob], 'photo.jpg', { type: 'image/jpeg' }) : file;
+    } catch {
+      return file; // the server will resize it instead
+    }
+  }
+
+  async function uploadPhoto(p) {
+    p.state = 'uploading'; renderPhotos();
+    try {
+      const prepared = await preparePhoto(p.file);
+      const form = new FormData();
+      form.append('file', prepared, prepared.name || 'photo.jpg');
+      const res = await fetch(BASE + 'media', { method: 'POST', headers: { Authorization: 'Bearer ' + token() }, body: form });
+      if (res.status === 401) return sessionExpired();
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.url) throw new Error(data.error_description || `Upload failed (${res.status})`);
+      p.url = data.url;
+      p.state = 'ready';
+    } catch (err) {
+      p.state = 'error';
+      p.error = err.message;
+    }
+    renderPhotos();
+  }
+
+  function addFiles(files) {
+    for (const file of files) {
+      if (photos.length >= MAX_PHOTOS) break;
+      const p = { id: nextId++, file, previewUrl: URL.createObjectURL(file), url: null, alt: '', state: 'uploading' };
+      photos.push(p);
+      uploadPhoto(p);
+    }
+    renderPhotos();
+  }
+
+  function removePhoto(id) {
+    const i = photos.findIndex((p) => p.id === id);
+    if (i >= 0) { URL.revokeObjectURL(photos[i].previewUrl); photos.splice(i, 1); }
+    renderPhotos();
+  }
+
+  function renderPhotos() {
+    const list = $('photos');
+    // Keep focus and typing intact: update existing cards, add/remove others.
+    const existing = new Map([...list.children].map((el) => [Number(el.dataset.id), el]));
+    for (const [id, el] of existing) if (!photos.find((p) => p.id === id)) el.remove();
+    photos.forEach((p, index) => {
+      let el = existing.get(p.id);
+      if (!el) {
+        el = document.createElement('div');
+        el.className = 'photo';
+        el.dataset.id = p.id;
+        const altId = 'alt-' + p.id;
+        el.innerHTML = `
+          <img alt="">
+          <div>
+            <label for="${altId}">Describe this image</label>
+            <textarea id="${altId}" placeholder="What's in the photo, for someone who can't see it"></textarea>
+            <div class="row"><span class="status"></span><button type="button" class="link remove">Remove</button></div>
+          </div>`;
+        el.querySelector('img').src = p.previewUrl;
+        el.querySelector('textarea').addEventListener('input', (e) => { p.alt = e.target.value; el.classList.toggle('needs-alt', !p.alt.trim()); updatePublishState(); });
+        el.querySelector('.remove').addEventListener('click', () => removePhoto(p.id));
+        list.append(el);
+      }
+      el.querySelector('img').alt = `Photo ${index + 1}`;
+      el.classList.toggle('needs-alt', !p.alt.trim());
+      const status = el.querySelector('.status');
+      status.className = 'status' + (p.state === 'error' ? ' err' : p.state === 'ready' ? ' ok' : '');
+      status.textContent = p.state === 'uploading' ? 'Uploading…' : p.state === 'ready' ? 'Uploaded' : p.error + ' – remove and try again';
+    });
+    $('add-photo').hidden = photos.length >= MAX_PHOTOS;
+    updatePublishState();
+  }
+
+  // ----------------------------------------------------------- publish --
+  let publishing = false;
+
+  function blockers() {
+    if (publishing) return 'Publishing…';
+    if (!$('text').value.trim() && !photos.length) return 'Write something or add a photo';
+    if (photos.some((p) => p.state === 'uploading')) return 'Waiting for photos to upload';
+    if (photos.some((p) => p.state === 'error')) return 'Remove the photo that failed to upload';
+    const missing = photos.filter((p) => !p.alt.trim()).length;
+    if (missing) return missing === 1 ? 'Add a description to the photo' : `Add descriptions to ${missing} photos`;
+    return '';
+  }
+
+  function updatePublishState() {
+    const why = blockers();
+    $('publish').disabled = !!why;
+    $('publish').textContent = publishing ? 'Publishing…' : 'Publish';
+    $('why').textContent = publishing ? '' : why;
+  }
+
+  async function publish() {
+    if (blockers()) return;
+    publishing = true; updatePublishState();
+    try {
+      const properties = { content: [$('text').value.trim()] };
+      if (photos.length) properties.photo = photos.map((p) => ({ value: p.url, alt: p.alt.trim() }));
+      const tags = tagList();
+      if (tags.length) properties.category = tags;
+
+      const res = await fetch(BASE, {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + token(), 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ type: ['h-entry'], properties }),
+      });
+      if (res.status === 401) return sessionExpired();
+      if (res.status !== 201 && res.status !== 202) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error_description || `Publishing failed (${res.status})`);
+      }
+      const url = res.headers.get('Location') || ME + 'updates/';
+      $('done-link').href = url;
+      $('done-link').textContent = url;
+      resetForm();
+      show('done');
+    } catch (err) {
+      $('why').textContent = '';
+      alertInline(err.message);
+    } finally {
+      publishing = false; updatePublishState();
+    }
+  }
+
+  function alertInline(message) {
+    const why = $('why');
+    why.textContent = message;
+    why.classList.add('error');
+    setTimeout(() => why.classList.remove('error'), 6000);
+  }
+
+  function resetForm() {
+    $('text').value = '';
+    $('tags').value = '';
+    photos.splice(0).forEach((p) => URL.revokeObjectURL(p.previewUrl));
+    renderPhotos();
+    updateCounter();
+  }
+
+  // -------------------------------------------------------------- wire --
+  $('signin').addEventListener('click', () => signIn().catch((e) => { $('signin-error').textContent = e.message; $('signin-error').hidden = false; }));
+  $('signout').addEventListener('click', signOut);
+  $('text').addEventListener('input', updateCounter);
+  $('tags').addEventListener('input', updateCounter);
+  $('add-photo').addEventListener('click', () => $('file').click());
+  $('file').addEventListener('change', (e) => { addFiles([...e.target.files]); e.target.value = ''; });
+  $('publish').addEventListener('click', publish);
+  $('another').addEventListener('click', () => { show('compose'); $('text').focus(); });
+
+  // Don't lose an update by closing the app mid-way.
+  window.addEventListener('beforeunload', (e) => {
+    if ($('text').value.trim() || photos.length) { e.preventDefault(); e.returnValue = ''; }
+  });
+
+  (async () => {
+    const params = new URLSearchParams(location.search);
+    if (params.has('code')) {
+      try { await finishSignIn(params); }
+      catch (err) { $('signin-error').textContent = err.message; $('signin-error').hidden = false; }
+    } else if (params.has('error')) {
+      history.replaceState(null, '', CLIENT_ID);
+      $('signin-error').textContent = params.get('error_description') || 'Sign-in was cancelled.';
+      $('signin-error').hidden = false;
+    }
+    show(token() ? 'compose' : 'signin');
+    updateCounter();
+  })();
+})();
+</script>
+</body>
+</html>
