@@ -4,7 +4,7 @@ aliases:
 categories:
   - "[[Blog]]"
 status:
-date:
+date: 2026-10-04
 updatedDate:
 updateDescription:
 tags:
@@ -12,7 +12,7 @@ location:
 coverImage:
 summary: We have spent decades writing learning outcomes with only a third of a framework. It's time to extend Bloom's taxonomy.
 commentId: '117381244609203174'
-url: https://heartsoulmachine.com/blog/2026/10-03-learning-in-3d/
+url: https://heartsoulmachine.com/blog/2026/10-04-learning-in-3d/
 mastodonTags:
 ---
 This is the presentation given at the [HERGA conference](https://www.herga.com.au/) on the 30th September 2026. 
