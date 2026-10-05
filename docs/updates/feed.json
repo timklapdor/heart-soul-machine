@@ -5,5 +5,25 @@
   "feed_url": "https://heartsoulmachine.com/updates/feed.json",
   "authors": [{ "name": "Tim Klapdor", "url": "https://heartsoulmachine.com/" }],
   "items": [
+    {
+      "id": "https://heartsoulmachine.com/updates/2026/10/05/130322/",
+      "url": "https://heartsoulmachine.com/updates/2026/10/05/130322/",
+      "date_published": "2026-10-05T13:03:22+10:30",
+      "content_html": "<p>Posting an update from my phone.</p>\n",
+      "tags": ["IOS","Mobile"],
+      "_photos": [
+        { "url": "https://heartsoulmachine.com/updates/images/2026-10-05-130322-7738a1.jpg", "alt": "Painting that captures an abstract landscape. There is a sailboat and an indistinguishable landmark. But the painting seems to capture a perfect light." }
+      ]
+    },
+    {
+      "id": "https://heartsoulmachine.com/updates/2026/10/04/191555/",
+      "url": "https://heartsoulmachine.com/updates/2026/10/04/191555/",
+      "date_published": "2026-10-04T19:15:55+10:30",
+      "content_html": "<p>Testing a new way of posting here – short updates written on my own site first, then shared out – trying to go #POSSE #IndieWeb</p>\n",
+      "tags": [],
+      "_photos": [
+        { "url": "https://heartsoulmachine.com/updates/images/2026-10-04-185910-d76b5a.png", "alt": "Testing an image" }
+      ]
+    }
   ]
 }
