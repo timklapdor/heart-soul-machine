@@ -4,12 +4,42 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-10-04T00:00:00Z</updated>
+  <updated>2026-10-05T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Small Updates</title>
+    <link href="https://heartsoulmachine.com/blog/2026/10-05-small-updates/"/>
+    <updated>2026-10-05T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/10-05-small-updates/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/small-updates-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>A new space on the site for short posts and photos – written here first, then shared to Mastodon and Bluesky.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;There&#39;s a gap in how I use this site. Blog posts and notes live here, but the small stuff – a photo from a walk, a link worth sharing, a passing thought – has always gone straight to Mastodon or Bluesky. That means a lot of my day-to-day lives on someone else&#39;s platform, which sits awkwardly with the whole reason this site exists.&lt;/p&gt;
+&lt;p&gt;So I&#39;ve added a new section: &lt;a href=&quot;https://heartsoulmachine.com/updates/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Updates&lt;/a&gt;. They&#39;re short posts with up to four photos and no titles. They&#39;re published here first and then shared to Mastodon and Bluesky as proper posts – the full text, the photos and their alt text – rather than as a link back to the site. Each update then links out to its copies, so there&#39;s a trail from the original to wherever the conversation happens. It&#39;s &lt;a href=&quot;https://heartsoulmachine.com/notes/posse/&quot;&gt;POSSE&lt;/a&gt; for the small stuff.&lt;/p&gt;
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;p&gt;The tricky part with a static site is that there&#39;s nothing to post &lt;em&gt;to&lt;/em&gt;. This site is built with 11ty and hosted on GitHub Pages – no server, no database, no admin screen. The answer turned out to be &lt;a href=&quot;https://indieweb.org/Micropub&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Micropub&lt;/a&gt;, an open standard that lets writing apps publish to your own site. I had heard of it before, but &lt;a href=&quot;https://canion.pika.page/posts/2026-10-04-outpost-by-jim-mitchell&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;this post from Andrew Canion&lt;/a&gt; led me to look into it more.&lt;/p&gt;
+&lt;p&gt;I already had a &lt;a href=&quot;https://www.reclaimhosting.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Reclaim Hosting&lt;/a&gt; account, so the Micropub endpoint is a single PHP file on that server. When I publish, it checks it&#39;s me, takes the text and photos, and commits them to the site&#39;s GitHub repository. From there, the same GitHub Action that builds the site and toots new blog posts picks it up, publishes the update and sends it out. It takes about three minutes from hitting publish to it appearing on Mastodon and Bluesky.&lt;/p&gt;
+&lt;p&gt;Because Micropub is a standard, any app that speaks it can post here. So far, I can publish from iA Writer on my laptop, and I&#39;ve built a small web app for my phone that sits on the home screen like any other app. It has a character counter, so I know when Bluesky&#39;s 300-character limit will force a shortened version, and it won&#39;t let me publish a photo without a description. Alt text isn&#39;t optional.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Caveat: Like the cross-posting setup, this was vibe-coded with Claude.  I know enough about how the web works, I knew that Micorpub could work and what I wanted, and knew enough to test it properly, but I didn&#39;t write the code myself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It feels good to close that gap. Owning the long-form stuff was the easy part. The small stuff is where most of the web lives, and it&#39;s nice to have a home for it here too.&lt;/p&gt;
+</content>
+    
+    <category term="IndieWeb"/>
+    
+    <category term="POSSE"/>
+    
+    <category term="Micropub"/>
+    
+  </entry>
   <entry>
     <title>September 2026</title>
     <link href="https://heartsoulmachine.com/blog/2026/10-04-september-2026/"/>
