@@ -2,7 +2,7 @@
  * glitch.js — Reusable stripe-glitch animation utility
  * Based on the technique by Michael Villar (michaelvillar.com)
  *
- * Requires: dynamics.js, tinycolor.js
+ * No dependencies.
  *
  * Usage:
  *   // Hover glitch on a single element
@@ -96,18 +96,18 @@
     // Recolour SVG shapes
     clone.querySelectorAll('path, polygon, rect, circle, ellipse').forEach(function (child) {
       var hue = Math.round(Math.random() * 360);
-      child.style.fill = tinycolor('hsl(' + hue + ', 80%, 65%)').toRgbString();
+      child.style.fill = 'hsl(' + hue + ', 80%, 65%)';
     });
     // Recolour text nodes
     clone.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li').forEach(function (child) {
       var hue = Math.round(Math.random() * 360);
-      child.style.color = tinycolor('hsl(' + hue + ', 80%, 65%)').toRgbString();
+      child.style.color = 'hsl(' + hue + ', 80%, 65%)';
     });
     // If the clone itself is a text element, recolour it directly
     var tag = clone.tagName.toLowerCase();
     if (['p','h1','h2','h3','h4','h5','h6','a','span','li'].indexOf(tag) !== -1) {
       var hue = Math.round(Math.random() * 360);
-      clone.style.color = tinycolor('hsl(' + hue + ', 80%, 65%)').toRgbString();
+      clone.style.color = 'hsl(' + hue + ', 80%, 65%)';
     }
   }
 
@@ -153,16 +153,16 @@
       var d  = Math.random() * 100;
       var tx = Math.random() * spread * 2 - spread;
 
-      dynamics.setTimeout(function () {
-        dynamics.css(clone, { translateX: tx });
+      setTimeout(function () {
+        clone.style.transform = 'translateX(' + tx + 'px)';
       }, d);
-      dynamics.setTimeout(function () {
-        dynamics.css(clone, { translateX: tx / -5 });
+      setTimeout(function () {
+        clone.style.transform = 'translateX(' + (tx / -5) + 'px)';
       }, d + 50);
-      dynamics.setTimeout(function () {
-        dynamics.css(clone, { translateX: tx / -10 });
+      setTimeout(function () {
+        clone.style.transform = 'translateX(' + (tx / -10) + 'px)';
       }, d + 100);
-      dynamics.setTimeout(function () {
+      setTimeout(function () {
         if (clone.parentNode) clone.parentNode.removeChild(clone);
         ids.forEach(function (id) {
           var node = document.getElementById(id);
@@ -217,16 +217,16 @@
       els.forEach(function (el) {
         function loop() {
           var delay = min + Math.random() * (max - min);
-          dynamics.setTimeout(function () {
+          setTimeout(function () {
             fire(el, opts);
             if (Math.random() < stutter) {
-              dynamics.setTimeout(function () { fire(el, opts); }, 300 + Math.random() * 300);
+              setTimeout(function () { fire(el, opts); }, 300 + Math.random() * 300);
             }
             loop();
           }, delay);
         }
         // Stagger start so multiple elements don't all fire simultaneously
-        dynamics.setTimeout(loop, Math.random() * 2000);
+        setTimeout(loop, Math.random() * 2000);
       });
       return Glitch;
     },
