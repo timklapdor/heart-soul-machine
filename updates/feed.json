@@ -6,6 +6,16 @@
   "authors": [{ "name": "Tim Klapdor", "url": "https://heartsoulmachine.com/" }],
   "items": [
     {
+      "id": "https://heartsoulmachine.com/updates/2026/10/08/203627/",
+      "url": "https://heartsoulmachine.com/updates/2026/10/08/203627/",
+      "date_published": "2026-10-08T20:36:27+10:30",
+      "content_html": "<p>Thursday night gig</p>\n",
+      "tags": ["adelaide","katatonia"],
+      "_photos": [
+        { "url": "https://heartsoulmachine.com/updates/images/2026-10-08-203627-0f3615.jpg", "alt": "Empty atage setup for Katatonia" }
+      ]
+    },
+    {
       "id": "https://heartsoulmachine.com/updates/2026/10/07/145457/",
       "url": "https://heartsoulmachine.com/updates/2026/10/07/145457/",
       "date_published": "2026-10-07T14:54:57+10:30",
