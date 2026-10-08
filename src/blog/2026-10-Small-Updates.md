@@ -12,7 +12,7 @@ tags:
 location:
 coverImage:
 summary: A new space on the site for short posts and photos – written here first, then shared to Mastodon and Bluesky.
-commentId:
+commentId: '117386549323193771'
 url: https://heartsoulmachine.com/blog/2026/10-05-small-updates/
 mastodonTags:
   - IndieWeb
