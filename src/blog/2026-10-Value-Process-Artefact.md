@@ -13,8 +13,8 @@ tags:
 location:
 coverImage:
 summary: "One of the tensions at the heart of the current AI debate is one I’ve been interested in for a long time – the conflict between where we place value: in the artefact, or in the process that produced it."
-commentId:
-url:
+commentId: '117471924996477325'
+url: https://heartsoulmachine.com/blog/2026/10-20-the-value-of-process-and-artefact/
 mastodonTags:
 ---
 This isn’t a new argument. Coming from a design background, it’s one I’ve lived with throughout my career. A designer’s craft is in the process – the decisions made, the context understood, the nuances navigated. Clients, almost universally, want the artefact, getting them to value the process is a constant negotiation. AI has thrown this into sharp relief, because now the process can be almost entirely bypassed. Type a prompt, get an artefact. What’s missing is everything that went into knowing what designing the 'right thing' should be.
