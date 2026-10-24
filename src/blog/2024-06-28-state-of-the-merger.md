@@ -4,7 +4,6 @@ date: 2024-06-28
 categories:
   - Higher Education
   - Leadership
-  - Stories
   - Work
 updatedDate: 
 updateDescription: 

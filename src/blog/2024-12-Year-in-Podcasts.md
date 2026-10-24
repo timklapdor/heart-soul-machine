@@ -2,8 +2,7 @@
 title: A Year in Podcasts
 date: 2024-12-15
 categories:
-  - Journal
-  - Review
+  - Reviews
 updatedDate: 
 updateDescription: 
 tags:

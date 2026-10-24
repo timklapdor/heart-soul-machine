@@ -2,10 +2,9 @@
 title: Intellectual Outsourcing
 date: 2025-01-30
 categories:
-  - Critique
+  - AI
   - Educational Technology
-  - Higher Education
-  - Technology
+  - Critique
 updatedDate: 
 updateDescription: 
 tags:

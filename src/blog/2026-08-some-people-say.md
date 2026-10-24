@@ -4,6 +4,8 @@ aliases:
   - Some People Say
 categories:
   - "[[Blog]]"
+  - Politics
+  - Concepts
 status:
 date: 2026-08-09
 updatedDate:

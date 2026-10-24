@@ -1,8 +1,13 @@
 module.exports = {
   eleventyComputed: {
     categories: (data) => {
-      const stripWikiLink = (s) => s.replace(/^\[\[(.+)\]\]$/, '$1');
-      const existing = (data.categories || []).map(stripWikiLink);
+      const stripWikiLink = (s) => String(s).replace(/^\[\[(.+)\]\]$/, '$1').trim();
+      // "[[Blog]]" and "[[Notes]]" are Obsidian housekeeping: keep them in
+      // the Markdown files, but don't show them as categories on the site.
+      const hidden = ["Blog", "Notes"];
+      const existing = (data.categories || [])
+        .map(stripWikiLink)
+        .filter((c) => c && !hidden.includes(c));
       const extracted = new Set(existing);
 
       for (const tag of data.tags || []) {

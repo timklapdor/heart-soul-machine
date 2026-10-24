@@ -3,9 +3,8 @@ title: Finishing
 date: 2024-10-20
 categories:
   - Higher Education
-  - Leadership
-  - Reflection
   - Work
+  - Reflection
 updatedDate: 
 updateDescription: 
 tags:

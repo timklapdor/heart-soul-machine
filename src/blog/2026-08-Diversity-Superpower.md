@@ -4,6 +4,8 @@ aliases:
   - Diversity is a Superpower
 categories:
   - "[[Blog]]"
+  - Leadership
+  - Work
 status:
 date: 2026-08-07
 updatedDate:

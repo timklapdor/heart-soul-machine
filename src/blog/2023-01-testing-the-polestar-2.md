@@ -2,7 +2,8 @@
 title: Testing the Polestar 2
 date: 2023-01-13
 categories:
-  - Review
+  - Reviews
+  - Technology
 updatedDate: 2023-01-04
 updateDescription: "Updated title and edits for clarity." 
 tags:

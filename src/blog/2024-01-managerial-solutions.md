@@ -2,10 +2,9 @@
 title: Managerial Solutions
 date: 2024-01-16
 categories:
-  - Concepts
-  - Higher Education
   - Leadership
   - Work
+  - Higher Education
 updatedDate: 
 updateDescription: 
 tags:

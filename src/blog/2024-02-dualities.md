@@ -2,7 +2,7 @@
 title: Dualities
 date: 2024-02-11
 categories:
-  - Music
+  - Life
 updatedDate: 
 updateDescription: 
 tags:

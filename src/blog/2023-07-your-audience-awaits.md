@@ -1,8 +1,8 @@
 ---
 title: "Your Audience Awaits"
 date: 2023-07-23
-categories: 
-- Technology
+categories:
+  - Social Media
 updatedDate: 2024-01-04
 updateDescription: Spelling and grammar
 tags:

@@ -4,6 +4,7 @@ aliases:
   - Labor are the new conservatives
 categories:
   - "[[Blog]]"
+  - Politics
 status:
 date: 2026-08-03
 updatedDate:

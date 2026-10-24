@@ -1,12 +1,11 @@
 ---
 title: A little glitch
 aliases:
-category:
-  - "[[Blog]]"
 status:
 date: 2026-03-13
 categories:
-  - Technology
+  - "[[Blog]]"
+  - Open Web
 updatedDate:
 updateDescription:
 tags:

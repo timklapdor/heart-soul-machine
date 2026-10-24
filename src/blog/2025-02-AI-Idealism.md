@@ -2,8 +2,8 @@
 title: AI Idealism
 date: 2025-02-18
 categories:
+  - AI
   - Critique
-  - Technology
 updatedDate: 
 updateDescription: 
 tags: 

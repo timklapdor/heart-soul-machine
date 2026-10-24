@@ -4,10 +4,9 @@ aliases:
   - Outsource & Centralise
 date: 2025-01-29
 categories:
+  - Work
   - Higher Education
   - Leadership
-  - Planning
-  - Work
 updatedDate: 
 updateDescription: 
 tags:

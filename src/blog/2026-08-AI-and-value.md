@@ -4,6 +4,9 @@ aliases:
   - AI and Value
 categories:
   - "[[Blog]]"
+  - AI
+  - Work
+  - Critique
 status:
 date: 2026-08-23
 updatedDate:

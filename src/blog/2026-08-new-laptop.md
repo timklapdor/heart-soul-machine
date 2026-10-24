@@ -4,6 +4,7 @@ aliases:
   - New Laptop, New Setup
 categories:
   - "[[Blog]]"
+  - Technology
 status:
 date: 2026-08-22
 updatedDate:

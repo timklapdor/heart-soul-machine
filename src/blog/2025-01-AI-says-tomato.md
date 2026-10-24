@@ -2,10 +2,9 @@
 title: AI says tomato but you mean potato
 date: 2025-01-05
 categories:
+  - AI
   - Concepts
   - Critique
-  - Technology
-  - Travels
 updatedDate: 
 updateDescription: 
 tags: 

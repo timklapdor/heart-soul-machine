@@ -2,9 +2,7 @@
 title: February 2024
 date: 2024-03-04
 categories:
-  - Family
   - Journal
-  - Review
 updatedDate: 
 updateDescription: 
 tags: 

@@ -2,7 +2,7 @@
 title: The Hype Machine is Breaking Us
 date: 2024-02-22
 categories:
-  - Technology
+  - AI
   - Critique
 updatedDate: 
 updateDescription: 

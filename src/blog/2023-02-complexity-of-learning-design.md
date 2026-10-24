@@ -3,6 +3,7 @@ title: The Complexity of Learning Design
 date: 2023-02-01
 categories:
   - Learning Design
+  - Concepts
 updatedDate: 2023-01-04
 updateDescription: Grammar and edits for clarity.
 tags:

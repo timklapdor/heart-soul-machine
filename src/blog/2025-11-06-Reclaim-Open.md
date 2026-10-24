@@ -1,14 +1,12 @@
 ---
 title: Reclaim Open - This One Goes to 11(ty)
 aliases:
-category:
-  - "[[Blog]]"
 status:
 date: 2025-11-06
 categories:
-  - Conferences
-  - Reclaim
-  - Technology
+  - "[[Blog]]"
+  - Presentations
+  - Open Web
 updatedDate:
 updateDescription:
 tags:

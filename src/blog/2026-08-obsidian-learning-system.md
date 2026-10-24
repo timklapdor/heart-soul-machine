@@ -4,6 +4,8 @@ aliases:
   - Obsidian and the Distributed Learning System
 categories:
   - "[[Blog]]"
+  - Educational Technology
+  - Open Web
 status:
   - published
 date: 2026-08-21

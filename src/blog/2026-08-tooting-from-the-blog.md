@@ -4,6 +4,8 @@ aliases:
   - Tooting from the Blog
 categories:
   - "[[Blog]]"
+  - Open Web
+  - Social Media
 status:
 date: 2026-08-11
 updatedDate:

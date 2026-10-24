@@ -4,6 +4,9 @@ aliases:
   - AI is just a Text Processor
 categories:
   - "[[Blog]]"
+  - AI
+  - Concepts
+  - Critique
 status:
 date: 2026-09-16
 updatedDate:

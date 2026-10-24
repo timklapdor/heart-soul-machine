@@ -4,6 +4,9 @@ aliases:
   - Culture is Complex
 categories:
   - "[[Blog]]"
+  - Leadership
+  - Work
+  - Concepts
 status:
 date: 2026-08-04
 updatedDate:

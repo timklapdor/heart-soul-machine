@@ -4,6 +4,8 @@ aliases:
   - Intentional Engagement
 categories:
   - "[[Blog]]"
+  - Technology
+  - Reflection
 status:
 date: 2026-08-15
 updatedDate:

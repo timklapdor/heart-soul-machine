@@ -1,12 +1,10 @@
 ---
 title: 2025 November
 aliases:
-category:
-  - "[[Blog]]"
-  - "[[Month Notes]]"
 status:
 date: 2026-01-01
 categories:
+  - "[[Blog]]"
   - Journal
 updatedDate:
 updateDescription:

@@ -2,9 +2,8 @@
 title: The Luddite & the Mechanic
 date: 2025-01-31
 categories:
-  - Critique
-  - Educational Technology
   - Technology
+  - Critique
 updatedDate: 
 updateDescription: 
 tags: podcasts

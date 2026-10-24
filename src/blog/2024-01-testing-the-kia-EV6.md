@@ -2,7 +2,8 @@
 title: Testing the Kia EV6
 date: 2024-01-04
 categories:
-  - Review
+  - Reviews
+  - Technology
 updatedDate: 
 updateDescription: 
 tags: 

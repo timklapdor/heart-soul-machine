@@ -5,6 +5,7 @@ tags:
 aliases:
 categories:
   - "[[Blog]]"
+  - Learning Design
 status:
   - draft
 date: 2026-10-01

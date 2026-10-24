@@ -4,6 +4,9 @@ aliases:
   - Technology is a Tool and a Weapon
 categories:
   - "[[Blog]]"
+  - Technology
+  - Concepts
+  - Critique
 status:
 date: 2026-09-17
 updatedDate:

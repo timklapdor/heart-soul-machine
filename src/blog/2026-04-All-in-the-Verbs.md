@@ -1,15 +1,12 @@
 ---
 title: All in the Verbs
 aliases:
-category:
-  - "[[Blog]]"
 status:
 date: 2026-04-10 16:00:00
 categories:
-  - Concepts
-  - Educational Technology
-  - Higher Education
+  - "[[Blog]]"
   - Learning Design
+  - Higher Education
 updatedDate:
 updateDescription:
 tags:

@@ -2,11 +2,9 @@
 title: An Open Design System for Learning
 date: 2024-11-19
 categories:
-  - Conferences
-  - Higher Education
+  - Presentations
   - Learning Design
-  - Travels
-  - Work
+  - Higher Education
 updatedDate: 
 updateDescription: 
 tags:

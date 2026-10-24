@@ -2,8 +2,8 @@
 title: 2024 - Do and Donts
 date: 2024-01-10
 categories:
-  - Family
-  - Planning
+  - Reflection
+  - Life
 updatedDate: 
 updateDescription: 
 tags:

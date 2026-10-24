@@ -3,8 +3,7 @@ title: September 2026
 aliases:
 categories:
   - "[[Blog]]"
-  - "[[Month Notes]]"
-  - "[[Journal]]"
+  - Journal
 status:
 date: 2026-10-04
 updatedDate:

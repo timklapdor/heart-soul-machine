@@ -3,7 +3,8 @@ title: "The Connected Curriculum"
 date: 2023-06-25
 categories:
   - Learning Design
-  - Concept
+  - Higher Education
+  - Concepts
 updatedDate: 2024-01-04
 updateDescription: Spelling and edits for clarity
 tags:

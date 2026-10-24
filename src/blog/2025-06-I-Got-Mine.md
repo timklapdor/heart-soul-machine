@@ -1,13 +1,11 @@
 ---
 title: I Got Mine
 aliases: 
-category:
-  - "[[Blog]]"
 status: 
 date: 2025-06-01
 categories:
+  - "[[Blog]]"
   - Politics
-  - Reflection
 updatedDate: 
 updateDescription: 
 tags: 

@@ -3,8 +3,8 @@ title: Learning Type Iconography
 date: 2025-01-07
 commentId: "113790585031265811"
 categories:
-  - Concepts
   - Learning Design
+  - Concepts
 updatedDate: 
 updateDescription: 
 tags:

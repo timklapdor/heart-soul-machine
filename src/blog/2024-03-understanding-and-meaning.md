@@ -2,8 +2,9 @@
 title: Understanding and Meaning
 date: 2024-03-02
 categories:
+  - AI
+  - Concepts
   - Critique
-  - Technology
 updatedDate: 
 updateDescription: 
 tags:

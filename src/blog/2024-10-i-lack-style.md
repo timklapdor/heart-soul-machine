@@ -2,9 +2,8 @@
 title: I lack style
 date: 2024-10-07
 categories:
-  - Family
   - Reflection
-  - Work
+  - Life
 updatedDate: 
 updateDescription: 
 tags:

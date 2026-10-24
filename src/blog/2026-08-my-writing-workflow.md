@@ -4,6 +4,8 @@ aliases:
   - My Writing Workflow
 categories:
   - "[[Blog]]"
+  - Writing
+  - AI
 status:
 date: 2026-08-19
 updatedDate:

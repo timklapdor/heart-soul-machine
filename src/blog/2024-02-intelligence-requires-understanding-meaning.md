@@ -2,8 +2,8 @@
 title: Intelligence requires understanding & meaning
 date: 2024-02-25
 categories:
+  - AI
   - Critique
-  - Technology
 updatedDate: 
 updateDescription: 
 tags:

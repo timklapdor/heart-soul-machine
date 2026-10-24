@@ -4,6 +4,8 @@ aliases:
   - The Network Should Be Ours
 categories:
   - "[[Blog]]"
+  - Open Web
+  - Social Media
 status:
 date: 2026-08-12
 updatedDate:

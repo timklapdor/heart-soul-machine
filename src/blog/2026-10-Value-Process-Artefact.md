@@ -4,6 +4,8 @@ aliases:
   - The Value of Process and Artefact
 categories:
   - "[[Blog]]"
+  - AI
+  - Higher Education
 status:
   - published
 date: 2026-10-20

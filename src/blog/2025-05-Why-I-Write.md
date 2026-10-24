@@ -1,14 +1,13 @@
 ---
 title: Why I Write
 aliases: 
-category:
-  - "[[Blog]]"
 status:
   - published
 date: 2025-05-19
 categories:
-  - Reflection
+  - "[[Blog]]"
   - Writing
+  - Reflection
 updatedDate: 
 updateDescription: 
 tags: 

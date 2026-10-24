@@ -3,7 +3,6 @@ title: January 2025
 date: 2025-02-02
 categories:
   - Journal
-  - Review
 updatedDate: 
 updateDescription: 
 tags: 

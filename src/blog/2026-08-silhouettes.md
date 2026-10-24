@@ -4,6 +4,7 @@ aliases:
   - Silhouettes
 categories:
   - "[[Blog]]"
+  - Reflection
 status:
 date: 2026-08-20
 updatedDate:

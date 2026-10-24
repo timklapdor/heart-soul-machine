@@ -1,14 +1,10 @@
 ---
 title: January 2026
 aliases:
-category:
-  - "[[Blog]]"
-  - "[[Month Notes]]"
-  - Journal 
-  - Review
 status:
 date: 2026-01-31
 categories:
+  - "[[Blog]]"
   - Journal
 updatedDate:
 updateDescription:

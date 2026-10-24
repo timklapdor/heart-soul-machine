@@ -4,6 +4,7 @@ aliases:
   - The Politics of Care
 categories:
   - "[[Blog]]"
+  - Politics
 status:
   - draft
 date: 2026-08-05

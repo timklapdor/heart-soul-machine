@@ -3,7 +3,6 @@ title: December 2024
 date: 2024-12-31
 categories:
   - Journal
-  - Review
 updatedDate: 
 updateDescription: 
 tags: 

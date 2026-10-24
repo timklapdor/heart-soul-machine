@@ -4,6 +4,8 @@ aliases:
   - The Answer Machine
 categories:
   - "[[Blog]]"
+  - AI
+  - Critique
 status:
   - draft
 date: 2026-08-08

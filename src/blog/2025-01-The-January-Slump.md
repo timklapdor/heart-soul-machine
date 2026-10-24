@@ -2,8 +2,6 @@
 title: The January Slump
 date: 2025-01-27
 categories:
-  - Journal
-  - Planning
   - Reflection
 updatedDate: 
 updateDescription: 

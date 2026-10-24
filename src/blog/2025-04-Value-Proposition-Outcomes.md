@@ -1,19 +1,14 @@
 ---
 title: A Value Proposition & Outcomes Focus
 aliases: 
-category:
-  - "[[Blog]]"
 status:
   - published
 date: 2025-04-29
 categories:
-  - Educational Technology
-  - Higher Education
-  - Leadership
-  - Planning
-  - Reflection
+  - "[[Blog]]"
   - Work
   - Learning Design
+  - Higher Education
 updatedDate: 
 updateDescription: 
 tags: 

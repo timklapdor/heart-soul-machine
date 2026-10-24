@@ -1,8 +1,9 @@
 ---
 title: "Social to Antisocial"
 date: 2023-07-07
-categories: 
-- Technology
+categories:
+  - Social Media
+  - Open Web
 updatedDate: 2024-01-04
 updateDescription: Grammar and links
 tags:

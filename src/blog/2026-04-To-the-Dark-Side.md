@@ -1,12 +1,11 @@
 ---
 title: To the Dark Side
 aliases:
-category:
-  - "[[Blog]]"
 status:
 date: 2026-04-10 10:00:00
 categories:
-  - Technology
+  - "[[Blog]]"
+  - Open Web
 updatedDate:
 updateDescription:
 tags:

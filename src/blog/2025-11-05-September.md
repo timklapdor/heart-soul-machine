@@ -1,13 +1,11 @@
 ---
 title: September 2025
 aliases:
-category:
-  - "[[Blog]]"
 status:
 date: 2025-11-05
 categories:
+  - "[[Blog]]"
   - Journal
-  - Reflection
 updatedDate:
 updateDescription:
 tags:

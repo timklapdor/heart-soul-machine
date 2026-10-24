@@ -13,7 +13,7 @@ summary: "I'm Tim Klapdor, and this is Heart Soul Machine ❤️ 🔥 ⚙️ –
 
 I'm [Tim Klapdor](https://heartsoulmachine.com/){.p-name .u-url .u-uid}, a digital creative, learner and expert generalist based in [Adelaide]{.p-locality}, South Australia. I've spent nearly twenty years in higher education, working in the space where learning, design and technology meet. {.p-note}
 
-I'm the [Capability Development Manager]{.p-job-title} in the Learning Futures team at [Adelaide University](https://adelaideuni.edu.au/){.p-org}. I've also started bringing my own learning design work together at [Pattern Learning](https://patternlearning.co/), a design studio for learning. It's home to three connected frameworks – [Bloom's 3D](https://patternlearning.co/blooms/), [Learning Types](https://patternlearning.co/types/), and [Learning Patterns](https://patternlearning.co/patterns/).
+I'm the [Capability Development Manager]{.p-job-title} in the Learning Futures team at [Adelaide University](https://adelaideuni.edu.au/){.p-org}. I've also started bringing my own learning design work together at [Pattern Learning](https://patternlearning.co/), a design studio for learning. It's home to three connected frameworks – [Blooms 3D](https://patternlearning.co/blooms/), [Learning Types](https://patternlearning.co/types/), and [Learning Patterns](https://patternlearning.co/patterns/).
 
 </div>
 

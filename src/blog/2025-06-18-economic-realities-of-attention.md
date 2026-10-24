@@ -1,13 +1,13 @@
 ---
 title: The Economic Realities of Attention
 aliases: 
-category:
-  - "[[Blog]]"
 status: 
 date: 2025-06-18
 categories:
-  - Technology
+  - "[[Blog]]"
   - Social Media
+  - AI
+  - Critique
 updatedDate: 
 updateDescription: 
 tags: 

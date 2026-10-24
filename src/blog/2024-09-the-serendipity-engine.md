@@ -2,10 +2,9 @@
 title: The Serendipity Engine
 date: 2024-09-10
 categories:
-  - Concepts
-  - Educational Technology
   - Learning Design
-  - Reflection
+  - Educational Technology
+  - Concepts
 updatedDate: 
 updateDescription: 
 tags:

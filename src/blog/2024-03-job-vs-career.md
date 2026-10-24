@@ -2,8 +2,8 @@
 title: Job vs Career
 date: 2024-03-11
 categories:
-  - Reflection
   - Work
+  - Reflection
 updatedDate: 
 updateDescription: 
 tags:

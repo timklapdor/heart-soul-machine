@@ -1,4 +1,6 @@
-section#comments {
+// Shared by Mastodon comments (comments.njk) and webmention replies (webmentions.njk)
+section#comments,
+section.webmentions {
 
     #comments-wrapper {
         width: 100%;
@@ -67,7 +69,8 @@ section#comments {
         margin-top: .2rem;
       }
   
-      main {
+      main,
+      .comment-content {
         grid-area: post;
         min-height: fit-content;
         background: none;
@@ -134,3 +137,22 @@ section#comments {
       }
     }
   }
+
+// Webmention replies: placement on the article grid, and no avatar
+// column (the Mastodon comments keep theirs)
+main article section.webmentions {
+    grid-column: 4;
+    justify-self: start;
+    width: 100%;
+}
+
+// Each reply is an <article>, so `main article { display: grid }` in
+// _main.scss would otherwise lay it out on the 7-column post grid.
+// Without an avatar there's nothing to put side by side, so just stack.
+section.webmentions .comment {
+    display: block;
+
+    time {
+        display: block;
+    }
+}

@@ -3,6 +3,8 @@ title: The Professional Toolkit
 aliases:
   - The Professional Toolkit
 categories:
+  - Higher Education
+  - Work
 status:
 date: 2026-08-06
 updatedDate:

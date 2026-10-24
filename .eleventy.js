@@ -47,6 +47,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("localDateTime", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "Australia/Adelaide" }).toFormat("d LLL yyyy, h:mma").replace(/AM$/, "am").replace(/PM$/, "pm");
   });
+  // Webmentions: published dates arrive as ISO strings
+  eleventyConfig.addFilter("mentionDate", (iso) => {
+    const dt = DateTime.fromISO(String(iso), { zone: "Australia/Adelaide" });
+    return dt.isValid ? dt.toFormat("d LLLL yyyy") : "";
+  });
   eleventyConfig.addFilter("isoDateTime", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "Australia/Adelaide" }).toISO({ suppressMilliseconds: true });
   });

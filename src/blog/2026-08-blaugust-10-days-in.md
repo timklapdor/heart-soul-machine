@@ -4,6 +4,7 @@ aliases:
   - Blaugust - 10 days in
 categories:
   - "[[Blog]]"
+  - Writing
 status:
   - draft
 date: 2026-08-10

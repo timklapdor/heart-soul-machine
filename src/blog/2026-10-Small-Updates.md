@@ -4,6 +4,7 @@ aliases:
   - Small Updates
 categories:
   - "[[Blog]]"
+  - Open Web
 status:
 date: 2026-10-05
 updatedDate:

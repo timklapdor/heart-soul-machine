@@ -32,15 +32,5 @@ eleventyComputed:
 	{% endfor %}
 </div>
 
-<div class="note-links">
-	<h3>Other categories</h3>
-	<p class="category-list">
-		{%- for cat in collections.postsByCategory %}
-			{%- if cat.name != category.name %}
-				<a href="/categories/{{ cat.name | slugify }}/">{{ cat.name }}</a>
-				<span class="count">({{ cat.count }})</span>
-				{% if not loop.last %} · {% endif %}
-			{% endif %}
-		{%- endfor %}
-	</p>
-</div>
+{% set categoryLinksHeading = "Other categories" %}
+{% include "partials/category-links.njk" %}

@@ -1,8 +1,11 @@
 ---
 title: Why the Canvas hack was innevitable
 aliases:
-category:
+categories:
   - "[[Blog]]"
+  - Educational Technology
+  - Higher Education
+  - Critique
 status:
 date: 2026-05-10
 updatedDate:

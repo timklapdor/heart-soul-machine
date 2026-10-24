@@ -3,8 +3,7 @@ title: November 2024
 date: 2024-12-01
 categories:
   - Journal
-  - Review
-  - Travels
+  - Travel
 updatedDate: 
 updateDescription: 
 tags: 

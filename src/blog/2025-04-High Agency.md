@@ -2,10 +2,9 @@
 title: High Agency
 date: 2025-04-02
 categories:
-  - Concepts
-  - Higher Education
-  - Leadership
   - Work
+  - Leadership
+  - Concepts
 updatedDate: 
 updateDescription: 
 tags: 

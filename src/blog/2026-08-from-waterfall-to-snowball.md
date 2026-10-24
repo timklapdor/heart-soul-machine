@@ -4,6 +4,8 @@ aliases:
   - From Waterfall to Snowball
 categories:
   - "[[Blog]]"
+  - Work
+  - Concepts
 status:
 date: 2026-08-13
 updatedDate:

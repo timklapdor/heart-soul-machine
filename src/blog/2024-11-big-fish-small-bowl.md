@@ -2,12 +2,9 @@
 title: A big fish in a small bowl looking out
 date: 2024-11-25
 categories:
-  - Critique
   - Higher Education
-  - Leadership
-  - Reflection
   - Social Media
-  - Work
+  - Critique
 updatedDate: 
 updateDescription: 
 tags:

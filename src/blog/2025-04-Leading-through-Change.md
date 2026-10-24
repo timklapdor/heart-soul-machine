@@ -2,8 +2,8 @@
 title: Leading through Change
 date: 2025-04-03
 categories:
-  - Higher Education
   - Leadership
+  - Higher Education
   - Work
 updatedDate: 
 updateDescription: 

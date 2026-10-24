@@ -4,6 +4,8 @@ aliases:
   - When the Noise is the Signal
 categories:
   - "[[Blog]]"
+  - Social Media
+  - Politics
 status:
   - published
 date: 2026-05-19

@@ -4,6 +4,8 @@ aliases:
   - AI as Translator
 categories:
   - "[[Blog]]"
+  - AI
+  - Concepts
 status:
 date: 2026-08-18
 updatedDate:

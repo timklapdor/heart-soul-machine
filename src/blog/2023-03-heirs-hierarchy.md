@@ -3,6 +3,7 @@ title: Heirs and Hierarchy
 date: 2023-03-07
 categories:
   - Technology
+  - Concepts
 updatedDate: 
 updateDescription: 
 tags:

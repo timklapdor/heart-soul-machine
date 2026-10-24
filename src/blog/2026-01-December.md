@@ -1,12 +1,10 @@
 ---
 title: 2025 December
 aliases:
-category:
-  - "[[Blog]]"
-  - "[[Month Notes]]"
 status:
 date: 2026-01-02
 categories:
+  - "[[Blog]]"
   - Journal
 updatedDate:
 updateDescription:

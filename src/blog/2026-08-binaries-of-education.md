@@ -4,6 +4,8 @@ aliases:
   - The Binaries of Education
 categories:
   - "[[Blog]]"
+  - Higher Education
+  - Learning Design
 status:
 date: 2026-08-17
 updatedDate:

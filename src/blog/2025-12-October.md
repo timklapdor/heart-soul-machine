@@ -1,18 +1,13 @@
 ---
 title: October 2025
 aliases:
-category:
-  - "[[Blog]]"
-  - "[[Month Notes]]"
 status:
   - published
 date: 2025-12-05
 categories:
+  - "[[Blog]]"
   - Journal
-  - Reflection
-  - Review
-  - Travels
-  - Work
+  - Travel
 updatedDate:
 updateDescription:
 tags:

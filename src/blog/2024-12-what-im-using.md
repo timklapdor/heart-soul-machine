@@ -2,7 +2,7 @@
 title: 2024 and what I'm using
 date: 2024-12-16
 categories:
-  - Review
+  - Reviews
   - Technology
 updatedDate: 
 updateDescription: 

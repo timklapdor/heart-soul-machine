@@ -2,7 +2,7 @@
 title: Broken Streak
 date: 2024-02-12
 categories:
-  - Journal
+  - Reflection
 updatedDate: 
 updateDescription: 
 tags:

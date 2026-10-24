@@ -1,16 +1,14 @@
 ---
 title: The Mirror and What's Not There
 aliases: 
-category:
-  - "[[Blog]]"
 status:
   - published
 date: 2025-07-27
 categories:
+  - "[[Blog]]"
+  - Technology
   - Concepts
   - Reflection
-  - Stories
-  - Technology
 updatedDate: 
 updateDescription: 
 tags: 

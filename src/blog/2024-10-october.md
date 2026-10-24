@@ -3,8 +3,6 @@ title: October 2024
 date: 2024-11-04
 categories:
   - Journal
-  - Planning
-  - Review
 updatedDate: 
 updateDescription: 
 tags:

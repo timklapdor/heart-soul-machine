@@ -2,10 +2,9 @@
 title: Focus vs Distraction
 date: 2025-02-03
 categories:
-  - Reflection
   - Social Media
-  - Technology
   - Politics
+  - Reflection
 updatedDate: 
 updateDescription: 
 tags: 

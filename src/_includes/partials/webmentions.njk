@@ -1,4 +1,12 @@
 {% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
+{#- Replies and mentions, minus Tim's own cross-posts (e.g. Bluesky "NEW POST" links) -#}
+{% set replies = [] %}
+{% for mention in mentions.comments %}
+  {% if not ("timklapdor" in (mention.author.url or "")) %}{% set replies = (replies.push(mention), replies) %}{% endif %}
+{% endfor %}
+
+{% if mentions.likes.length > 0 or mentions.reposts.length > 0 or replies.length > 0 %}
+<section class="webmentions" data-pagefind-ignore>
 
 {% if mentions.likes.length > 0 %}
   <h3>Likes</h3>
@@ -18,14 +26,22 @@
   </ul>
 {% endif %}
 
-{% if mentions.comments.length > 0 %}
-  <h3>Replies</h3>
-  <ul class="webmention-comments">
-    {% for mention in mentions.comments %}
-      <li>
-        <a href="{{ mention.url }}"><strong>{{ mention.author.name }}</strong></a>
-        <p>{{ mention.content.text }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+{% if replies.length > 0 %}
+  <hr>
+  <h4>Replies &amp; mentions</h4>
+  {% for mention in replies %}
+    {%- set host = mention.url.split("/")[2] | replace("www.", "") -%}
+    {%- set name = mention.author.name or host -%}
+    <article class="comment h-cite" id="mention-{{ mention['wm-id'] }}">
+      <h5 class="author p-author h-card"><span class="p-name">{{ name }}</span>{% if mention.author.name %} <a class="instance u-url" href="{{ mention.author.url or mention.url }}" rel="external nofollow">{{ host }}</a>{% endif %}</h5>
+      {% if mention.published %}<time class="dt-published" datetime="{{ mention.published }}"><a href="{{ mention.url }}" rel="external nofollow">{{ mention.published | mentionDate }}</a></time>{% endif %}
+      <div class="comment-content e-content">
+        {% if mention.content.text %}<p>{{ mention.content.text | truncate(500) | escape | replace("\n", "<br>") | safe }}</p>{% else %}<p><em>{{ "Replied to" if mention["wm-property"] == "in-reply-to" else "Mentioned" }} this post.</em></p>{% endif %}
+        <p><small><a href="{{ mention.url }}" rel="external nofollow">Read on {{ host }}</a></small></p>
+      </div>
+    </article>
+  {% endfor %}
+{% endif %}
+
+</section>
 {% endif %}

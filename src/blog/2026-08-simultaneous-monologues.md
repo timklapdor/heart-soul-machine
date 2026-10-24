@@ -4,6 +4,7 @@ aliases:
   - Simultaneous Monologues
 categories:
   - "[[Blog]]"
+  - Social Media
 status:
   - published
 date: 2026-08-14

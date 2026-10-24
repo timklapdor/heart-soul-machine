@@ -2,10 +2,9 @@
 title: Catching Up with Critique
 date: 2025-02-11
 categories:
-  - Critique
-  - Educational Technology
-  - Reclaim
   - Technology
+  - Open Web
+  - Critique
 updatedDate: 
 updateDescription: 
 tags: 

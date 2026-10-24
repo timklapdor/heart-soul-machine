@@ -2,9 +2,9 @@
 title: Dealing with Burnout
 date: 2024-08-12
 categories:
-  - Higher Education
-  - Leadership
   - Work
+  - Leadership
+  - Reflection
 updatedDate: 
 updateDescription: 
 tags:

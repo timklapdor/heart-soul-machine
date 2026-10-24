@@ -1,8 +1,8 @@
 ---
 title: "What becomes of Australian Rugby?"
 date: 2023-09-28
-categories: 
-- Sport 
+categories:
+  - Life
 updatedDate: 2024-01-04
 updateDescription: "Fixing spelling and grammar"
 tags: Rugby

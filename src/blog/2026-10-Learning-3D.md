@@ -3,6 +3,8 @@ title: Learning in 3D
 aliases:
 categories:
   - "[[Blog]]"
+  - Learning Design
+  - Presentations
 status:
 date: 2026-10-04
 updatedDate:

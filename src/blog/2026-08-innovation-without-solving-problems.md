@@ -4,6 +4,9 @@ aliases:
   - Innovation without solving problems
 categories:
   - "[[Blog]]"
+  - AI
+  - Technology
+  - Critique
 status:
 date: 2026-08-16
 updatedDate:

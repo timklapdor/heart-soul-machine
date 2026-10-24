@@ -1,13 +1,12 @@
 ---
 title: "Beyond the Cognitive: Rethinking Bloom’s Taxonomy"
 aliases:
-category:
-  - "[[Blog]]"
 status:
 date: 2026-03-20
 categories:
-  - Higher Education
+  - "[[Blog]]"
   - Learning Design
+  - Higher Education
 updatedDate: 2026-04-10
 updateDescription: Adding references - need to acknowledge original sources. 
 tags:

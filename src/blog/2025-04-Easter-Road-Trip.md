@@ -1,13 +1,12 @@
 ---
 title: Easter Road Trip
 aliases: 
-category:
-  - "[[Blog]]"
 status: 
 date: 2025-04-28
 categories:
-  - Family
-  - Travels
+  - "[[Blog]]"
+  - Travel
+  - Life
 updatedDate: 
 updateDescription: 
 tags: 
