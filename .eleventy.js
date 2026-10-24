@@ -160,6 +160,41 @@ module.exports = function (eleventyConfig) {
     return postsByYear;
   });
 
+  // Category archives – one entry per category used in blog posts,
+  // each with its posts grouped by year (newest first).
+  // Categories come from front matter, with [[wikilinks]] already stripped
+  // by processObsidianTags.js. "Blog" is Obsidian housekeeping, not a topic.
+  eleventyConfig.addCollection("postsByCategory", (collection) => {
+    const ignore = ["Blog"];
+    const byCategory = new Map();
+
+    for (const post of collection.getFilteredByTag("posts")) {
+      const names = new Set(
+        (post.data.categories || [])
+          .map((c) => String(c).replace(/^\[\[(.+)\]\]$/, "$1").trim())
+          .filter((c) => c && !ignore.includes(c))
+      );
+      for (const name of names) {
+        if (!byCategory.has(name)) byCategory.set(name, []);
+        byCategory.get(name).push(post);
+      }
+    }
+
+    return [...byCategory.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([name, posts]) => {
+        posts.sort((a, b) => b.date - a.date);
+        const years = [];
+        for (const post of posts) {
+          const year = post.date.getFullYear();
+          const last = years[years.length - 1];
+          if (last && last[0] === year) last[1].push(post);
+          else years.push([year, [post]]);
+        }
+        return { name, count: posts.length, years };
+      });
+  });
+
   // Filter for Social Images
   eleventyConfig.addFilter('splitlines', function(input) {
     const parts = input?.split(' ');

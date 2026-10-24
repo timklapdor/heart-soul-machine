@@ -1,0 +1,13 @@
+{#
+  Linked list of blog categories with post counts.
+  Uses the postsByCategory collection in .eleventy.js, so it only shows
+  categories that actually have posts. Each links to /categories/<name>/.
+#}
+<section class="category-links" aria-label="Blog categories" data-pagefind-ignore>
+	<h2>Browse by category</h2>
+	<ul>
+	{%- for cat in collections.postsByCategory %}
+		<li><a href="/categories/{{ cat.name | slugify }}/">{{ cat.name }}<span class="count">{{ cat.count }}</span></a></li>
+	{%- endfor %}
+	</ul>
+</section>

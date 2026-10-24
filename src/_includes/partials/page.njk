@@ -8,11 +8,11 @@ templateEngineOverride: njk,md
 
 	<h1 class="">{{ title }}</h1>
 
-    {% if summary %}
-	<div class="p-summary introduction">
-		{{ summary | markdown | safe  }}
-	</div>
-    {% endif %}
+	{% if summary %}
+		<div class="introduction">
+			{{ summary | markdown | safe  }}
+		</div>
+	{% endif %}
 	{{ content | safe }}
 	{% include "partials/footer.njk" %}
 </article>

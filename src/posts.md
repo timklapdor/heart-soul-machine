@@ -10,5 +10,3 @@ summary: The blog is the heart of the site - a place to express and record life 
 collection: blog
 permalink: "/blog/"
 ---
-
-*(PS I'll make all of those clickable in the future!)*

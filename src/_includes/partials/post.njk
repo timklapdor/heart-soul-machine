@@ -3,14 +3,18 @@ layout: /layouts/grid.njk
 ---
 <article class="h-entry blogpost">
 
-		{% if coverImage | length  %}
-	<img src="{{ coverImage | url }}" class="header-image" alt="">
-	<div class="hero-overlay"></div>
-		{% endif %}
+	{% if coverImage | length %}
+		<img src="{{ coverImage | url }}" class="header-image" alt="">
+		<div class="hero-overlay"></div>
+	{% endif %}
 	<h1 class="p-name title {{ 'hero' if coverImage | length }}">{{ title }}</h1>
-	
+
 	<ul class="metadata">
-		<li class="dt-published date">{% include "icons/calendar.svg" %} {{ page.date | postDate }}</li>
+		<li class="date">{% include "icons/calendar.svg" %}
+			<a class="u-url" href="{{ page.url }}">
+				<time class="dt-published" datetime="{{ page.date | isoDateTime }}">{{ page.date | postDate }}</time>
+			</a>
+		</li>
 		{%- if categories | length -%}
 			<li class="categories">
 				{% include "icons/categories.svg" %}
@@ -28,20 +32,45 @@ layout: /layouts/grid.njk
 		{%- endif -%}
 		<li class="time">{% include "icons/time.svg" %}{{ content | timeToRead ('220 words a minute') }} reading time</li>
 	</ul>
-	
-	{% if summary  %}
-	<div class="p-summary introduction">
-		{{ summary }}
-	</div>
+
+	{% if summary %}
+		<div class="p-summary introduction">
+			{{ summary }}
+		</div>
 	{% endif %}
 
-	{{ content | safe }}
+	<div class="e-content">
+		{{ content | safe }}
+	</div>
+
 	<ul class="metadata">
-		{% if author | length  %}<li class="p-author author">{% include "icons/author.svg" %}{{ author}}</li>{% endif %}
-		{% if location | length %}<li class="p-locality location">{% include "icons/map.svg" %}{{ location }}</li>{% else %}<li class="p-locality location">{% include "icons/map.svg" %} Adelaide, Australia</li>{% endif %}
-		{% if tags | length %}<li class="p-category tags">{% include "icons/tag.svg" %}{%- for item in tags -%}{{ item }}{% if loop.revindex == 2 %} & {% elseif not loop.last %}, {% endif %}{%- endfor -%}</li>{%- endif -%}
-		{% if updatedDate %}<li class="dt-updated updatedDate">{% include "icons/calendar.svg" %} {{ updatedDate | postDate }}</li>{% endif %}
-		{% if updateDescription %}<li class="update-description">{{ updateDescription }}</li>{% endif %}
+		{% if author | length %}
+			<li class="author">{% include "icons/author.svg" %}
+				<a class="p-author h-card" href="https://heartsoulmachine.com/">{{ author }}</a>
+			</li>
+		{% endif %}
+		{% if location | length %}
+			<li class="p-location location">{% include "icons/map.svg" %}{{ location }}</li>
+		{% else %}
+			<li class="p-location location">{% include "icons/map.svg" %} Adelaide, Australia</li>
+		{% endif %}
+		{% if tags | length %}
+			<li class="tags">{% include "icons/tag.svg" %}
+				{%- for item in tags -%}
+					<span class="p-category">{{ item }}</span>
+					{% if loop.revindex == 2 %} & {% elseif not loop.last %}, 
+				{% endif %}
+				{%- endfor -%}
+			</li>
+		{%- endif -%}
+		{% if updatedDate %}
+			<li class="updatedDate">{% include "icons/calendar.svg" %}
+				<time class="dt-updated" datetime="{{ updatedDate | isoDateTime }}">{{ updatedDate | postDate }}</time>
+			</li>
+		{% endif %}
+		{% if updateDescription %}
+			<li class="update-description">{{ updateDescription }}</li>
+		{% endif %}
 	</ul>
 
 	{%- include "partials/webmentions.njk" -%}

@@ -11,6 +11,8 @@ main {
     grid-template-columns: 1vw 1fr 1fr minmax(30ch, 75ch) 1fr 1fr 1vw;
     grid-template-rows: auto minmax(2ch, auto) auto;
     justify-items: center;
+
+        & .e-content { display: contents; }
     
         h1, h2, h3, h4, h4, h5, h6, p, ul, ol, blockquote, hr, div, table, iframe, pre, section.footnotes {
             grid-column: 4;
@@ -348,6 +350,16 @@ main {
                        content: "";
                     }
 
+                   a.u-url, a.p-author {
+                        text-decoration: none;
+                        color: inherit;
+
+                        &:hover {
+                            background: none;
+                            color: inherit;
+                        }
+                    }
+
                     svg {
                         width: 100%;
                     }
@@ -370,9 +382,6 @@ main {
                     text-transform: capitalize;
                 }
 
-            
-
-
                 li::marker {
                     font-size: 1em;
                 }
@@ -390,4 +399,70 @@ main {
     }
 
 }   
+}
+// Category archive pages (src/category-archive.njk)
+.category-archive {
+    li {
+        margin-block-end: 0.75rem;
+    }
+    .p-summary {
+        font-size: 0.9rem;
+        color: light-dark(var(--color-base-700), var(--color-base-400));
+    }
+}
+
+.category-list .count {
+    font-size: 0.8rem;
+    color: light-dark(var(--color-base-700), var(--color-base-400));
+}
+
+// Category links partial (partials/category-links.njk), used on /blog/
+main article .category-links {
+    grid-column: 4;
+    justify-self: start;
+    width: 100%;
+    padding-block: 1ch 2ch;
+
+    h2 {
+        margin: 0 0 1ch 0;
+        text-transform: uppercase;
+        --fluid-type-min: 1rem;
+        --fluid-type-max: 1.2rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6ch;
+        padding: 0;
+        margin: 0;
+    }
+
+    li::marker {
+        content: "";
+    }
+
+    a {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.6ch;
+        padding: 0.3ch 1.2ch;
+        border: 1px solid var(--soul);
+        border-radius: 999px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 0.95rem;
+
+        &:hover,
+        &:focus-visible {
+            background: var(--soul);
+            color: var(--flexoki-black);
+        }
+    }
+
+    .count {
+        font-size: 0.75rem;
+        opacity: 0.7;
+    }
 }
