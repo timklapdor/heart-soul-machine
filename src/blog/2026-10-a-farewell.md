@@ -16,8 +16,8 @@ tags:
 location:
 coverImage: /images/paul.jpg
 summary: We said goodbye to my Uncle this week. 
-commentId:
-url:
+commentId: '117500097199047613'
+url: https://heartsoulmachine.com/blog/2026/10-25-a-farewell/
 mastodonTags:
 ---
 On Monday my family gathered at Wisos Bowling Club in Wollongong alongside his colleagues and friends to say our goodbyes. It was a fitting send of to a man who played a variety of roles in our lives, but who's main drives tended to be the simple things - simple food, normal beer, and hanging out. My mum and aunt had taken the passing of their brother pretty hard, so I offered to speak at the service we were having. My brother spoke too, sharing a rejigged poem he'd written, you see we had come somewhat prepared. You see for the last couple of decades Uncle Paul had reminded us as each milestone birthday loomed, that he’d be dead by the next one. For his 70th the family played into this joke - and held a mock funeral for him, complete with miniature coffin stuffed with notes and eulogies from his friends and family. While we can look back at that with some irony today, what it did enable is for him to hear and share the memories and stories from his loved ones. 
