@@ -14,8 +14,8 @@ tags:
 location:
 coverImage:
 summary: A deeper look at the six dimensions of Bloom’s 3D – what they are, how they differ from a hierarchy, and how they connect to learning types and patterns in practice.
-commentId:
-url:
+commentId: '117549512413221042'
+url: https://heartsoulmachine.com/blog/2026/11-03-delving-into-dimensions/
 mastodonTags:
 ---
 
