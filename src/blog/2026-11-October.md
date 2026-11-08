@@ -13,7 +13,9 @@ tags:
 location:
 coverImage:
 summary: A big month – highs, lows, connections and losses.
-commentId:
+commentId: '117578955035685082'
+url: https://heartsoulmachine.com/blog/2026/11-08-october-2026/
+
 ---
 
 ## The Vibe
