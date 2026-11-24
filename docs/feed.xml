@@ -4,12 +4,46 @@
   <subtitle>Posts from the blog of Tim Klapdor.</subtitle>
   <link href="https://heartsoulmachine.com/feed.xml" rel="self"/>
   <link href="https://heartsoulmachine.com/"/>
-  <updated>2026-11-08T00:00:00Z</updated>
+  <updated>2026-11-25T00:00:00Z</updated>
   <id>https://heartsoulmachine.com/</id>
   <author>
     <name>Tim Klapdor</name>
     <email>tim.klapdor@gmail.com</email>
   </author>
+  <entry>
+    <title>Moving Beyond the Cognitive</title>
+    <link href="https://heartsoulmachine.com/blog/2026/11-25-moving-beyond-the-cognitive/"/>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <id>https://heartsoulmachine.com/blog/2026/11-25-moving-beyond-the-cognitive/</id>
+    <media:content 
+        xmlns:media="http://search.yahoo.com/mrss/" 
+        url="https://heartsoulmachine.com/assets/social-previews/moving-beyond-the-cognitive-preview.jpeg" 
+        medium="image" 
+        type="image/jpeg" />
+    <summary>Bloom&#39;s has focused almost entirely on the cognitive domain, which is exactly what AI does best, so opening up the affective and operative domains is how we design learning around what&#39;s uniquely human.</summary>
+    <content xml:lang="en" type="html">&lt;p&gt;I&#39;ve been developing my presentation for &lt;a href=&quot;ttps://2026conference.ascilite.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ascilite&lt;/a&gt; and spending a lot of time working back through &lt;a href=&quot;https://patternlearning.co/blooms/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Blooms 3D&lt;/a&gt;. One of the things that keeps coming into focus is what I think is the most important gap the framework addresses – the cognitive bias baked into the original Bloom&#39;s taxonomy.&lt;/p&gt;
+&lt;p&gt;Bloom&#39;s, as it&#39;s been used in higher education, is almost entirely about the cognitive domain. Universities have tried to patch around this with graduate attributes as a way of embedding broader capabilities into program-level design. That&#39;s nothing, but it&#39;s also not the same as actually designing for those things into the course, where learning outcomes drive assessment, and assessment drives content. In other words, if it&#39;s not baked in and explicit in the experience of learning, then it&#39;s only based on assumptions. If your learning outcomes are purely cognitive, everything downstream follows suit.&lt;/p&gt;
+&lt;h3&gt;What Gets Left Out&lt;/h3&gt;
+&lt;p&gt;The affective and operative domains are where this matters most. The affective domain is about how we feel, how we make others feel, and how we relate to people. These are genuinely critical professional skills, and we mostly don&#39;t teach them. Universities have produced graduates who are cognitively capable but interpersonally underdeveloped – not because students can&#39;t develop these skills, but because we&#39;ve removed the conditions for it. The push toward scale and financial viability has stripped out a lot of the human interaction that university used to provide almost incidentally. What&#39;s left is content delivery that focuses on cognitive development, not on affective skill formation.&lt;/p&gt;
+&lt;p&gt;The operative domain is about how people move, occupy space, and act within physical and professional contexts. What does it look like to walk into a meeting room ready to contribute? How do you sit in a meeting in a way that signals presence and engagement? These things matter – they&#39;re part of how others perceive you, which connects directly back to the affective domain. University should be a safe space to explore and practice these things before the stakes are real. Instead, we&#39;ve abstracted ourselves so thoroughly from the real world that most of this goes completely unaddressed.&lt;/p&gt;
+&lt;h3&gt;The AI Problem Makes This Urgent&lt;/h3&gt;
+&lt;p&gt;I was &lt;a href=&quot;https://kclpure.kcl.ac.uk/portal/en/publications/why-education-cannot-be-automated-enactive-pedagogy-ai-and-the-cr/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;reading this morning&lt;/a&gt;&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://heartsoulmachine.com/blog/2026/11-25-moving-beyond-the-cognitive/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; about the so-called death of the university as we know it – the increasing use of AI by students to write assessments, and AI by academics to mark them. I don&#39;t entirely disagree with the diagnosis. Universities have been on a trajectory toward scale and revenue extraction for decades, driven by neoliberal policy and deregulation. The logical endpoint of that trajectory is a fully automated system: students pay, AI produces, university receives assessment, AI marks, everyone parts ways, and the actual purpose of being at a university has quietly disappeared.&lt;/p&gt;
+&lt;p&gt;The essay is a useful example of how this happened. The traditional essay always contained a hidden assumption – that in order to answer the question, students would read, research, and think. Those weren&#39;t stated requirements; they were assumed as prerequisites. AI has exposed that assumption by simply bypassing it. The essay still gets written, but the reading and thinking didn’t happen.&lt;/p&gt;
+&lt;p&gt;What this means is that we need to become more explicit about what we actually want students to learn – and this is something universities have historically been terrible at. So much of what universities value lives in tacit, unspoken knowledge. Clarity is not a thing universities do well. Academic writing is probably the least accessible form of communication imaginable, actively hostile to anyone outside the discipline. Even our own learning outcomes are so often vague and filled with jargon that it makes the actual expectations for teachers and students opaque.&lt;/p&gt;
+&lt;h3&gt;What Blooms 3D Opens Up&lt;/h3&gt;
+&lt;p&gt;The cognitive domain is precisely where AI is most capable right now. It can explain, summarise, analyse, and synthesise – all the things that traditional cognitive-focused assessments have asked for. If we keep designing learning purely around cognitive outcomes, we&#39;re choosing to specifically design for the things AI does best and neglecting the things it can&#39;t replicate.&lt;/p&gt;
+&lt;p&gt;Blooms 3D opens up the affective and operative domains as legitimate targets for learning design – things that are uniquely human, genuinely important in professional contexts, and not currently well served by how we design courses or assess learning. Getting those domains into learning outcomes, into assessment design, and into the actual experience of being at a university isn&#39;t just a response to AI. It&#39;s a response to the long-running problem of universities producing graduates who know things but struggle to work with people, navigate real environments, or bring themselves fully into professional life.&lt;/p&gt;
+&lt;p&gt;That&#39;s the gap. And it&#39;s been there a lot longer than AI has.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;I should also point out that this paper argues for a similar shift in pedagogical approach - one of enactive learning- but it&#39;s not too dissimilar to what I’m arguing for here. &lt;a href=&quot;https://heartsoulmachine.com/blog/2026/11-25-moving-beyond-the-cognitive/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+    
+  </entry>
   <entry>
     <title>October 2026</title>
     <link href="https://heartsoulmachine.com/blog/2026/11-08-october-2026/"/>
