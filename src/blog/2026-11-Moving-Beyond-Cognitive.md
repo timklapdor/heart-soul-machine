@@ -15,8 +15,8 @@ tags:
 location:
 coverImage: /images/blooms-3D.png
 summary: Bloom's has focused almost entirely on the cognitive domain, which is exactly what AI does best, so opening up the affective and operative domains is how we design learning around what's uniquely human.
-commentId:
-url:
+commentId: '117673902267639135'
+url: https://heartsoulmachine.com/blog/2026/11-25-moving-beyond-the-cognitive/
 mastodonTags:
 ---
 
